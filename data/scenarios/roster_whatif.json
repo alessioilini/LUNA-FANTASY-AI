@@ -1,0 +1,319 @@
+{
+ "region": "RU",
+ "balance_version": "what-if:role-templates-v1",
+ "status": "hypothetical",
+ "note": "All heroines named in the brief - NOT the operator's confirmed roster",
+ "heroes": [
+  {
+   "hero_id": "hymelle",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "lucifer",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "klim",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "seneren",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "vignette",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "kira",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "illusia",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "verafiel",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "chloe",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "seraphia",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  },
+  {
+   "hero_id": "nyxara",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": "UNKNOWN",
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "stats_mode": "base",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null
+  }
+ ],
+ "inventory": {},
+ "rune_pool": [],
+ "pw_pool": []
+}

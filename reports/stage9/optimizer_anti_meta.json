@@ -1,0 +1,380 @@
+{
+ "method": "genetic_algorithm",
+ "best": [
+  "illusia",
+  "vignette",
+  "verafiel",
+  "hymelle",
+  "lucifer",
+  "seneren"
+ ],
+ "positions": [
+  1,
+  5,
+  3,
+  4,
+  2,
+  0
+ ],
+ "runes": [],
+ "team": {
+  "name": "ga-best",
+  "heroes": [
+   {
+    "hero_id": "illusia",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   },
+   {
+    "hero_id": "vignette",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   },
+   {
+    "hero_id": "verafiel",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   },
+   {
+    "hero_id": "hymelle",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   },
+   {
+    "hero_id": "lucifer",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   },
+   {
+    "hero_id": "seneren",
+    "progression": {
+     "level": "UNKNOWN",
+     "stars": "UNKNOWN",
+     "awakening": "UNKNOWN",
+     "skill_levels": {},
+     "upgrades": []
+    },
+    "stats": {
+     "ATK": "UNKNOWN",
+     "HP": "UNKNOWN",
+     "DEF": "UNKNOWN",
+     "SPD": "UNKNOWN",
+     "CRIT": "UNKNOWN",
+     "CRIT_DMG": "UNKNOWN",
+     "CTRL_RES": "UNKNOWN"
+    },
+    "stats_mode": "base",
+    "sigils": [],
+    "talents": [],
+    "limbs": [],
+    "decorations": [],
+    "pets": [],
+    "charm_cards": [],
+    "extra_mods": [],
+    "abilities_override": null
+   }
+  ],
+  "formation": {
+   "illusia": 1,
+   "vignette": 5,
+   "verafiel": 3,
+   "hymelle": 4,
+   "lucifer": 2,
+   "seneren": 0
+  },
+  "formation_id": null,
+  "faction_bonus": [],
+  "global_stats": [],
+  "runes": [],
+  "princess_weapon": [],
+  "relics": [],
+  "region": "RU",
+  "balance_version": "what-if:role-templates-v1",
+  "notes": "",
+  "status": "hypothetical"
+ },
+ "objectives": {
+  "win_rate": 0.985,
+  "robust_wr": 0.98,
+  "speed": 0.06668889629876625,
+  "survival": 0.90875,
+  "cost": 0.0,
+  "per_opponent": {
+   "Команда A": 0.99,
+   "Команда B": 0.98
+  },
+  "n": 200
+ },
+ "history": [
+  {
+   "gen": 0,
+   "best": 0.8,
+   "mean": 0.3927
+  },
+  {
+   "gen": 1,
+   "best": 0.8875,
+   "mean": 0.5167
+  },
+  {
+   "gen": 2,
+   "best": 0.8875,
+   "mean": 0.6073
+  },
+  {
+   "gen": 3,
+   "best": 0.925,
+   "mean": 0.6719
+  },
+  {
+   "gen": 4,
+   "best": 1.0,
+   "mean": 0.7427
+  },
+  {
+   "gen": 5,
+   "best": 1.0,
+   "mean": 0.8469
+  }
+ ],
+ "finalists": [
+  {
+   "heroes": [
+    "illusia",
+    "vignette",
+    "verafiel",
+    "hymelle",
+    "lucifer",
+    "seneren"
+   ],
+   "positions": [
+    1,
+    5,
+    3,
+    4,
+    2,
+    0
+   ],
+   "runes": [],
+   "win_rate": 0.985,
+   "robust_wr": 0.98,
+   "speed": 0.06668889629876625,
+   "survival": 0.90875,
+   "cost": 0.0,
+   "n": 200
+  },
+  {
+   "heroes": [
+    "illusia",
+    "vignette",
+    "verafiel",
+    "hymelle",
+    "lucifer",
+    "kira"
+   ],
+   "positions": [
+    1,
+    5,
+    3,
+    4,
+    2,
+    0
+   ],
+   "runes": [],
+   "win_rate": 0.9675,
+   "robust_wr": 0.965,
+   "speed": 0.06668889629876626,
+   "survival": 0.8954166666666666,
+   "cost": 0.0,
+   "n": 200
+  },
+  {
+   "heroes": [
+    "nyxara",
+    "verafiel",
+    "vignette",
+    "hymelle",
+    "illusia",
+    "lucifer"
+   ],
+   "positions": [
+    2,
+    3,
+    5,
+    4,
+    0,
+    1
+   ],
+   "runes": [],
+   "win_rate": 0.965,
+   "robust_wr": 0.945,
+   "speed": 0.06670001667500416,
+   "survival": 0.9058333333333333,
+   "cost": 0.0,
+   "n": 200
+  },
+  {
+   "heroes": [
+    "illusia",
+    "vignette",
+    "verafiel",
+    "hymelle",
+    "lucifer",
+    "seneren"
+   ],
+   "positions": [
+    1,
+    5,
+    3,
+    4,
+    0,
+    2
+   ],
+   "runes": [],
+   "win_rate": 0.925,
+   "robust_wr": 0.905,
+   "speed": 0.06666666666666667,
+   "survival": 0.8858333333333333,
+   "cost": 0.0,
+   "n": 200
+  }
+ ],
+ "evaluations": 69,
+ "battles": 6800,
+ "pareto_front": [
+  {
+   "heroes": [
+    "illusia",
+    "vignette",
+    "verafiel",
+    "hymelle",
+    "lucifer",
+    "seneren"
+   ],
+   "win_rate": 1.0,
+   "robust_wr": 1.0
+  }
+ ],
+ "mode": {
+  "weights": {
+   "robust_wr": 1.0,
+   "win_rate": 0.25
+  },
+  "description": "Best Anti-Meta Team - максимум минимального WR по пулу (устойчивость)"
+ }
+}

@@ -1,0 +1,814 @@
+{
+ "region": "RU",
+ "balance_version": "what-if:role-templates-v1",
+ "meta": {
+  "warning": "WHAT-IF catalog: generic role templates + priors. Not Luna Fantasy data."
+ },
+ "heroes": [
+  {
+   "id": "hymelle",
+   "names": {
+    "ru": null,
+    "en": "Hymelle"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "hymelle_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "hymelle_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "lucifer",
+   "names": {
+    "ru": null,
+    "en": "Lucifer"
+   },
+   "role": "attacker",
+   "template": "magic_aoe_dot",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "lucifer_basic",
+     "kind": "basic",
+     "tags": [
+      "magic"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "magic"
+      }
+     ]
+    },
+    {
+     "id": "lucifer_burst",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "magic"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_all",
+       "coef": 0.7,
+       "dtype": "magic",
+       "bonus_vs_status": {
+        "burn": 0.3
+       }
+      },
+      {
+       "op": "status",
+       "target": "hit",
+       "status": {
+        "key": "burn",
+        "dot": {
+         "coef": 0.12,
+         "stat": "ATK",
+         "dtype": "true"
+        },
+        "duration": 2,
+        "stacking": "refresh"
+       }
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "JP: 闇属性 魔法使い 魔法範囲爆裂; amplifies abnormal-status damage (LOW)",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "klim",
+   "names": {
+    "ru": null,
+    "en": "Klim"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "klim_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "klim_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "seneren",
+   "names": {
+    "ru": null,
+    "en": "Seneren"
+   },
+   "role": "support",
+   "template": "support_buffer",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "seneren_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.6,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "seneren_aura",
+     "kind": "passive",
+     "trigger": {
+      "on": "battle_start"
+     },
+     "effects": [
+      {
+       "op": "status",
+       "target": "ally_all",
+       "status": {
+        "key": "seneren_aura",
+        "kind": "buff",
+        "undispellable": true,
+        "mods": [
+         {
+          "stat": "ATK",
+          "value": 0.1,
+          "mode": "pct"
+         },
+         {
+          "stat": "DEF",
+          "value": 0.1,
+          "mode": "pct"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "seneren_rebirth",
+     "kind": "passive",
+     "trigger": {
+      "on": "self_death",
+      "per_battle": 1
+     },
+     "effects": [
+      {
+       "op": "revive",
+       "target": "self",
+       "hp_pct": 0.5
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "support"
+   ],
+   "evidence": "JP セネリン: team buff by class, revive durability (LOW, mapping hypothesis)",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "vignette",
+   "names": {
+    "ru": null,
+    "en": "Vignette"
+   },
+   "role": "support",
+   "template": "support_revive",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "vignette_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.5,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "vignette_mass_revive",
+     "kind": "active",
+     "priority": 9,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 4,
+      "dead_ally_ge": 1
+     },
+     "effects": [
+      {
+       "op": "revive",
+       "target": "dead_allies",
+       "count": 3,
+       "hp_pct": 0.3
+      }
+     ]
+    },
+    {
+     "id": "vignette_guardian_angel",
+     "kind": "passive",
+     "trigger": {
+      "on": "ally_death",
+      "per_battle": 1
+     },
+     "effects": [
+      {
+       "op": "revive",
+       "target": "dead_ally_random",
+       "count": 1,
+       "hp_pct": 0.3
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "support"
+   ],
+   "evidence": "JP ヴィネット: revives up to 3 allies, passive revives others (LOW)",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "kira",
+   "names": {
+    "ru": null,
+    "en": "Kira"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "kira_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "kira_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "illusia",
+   "names": {
+    "ru": null,
+    "en": "Illusia"
+   },
+   "role": "tank",
+   "template": "guardian_counter_poison",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "illusia_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.7,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "illusia_barrier",
+     "kind": "passive",
+     "trigger": {
+      "on": "battle_start"
+     },
+     "effects": [
+      {
+       "op": "shield",
+       "target": "ally_all",
+       "coef": 1.0,
+       "duration": 3
+      }
+     ]
+    },
+    {
+     "id": "illusia_counter",
+     "kind": "passive",
+     "trigger": {
+      "on": "damaged",
+      "per_round": 2
+     },
+     "effects": [
+      {
+       "op": "damage",
+       "target": "attacker",
+       "coef": 0.5
+      },
+      {
+       "op": "status",
+       "target": "hit",
+       "status": {
+        "key": "poison",
+        "dot": {
+         "coef": 0.08,
+         "stat": "ATK",
+         "dtype": "true"
+        },
+        "duration": 2,
+        "stacking": "stack",
+        "max_stacks": 3
+       }
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "tank"
+   ],
+   "evidence": "HYPOTHESIS Illusia=エルシア: barrier, counter, poison (LOW)",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "verafiel",
+   "names": {
+    "ru": "Верафиэль",
+    "en": "Verafiel"
+   },
+   "role": "support",
+   "template": "support_healer",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "verafiel_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.5,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "verafiel_heal",
+     "kind": "active",
+     "priority": 6,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 1,
+      "ally_hp_below": 0.8
+     },
+     "effects": [
+      {
+       "op": "heal",
+       "target": "ally_lowest_hp:2",
+       "coef": 1.6
+      }
+     ]
+    },
+    {
+     "id": "verafiel_ward",
+     "kind": "passive",
+     "trigger": {
+      "on": "battle_start"
+     },
+     "effects": [
+      {
+       "op": "shield",
+       "target": "ally_all",
+       "coef": 0.8,
+       "duration": 2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "support"
+   ],
+   "evidence": "operator: Верафиэль - поддержка",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "chloe",
+   "names": {
+    "ru": null,
+    "en": "Chloe"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "chloe_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "chloe_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "seraphia",
+   "names": {
+    "ru": null,
+    "en": "Seraphia"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "seraphia_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "seraphia_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "alias «Монашка»; no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  },
+  {
+   "id": "nyxara",
+   "names": {
+    "ru": null,
+    "en": "Nyxara"
+   },
+   "role": "attacker",
+   "template": "generic_attacker",
+   "base_stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN",
+    "CRIT": "UNKNOWN",
+    "CRIT_DMG": "UNKNOWN",
+    "CTRL_RES": "UNKNOWN"
+   },
+   "abilities": [
+    {
+     "id": "nyxara_basic",
+     "kind": "basic",
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ]
+    },
+    {
+     "id": "nyxara_skill",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2
+     },
+     "tags": [
+      "physical"
+     ],
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 2.2
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "evidence": "no role evidence",
+   "provenance": {
+    "source": "luna.scenarios role templates",
+    "confidence": "hypothesis",
+    "note": "Generic role template - NOT the real skill. Replace with sourced kit when available."
+   }
+  }
+ ],
+ "sigils": [],
+ "talents": [],
+ "limbs": [],
+ "limb_sets": [],
+ "decorations": [],
+ "pets": [],
+ "charm_cards": [],
+ "charm_combos": [],
+ "runes": [],
+ "princess_weapon_parts": [],
+ "princess_resonance": [],
+ "relics": [],
+ "factions": [],
+ "formations": []
+}

@@ -1,0 +1,81 @@
+<!doctype html><html lang='ru'><meta charset='utf-8'><title>WHAT-IF (structure-only): role templates + symmetric priors; not real balance</title>
+<style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}table{border-collapse:collapse;margin:8px 0 24px;font-size:13px}td,th{border:1px solid #ccc;padding:4px 8px}th{background:#f0f0f5}.warn{background:#fff4d6;padding:8px;border-left:4px solid #e0a800}@media (prefers-color-scheme: dark){body{background:#111;color:#eee}th{background:#222}td,th{border-color:#444}.warn{background:#3a3000}}</style>
+<h1>WHAT-IF (structure-only): role templates + symmetric priors; not real balance</h1><p class='warn'>Модельные результаты не являются реальным процентом побед, пока симулятор не прошёл проверку на реальных боях.</p>
+<h2>summary</h2><table><tr><th>field</th><th>value</th></tr>
+<tr><td>label</td><td>WHAT-IF (structure-only): role templates + symmetric priors; not real balance</td></tr>
+<tr><td>n_per_run</td><td>400</td></tr>
+<tr><td>seed</td><td>2026</td></tr>
+<tr><td>priors.label</td><td>symmetric-wide-v1 (JP-scale anchored)</td></tr>
+<tr><td>priors.priors.*|ATK</td><td>[80000, 140000]</td></tr>
+<tr><td>priors.priors.*|HP</td><td>[800000, 1400000]</td></tr>
+<tr><td>priors.priors.*|DEF</td><td>[3000, 7000]</td></tr>
+<tr><td>priors.priors.*|SPD</td><td>[3500, 5000]</td></tr>
+<tr><td>priors.priors.*|CRIT</td><td>[0.05, 0.3]</td></tr>
+<tr><td>priors.priors.*|CRIT_DMG</td><td>[1.5, 2.0]</td></tr>
+<tr><td>priors.priors.*|CTRL_RES</td><td>[0.0, 0.2]</td></tr>
+<tr><td>variants</td><td>[&quot;v1/kill-first&quot;, &quot;v1/death-first&quot;, &quot;alt/kill-first&quot;, &quot;alt/death-first&quot;]</td></tr>
+</table>
+<h2>results</h2><table><tr><th>key</th><th>desc</th><th>verdict</th><th>status</th><th>reason</th></tr>
+<tr><td>H1_penetration</td><td>Пробитие: +20% игнорирования защиты атакующим героиням команды</td><td>robust_positive</td><td></td><td></td></tr>
+<tr><td>H2_magic_combo</td><td>Магическое комбо: Люцифер получает 30% шанс доп. атаки после магической атаки</td><td>robust_positive</td><td></td><td></td></tr>
+<tr><td>H3_speed</td><td>Скорость: +10% СКР всей команде</td><td>negative_in_some_variants</td><td></td><td></td></tr>
+<tr><td>H4_defense</td><td>Защита: +20% DEF всей команде</td><td>robust_positive</td><td></td><td></td></tr>
+<tr><td>H5_anti_revive</td><td>Запрет воскрешения: Кира накладывает запрет воскрешения (3 хода) при убийстве</td><td>positive_in_some_variants</td><td></td><td></td></tr>
+<tr><td>H6_soul_eater</td><td>Пожиратель душ</td><td></td><td>BLOCKED</td><td>Эффект «Пожиратель душ» не найден ни в одном доступном источнике: текст и числа UNKNOWN. Проверка невозможна без выдумывания механики - заблокировано.</td></tr>
+</table>
+<h2>results.H1_penetration.runs</h2><table><tr><th>key</th><th>wr_before</th><th>wr_after</th><th>delta</th><th>significant</th></tr>
+<tr><td>A_vs_B|v1/kill-first</td><td>0.7175</td><td>0.815</td><td>0.0975</td><td>True</td></tr>
+<tr><td>A_vs_B|v1/death-first</td><td>0.7175</td><td>0.815</td><td>0.0975</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/kill-first</td><td>0.7175</td><td>0.815</td><td>0.0975</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/death-first</td><td>0.7175</td><td>0.815</td><td>0.0975</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/kill-first</td><td>0.365</td><td>0.4925</td><td>0.1275</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/death-first</td><td>0.365</td><td>0.4925</td><td>0.1275</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/kill-first</td><td>0.365</td><td>0.4925</td><td>0.1275</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/death-first</td><td>0.365</td><td>0.4925</td><td>0.1275</td><td>True</td></tr>
+</table>
+<h2>results.H2_magic_combo.runs</h2><table><tr><th>key</th><th>wr_before</th><th>wr_after</th><th>delta</th><th>significant</th></tr>
+<tr><td>A_vs_B|v1/kill-first</td><td>0.7175</td><td>0.785</td><td>0.0675</td><td>True</td></tr>
+<tr><td>A_vs_B|v1/death-first</td><td>0.7175</td><td>0.785</td><td>0.0675</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/kill-first</td><td>0.7175</td><td>0.7875</td><td>0.07</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/death-first</td><td>0.7175</td><td>0.7875</td><td>0.07</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/kill-first</td><td>0.365</td><td>0.525</td><td>0.16</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/death-first</td><td>0.365</td><td>0.525</td><td>0.16</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/kill-first</td><td>0.365</td><td>0.5775</td><td>0.2125</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/death-first</td><td>0.365</td><td>0.5775</td><td>0.2125</td><td>True</td></tr>
+</table>
+<h2>results.H3_speed.runs</h2><table><tr><th>key</th><th>wr_before</th><th>wr_after</th><th>delta</th><th>significant</th></tr>
+<tr><td>A_vs_B|v1/kill-first</td><td>0.7175</td><td>0.6775</td><td>-0.04</td><td>True</td></tr>
+<tr><td>A_vs_B|v1/death-first</td><td>0.7175</td><td>0.6775</td><td>-0.04</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/kill-first</td><td>0.7175</td><td>0.6775</td><td>-0.04</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/death-first</td><td>0.7175</td><td>0.6775</td><td>-0.04</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/kill-first</td><td>0.365</td><td>0.3825</td><td>0.0175</td><td>False</td></tr>
+<tr><td>B_vs_A|v1/death-first</td><td>0.365</td><td>0.3825</td><td>0.0175</td><td>False</td></tr>
+<tr><td>B_vs_A|alt/kill-first</td><td>0.365</td><td>0.3825</td><td>0.0175</td><td>False</td></tr>
+<tr><td>B_vs_A|alt/death-first</td><td>0.365</td><td>0.3825</td><td>0.0175</td><td>False</td></tr>
+</table>
+<h2>results.H4_defense.runs</h2><table><tr><th>key</th><th>wr_before</th><th>wr_after</th><th>delta</th><th>significant</th></tr>
+<tr><td>A_vs_B|v1/kill-first</td><td>0.7175</td><td>0.7975</td><td>0.08</td><td>True</td></tr>
+<tr><td>A_vs_B|v1/death-first</td><td>0.7175</td><td>0.7975</td><td>0.08</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/kill-first</td><td>0.7175</td><td>0.7975</td><td>0.08</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/death-first</td><td>0.7175</td><td>0.7975</td><td>0.08</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/kill-first</td><td>0.365</td><td>0.595</td><td>0.23</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/death-first</td><td>0.365</td><td>0.595</td><td>0.23</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/kill-first</td><td>0.365</td><td>0.595</td><td>0.23</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/death-first</td><td>0.365</td><td>0.595</td><td>0.23</td><td>True</td></tr>
+</table>
+<h2>results.H5_anti_revive.runs</h2><table><tr><th>key</th><th>wr_before</th><th>wr_after</th><th>delta</th><th>significant</th></tr>
+<tr><td>A_vs_B|v1/kill-first</td><td>0.7175</td><td>0.745</td><td>0.0275</td><td>True</td></tr>
+<tr><td>A_vs_B|v1/death-first</td><td>0.7175</td><td>0.7175</td><td>0.0</td><td>False</td></tr>
+<tr><td>A_vs_B|alt/kill-first</td><td>0.7175</td><td>0.745</td><td>0.0275</td><td>True</td></tr>
+<tr><td>A_vs_B|alt/death-first</td><td>0.7175</td><td>0.7175</td><td>0.0</td><td>False</td></tr>
+<tr><td>B_vs_A|v1/kill-first</td><td>0.365</td><td>0.6775</td><td>0.3125</td><td>True</td></tr>
+<tr><td>B_vs_A|v1/death-first</td><td>0.365</td><td>0.6525</td><td>0.2875</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/kill-first</td><td>0.365</td><td>0.6775</td><td>0.3125</td><td>True</td></tr>
+<tr><td>B_vs_A|alt/death-first</td><td>0.365</td><td>0.6525</td><td>0.2875</td><td>True</td></tr>
+</table>
+<h2>baseline_A_vs_B</h2><table><tr><th>key</th><th>model_win_rate</th><th>avg_rounds</th><th>draws</th></tr>
+<tr><td>v1/kill-first</td><td>0.7175</td><td>14.9475</td><td>0</td></tr>
+<tr><td>v1/death-first</td><td>0.7175</td><td>14.9475</td><td>0</td></tr>
+<tr><td>alt/kill-first</td><td>0.7175</td><td>14.9475</td><td>0</td></tr>
+<tr><td>alt/death-first</td><td>0.7175</td><td>14.9475</td><td>0</td></tr>
+</table>

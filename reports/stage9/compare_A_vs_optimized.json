@@ -1,0 +1,31 @@
+{
+ "per_opponent": {
+  "Команда B": {
+   "wr_a": 0.6766666666666666,
+   "wr_b": 0.9766666666666667,
+   "delta": 0.3,
+   "ci": [
+    0.24485717338905838,
+    0.3551428266109416
+   ],
+   "n": 300,
+   "better": 94,
+   "worse": 4,
+   "significant": true
+  }
+ },
+ "label": "MODEL comparison (common random numbers)",
+ "overall": {
+  "delta": 0.3,
+  "ci": [
+   0.24485717338905838,
+   0.3551428266109416
+  ],
+  "n": 300,
+  "better": 94,
+  "worse": 4,
+  "significant": true,
+  "wr_a": 0.6766666666666666,
+  "wr_b": 0.9766666666666667
+ }
+}

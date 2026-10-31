@@ -1,0 +1,718 @@
+{
+ "analysis": {
+  "label": "MODEL ANALYSIS - выводы зависят от допущений (assumptions_used) и неполных данных",
+  "summary": {
+   "n": 300,
+   "model_win_rate": 0.69,
+   "ci95": [
+    0.6355381623460284,
+    0.7396573342548319
+   ],
+   "avg_rounds": 14.986666666666666,
+   "draws": 0,
+   "end_reasons": {
+    "round_limit": 286,
+    "wipe": 14
+   }
+  },
+  "metrics": {
+   "my_damage": 6997070.201831305,
+   "my_survival": 0.8922222222222222,
+   "my_ctrl_landed": 0.0,
+   "my_heal": 0.0,
+   "my_shield_absorb": 0.0,
+   "enemy_damage": 6656316.821146217,
+   "enemy_revives": 0.75,
+   "enemy_ctrl_landed": 0.0,
+   "enemy_revive_blocked": 0.0,
+   "rounds": 14.986666666666666,
+   "r1_my_damage": 1144488.3023463725,
+   "r1_enemy_damage": 1097432.7367319632
+  },
+  "first_round": {
+   "order_sample": [
+    [
+     "B0",
+     "illusia",
+     4297.4
+    ],
+    [
+     "A5",
+     "kira",
+     4260.03
+    ],
+    [
+     "B1",
+     "kira",
+     4260.03
+    ],
+    [
+     "A0",
+     "hymelle",
+     4171.68
+    ],
+    [
+     "A3",
+     "seneren",
+     4143.86
+    ],
+    [
+     "B3",
+     "seneren",
+     4143.86
+    ],
+    [
+     "A4",
+     "vignette",
+     3947.53
+    ],
+    [
+     "B5",
+     "chloe",
+     3913.55
+    ],
+    [
+     "B2",
+     "verafiel",
+     3894.06
+    ],
+    [
+     "A1",
+     "lucifer",
+     3762.1
+    ],
+    [
+     "B4",
+     "lucifer",
+     3762.1
+    ],
+    [
+     "A2",
+     "klim",
+     3528.77
+    ]
+   ],
+   "my_heroes_before_first_enemy": {
+    "0": 101,
+    "1": 124,
+    "2": 61,
+    "3": 12,
+    "4": 2
+   },
+   "avg_damage": {
+    "A": 1144488.3023463725,
+    "B": 1097432.7367319632
+   },
+   "p_any_death_r1": {
+    "A": 0.0033333333333333335,
+    "B": 0.0033333333333333335
+   },
+   "avg_controls_r1": 0.0
+  },
+  "key_heroes": {
+   "mine": [
+    {
+     "hero": "vignette",
+     "damage_share": 0.076,
+     "heal": 0.0,
+     "revives": 6.86,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.997
+    },
+    {
+     "hero": "lucifer",
+     "damage_share": 0.259,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.877
+    },
+    {
+     "hero": "kira",
+     "damage_share": 0.25,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.997
+    },
+    {
+     "hero": "seneren",
+     "damage_share": 0.112,
+     "heal": 0.0,
+     "revives": 0.22,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.97
+    },
+    {
+     "hero": "klim",
+     "damage_share": 0.22,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.97
+    },
+    {
+     "hero": "hymelle",
+     "damage_share": 0.084,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.543
+    }
+   ],
+   "enemy": [
+    {
+     "hero": "seneren",
+     "damage_share": 0.106,
+     "heal": 0.0,
+     "revives": 0.75,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.45
+    },
+    {
+     "hero": "lucifer",
+     "damage_share": 0.428,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.793
+    },
+    {
+     "hero": "chloe",
+     "damage_share": 0.249,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.953
+    },
+    {
+     "hero": "verafiel",
+     "damage_share": 0.035,
+     "heal": 1149892.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.063
+    },
+    {
+     "hero": "kira",
+     "damage_share": 0.103,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.003
+    },
+    {
+     "hero": "illusia",
+     "damage_share": 0.079,
+     "heal": 0.0,
+     "revives": 0.0,
+     "ctrl_landed": 0.0,
+     "survival_rate": 0.0
+    }
+   ]
+  },
+  "strengths_weaknesses": {
+   "strengths": [
+    "Суммарный урон: мой 6997070 vs соперник 6656317",
+    "1-й раунд: мой урон 1144488 vs 1097433"
+   ],
+   "weaknesses": [
+    "Соперник воскрешает в среднем 0.75 раз за бой - проверьте запрет воскрешения/добивание"
+   ]
+  },
+  "loss_causes": {
+   "n_lost": 93,
+   "top_killers": [
+    [
+     "chloe/chloe_basic",
+     155
+    ],
+    [
+     "lucifer/lucifer_basic",
+     143
+    ],
+    [
+     "seneren/seneren_basic",
+     132
+    ],
+    [
+     "chloe/chloe_skill",
+     126
+    ],
+    [
+     "lucifer/lucifer_burst",
+     72
+    ]
+   ],
+   "first_to_die": {
+    "hymelle": 1.0
+   },
+   "avg_rounds_in_losses": 15.0,
+   "end_reasons": {
+    "round_limit": 93
+   },
+   "key_hero_dead_in_losses": {
+    "vignette": 0.010752688172043012,
+    "seneren": 0.5268817204301075
+   }
+  },
+  "dangerous_interactions": {
+   "enemy_top_damage_sources": [
+    [
+     "lucifer/lucifer_burst",
+     0.309
+    ],
+    [
+     "chloe/chloe_skill",
+     0.126
+    ],
+    [
+     "chloe/chloe_basic",
+     0.123
+    ],
+    [
+     "lucifer/lucifer_basic",
+     0.118
+    ],
+    [
+     "seneren/seneren_basic",
+     0.106
+    ],
+    [
+     "kira/kira_skill",
+     0.06
+    ]
+   ],
+   "enemy_combo_triggers_per_battle": {},
+   "enemy_reflect_damage_per_battle": 0.0
+  },
+  "assumptions_used": [
+   "battle.draw_result",
+   "battle.max_rounds",
+   "death.clear_statuses",
+   "death.trigger_order",
+   "dmg.bonus_stacking",
+   "dmg.crit_formula",
+   "dmg.dr_cap",
+   "dmg.family",
+   "dmg.hit_formula",
+   "dmg.k_def",
+   "dmg.magic_def_stat",
+   "dmg.min_fraction",
+   "dmg.variance",
+   "dot.snapshot",
+   "dot.timing",
+   "formation.front",
+   "order.mode",
+   "order.resort_mid_round",
+   "order.tie_break",
+   "pet.timing",
+   "prior:chloe.ATK",
+   "prior:chloe.CRIT",
+   "prior:chloe.CRIT_DMG",
+   "prior:chloe.CTRL_RES",
+   "prior:chloe.DEF",
+   "prior:chloe.HP",
+   "prior:chloe.SPD",
+   "prior:hymelle.ATK",
+   "prior:hymelle.CRIT",
+   "prior:hymelle.CRIT_DMG",
+   "prior:hymelle.CTRL_RES",
+   "prior:hymelle.DEF",
+   "prior:hymelle.HP",
+   "prior:hymelle.SPD",
+   "prior:illusia.ATK",
+   "prior:illusia.CRIT",
+   "prior:illusia.CRIT_DMG",
+   "prior:illusia.CTRL_RES",
+   "prior:illusia.DEF",
+   "prior:illusia.HP",
+   "prior:illusia.SPD",
+   "prior:kira.ATK",
+   "prior:kira.CRIT",
+   "prior:kira.CRIT_DMG",
+   "prior:kira.CTRL_RES",
+   "prior:kira.DEF",
+   "prior:kira.HP",
+   "prior:kira.SPD",
+   "prior:klim.ATK",
+   "prior:klim.CRIT",
+   "prior:klim.CRIT_DMG",
+   "prior:klim.CTRL_RES",
+   "prior:klim.DEF",
+   "prior:klim.HP",
+   "prior:klim.SPD",
+   "prior:lucifer.ATK",
+   "prior:lucifer.CRIT",
+   "prior:lucifer.CRIT_DMG",
+   "prior:lucifer.CTRL_RES",
+   "prior:lucifer.DEF",
+   "prior:lucifer.HP",
+   "prior:lucifer.SPD",
+   "prior:seneren.ATK",
+   "prior:seneren.CRIT",
+   "prior:seneren.CRIT_DMG",
+   "prior:seneren.CTRL_RES",
+   "prior:seneren.DEF",
+   "prior:seneren.HP",
+   "prior:seneren.SPD",
+   "prior:verafiel.ATK",
+   "prior:verafiel.CRIT",
+   "prior:verafiel.CRIT_DMG",
+   "prior:verafiel.CTRL_RES",
+   "prior:verafiel.DEF",
+   "prior:verafiel.HP",
+   "prior:verafiel.SPD",
+   "prior:vignette.ATK",
+   "prior:vignette.CRIT",
+   "prior:vignette.CRIT_DMG",
+   "prior:vignette.CTRL_RES",
+   "prior:vignette.DEF",
+   "prior:vignette.HP",
+   "prior:vignette.SPD",
+   "react.max_depth",
+   "revive.can_act_same_round",
+   "revive.cleanse_on_revive",
+   "shield.absorbs_true",
+   "stack.same_status_default",
+   "status.tick",
+   "target.default_single",
+   "team_source.stats"
+  ],
+  "key_hero_death_prob": {
+   "vignette": 0.0033333333333333335,
+   "seneren": 0.22333333333333333
+  }
+ },
+ "suggestions": {
+  "label": "MODEL counterpick suggestions (paired Monte Carlo)",
+  "evaluated": 15,
+  "improvements": [
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.8733333333333333,
+    "delta": 0.18333333333333332,
+    "ci95": [
+     0.13663624180197645,
+     0.2300304248646902
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.897 (+20%)",
+     "урон моей команды: 7e+06 → 7.6e+06 (+9%)",
+     "урон соперника: 6.66e+06 → 6.63e+06 (-0%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.87,
+    "delta": 0.18,
+    "ci95": [
+     0.13004032305993754,
+     0.22995967694006245
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.933 (+24%)",
+     "урон моей команды: 7e+06 → 7.62e+06 (+9%)",
+     "урон соперника: 6.66e+06 → 6.44e+06 (-3%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами klim и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.75,
+    "delta": 0.06,
+    "ci95": [
+     0.019173113106403523,
+     0.10082688689359648
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.813 (+8%)",
+     "урон моей команды: 7e+06 → 7.13e+06 (+2%)",
+     "выживаемость моих героинь: 0.892 → 0.886 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и klim",
+    "wr_before": 0.69,
+    "wr_after": 0.7166666666666667,
+    "delta": 0.02666666666666667,
+    "ci95": [
+     -0.014612281983160638,
+     0.06794561531649397
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.737 (-2%)",
+     "урон моей команды: 7e+06 → 7.09e+06 (+1%)",
+     "урон соперника: 6.66e+06 → 6.69e+06 (+1%)"
+    ]
+   }
+  ],
+  "all": [
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.8733333333333333,
+    "delta": 0.18333333333333332,
+    "ci95": [
+     0.13663624180197645,
+     0.2300304248646902
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.897 (+20%)",
+     "урон моей команды: 7e+06 → 7.6e+06 (+9%)",
+     "урон соперника: 6.66e+06 → 6.63e+06 (-0%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.87,
+    "delta": 0.18,
+    "ci95": [
+     0.13004032305993754,
+     0.22995967694006245
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.933 (+24%)",
+     "урон моей команды: 7e+06 → 7.62e+06 (+9%)",
+     "урон соперника: 6.66e+06 → 6.44e+06 (-3%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами klim и seneren",
+    "wr_before": 0.69,
+    "wr_after": 0.75,
+    "delta": 0.06,
+    "ci95": [
+     0.019173113106403523,
+     0.10082688689359648
+    ],
+    "significant": true,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.813 (+8%)",
+     "урон моей команды: 7e+06 → 7.13e+06 (+2%)",
+     "выживаемость моих героинь: 0.892 → 0.886 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и klim",
+    "wr_before": 0.69,
+    "wr_after": 0.7166666666666667,
+    "delta": 0.02666666666666667,
+    "ci95": [
+     -0.014612281983160638,
+     0.06794561531649397
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.737 (-2%)",
+     "урон моей команды: 7e+06 → 7.09e+06 (+1%)",
+     "урон соперника: 6.66e+06 → 6.69e+06 (+1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами vignette и kira",
+    "wr_before": 0.69,
+    "wr_after": 0.69,
+    "delta": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.753 (+0%)",
+     "выживаемость моих героинь: 0.892 → 0.893 (+0%)",
+     "урон соперника в 1-м раунде: 1.1e+06 → 1.1e+06 (-0%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и kira",
+    "wr_before": 0.69,
+    "wr_after": 0.68,
+    "delta": -0.01,
+    "ci95": [
+     -0.05762936991483127,
+     0.03762936991483127
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.703 (-6%)",
+     "урон моей команды: 7e+06 → 7.14e+06 (+2%)",
+     "выживаемость моих героинь: 0.892 → 0.882 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами klim и kira",
+    "wr_before": 0.69,
+    "wr_after": 0.67,
+    "delta": -0.02,
+    "ci95": [
+     -0.0557725703479308,
+     0.015772570347930805
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.757 (+1%)",
+     "урон моей команды: 7e+06 → 6.99e+06 (-0%)",
+     "выживаемость моих героинь: 0.892 → 0.891 (-0%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и kira",
+    "wr_before": 0.69,
+    "wr_after": 0.65,
+    "delta": -0.04,
+    "ci95": [
+     -0.09456507186840735,
+     0.014565071868407345
+    ],
+    "significant": false,
+    "reason": [
+     "урон моей команды: 7e+06 → 6.95e+06 (-1%)",
+     "урон соперника: 6.66e+06 → 6.7e+06 (+1%)",
+     "выживаемость моих героинь: 0.892 → 0.887 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и lucifer",
+    "wr_before": 0.69,
+    "wr_after": 0.6433333333333333,
+    "delta": -0.04666666666666667,
+    "ci95": [
+     -0.09446508147115962,
+     0.00113174813782628
+    ],
+    "significant": false,
+    "reason": [
+     "урон моей команды: 7e+06 → 6.75e+06 (-4%)",
+     "выживаемость моих героинь: 0.892 → 0.883 (-1%)",
+     "воскрешения соперника: 0.75 → 0.747 (-0%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и klim",
+    "wr_before": 0.69,
+    "wr_after": 0.6366666666666667,
+    "delta": -0.05333333333333334,
+    "ci95": [
+     -0.11081355480363554,
+     0.004146888136968868
+    ],
+    "significant": false,
+    "reason": [
+     "воскрешения соперника: 0.75 → 0.72 (-4%)",
+     "выживаемость моих героинь: 0.892 → 0.873 (-2%)",
+     "урон соперника в 1-м раунде: 1.1e+06 → 1.1e+06 (+1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами seneren и kira",
+    "wr_before": 0.69,
+    "wr_after": 0.6333333333333333,
+    "delta": -0.056666666666666664,
+    "ci95": [
+     -0.08596025583574153,
+     -0.0273730774975918
+    ],
+    "significant": true,
+    "reason": [
+     "выживаемость моих героинь: 0.892 → 0.855 (-4%)",
+     "воскрешения соперника: 0.75 → 0.73 (-3%)",
+     "урон моей команды: 7e+06 → 6.94e+06 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами seneren и vignette",
+    "wr_before": 0.69,
+    "wr_after": 0.6133333333333333,
+    "delta": -0.07666666666666666,
+    "ci95": [
+     -0.10821284570810455,
+     -0.045120487625228765
+    ],
+    "significant": true,
+    "reason": [
+     "выживаемость моих героинь: 0.892 → 0.782 (-12%)",
+     "воскрешения соперника: 0.75 → 0.727 (-3%)",
+     "урон моей команды: 7e+06 → 6.92e+06 (-1%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами klim и vignette",
+    "wr_before": 0.69,
+    "wr_after": 0.38333333333333336,
+    "delta": -0.30666666666666664,
+    "ci95": [
+     -0.3589333333333333,
+     -0.25439999999999996
+    ],
+    "significant": true,
+    "reason": [
+     "выживаемость моих героинь: 0.892 → 0.527 (-41%)",
+     "воскрешения соперника: 0.75 → 0.71 (-5%)",
+     "урон моей команды: 7e+06 → 6.8e+06 (-3%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами lucifer и vignette",
+    "wr_before": 0.69,
+    "wr_after": 0.26,
+    "delta": -0.43,
+    "ci95": [
+     -0.4868747619838944,
+     -0.3731252380161056
+    ],
+    "significant": true,
+    "reason": [
+     "выживаемость моих героинь: 0.892 → 0.398 (-55%)",
+     "воскрешения соперника: 0.75 → 0.637 (-15%)",
+     "урон соперника: 6.66e+06 → 6.51e+06 (-2%)"
+    ]
+   },
+   {
+    "kind": "формация",
+    "change": "поменять местами hymelle и vignette",
+    "wr_before": 0.69,
+    "wr_after": 0.11,
+    "delta": -0.58,
+    "ci95": [
+     -0.6359447218811078,
+     -0.5240552781188921
+    ],
+    "significant": true,
+    "reason": [
+     "выживаемость моих героинь: 0.892 → 0.277 (-69%)",
+     "воскрешения соперника: 0.75 → 0.53 (-29%)",
+     "урон моей команды: 7e+06 → 6.15e+06 (-12%)"
+    ]
+   }
+  ]
+ }
+}

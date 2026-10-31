@@ -1,0 +1,519 @@
+{
+ "label": "WHAT-IF (structure-only): role templates + symmetric priors; not real balance",
+ "n_per_run": 400,
+ "seed": 2026,
+ "priors": {
+  "label": "symmetric-wide-v1 (JP-scale anchored)",
+  "priors": {
+   "*|ATK": [
+    80000,
+    140000
+   ],
+   "*|HP": [
+    800000,
+    1400000
+   ],
+   "*|DEF": [
+    3000,
+    7000
+   ],
+   "*|SPD": [
+    3500,
+    5000
+   ],
+   "*|CRIT": [
+    0.05,
+    0.3
+   ],
+   "*|CRIT_DMG": [
+    1.5,
+    2.0
+   ],
+   "*|CTRL_RES": [
+    0.0,
+    0.2
+   ]
+  }
+ },
+ "variants": [
+  "v1/kill-first",
+  "v1/death-first",
+  "alt/kill-first",
+  "alt/death-first"
+ ],
+ "results": {
+  "H1_penetration": {
+   "desc": "Пробитие: +20% игнорирования защиты атакующим героиням команды",
+   "runs": {
+    "A_vs_B|v1/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.815,
+     "delta": 0.0975,
+     "ci95": [
+      0.06308790247397944,
+      0.13191209752602057
+     ],
+     "significant": true
+    },
+    "A_vs_B|v1/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.815,
+     "delta": 0.0975,
+     "ci95": [
+      0.06308790247397944,
+      0.13191209752602057
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.815,
+     "delta": 0.0975,
+     "ci95": [
+      0.06308790247397944,
+      0.13191209752602057
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.815,
+     "delta": 0.0975,
+     "ci95": [
+      0.06308790247397944,
+      0.13191209752602057
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.4925,
+     "delta": 0.1275,
+     "ci95": [
+      0.0874924195779341,
+      0.1675075804220659
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.4925,
+     "delta": 0.1275,
+     "ci95": [
+      0.0874924195779341,
+      0.1675075804220659
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.4925,
+     "delta": 0.1275,
+     "ci95": [
+      0.0874924195779341,
+      0.1675075804220659
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.4925,
+     "delta": 0.1275,
+     "ci95": [
+      0.0874924195779341,
+      0.1675075804220659
+     ],
+     "significant": true
+    }
+   },
+   "verdict": "robust_positive"
+  },
+  "H2_magic_combo": {
+   "desc": "Магическое комбо: Люцифер получает 30% шанс доп. атаки после магической атаки",
+   "runs": {
+    "A_vs_B|v1/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.785,
+     "delta": 0.0675,
+     "ci95": [
+      0.028503929572687332,
+      0.10649607042731268
+     ],
+     "significant": true
+    },
+    "A_vs_B|v1/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.785,
+     "delta": 0.0675,
+     "ci95": [
+      0.028503929572687332,
+      0.10649607042731268
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7875,
+     "delta": 0.07,
+     "ci95": [
+      0.030738644507764146,
+      0.10926135549223587
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7875,
+     "delta": 0.07,
+     "ci95": [
+      0.030738644507764146,
+      0.10926135549223587
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.525,
+     "delta": 0.16,
+     "ci95": [
+      0.11249400407187735,
+      0.20750599592812266
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.525,
+     "delta": 0.16,
+     "ci95": [
+      0.11249400407187735,
+      0.20750599592812266
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.5775,
+     "delta": 0.2125,
+     "ci95": [
+      0.16520283380767342,
+      0.25979716619232657
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.5775,
+     "delta": 0.2125,
+     "ci95": [
+      0.16520283380767342,
+      0.25979716619232657
+     ],
+     "significant": true
+    }
+   },
+   "verdict": "robust_positive"
+  },
+  "H3_speed": {
+   "desc": "Скорость: +10% СКР всей команде",
+   "runs": {
+    "A_vs_B|v1/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.6775,
+     "delta": -0.04,
+     "ci95": [
+      -0.07650376572739725,
+      -0.0034962342726027537
+     ],
+     "significant": true
+    },
+    "A_vs_B|v1/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.6775,
+     "delta": -0.04,
+     "ci95": [
+      -0.07650376572739725,
+      -0.0034962342726027537
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.6775,
+     "delta": -0.04,
+     "ci95": [
+      -0.07650376572739725,
+      -0.0034962342726027537
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.6775,
+     "delta": -0.04,
+     "ci95": [
+      -0.07650376572739725,
+      -0.0034962342726027537
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.3825,
+     "delta": 0.0175,
+     "ci95": [
+      -0.02438286296955254,
+      0.059382862969552544
+     ],
+     "significant": false
+    },
+    "B_vs_A|v1/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.3825,
+     "delta": 0.0175,
+     "ci95": [
+      -0.02438286296955254,
+      0.059382862969552544
+     ],
+     "significant": false
+    },
+    "B_vs_A|alt/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.3825,
+     "delta": 0.0175,
+     "ci95": [
+      -0.02438286296955254,
+      0.059382862969552544
+     ],
+     "significant": false
+    },
+    "B_vs_A|alt/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.3825,
+     "delta": 0.0175,
+     "ci95": [
+      -0.02438286296955254,
+      0.059382862969552544
+     ],
+     "significant": false
+    }
+   },
+   "verdict": "negative_in_some_variants"
+  },
+  "H4_defense": {
+   "desc": "Защита: +20% DEF всей команде",
+   "runs": {
+    "A_vs_B|v1/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7975,
+     "delta": 0.08,
+     "ci95": [
+      0.04550319618161401,
+      0.11449680381838599
+     ],
+     "significant": true
+    },
+    "A_vs_B|v1/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7975,
+     "delta": 0.08,
+     "ci95": [
+      0.04550319618161401,
+      0.11449680381838599
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7975,
+     "delta": 0.08,
+     "ci95": [
+      0.04550319618161401,
+      0.11449680381838599
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7975,
+     "delta": 0.08,
+     "ci95": [
+      0.04550319618161401,
+      0.11449680381838599
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.595,
+     "delta": 0.23,
+     "ci95": [
+      0.18643748593596846,
+      0.27356251406403154
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.595,
+     "delta": 0.23,
+     "ci95": [
+      0.18643748593596846,
+      0.27356251406403154
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.595,
+     "delta": 0.23,
+     "ci95": [
+      0.18643748593596846,
+      0.27356251406403154
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.595,
+     "delta": 0.23,
+     "ci95": [
+      0.18643748593596846,
+      0.27356251406403154
+     ],
+     "significant": true
+    }
+   },
+   "verdict": "robust_positive"
+  },
+  "H5_anti_revive": {
+   "desc": "Запрет воскрешения: Кира накладывает запрет воскрешения (3 хода) при убийстве",
+   "runs": {
+    "A_vs_B|v1/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.745,
+     "delta": 0.0275,
+     "ci95": [
+      0.011453483189352711,
+      0.04354651681064729
+     ],
+     "significant": true
+    },
+    "A_vs_B|v1/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7175,
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "significant": false
+    },
+    "A_vs_B|alt/kill-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.745,
+     "delta": 0.0275,
+     "ci95": [
+      0.011453483189352711,
+      0.04354651681064729
+     ],
+     "significant": true
+    },
+    "A_vs_B|alt/death-first": {
+     "wr_before": 0.7175,
+     "wr_after": 0.7175,
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "significant": false
+    },
+    "B_vs_A|v1/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.6775,
+     "delta": 0.3125,
+     "ci95": [
+      0.2670188973115824,
+      0.3579811026884176
+     ],
+     "significant": true
+    },
+    "B_vs_A|v1/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.6525,
+     "delta": 0.2875,
+     "ci95": [
+      0.24308997860842665,
+      0.33191002139157333
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/kill-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.6775,
+     "delta": 0.3125,
+     "ci95": [
+      0.2670188973115824,
+      0.3579811026884176
+     ],
+     "significant": true
+    },
+    "B_vs_A|alt/death-first": {
+     "wr_before": 0.365,
+     "wr_after": 0.6525,
+     "delta": 0.2875,
+     "ci95": [
+      0.24308997860842665,
+      0.33191002139157333
+     ],
+     "significant": true
+    }
+   },
+   "verdict": "positive_in_some_variants"
+  },
+  "H6_soul_eater": {
+   "desc": "Пожиратель душ",
+   "status": "BLOCKED",
+   "reason": "Эффект «Пожиратель душ» не найден ни в одном доступном источнике: текст и числа UNKNOWN. Проверка невозможна без выдумывания механики - заблокировано."
+  }
+ },
+ "baseline_A_vs_B": {
+  "v1/kill-first": {
+   "model_win_rate": 0.7175,
+   "ci95": [
+    0.6714715471495262,
+    0.7593904541896127
+   ],
+   "avg_rounds": 14.9475,
+   "draws": 0
+  },
+  "v1/death-first": {
+   "model_win_rate": 0.7175,
+   "ci95": [
+    0.6714715471495262,
+    0.7593904541896127
+   ],
+   "avg_rounds": 14.9475,
+   "draws": 0
+  },
+  "alt/kill-first": {
+   "model_win_rate": 0.7175,
+   "ci95": [
+    0.6714715471495262,
+    0.7593904541896127
+   ],
+   "avg_rounds": 14.9475,
+   "draws": 0
+  },
+  "alt/death-first": {
+   "model_win_rate": 0.7175,
+   "ci95": [
+    0.6714715471495262,
+    0.7593904541896127
+   ],
+   "avg_rounds": 14.9475,
+   "draws": 0
+  }
+ }
+}

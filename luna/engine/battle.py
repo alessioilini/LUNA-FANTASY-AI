@@ -236,6 +236,8 @@ class Battle:
             return False
         if "ally_hp_below" in t and not any(a.hp_frac() < t["ally_hp_below"] for a in self.fighters(u.side)):
             return False
+        if "dead_ally_ge" in t and len(self.fighters(u.side, alive=False)) < t["dead_ally_ge"]:
+            return False
         if "ability_tag" in t:
             src_ab = ctx.get("ability") or {}
             if t["ability_tag"] not in src_ab.get("tags", []):

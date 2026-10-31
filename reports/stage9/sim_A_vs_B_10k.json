@@ -1,0 +1,1089 @@
+{
+ "n": 10000,
+ "wins": 6698,
+ "losses": 3302,
+ "draws": 0,
+ "model_win_rate": 0.6698,
+ "ci95": [
+  0.6605187484544075,
+  0.6789508409081428
+ ],
+ "avg_rounds": 14.9768,
+ "rounds_ci95": [
+  14.972926052856808,
+  14.980673947143194
+ ],
+ "rounds_hist": {
+  "12": 7,
+  "13": 61,
+  "14": 89,
+  "15": 9843
+ },
+ "avg_damage": {
+  "A": 6973602.610993821,
+  "B": 6670179.00691776
+ },
+ "avg_hp_left": {
+  "A": 0.34574408,
+  "B": 0.26754213
+ },
+ "heroes": {
+  "A:hymelle": {
+   "dmg_raw": 607404.5148830692,
+   "dmg_effective": 534702.1574451996,
+   "dmg_to_shield": 52257.10584868858,
+   "overkill": 20445.25158917943,
+   "dmg_taken_hp": 2316246.732924427,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 3.9502,
+   "revive_blocked": 0.0,
+   "deaths": 4.4416,
+   "kills": 0.32,
+   "actions": 4.8882,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 0.8639,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.5086,
+   "died_at_least_once": 1.0,
+   "max_hp": 1102124.0659205038,
+   "damage_share": 0.08314476247408961,
+   "survival_rate": 0.5086,
+   "p_died": 1.0,
+   "abilities": {
+    "hymelle_skill": {
+     "casts": 1.9205,
+     "dmg": 297154.66063443955,
+     "dmg_to_shield": 50658.41418089844
+    },
+    "hymelle_basic": {
+     "casts": 2.9677,
+     "dmg": 237547.49681076212,
+     "dmg_to_shield": 1598.6916677901881
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:chloe/chloe_basic",
+     8183
+    ],
+    [
+     "B:lucifer/lucifer_basic",
+     8025
+    ],
+    [
+     "B:chloe/chloe_skill",
+     6776
+    ],
+    [
+     "B:seneren/seneren_basic",
+     6319
+    ],
+    [
+     "B:kira/kira_basic",
+     4198
+    ]
+   ]
+  },
+  "A:lucifer": {
+   "dmg_raw": 1843194.3598277604,
+   "dmg_effective": 1391210.1997819005,
+   "dmg_to_shield": 427712.185420204,
+   "overkill": 24271.974625655377,
+   "dmg_taken_hp": 1468456.3097281454,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 1.8831,
+   "revive_blocked": 0.0,
+   "deaths": 2.0131,
+   "kills": 0.6018,
+   "actions": 9.7405,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 3.966,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.87,
+   "died_at_least_once": 0.9953,
+   "max_hp": 1097687.2294129208,
+   "damage_share": 0.2607752114949695,
+   "survival_rate": 0.87,
+   "p_died": 0.9953,
+   "abilities": {
+    "lucifer_burst": {
+     "casts": 3.57,
+     "dmg": 886439.9336792101,
+     "dmg_to_shield": 426075.6286889063
+    },
+    "lucifer_basic": {
+     "casts": 6.1705,
+     "dmg": 504770.26610268943,
+     "dmg_to_shield": 1636.5567312978083
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:lucifer/lucifer_basic",
+     4662
+    ],
+    [
+     "B:chloe/chloe_basic",
+     4466
+    ],
+    [
+     "B:chloe/chloe_skill",
+     3530
+    ],
+    [
+     "B:seneren/seneren_basic",
+     3344
+    ],
+    [
+     "B:lucifer/lucifer_burst",
+     2043
+    ]
+   ]
+  },
+  "A:klim": {
+   "dmg_raw": 1617274.9096550578,
+   "dmg_effective": 1478075.978413602,
+   "dmg_to_shield": 51313.227688323015,
+   "overkill": 87885.70355313366,
+   "dmg_taken_hp": 1127241.0609309766,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.995,
+   "revive_blocked": 0.0,
+   "deaths": 1.0367,
+   "kills": 1.1781,
+   "actions": 12.948,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.2697,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.9583,
+   "died_at_least_once": 0.7556,
+   "max_hp": 1103653.2942267105,
+   "damage_share": 0.21798943520970665,
+   "survival_rate": 0.9583,
+   "p_died": 0.7556,
+   "abilities": {
+    "klim_skill": {
+     "casts": 4.5877,
+     "dmg": 775198.049708509,
+     "dmg_to_shield": 49705.9522145198
+    },
+    "klim_basic": {
+     "casts": 8.3603,
+     "dmg": 702877.928705096,
+     "dmg_to_shield": 1607.2754738032302
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:chloe/chloe_basic",
+     2386
+    ],
+    [
+     "B:lucifer/lucifer_basic",
+     2338
+    ],
+    [
+     "B:chloe/chloe_skill",
+     1835
+    ],
+    [
+     "B:seneren/seneren_basic",
+     1608
+    ],
+    [
+     "B:lucifer/lucifer_burst",
+     1482
+    ]
+   ]
+  },
+  "A:seneren": {
+   "dmg_raw": 785554.182227493,
+   "dmg_effective": 751086.6644109287,
+   "dmg_to_shield": 17530.419018393695,
+   "overkill": 16937.098798169507,
+   "dmg_taken_hp": 791192.4637372429,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.2372,
+   "revived_times": 0.2372,
+   "revive_blocked": 0.0,
+   "deaths": 0.2846,
+   "kills": 0.587,
+   "actions": 14.8474,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.596,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.9526,
+   "died_at_least_once": 0.2372,
+   "max_hp": 1101476.3963342668,
+   "damage_share": 0.11099935745628443,
+   "survival_rate": 0.9526,
+   "p_died": 0.2372,
+   "abilities": {
+    "seneren_aura": {
+     "casts": 1.0
+    },
+    "seneren_basic": {
+     "casts": 14.8474,
+     "dmg": 751086.6644109287,
+     "dmg_to_shield": 17530.419018393695
+    },
+    "seneren_rebirth": {
+     "casts": 0.2372
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:chloe/chloe_skill",
+     740
+    ],
+    [
+     "B:lucifer/lucifer_burst",
+     561
+    ],
+    [
+     "B:lucifer/lucifer_basic",
+     487
+    ],
+    [
+     "B:chloe/chloe_basic",
+     475
+    ],
+    [
+     "B:seneren/seneren_basic",
+     407
+    ]
+   ]
+  },
+  "A:vignette": {
+   "dmg_raw": 529382.5948606416,
+   "dmg_effective": 504940.4466268985,
+   "dmg_to_shield": 14865.411196629026,
+   "overkill": 9576.737037114948,
+   "dmg_taken_hp": 484973.215779483,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 6.8284,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.0074,
+   "kills": 0.3954,
+   "actions": 14.9421,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.0861,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.9926,
+   "died_at_least_once": 0.0074,
+   "max_hp": 1099620.9424782875,
+   "damage_share": 0.0751221022373164,
+   "survival_rate": 0.9926,
+   "p_died": 0.0074,
+   "abilities": {
+    "vignette_basic": {
+     "casts": 11.9919,
+     "dmg": 504940.4466268985,
+     "dmg_to_shield": 14865.411196629026
+    },
+    "vignette_guardian_angel": {
+     "casts": 1.0
+    },
+    "vignette_mass_revive": {
+     "casts": 2.9502
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:lucifer/lucifer_burst",
+     24
+    ],
+    [
+     "B:chloe/chloe_skill",
+     12
+    ],
+    [
+     "B:lucifer/lucifer_basic",
+     11
+    ],
+    [
+     "B:chloe/chloe_basic",
+     10
+    ],
+    [
+     "B:seneren/seneren_basic",
+     7
+    ]
+   ]
+  },
+  "A:kira": {
+   "dmg_raw": 1854396.1992430103,
+   "dmg_effective": 1696096.4117547746,
+   "dmg_to_shield": 53812.4033882784,
+   "overkill": 104487.3840999468,
+   "dmg_taken_hp": 482069.2238174862,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0001,
+   "revive_blocked": 0.0,
+   "deaths": 0.0035,
+   "kills": 1.3898,
+   "actions": 14.9608,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.6041,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.9966,
+   "died_at_least_once": 0.0035,
+   "max_hp": 1101666.6037566725,
+   "damage_share": 0.2519691311276352,
+   "survival_rate": 0.9966,
+   "p_died": 0.0035,
+   "abilities": {
+    "kira_skill": {
+     "casts": 4.9975,
+     "dmg": 854601.0519026121,
+     "dmg_to_shield": 49974.95285422471
+    },
+    "kira_basic": {
+     "casts": 9.9633,
+     "dmg": 841495.359852168,
+     "dmg_to_shield": 3837.450534053721
+    }
+   },
+   "death_causes_top": [
+    [
+     "B:lucifer/lucifer_burst",
+     15
+    ],
+    [
+     "B:chloe/chloe_basic",
+     6
+    ],
+    [
+     "B:lucifer/lucifer_basic",
+     5
+    ],
+    [
+     "B:verafiel/verafiel_basic",
+     4
+    ],
+    [
+     "B:chloe/chloe_skill",
+     2
+    ]
+   ]
+  },
+  "A:__team__": {
+   "dmg_raw": 0.0,
+   "dmg_effective": 0.0,
+   "dmg_to_shield": 0.0,
+   "overkill": 0.0,
+   "dmg_taken_hp": 0.0,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.0,
+   "kills": 0.0,
+   "actions": 0.0,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 0.0,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "damage_share": 0.0,
+   "abilities": {},
+   "death_causes_top": []
+  },
+  "B:illusia": {
+   "dmg_raw": 539413.2541074251,
+   "dmg_effective": 532194.3947520185,
+   "dmg_to_shield": 0.0,
+   "overkill": 7218.859355406992,
+   "dmg_taken_hp": 1344250.8270396134,
+   "dmg_absorbed_by_own_shield": 197844.9184494045,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 658856.7345966372,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 1.0,
+   "kills": 0.2277,
+   "actions": 2.755,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 1.5269,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.0,
+   "died_at_least_once": 1.0,
+   "max_hp": 1100671.9161024776,
+   "damage_share": 0.07941712729521558,
+   "survival_rate": 0.0,
+   "p_died": 1.0,
+   "abilities": {
+    "illusia_barrier": {
+     "casts": 1.0,
+     "shield": 658856.7345966372
+    },
+    "illusia_basic": {
+     "casts": 2.755,
+     "dmg": 166503.425800675,
+     "dmg_to_shield": 0.0
+    },
+    "illusia_counter": {
+     "casts": 5.9791,
+     "dmg": 365690.9689513432,
+     "dmg_to_shield": 0.0
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:klim/klim_basic",
+     1480
+    ],
+    [
+     "A:kira/kira_basic",
+     1471
+    ],
+    [
+     "A:lucifer/lucifer_basic",
+     1352
+    ],
+    [
+     "A:seneren/seneren_basic",
+     1103
+    ],
+    [
+     "A:hymelle/hymelle_basic",
+     1077
+    ]
+   ]
+  },
+  "B:kira": {
+   "dmg_raw": 770011.6684708202,
+   "dmg_effective": 698557.5297166528,
+   "dmg_to_shield": 0.0,
+   "overkill": 71454.13875416796,
+   "dmg_taken_hp": 1384177.8201770757,
+   "dmg_absorbed_by_own_shield": 94266.41599129807,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.9972,
+   "kills": 0.9271,
+   "actions": 5.9305,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 1.039,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.0028,
+   "died_at_least_once": 0.9972,
+   "max_hp": 1101666.6037566725,
+   "damage_share": 0.10412584410814352,
+   "survival_rate": 0.0028,
+   "p_died": 0.9972,
+   "abilities": {
+    "kira_skill": {
+     "casts": 2.2851,
+     "dmg": 399766.40616668656,
+     "dmg_to_shield": 0.0
+    },
+    "kira_basic": {
+     "casts": 3.6454,
+     "dmg": 298791.12354996684,
+     "dmg_to_shield": 0.0
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:kira/kira_skill",
+     1585
+    ],
+    [
+     "A:kira/kira_basic",
+     1562
+    ],
+    [
+     "A:klim/klim_basic",
+     1409
+    ],
+    [
+     "A:seneren/seneren_basic",
+     1330
+    ],
+    [
+     "A:klim/klim_skill",
+     1322
+    ]
+   ]
+  },
+  "B:verafiel": {
+   "dmg_raw": 245826.7509220625,
+   "dmg_effective": 236286.1155195984,
+   "dmg_to_shield": 0.0,
+   "overkill": 9540.63540246408,
+   "dmg_taken_hp": 1436783.277785637,
+   "dmg_absorbed_by_own_shield": 82931.54642029505,
+   "heal_effective": 1136113.6826451095,
+   "overheal": 588587.1141783356,
+   "shield_given": 528212.7760997919,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.936,
+   "kills": 0.3802,
+   "actions": 9.8471,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 0.9453,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.064,
+   "died_at_least_once": 0.936,
+   "max_hp": 1100069.9292092614,
+   "damage_share": 0.03518086797180402,
+   "survival_rate": 0.064,
+   "p_died": 0.936,
+   "abilities": {
+    "verafiel_ward": {
+     "casts": 1.0,
+     "shield": 528212.7760997919
+    },
+    "verafiel_basic": {
+     "casts": 5.4391,
+     "dmg": 236286.1155195984,
+     "dmg_to_shield": 0.0
+    },
+    "verafiel_heal": {
+     "casts": 4.408,
+     "heal": 1136113.6826451095
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:kira/kira_skill",
+     1626
+    ],
+    [
+     "A:kira/kira_basic",
+     1457
+    ],
+    [
+     "A:klim/klim_skill",
+     1453
+    ],
+    [
+     "A:seneren/seneren_basic",
+     1207
+    ],
+    [
+     "A:klim/klim_basic",
+     1142
+    ]
+   ]
+  },
+  "B:seneren": {
+   "dmg_raw": 725680.1705068452,
+   "dmg_effective": 691062.3012619651,
+   "dmg_to_shield": 0.0,
+   "overkill": 34617.86924488416,
+   "dmg_taken_hp": 1376164.1782870877,
+   "dmg_absorbed_by_own_shield": 82812.95485389761,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.7471,
+   "revived_times": 0.7471,
+   "revive_blocked": 0.0,
+   "deaths": 1.2942,
+   "kills": 1.1686,
+   "actions": 13.6117,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.3699,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.4529,
+   "died_at_least_once": 0.7471,
+   "max_hp": 1101476.3963342668,
+   "damage_share": 0.10371006265018573,
+   "survival_rate": 0.4529,
+   "p_died": 0.7471,
+   "abilities": {
+    "seneren_aura": {
+     "casts": 1.0
+    },
+    "seneren_basic": {
+     "casts": 13.6117,
+     "dmg": 691062.3012619651,
+     "dmg_to_shield": 0.0
+    },
+    "seneren_rebirth": {
+     "casts": 0.7471
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:kira/kira_basic",
+     2347
+    ],
+    [
+     "A:kira/kira_skill",
+     2076
+    ],
+    [
+     "A:seneren/seneren_basic",
+     1884
+    ],
+    [
+     "A:klim/klim_skill",
+     1748
+    ],
+    [
+     "A:klim/klim_basic",
+     1551
+    ]
+   ]
+  },
+  "B:lucifer": {
+   "dmg_raw": 2947329.666115656,
+   "dmg_effective": 2851612.7040992957,
+   "dmg_to_shield": 0.0,
+   "overkill": 95716.9620163602,
+   "dmg_taken_hp": 518773.4753478774,
+   "dmg_absorbed_by_own_shield": 76883.32098078897,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.2048,
+   "kills": 2.2412,
+   "actions": 14.6779,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 6.1009,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.7952,
+   "died_at_least_once": 0.2048,
+   "max_hp": 1097687.2294129208,
+   "damage_share": 0.42812572238696023,
+   "survival_rate": 0.7952,
+   "p_died": 0.2048,
+   "abilities": {
+    "lucifer_burst": {
+     "casts": 4.9575,
+     "dmg": 2055023.4065504977,
+     "dmg_to_shield": 0.0
+    },
+    "lucifer_basic": {
+     "casts": 9.7204,
+     "dmg": 796589.297548787,
+     "dmg_to_shield": 0.0
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:kira/kira_basic",
+     419
+    ],
+    [
+     "A:seneren/seneren_basic",
+     286
+    ],
+    [
+     "A:klim/klim_basic",
+     258
+    ],
+    [
+     "A:kira/kira_skill",
+     255
+    ],
+    [
+     "A:klim/klim_skill",
+     254
+    ]
+   ]
+  },
+  "B:chloe": {
+   "dmg_raw": 1878313.5386919642,
+   "dmg_effective": 1660465.9615682296,
+   "dmg_to_shield": 0.0,
+   "overkill": 217847.5771237318,
+   "dmg_taken_hp": 295962.2797960092,
+   "dmg_absorbed_by_own_shield": 82751.59586483239,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.0399,
+   "kills": 2.8421,
+   "actions": 14.9598,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 2.631,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "survived": 0.9601,
+   "died_at_least_once": 0.0399,
+   "max_hp": 1097338.8960949152,
+   "damage_share": 0.24944037558769172,
+   "survival_rate": 0.9601,
+   "p_died": 0.0399,
+   "abilities": {
+    "chloe_skill": {
+     "casts": 4.9973,
+     "dmg": 841696.7934201183,
+     "dmg_to_shield": 0.0
+    },
+    "chloe_basic": {
+     "casts": 9.9625,
+     "dmg": 818769.1681481092,
+     "dmg_to_shield": 0.0
+    }
+   },
+   "death_causes_top": [
+    [
+     "A:kira/kira_basic",
+     80
+    ],
+    [
+     "A:klim/klim_basic",
+     79
+    ],
+    [
+     "A:seneren/seneren_basic",
+     60
+    ],
+    [
+     "A:lucifer/lucifer_basic",
+     36
+    ],
+    [
+     "A:hymelle/hymelle_skill",
+     26
+    ]
+   ]
+  },
+  "B:__team__": {
+   "dmg_raw": 0.0,
+   "dmg_effective": 0.0,
+   "dmg_to_shield": 0.0,
+   "overkill": 0.0,
+   "dmg_taken_hp": 0.0,
+   "dmg_absorbed_by_own_shield": 0.0,
+   "heal_effective": 0.0,
+   "overheal": 0.0,
+   "shield_given": 0.0,
+   "ctrl_attempts": 0.0,
+   "ctrl_landed": 0.0,
+   "ctrl_resisted": 0.0,
+   "turns_controlled": 0.0,
+   "revives_done": 0.0,
+   "revived_times": 0.0,
+   "revive_blocked": 0.0,
+   "deaths": 0.0,
+   "kills": 0.0,
+   "actions": 0.0,
+   "extra_actions": 0.0,
+   "combo_triggers": 0.0,
+   "crits": 0.0,
+   "dodges": 0.0,
+   "reflected": 0.0,
+   "damage_share": 0.0,
+   "abilities": {},
+   "death_causes_top": []
+  }
+ },
+ "first_death": {
+  "A:hymelle": 7211,
+  "B:illusia": 2789
+ },
+ "end_reasons": {
+  "round_limit": 9582,
+  "wipe": 418
+ },
+ "key_hero_death_prob": {
+  "vignette": 0.0074,
+  "seneren": 0.2372
+ },
+ "assumptions_used": [
+  "battle.draw_result",
+  "battle.max_rounds",
+  "death.clear_statuses",
+  "death.trigger_order",
+  "dmg.bonus_stacking",
+  "dmg.crit_formula",
+  "dmg.dr_cap",
+  "dmg.family",
+  "dmg.hit_formula",
+  "dmg.k_def",
+  "dmg.magic_def_stat",
+  "dmg.min_fraction",
+  "dmg.variance",
+  "dot.snapshot",
+  "dot.timing",
+  "formation.front",
+  "order.mode",
+  "order.resort_mid_round",
+  "order.tie_break",
+  "pet.timing",
+  "prior:chloe.ATK",
+  "prior:chloe.CRIT",
+  "prior:chloe.CRIT_DMG",
+  "prior:chloe.CTRL_RES",
+  "prior:chloe.DEF",
+  "prior:chloe.HP",
+  "prior:chloe.SPD",
+  "prior:hymelle.ATK",
+  "prior:hymelle.CRIT",
+  "prior:hymelle.CRIT_DMG",
+  "prior:hymelle.CTRL_RES",
+  "prior:hymelle.DEF",
+  "prior:hymelle.HP",
+  "prior:hymelle.SPD",
+  "prior:illusia.ATK",
+  "prior:illusia.CRIT",
+  "prior:illusia.CRIT_DMG",
+  "prior:illusia.CTRL_RES",
+  "prior:illusia.DEF",
+  "prior:illusia.HP",
+  "prior:illusia.SPD",
+  "prior:kira.ATK",
+  "prior:kira.CRIT",
+  "prior:kira.CRIT_DMG",
+  "prior:kira.CTRL_RES",
+  "prior:kira.DEF",
+  "prior:kira.HP",
+  "prior:kira.SPD",
+  "prior:klim.ATK",
+  "prior:klim.CRIT",
+  "prior:klim.CRIT_DMG",
+  "prior:klim.CTRL_RES",
+  "prior:klim.DEF",
+  "prior:klim.HP",
+  "prior:klim.SPD",
+  "prior:lucifer.ATK",
+  "prior:lucifer.CRIT",
+  "prior:lucifer.CRIT_DMG",
+  "prior:lucifer.CTRL_RES",
+  "prior:lucifer.DEF",
+  "prior:lucifer.HP",
+  "prior:lucifer.SPD",
+  "prior:seneren.ATK",
+  "prior:seneren.CRIT",
+  "prior:seneren.CRIT_DMG",
+  "prior:seneren.CTRL_RES",
+  "prior:seneren.DEF",
+  "prior:seneren.HP",
+  "prior:seneren.SPD",
+  "prior:verafiel.ATK",
+  "prior:verafiel.CRIT",
+  "prior:verafiel.CRIT_DMG",
+  "prior:verafiel.CTRL_RES",
+  "prior:verafiel.DEF",
+  "prior:verafiel.HP",
+  "prior:verafiel.SPD",
+  "prior:vignette.ATK",
+  "prior:vignette.CRIT",
+  "prior:vignette.CRIT_DMG",
+  "prior:vignette.CTRL_RES",
+  "prior:vignette.DEF",
+  "prior:vignette.HP",
+  "prior:vignette.SPD",
+  "react.max_depth",
+  "revive.can_act_same_round",
+  "revive.cleanse_on_revive",
+  "shield.absorbs_true",
+  "stack.same_status_default",
+  "status.tick",
+  "target.default_single",
+  "team_source.stats"
+ ],
+ "assumption_values": {
+  "battle.draw_result": "hp_percent",
+  "battle.max_rounds": 15,
+  "cooldown.tick": "owner_turn_end",
+  "ctrl.controlled_can_react": false,
+  "ctrl.formula": "chance_times_hit_minus_res",
+  "death.clear_statuses": true,
+  "death.trigger_order": "kill_effects_first",
+  "dmg.base_crit_dmg": 1.5,
+  "dmg.bonus_stacking": "additive",
+  "dmg.crit_formula": "crit_minus_crit_res",
+  "dmg.dr_cap": 0.8,
+  "dmg.family": "divisive",
+  "dmg.hit_formula": "dodge_minus_acc",
+  "dmg.ignore_def_formula": "def_times_one_minus",
+  "dmg.k_def": 10000.0,
+  "dmg.magic_def_stat": "DEF",
+  "dmg.min_fraction": 0.05,
+  "dmg.sub_c": 1.0,
+  "dmg.true_can_crit": false,
+  "dmg.true_can_miss": false,
+  "dmg.variance": 0.0,
+  "dot.snapshot": false,
+  "dot.timing": "round_end",
+  "extra.combo_chain_max": 0,
+  "extra.per_unit_per_round_max": 5,
+  "extra.timing": "immediate",
+  "formation.front": [
+   0,
+   1,
+   2
+  ],
+  "heal.formula": "bonus_times_recv",
+  "order.mode": "round_spd_sort",
+  "order.resort_mid_round": false,
+  "order.tie_break": [
+   "attacker_first",
+   "position"
+  ],
+  "pet.timing": "round_end",
+  "react.max_depth": 2,
+  "reflect.dtype": "true",
+  "reflect.triggers_on_hit": false,
+  "resonance.rule": "as_declared",
+  "revive.can_act_same_round": true,
+  "revive.cleanse_on_revive": true,
+  "revive.timing": "immediate",
+  "shield.absorbs_true": true,
+  "stack.duplicate_effect": "unique",
+  "stack.same_status_default": "refresh",
+  "stat.aggregation": "base_plus_flat_times_pct",
+  "stat.panel_includes_team": true,
+  "status.tick": "owner_turn_end",
+  "target.default_single": "front_first_lowest_pos",
+  "team_source.stats": "team_max_atk",
+  "stacking": {}
+ },
+ "seed": 11,
+ "priors": {
+  "label": "symmetric-wide-v1 (JP-scale anchored)",
+  "priors": {
+   "*|ATK": [
+    80000,
+    140000
+   ],
+   "*|HP": [
+    800000,
+    1400000
+   ],
+   "*|DEF": [
+    3000,
+    7000
+   ],
+   "*|SPD": [
+    3500,
+    5000
+   ],
+   "*|CRIT": [
+    0.05,
+    0.3
+   ],
+   "*|CRIT_DMG": [
+    1.5,
+    2.0
+   ],
+   "*|CTRL_RES": [
+    0.0,
+    0.2
+   ]
+  }
+ },
+ "label": "MODEL WIN RATE - not a real win rate until validated (see luna validate)"
+}

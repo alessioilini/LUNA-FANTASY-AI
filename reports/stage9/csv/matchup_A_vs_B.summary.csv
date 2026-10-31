@@ -1,0 +1,48 @@
+﻿field,value
+analysis.label,MODEL ANALYSIS - выводы зависят от допущений (assumptions_used) и неполных данных
+analysis.summary.n,300
+analysis.summary.model_win_rate,0.69
+analysis.summary.ci95,"[0.6355381623460284, 0.7396573342548319]"
+analysis.summary.avg_rounds,14.986667
+analysis.summary.draws,0
+analysis.summary.end_reasons.round_limit,286
+analysis.summary.end_reasons.wipe,14
+analysis.metrics.my_damage,6997070.201831
+analysis.metrics.my_survival,0.892222
+analysis.metrics.my_ctrl_landed,0.0
+analysis.metrics.my_heal,0.0
+analysis.metrics.my_shield_absorb,0.0
+analysis.metrics.enemy_damage,6656316.821146
+analysis.metrics.enemy_revives,0.75
+analysis.metrics.enemy_ctrl_landed,0.0
+analysis.metrics.enemy_revive_blocked,0.0
+analysis.metrics.rounds,14.986667
+analysis.metrics.r1_my_damage,1144488.302346
+analysis.metrics.r1_enemy_damage,1097432.736732
+analysis.first_round.order_sample,"[[""B0"", ""illusia"", 4297.4], [""A5"", ""kira"", 4260.03], [""B1"", ""kira"", 4260.03], [""A0"", ""hymelle"", 4171.68], [""A3"", ""seneren"", 4143.86], [""B3"", ""seneren"", 4143.86], [""A4"", ""vignette"", 3947.53], [""B5"", ""chloe"", 3913.55], [""B2"", ""verafiel"", 3894.06], [""A1"", ""lucifer"", 3762.1], [""B4"", ""lucifer"", 3762.1], [""A2"", ""klim"", 3528.77]]"
+analysis.first_round.my_heroes_before_first_enemy.0,101
+analysis.first_round.my_heroes_before_first_enemy.1,124
+analysis.first_round.my_heroes_before_first_enemy.2,61
+analysis.first_round.my_heroes_before_first_enemy.3,12
+analysis.first_round.my_heroes_before_first_enemy.4,2
+analysis.first_round.avg_damage.A,1144488.302346
+analysis.first_round.avg_damage.B,1097432.736732
+analysis.first_round.p_any_death_r1.A,0.003333
+analysis.first_round.p_any_death_r1.B,0.003333
+analysis.first_round.avg_controls_r1,0.0
+analysis.strengths_weaknesses.strengths,"[""Суммарный урон: мой 6997070 vs соперник 6656317"", ""1-й раунд: мой урон 1144488 vs 1097433""]"
+analysis.strengths_weaknesses.weaknesses,"[""Соперник воскрешает в среднем 0.75 раз за бой - проверьте запрет воскрешения/добивание""]"
+analysis.loss_causes.n_lost,93
+analysis.loss_causes.top_killers,"[[""chloe/chloe_basic"", 155], [""lucifer/lucifer_basic"", 143], [""seneren/seneren_basic"", 132], [""chloe/chloe_skill"", 126], [""lucifer/lucifer_burst"", 72]]"
+analysis.loss_causes.first_to_die.hymelle,1.0
+analysis.loss_causes.avg_rounds_in_losses,15.0
+analysis.loss_causes.end_reasons.round_limit,93
+analysis.loss_causes.key_hero_dead_in_losses.vignette,0.010753
+analysis.loss_causes.key_hero_dead_in_losses.seneren,0.526882
+analysis.dangerous_interactions.enemy_top_damage_sources,"[[""lucifer/lucifer_burst"", 0.309], [""chloe/chloe_skill"", 0.126], [""chloe/chloe_basic"", 0.123], [""lucifer/lucifer_basic"", 0.118], [""seneren/seneren_basic"", 0.106], [""kira/kira_skill"", 0.06]]"
+analysis.dangerous_interactions.enemy_reflect_damage_per_battle,0.0
+analysis.assumptions_used,"[""battle.draw_result"", ""battle.max_rounds"", ""death.clear_statuses"", ""death.trigger_order"", ""dmg.bonus_stacking"", ""dmg.crit_formula"", ""dmg.dr_cap"", ""dmg.family"", ""dmg.hit_formula"", ""dmg.k_def"", ""dmg.magic_def_stat"", ""dmg.min_fraction"", ""dmg.variance"", ""dot.snapshot"", ""dot.timing"", ""formation.front"", ""order.mode"", ""order.resort_mid_round"", ""order.tie_break"", ""pet.timing"", ""prior:chloe.ATK"", ""prior:chloe.CRIT"", ""prior:chloe.CRIT_DMG"", ""prior:chloe.CTRL_RES"", ""prior:chloe.DEF"", ""prior:chloe.HP"", ""prior:chloe.SPD"", ""prior:hymelle.ATK"", ""prior:hymelle.CRIT"", ""prior:hymelle.CRIT_DMG"", ""prior:hymelle.CTRL_RES"", ""prior:hymelle.DEF"", ""prior:hymelle.HP"", ""prior:hymelle.SPD"", ""prior:illusia.ATK"", ""prior:illusia.CRIT"", ""prior:illusia.CRIT_DMG"", ""prior:illusia.CTRL_RES"", ""prior:illusia.DEF"", ""prior:illusia.HP"", ""prior:illusia.SPD"", ""prior:kira.ATK"", ""prior:kira.CRIT"", ""prior:kira.CRIT_DMG"", ""prior:kira.CTRL_RES"", ""prior:kira.DEF"", ""prior:kira.HP"", ""prior:kira.SPD"", ""prior:klim.ATK"", ""prior:klim.CRIT"", ""prior:klim.CRIT_DMG"", ""prior:klim.CTRL_RES"", ""prior:klim.DEF"", ""prior:klim.HP"", ""prior:klim.SPD"", ""prior:lucifer.ATK"", ""prior:lucifer.CRIT"", ""prior:lucifer.CRIT_DMG"", ""prior:lucifer.CTRL_RES"", ""prior:lucifer.DEF"", ""prior:lucifer.HP"", ""prior:lucifer.SPD"", ""prior:seneren.ATK"", ""prior:seneren.CRIT"", ""prior:seneren.CRIT_DMG"", ""prior:seneren.CTRL_RES"", ""prior:seneren.DEF"", ""prior:seneren.HP"", ""prior:seneren.SPD"", ""prior:verafiel.ATK"", ""prior:verafiel.CRIT"", ""prior:verafiel.CRIT_DMG"", ""prior:verafiel.CTRL_RES"", ""prior:verafiel.DEF"", ""prior:verafiel.HP"", ""prior:verafiel.SPD"", ""prior:vignette.ATK"", ""prior:vignette.CRIT"", ""prior:vignette.CRIT_DMG"", ""prior:vignette.CTRL_RES"", ""prior:vignette.DEF"", ""prior:vignette.HP"", ""prior:vignette.SPD"", ""react.max_depth"", ""revive.can_act_same_round"", ""revive.cleanse_on_revive"", ""shield.absorbs_true"", ""stack.same_status_default"", ""status.tick"", ""target.default_single"", ""team_source.stats""]"
+analysis.key_hero_death_prob.vignette,0.003333
+analysis.key_hero_death_prob.seneren,0.223333
+suggestions.label,MODEL counterpick suggestions (paired Monte Carlo)
+suggestions.evaluated,15
