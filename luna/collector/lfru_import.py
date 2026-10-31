@@ -26,7 +26,7 @@ FACTS = ROOT / "data" / "kb" / "facts" / "RU.lfru.jsonl"
 CATALOG = ROOT / "data" / "kb" / "catalog_RU.json"
 TEXT_PAGES = ["battle", "teams", "roles", "localization", "tier-list", "runes", "princess-weapons", "limbs", "sigils",
               "relics", "charm-cards", "pets", "talents", "accessories", "materials", "sources", "guides", "builds"]
-ELEMENTS = {"Огонь", "Вода", "Свет", "Тьма", "Ветер", "Земля", "Природа", "Лес", "Гром", "Молния"}
+ELEMENTS = {"Огонь", "Вода", "Свет", "Тьма", "Ветер", "Лед", "Лёд", "Звездный свет", "Звёздный свет", "Земля", "Природа"}
 CLASSES = {"Поддержка": "support", "Страж": "tank", "Маг": "mage", "Воин": "warrior", "Стрелок": "ranged",
            "Убийца": "assassin", "Жрец": "support"}
 TIERS = {"SSS", "SS", "S", "A", "B", "C", "D"}

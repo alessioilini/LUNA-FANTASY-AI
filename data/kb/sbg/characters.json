@@ -1,0 +1,7071 @@
+[
+{
+"url": "https://surrounded-by-girls.online/character/cthulhu/",
+"slug": "cthulhu",
+"title": "ヤバ少女 クトゥルフの海外評価！スキル・ステータスも",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "処刑追撃"
+},
+"stats": {
+"ATK": 150888.0,
+"HP": 960194.0,
+"DEF": 5075.0,
+"SPD": 4297.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "旧神の戯れ",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 物理範囲/猛毒/亡霊の印 敵全体に98%の物理ダメを与え、60%の確率で【猛毒】を付与する上、80%の確率で【亡霊の印】を付与する。 対象がデバフ・制御状態1つ持つごとに、追加でATKの6%分の純粋ダメージを与え、最大ATK30%分の純粋ダメージを追加。 対象HPが60%以上の場合、会心が20%上昇し、与ダメージが30%上昇する。【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う（発動者のATKの100%を超えず、最大5スタックまでスタック可能） 【亡霊の印】：2ターンの間、物理ダメージ軽減が20%低下する"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "旧神の囁き",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 物理単体処刑 HP割合最低の敵単体に471%物理ダメを与える。攻撃後、対象HPが30%以下の場合、そのまま処刑する。 このスキルは分散とシールドを無視する。対象が【亡霊の印】持ちの場合、対象DEFを20%無視する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "旧神体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: 敵をキルすると、即座に【旧神の戯れ】を発動。敵単体行動後、HPが50%以下の場合、即座に【旧神の囁き】を発動。2ターンクールダウンする。【亡霊の印】付きの敵が戦闘不能時、味方全体のHPをATK100%分回復させる"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "旧神の権利",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: 敵をキルすると、即座に【旧神の戯れ】を発動。 敵単体行動後、HPが50%以下の場合、即座に【旧神の囁き】を発動（2ターンクールダウン）。 【亡霊の印】付きの敵が戦闘不能時、味方全体のHPをATK100%分回復させる。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-04-02"
+},
+"name_jp": "クトゥルフ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/anubis/",
+"slug": "anubis",
+"title": "【ヤバ少女】クリスティーンの評価！強い？編成は？",
+"info": {
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "チャージ・バースト",
+"rank_site": "Bランク 【ヤバ少女】Tier表 最強ランキング"
+},
+"stats": {
+"ATK": 1501725.0,
+"HP": 953258.0,
+"DEF": 5069.0,
+"SPD": 4293.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "死神剣舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 人数が最も多い敵一列に合計450%の物理ダメージ（1体あたり最大ATKの4倍まで分割）。 80%の確率で【猛毒】状態を付与。中・後列の単体に対し与ダメ+20%。 【猛毒】：2ターン、魔法ダメ軽減-5%、最大HPの5%を毎ターン失う（最大5スタック）。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "死神影刃",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: HPが最も低い敵単体に495%の物理ダメージ（3段）。その後、HP割合が最も低い3体にDEF無視の75%物理ダメージで追撃。味方戦闘不能2体ごとに追撃1回追加（最大3回）。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "死神体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: ATK+45%、HP+25%、ダメージボーナス+10%"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "死神のノート",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: 被ダメごとに【アヌビスの刃】を1スタック。10スタックで【アヌビスの加護】に移行。 非加護状態なら行動前に2スタック追加。 【アヌビスの刃】：ATK+3%（最大15スタック） 【アヌビスの加護】：ATK+30%、被ダメ軽減+20%、制御無効、全スキルが【死神影刃】化（CTなし）、3ターン持続。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-05"
+},
+"name_jp": "クリスティーン",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "B"
+},
+{
+"url": "https://surrounded-by-girls.online/character/yura/",
+"slug": "yura",
+"title": "ヤバ少女 ユラの海外評価 | 光属性強すぎ？",
+"info": {
+"rank_site": "Sランク 【ヤバ少女】Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "サポーター",
+"trait_jp": "範囲回復・復活"
+},
+"stats": {
+"ATK": 111753.0,
+"HP": 115389.0,
+"DEF": 5123.0,
+"SPD": 4662.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "天使の祈り",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 範囲回復・星光 味方全体にユラATK69%分のHPを回復させ、【天使剣】を付与。 【天使剣】：2ターンの間、ATKが25%上昇し、会心が15%上昇する上、対象のデバフ・制御状態を1つ解除する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "天使の詠唱",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 復活回復・単体 戦闘不能の味方1体を復活させ、ユラATK224%分のHPを回復させる。戦闘不能単体がいない場合、HP割合最低の味方にユラATK286%分のHPを回復させ、会心抵抗が10%上昇し、被ダメージ軽減が10%上昇する。この効果は2ターン続き、対象に【天使の救済】を付与。 【天使の救済】：戦闘不能時、即座に【天使の救済】を消費し、HPを10％回復させる。この効果は2ターン続き、解除不可。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "天使体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: HPが45%、ATKが25%上昇し、抵抗が15%上昇する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ホーリーポエム",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: 戦闘開始時、ATK最高の味方3体に【HPシールド】を付与。通常攻撃後も、ATK最高の味方3体に【HPシールド】を付与できる。 【HPシールド】：2ターンの間、発動者のATK76%分のダメージを吸収する。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-10"
+},
+"name_jp": "ユラ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Поддержка",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/undine/",
+"slug": "undine",
+"title": "ヤバ少女 ウンディーネの海外評価 | 強い？編成は？",
+"info": {
+"element_jp": "氷属性",
+"class_jp": "魔法使い",
+"trait_jp": "氷結・ドラウン"
+},
+"stats": {
+"ATK": 134360.0,
+"HP": 851408.0,
+"DEF": 4728.0,
+"SPD": 4230.0
+},
+"stats_level": null,
+"skills": [],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-10"
+},
+"name_jp": "ウンディーネ",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/pecca/",
+"slug": "pecca",
+"title": "ヤバ少女 ペッカの評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "甘咬み",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 魔法ダメージ・範囲＋猛毒",
+"発動ターン: 1ターン目",
+"クールタイム: 2ターン",
+"効果概要: ランダムな敵3体に合計480%魔法ダメ（均等分配、1体上限ATKの4倍）。 70%で【猛毒】付与。 ガーディアン・サポーターへのダメージ+20%。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "むくれる猫",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: 通常攻撃が120%の【怨爪】に変化。 被ダメ時90%で反撃。 4回目ごとに【裁きのネコ爪】に変化： 全体134%魔法ダメ＋50%で【猛毒】付与、与ダメの50%回復＋超過分はシールド化",
+"解放条件: ★8で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ネコ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: ATK +45%、HP +25%、ダメージボーナス +10%",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "クルーエルキャット",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: 反撃時、DEF20%無視。 【猛毒】状態の敵に対し会心率+20%。 初反撃は必ず【裁きのネコ爪】",
+"解放条件: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-10"
+},
+"name_jp": "ペッカ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/renka/",
+"slug": "renka",
+"title": "ヤバ少女 レンカの海外評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "狐の呪術",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 魔法ダメージ・範囲＋火傷",
+"発動ターン: 1ターン目",
+"クールタイム: 2ターン",
+"効果概要: 敵全体に92%魔法ダメージ。 70%で【火傷】を付与。 対象が【火傷】または【炎上】状態ならDEF20%無視。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "狐火の陣",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: 毎ターン開始時に敵全体へ130%魔法ダメ＋65%で【火傷】。 【火傷】1スタックごとに追加ダメ12%。 CT：3ターン",
+"解放条件: ★8で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "狐体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: ATK +40%、HP +20%、ダメージボーナス +5%",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "狐族の適応力",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: 前・中列：与ダメ+20%、魔法吸血+10% 後列：前3ターンの会心+25%、会心ダメ+30% 戦闘開始時、敵全体に【火傷】1スタック付与",
+"解放条件: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-10"
+},
+"name_jp": "レンカ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/pandora/",
+"slug": "pandora",
+"title": "ヤバ少女 パンドラの海外評価！強い？編成は？",
+"info": {
+"element_jp": "闇属性",
+"class_jp": "サポーター",
+"trait_jp": "回復・バフ"
+},
+"stats": {
+"ATK": 1102532.0,
+"HP": 1162519.0,
+"DEF": 5192.0,
+"SPD": 4592.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "魔箱爆弾",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"CT: 2T",
+"効果: 敵4体に137%魔法ダメージ＋バフ1つ解除。70%で【猛毒】付与。 さらにATK上位味方4体のATKと会心率上昇（最大+25%）。 【猛毒】：2T、魔法軽減-5%、ターン終了時に最大HPの5%ダメージ（最大5スタック）。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "魔箱脈動",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"CT: 4T",
+"効果: HP割合最低の味方を5回回復（126%ずつ）。80%でデバフ・制御状態を1つ解除。HP50%以下の対象には回復効果+30%。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "魔箱の特性",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: HP+45%、ATK+25%、抵抗+15%"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "魔箱開封",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: 毎ターン終了時、敵が受けた持続ダメ合計の40%を味方に回復（上限：単体ATKの200%）。 行動後、戦闘不能の味方がいると1体復活し、ATK150%分のHPを回復（3Tクールダウン）。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [
+"海外の評価",
+"長い目で見ても育てて良い最強クラスのキャラの1つ。"
+],
+"dates": {
+"updated": "2025-05-19",
+"published": "2025-04-10"
+},
+"name_jp": "パンドラ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Поддержка",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/harriet/",
+"slug": "harriet",
+"title": "ヤバ少女 ハリエットの海外評価！強い？編成は？",
+"info": {
+"element_jp": "闇属性",
+"class_jp": "ガーディアン",
+"trait_jp": "猛毒・守護"
+},
+"stats": {
+"ATK": 88543.0,
+"HP": 1.277931,
+"DEF": 5311.0,
+"SPD": 4752.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "ミイラの束縛",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 物理ダメ+猛毒+シールド 攻撃後、味方2体にHP回復、シールド付与。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ファラオの拳",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 物理ダメ+猛毒+防御シールド 敵全体にダメージを与え、シールドを付与。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ミイラ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: HP45%、ATK25%、被ダメージ軽減15%上昇。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "エンシェントポイズン",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: 戦闘開始時に全ての敵に猛毒を付与。被ダメージ時にHP回復。ファラオの守護。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-10"
+},
+"name_jp": "ハリエット",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Страж",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/fill/",
+"slug": "fill",
+"title": "ヤバ少女 ウサギ娘フィルの評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "兎斬り",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 前列物理範囲＋氷結",
+"発動ターン: 1ターン目",
+"クールタイム: 2ターン",
+"効果概要: 前列の敵にトータル430%物理ダメ（敵全体で分割）。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "1体あたりATK3.5倍まで。前・中列の敵にはDEF20%無視＋50%で【氷結】付与",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "狂兎の嵐",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 全体物理ダメージ＋追加攻撃",
+"発動ターン: 2ターン目",
+"クールタイム: 4ターン",
+"効果概要: 敵全体に128%の物理ダメージ。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "対象が制御状態なら、追加でATK100%のダメージを与える",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ウサギ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: ATK +40%、HP +20%、ダメージボーナス +5%",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "クレイジーウサギ",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: ターン開始時、50%の確率で【狂暴の兎】発動。HP50%以下で発動率100%。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "第1ターン目は必ず発動＋味方全体のATK +10%（2ターン）",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-10"
+},
+"name_jp": "ウサギ娘フィル",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/koto/",
+"slug": "koto",
+"title": "ヤバ少女 鹿娘 琴の海外評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "神鹿の炎勢",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 列魔法ダメージ＋火傷蓄積",
+"発動ターン: 1ターン目",
+"クールタイム: 2ターン",
+"効果概要: 敵人数最多の一列に198%の魔法ダメージ＋100%で【火傷】付与。使用するたび、次回このスキルのダメージが12%上昇（最大5スタック・戦闘中永続）"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "神鹿の烈火",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 単体集中＋火傷・混乱",
+"発動ターン: 2ターン目",
+"クールタイム: 4ターン",
+"効果概要: HP割合が最も低い敵3体に195%の魔法ダメ＋90%で【火傷】、30%で【混乱】付与（サポーターには混乱確率50%）。効果は2ターン"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "神鹿体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: ATK +40%、HP +20%、ダメージボーナス +5%",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "神鹿の力",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: 味方全体の【火傷】【炎上】与ダメが上昇。自身のATK12%分の与ダメージ上昇。【火傷】【炎上】状態の敵を攻撃すると会心+15%",
+"解放条件: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-10"
+},
+"name_jp": "鹿娘",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/reardora/",
+"slug": "reardora",
+"title": "ヤバ少女 木エルフ リアドラの評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "希望の息吹",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: バフ＋浄化＋持続回復",
+"発動ターン: 1ターン目",
+"クールタイム: 2ターン",
+"効果概要: ATK最高の味方3体に【林佑】付与＆50%で制御効果を浄化（HP50%以下なら100%）。HP割合最低の味方3体に【翠風】を付与（リアドラATK50%分の行動後回復・2ターン）"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "森の恵み",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 単体復活＋超回復",
+"発動ターン: 2ターン目",
+"クールタイム: 4ターン",
+"効果概要: 戦闘不能の味方1体を復活＋HP回復（ATK217%分）。戦闘不能がいない場合はHP割合最低の味方にATK267%分回復＋【生命循環】を付与"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "エルフ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: HP +40%、ATK +20%、SPD +120",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "森林讃歌",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: 味方全体に【森林の恵み】付与： 戦士：与ダメ+15%、魔法使い：会心+15%、 ガーディアン：会心抵抗+15%、サポーター：抵抗+15%。 戦闘不能時、即時復活＋HP30%回復＆【生命循環】獲得（戦闘中1回・魂消滅無視）",
+"解放条件: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-10"
+},
+"name_jp": "木エルフ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/sere/",
+"slug": "sere",
+"title": "ヤバ少女 セレの海外評価！強い？編成は？",
+"info": {
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "範囲・バースト"
+},
+"stats": {
+"ATK": 1497516.0,
+"HP": 938296.0,
+"DEF": 4996.0,
+"SPD": 4459.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "白翼展開",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 敵全体に合計600%の魔法ダメージを分割して与える（1体あたり最大ATKの4倍まで）。80%の確率で【魔法ダメージUP】を付与。 【魔法ダメージUP】：被魔法ダメージが20%上昇。対象HPが高いほど、与ダメージが最大30%まで増加。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "白鳩の光雨",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 敵全体に132%の魔法ダメージ。バフを1つ持つごとに14%のDEF無視ダメージ（最大70%）を追加。50%の確率で対象のデバフを全解除。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "白鳩体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: CDなし：ATK+45%、HP+25%、会心+10%"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "聖羽",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果: CDなし：戦闘開始時、自身と同列の味方に【白翼の祝福】を付与。光属性キャラ全体が恩恵を受ける。 【白翼の祝福】：与ダメージ+20%、ATK+15%、解除不可。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-04-10"
+},
+"name_jp": "セレ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/bunina/",
+"slug": "bunina",
+"title": "ヤバ少女 蝶娘ブニナの海外評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "蝶嵐",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 単体物理＋引き寄せ＋デバフ",
+"発動ターン: 1ターン目",
+"CT: 2T",
+"効果概要: 中後列の敵単体に 109%物理ダメージ 敵前列に空きがある場合は 前列へ引き寄せ 引き寄せ成功時、1ターンの間： →【被ダメ軽減DOWN】【DEF DOWN】（各20%）を付与"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "蝶舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 全体物理＋烙印＋自己回復",
+"発動ターン: 2ターン目",
+"CT: 4T",
+"効果概要: 敵全体に 104%物理ダメージ 70%の確率で【バタフライニードル】の烙印を付与 この状態の敵が戦闘不能になると、 自身のHP上限6%分回復"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "蝶体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: HP +40%、ATK +20%、被ダメ軽減 +10%",
+"解放条件: ★9で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "蝶抱擁",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: 毎ターン、HP割合最低の味方に【バタフライシールド】（自身HP上限の10%）を付与 シールド持ちは 会心抵抗+15% さらに 味方全体の被ダメージ-10% （ブニナが出陣時）",
+"解放条件: ★10で自動解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-11"
+},
+"name_jp": "蝶娘ブニナ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/mei/",
+"slug": "mei",
+"title": "ヤバ少女 パンダ娘 梅（メイ）の海外評価！強い？編成は？",
+"info": {
+"element_jp": "風属性",
+"class_jp": "魔法使い",
+"trait_jp": "範囲バースト"
+},
+"stats": {
+"ATK": 1347211.0,
+"HP": 832779.0,
+"DEF": 4718.0,
+"SPD": 4327.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "粽落とし",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 前・中列に136%魔法ダメージ。100%で【竹】を1〜2スタック獲得。キル成功で追加1スタック。HP50%以上の敵には与ダメ+20%。 【竹】：会心ダメージ+4%（最大10スタック）、解除不可。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "竹槍舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 全【竹】を消費し、敵全体に128%魔法ダメージ。1スタック毎にDEF無視15%追加ダメージ。使用後、【竹】3スタック返還。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "パンダ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: ATK+40%、HP+20%、ダメージボーナス+5%"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "竹マニア",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: 戦闘開始時【竹】3スタック獲得。毎ターン【竹】+1スタック。【粽落とし】と【竹槍舞】の初使用時に会心率+50%、以後+15%追加。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-05-28",
+"published": "2025-04-11"
+},
+"name_jp": "パンダ娘",
+"global_name": null,
+"element_ru": "Ветер",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/minos/",
+"slug": "minos",
+"title": "ヤバ少女 乳牛娘ミノスの海外評価！強い？編成は？",
+"info": {
+"element_jp": "風属性",
+"class_jp": "戦士",
+"trait_jp": "物理処刑"
+},
+"stats": {
+"ATK": 136435.0,
+"HP": 841203.0,
+"DEF": 4745.0,
+"SPD": 4223.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "ミルク注入",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 物理ダメ連射 いずれかの敵に5連射し、1発ごとに152%の物理ダメを与える。複数発で同1敵に命中する場合、2発目以降のATKは前弾より15%低下する。前・中列にいる単体に与ダメージが20%上昇する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ミルク全開",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 物理単体追撃 HP割合最低の敵単体に合計291%の物理ダメを3回に分けて与え、キル失敗の場合、161%の物理ダメを1回追加で与える。スキルでキル成功後、スキルは再び使用可能になる（与ダメージが50%となり、物理攻撃などの追撃効果が発生しなくなる）。攻撃時、対象DEFを15%無視する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "乳牛体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: ATKが40%、HPが20%、会心が5%上昇する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "乳の栄養",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし",
+"効果: 戦闘に入ると、【俊敏な癒し手】状態を獲得：会心が20%上昇し、回避が40%上昇する。状態期間中、全ての制御を無効化する。この効果は3ターン続く。【ミルク全開】の追撃はHP30%以下の単体を処刑する。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [
+"ATK | 14350 | HP | 115000",
+"ATK | 13% | HP | 13%",
+"レベル | 効果",
+"1 | [覚醒の力]：HPが10%上昇する。",
+"5 | [ミルク注入]：槍撃回数+1。",
+"10 | [覚醒の力]：ATKが10%上昇する。",
+"15 | [覚醒の力]：SPDが10%上昇する。",
+"20 | [ミルク全開]：ダメージ倍率312%、追加攻撃172%、DEF無視20%に強化。",
+"25 | [乳の栄養]：【俊敏な癒し手】の持続ターン+3。",
+"30 | [覚醒バースト]：第3ターンから4ターン間、被ダメージ-25%、会心+15%。"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-24",
+"published": "2025-04-11"
+},
+"name_jp": "乳牛娘ミノス",
+"global_name": null,
+"element_ru": "Ветер",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/umu/",
+"slug": "umu",
+"title": "ヤバ少女 ウムの海外評価！強い？編成は？",
+"info": {
+"element_jp": "氷属性",
+"class_jp": "サポーター",
+"trait_jp": "氷結・デバフ"
+},
+"stats": {
+"ATK": 9953.0,
+"HP": 1047459.0,
+"DEF": 4890.0,
+"SPD": 4414.0
+},
+"stats_level": null,
+"skills": [],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-11"
+},
+"name_jp": "ウム",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Поддержка",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/jenny/",
+"slug": "jenny",
+"title": "ヤバ少女 ジェニーの海外評価！強い？編成は？",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "粘液触",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: シールド・デバフ誘発",
+"発動ターン: 1ターン目",
+"CT: 2T",
+"効果概要: 自身＋味方3体に【スライムシールド】（2T・ 最大HP10%分吸収 ）付与 シールド所持者が被弾時、60%の確率で**攻撃者にDEF-3%の【スライムの毒液】**付与（最大5スタック／解除不可）"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "粘液力",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: 範囲攻撃・氷結",
+"発動ターン: 2ターン目",
+"CT: 4T",
+"効果概要: 敵全体に 106%物理ダメ ＋50%の確率で【氷結】 対象が【スライムの毒液】を持つ場合、 1スタックごとに自身最大HPの2%分追加ダメージ"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "スライム体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: HP +40%、ATK +20%、被ダメ軽減 +10%",
+"解放条件: ★9で解放"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "スライム粘液",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果内容: 毎ターン、味方 後列のHP割合最低の2体 に【援護】（ 被ダメ30%分散 ） ジェニーのHP50%以下時、自身の 最大HP6%回復",
+"解放条件: ★10で解放"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {
+"🧊 おすすめ編成・相性": [
+"ジェニーはサポートと耐久を両立した便利タンク！ 毒液＋氷結のセットアップからの広範囲支援で、 後半になるほどじわじわ効いてくる、嫌らし～い強キャラだよ💧✨",
+"⇔ コメントへ"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-11"
+},
+"name_jp": "ジェニー",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/risa/",
+"slug": "risa",
+"title": "ヤバ少女 リサの海外評価！強い？編成は？",
+"info": {
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "単体バースト"
+},
+"stats": {
+"ATK": 152516.0,
+"HP": 951377.0,
+"DEF": 5018.0,
+"SPD": 4326.0
+},
+"stats_level": null,
+"skills": [],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-11"
+},
+"name_jp": "リサ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/riris/",
+"slug": "riris",
+"title": "ヤバ少女 サキュバス リリスの評価！強い？編成は？",
+"info": {
+"element_jp": "職業"
+},
+"stats": {
+"ATK": 149396.0,
+"HP": 942382.0,
+"DEF": 5045.0,
+"SPD": 4400.0
+},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "魅惑の投げキス",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"種類: 魔法範囲・猛毒",
+"発動: 1T",
+"CT: 2T",
+"効果概要: ランダム敵3体に 137%魔法ダメ → 【猛毒】持ち優先攻撃 → 70%で【猛毒】1スタック付与 → 毒スタックごとにスキル威力+8%（最大+40%）"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "巨魔覚醒",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"種類: 魔法範囲・猛毒・即時発動",
+"発動: 2T",
+"CT: 4T",
+"効果概要: 敵全体に 140%魔法ダメ → 対象が ガーディアン/サポーター ならダメ+15% → 攻撃後、全【猛毒】即座に発動"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "サキュバス体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"内容: ATK +45%、HP +25%、ダメージボーナス +10%"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "ポイズンキス",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"内容: 毎ターン、敵1体に【猛毒】2スタック付与 → 猛毒持ちへの攻撃で 被ダメ軽減を30%無視 → 開始時、敵全体の 回復効果-20%（3T）"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [
+"レベル | 効果",
+"1 | HP +10%",
+"5 | 「魅惑の投げキス」威力 146% 、猛毒確率 80% 、スタックごと与ダメ+10%",
+"10 | ATK +10%",
+"15 | SPD +10%",
+"20 | 「巨魔覚醒」威力 150% 、対G/Sに+25%ダメ",
+"25 | 回復効果低下が**30%**に",
+"30 | 第3ターンから4ターン間：**被ダメ軽減+25%、会心+15%**の自己バフ発動"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-22",
+"published": "2025-04-11"
+},
+"name_jp": "サキュバス",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/erena/",
+"slug": "erena",
+"title": "ヤバ少女 エレナの海外評価！強い？編成は？",
+"info": {
+"element_jp": "火属性",
+"class_jp": "戦士",
+"trait_jp": "火傷・会心"
+},
+"stats": {
+"ATK": 138542.0,
+"HP": 841628.0,
+"DEF": 4872.0,
+"SPD": 4029.0
+},
+"stats_level": null,
+"skills": [],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-04-23",
+"published": "2025-04-11"
+},
+"name_jp": "エレナ",
+"global_name": null,
+"element_ru": "Огонь",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/miracis/",
+"slug": "miracis",
+"title": "ヤバ少女 ミラシスの海外評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "星輝属性",
+"class_jp": "戦士",
+"trait_jp": "剣術変換",
+"jp_release": "2025年7月21日 100日記念"
+},
+"stats": {
+"ATK": 156355.0,
+"HP": 973156.0,
+"DEF": 5166.0,
+"SPD": 4454.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "白竜剣舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"物理範囲多形態",
+"【剣気】層数が2層未満の場合、【剣鋒】を解放：敵のHP割合が最も低い3体に124%の物理ダメージを与え、9%防御を無視し、1層の【剣気】を獲得。",
+"【剣気】層数が2層に達した場合、【剣影】を解放：敵全体に132%の物理ダメージを与え、16%防御を無視し、1層の【剣気】を獲得。",
+"【剣気】層数が4層に達した場合、【万剣帰心】を解放：敵全体に合計980%の物理ダメージを与え、全目標で均等に分担、各ユニットは攻撃の4倍を超えず、25%防御を無視。",
+"【万剣帰心】解放後、【剣気】層数がゼロにリセット。",
+"【剣気】：白竜は【剣気】のスタック数に応じて、異なるスキルを発動する。"
+]
+},
+{
+"name_jp": "白竜剣陣",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"物理範囲剣意",
+"攻撃または被撃時に50%の確率で1層の【剣意】を獲得。",
+"ターン開始時、累計で10層の【剣意】を所持している場合、全ての【剣意】を消費し制御を無視してスキル【剣召喚】を解放。",
+"【剣意】：ATKが4%、会心率が2%上昇する。この効果はスタック可能で解除されない。",
+"【剣召喚】：自身の制御効果を全て解除し、敵全体に135%の物理ダメージを与え、さらに攻撃力30%分のDEFを無視した物理ダメージを与える。"
+]
+},
+{
+"name_jp": "白竜体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ATKを45%、HPを25%、ダメージボーナスが15%上昇する。 戦闘開始後の3ターンの間、制御を無効化する。【万剣帰心】を1回発動すると、ATKが10%上昇する。最大5スタックまで可能で、戦闘終了まで持続し、解除不可。"
+]
+},
+{
+"name_jp": "竜の闘技場",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ターン開始時、敵のHP割合が最も低いユニットを【決闘】対象として選択。白竜が【決闘】 対象に与えるダメージが20%上昇、非【決闘】対象からのダメージが25%軽減。",
+"敵の非【決闘】ユニットが行動後、40%の確率で【命狩り】を解放、各ターン最大3回発動。",
+"【決闘】対象が行動後、100%の確率で【命狩り】を解放、各ターン最大2回発動。",
+"【決闘】対象が戦闘不能後、白竜が1層の【栄光】を獲得。",
+"【命狩り】：敵ユニットに218%の物理ダメージを与える。この効果は分散できず、シールドも無視する。",
+"【栄光】：戦闘終了時まで、与ダメージが10%、ダメージ軽減が5%上昇する(最大5スタック)。この効果は解除されない。 3スタック以上貯まると、追加で会心ダメージが40%上昇する。"
+]
+}
+],
+"awakening": [
+"レベル | スキル名 | 効果 | 覚醒効果",
+"1 | 覚醒の力 | HPが10%上昇する。 | —",
+"5 | 白竜剣舞 | 【剣鋒】ダメージ147%・DEF無視12%まで上昇。【剣影】ダメージ158%・DEF無視20%まで上昇。【万剣帰心】ダメージ1150%・DEF無視30%まで上昇。 | 耀 ：戦闘開始時、4層の【剣気】を獲得。 堕 ：【剣気】0→【剣鋒】発動。1スタック→【剣影】発動。3スタック→【万剣帰心】発動。",
+"10 | 覚醒の力 | ATKが10%上昇する。 | —",
+"15 | 覚醒の力 | SPDが10%上昇する。 | —",
+"20 | 白竜剣陣 | 【剣意】獲得確率60%まで上昇。【剣召喚】ダメージ161%物理ダメ＋DEF無視40%物理ダメに上昇。 | 耀 ：【剣召喚】35%の確率で対象に【重傷】付与（行動不能・被ダメ20%増・1ターン）。 堕 ：【剣意】8スタックで【剣召喚】発動可能。ダメージ与えた時、与ダメの40%分HP回復。",
+"25 | 竜の闘技場 | 【決闘】相手への与ダメ25%増。非【決闘】相手への与ダメ30%減。非【決闘】敵の行動後50%で【命狩り】発動。【命狩り】ダメージ260%まで上昇。 | 耀 ：【命狩り】でキル失敗時、40%の確率で追加1回発動。 堕 ：【命狩り】ダメージ30%増。キル成功時、再スキル発動でHP割合最低の単体を攻撃。",
+"30 | 覚醒バースト | 第3ターン開始から4ターンの間、被ダメージ軽減25%・会心率15%上昇。 | —"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [],
+"おすすめアクセサリー": [],
+"おすすめペット": [],
+"おすすめ戒魔": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-04-19"
+},
+"name_jp": "ミラシス",
+"global_name": null,
+"element_ru": "Звездный свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-07-21",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/ludo/",
+"slug": "ludo",
+"title": "ヤバ少女 ルト（雲豹娘）の海外評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "S+ 【ヤバ少女】Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "協同攻撃（コンボATK）",
+"jp_release": "2025年7月1日"
+},
+"stats": {
+"ATK": 154679.0,
+"HP": 970280.0,
+"DEF": 5098.0,
+"SPD": 4402.0
+},
+"stats_level": 350,
+"skills": [],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"抹殺 会心系 追撃 吸収",
+"あたりの刻印・タレントを付けたい。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-12-22",
+"published": "2025-04-19"
+},
+"name_jp_alt": "雲豹娘",
+"name_jp": "ルト",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-07-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/amatsuki-ai/",
+"slug": "amatsuki-ai",
+"title": "ヤバ少女 天月愛の評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "Bランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "追撃爆発"
+},
+"stats": {
+"ATK": 151638.0,
+"HP": 948274.0,
+"DEF": 5010.0,
+"SPD": 4344.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "バナナ軟爆弾",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 物理範囲ダメージ 敵全体に98%+目標HP上限10%の物理ダメージを与える；攻撃時、目標のHPが50%を超えている場合、会心と会心傷害が25%上昇、そうでなければ目標の35%防御を無視；40%の確率で目標に【バナナの皮】を付与、2ターン継続。 【バナナの皮】：命中が30%低下、会心抵抗が20%低下、2ターン継続。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "バナナ劈裂弾",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 物理爆発ダメージ 一時的に自身の攻撃を25%上昇させ、敵のHP割合が最も低い単体に486%の物理ダメージを与える。目標の現在HPが自身より低い場合、会心が100%上昇、ダメージが25%上昇；攻撃後、目標のHPが30%以上の場合、追加で1回の通常攻撃を行う。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "バナナ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: ATKを45%、HPを25%、ダメージボーナスを15%上昇する。受けるダメージが自身のHP上限の10%を超える場合、受けるダメージを30%軽減。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "膨張したバナナ",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: 通常攻撃が【バナナ炮】に強化：目標の40%防御を無視し、140%＋目標HP上限12%の物理ダメージを与える。 攻撃が目標を撃殺できなかった場合、100%の確率で1層の【追跡狩り】を獲得、行動後に【追跡狩り】層数が4層に達すると、全ての【追跡狩り】層数を削除し即座に【バナナ劈裂弾】を解放；戦闘開始時、2層の【追跡狩り】を獲得。 【追跡狩り】：攻撃が5%上昇、最大6層までスタック可能。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆タレント": [
+"「物理連撃」と「抹殺」がかなり良いよ。 あとは「クリ率」「クリダメ」、 「加護貫通」も。",
+"理想形はそんな感じ。バナナには「抹殺」がすごく合ってる。 「追撃」はあまり効果がないかな。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-04-23"
+},
+"name_jp": "天月愛",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "B"
+},
+{
+"url": "https://surrounded-by-girls.online/character/ferry/",
+"slug": "ferry",
+"title": "ヤバ少女 フェリーの海外評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "Cランク 【ヤバ少女】Tier表 最強ランキング",
+"element_jp": "火属性",
+"class_jp": "ガーディアン",
+"trait_jp": "挑発守護"
+},
+"stats": {
+"ATK": 810152.0,
+"HP": 1128712.0,
+"DEF": 5137.0,
+"SPD": 4456.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "黒羊守護",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1T",
+"クールタイム: 2T",
+"効果: 守護ダメージ軽減 2ターンの間、自身が【守護】状態に入り、味方HP割合最低の単体を守り、被ダメージを50%分散する。自身と守護対象の被ダメージ軽減と会心抵抗をそれぞれ15%上昇させる。自身のHPが50%以下の場合、自身のHPを10％回復させる。守護対象のHPが50%以下の場合、【シールド】を付与し、シールド値はHP上限の10%。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "黒羊奥義",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2T",
+"クールタイム: 4T",
+"効果: 物理範囲挑発 いずれかの敵4体に140%の物理ダメージを与え、30%の確率で【挑発】を付与する。戦士またはガーディアンに【挑発】の確率が50%まで上昇する。 【挑発】：2ターンの間、強制的に通常攻撃で挑発者を攻撃させる。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "黒羊体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: HPが40%、ATKが20%、被ダメージ軽減が10%上昇する。"
+],
+"version_note": "version not stated on page (table layout)"
+},
+{
+"name_jp": "黑羊反擊",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD: なし",
+"効果: 被ダメージ時、攻撃者に自身ATK120%分の物理ダメージで反撃し、自身とHP割合最低の味方単体にHP上限の1%分のHPを回復させる。80%の確率で【炎上】を付与。効果は1ターン続く。 【炎上】：1ターンの間、毎ターンフェリーの最大HP5%分のHPを失う。"
+],
+"version_note": "version not stated on page (table layout)"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-04-23"
+},
+"name_jp": "フェリー",
+"global_name": null,
+"element_ru": "Огонь",
+"class_ru": "Страж",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "C"
+},
+{
+"url": "https://surrounded-by-girls.online/character/tina/",
+"slug": "tina",
+"title": "ヤバ少女 ティナの海外評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "変身バースト",
+"jp_release": "2025年5月1日"
+},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "神竜奥義",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T 単体 多段",
+"前の単体を攻撃して、3-5段のダメージを与え、1段ごと80%の物理ダメを与え、対象DEFを20%無視する。対象HPが50%以下の場合、与ダメージが30%上昇する。"
+]
+},
+{
+"name_jp": "真竜覚醒",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし 変身 回復",
+"被ダメージ時、HP60%以下の場合、即座にHPを40%回復し、全ての異常状態を解除し、【真竜形態】に入る。",
+"ATKが30%上昇し、会心が25%上昇し、制御を無効化する。全ての攻撃はクールダウンなしの【真・神竜奥義】に変わる。この効果は5ターン続き、解除不可。状態終了後、5ターンクールダウンして再び発動可能。",
+"第4ターン開始時、竜が【真竜形態】でない場合、即座に40%のHPを回復し、全ての異常状態を解除し、【真竜形態】に入る。",
+"【真・神竜奥義】 前列の敵1体を3~5回攻撃し、毎回80%の物理ダメージを与える。さらに敵全体に75%の物理ダメージを1回与える。このスキルは、対象のDEFを20%無視する。対象のHPが50%以下の場合、与ダメージが30%上昇する。"
+]
+},
+{
+"name_jp": "真竜の体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ATKが45%上昇し、HPが25%上昇し、ダメージボーナスが15%上昇する。",
+"【竜怒】1スタックごとに、会心ダメージが3%上昇する。"
+]
+},
+{
+"name_jp": "逆鱗",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"戦闘に入ると、即座に【竜怒】を3スタック獲得する。被ダメージ時、80%の確率で【竜怒】を1スタック獲得する。",
+"【真竜形態】下、毎ターン開始時【竜怒】を1スタック獲得する。【竜怒】が10スタックに達した時、被ダメージ時に30%の確率で対象に【神竜奥義】で反撃する。2ターンクールダウンする。",
+"【竜怒】 戦闘終了時まで、攻撃時に追加で【竜怒】のスタック数×ATK2%分の純粋ダメージを与える(最大10スタック）。この効果は解除されない"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"会心率（クリティカル率）、会心ダメージ（クリティカルダメージ）、貫通（防御無視）を重視していて、最後の一枠は個人的には「滅魂（ソウルクラッシュ）」を好んで使ってます。"
+],
+"おすすめペット": [],
+"おすすめアクセサリー": [],
+"おすすめ戒魔": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-04-25"
+},
+"name_jp": "ティナ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-05-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/evelyn/",
+"slug": "evelyn",
+"title": "ヤバ少女 エヴリンの海外評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "Bランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "連続バースト",
+"jp_release": "2025年7月15日"
+},
+"stats": {
+"ATK": 153226.0,
+"HP": 973174.0,
+"DEF": 5180.0,
+"SPD": 4380.0
+},
+"stats_level": 350,
+"skills": [],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-05-07"
+},
+"name_jp": "エヴリン",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": "2025-07-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "B"
+},
+{
+"url": "https://surrounded-by-girls.online/character/crim/",
+"slug": "crim",
+"title": "【ヤバ少女】クリム（克莉姆）の海外評価！強い？ステータスやスキルも",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "ガーディアン",
+"trait_jp": "シールド分散",
+"jp_release": "2025年6月1日予定"
+},
+"stats": {
+"ATK": 107138.0,
+"HP": 1652145.0,
+"DEF": 5270.0,
+"SPD": 4815.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "光霊の恩寵 発動：1T CT：2T",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"シールド分散",
+"味方全体にHP15%分【聖なるシールド】を付与。 【聖なるシールド】：2ターンの間、発動者のHP15%分のダメージ吸収 味方全体に【聖なる加護】を付与。 【聖なる加護】：2ターンの間、対象が受けるダメージの30％はクリムが代わりに受ける。この効果は解除されない。また、全ての制御を無効化。",
+"※技のレベルが最高レベルの場合"
+]
+},
+{
+"name_jp": "精霊羊爆弾 発動：2T CT：4T",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"範囲ダメ スタン",
+"敵全体に物理ダメージ106%、25%の確率で対象に【スタン】を付与、HP上限の10%分の物理ダメージ追加。対象が【神聖載判】持ちの場合、追加ダメージが純粋ダメージに変換される。 【スタン】：2ターン行動不能 【神聖裁判】：2ターンの間、ターン終了時に発動者のHP5%分のダメージを受ける(最大3スタック) スキル発動後、自身とHP割合最低の味方単体のHPをスキルダメージ30%分回復"
+]
+},
+{
+"name_jp": "エルフ体質 CT：なし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"HP＋45%、ATK＋25%、被ダメージ軽減＋20% 味方単体1回の被ダメージがHP上限の40%分を超えた場合、今回の被ダメージが70%まで低下 毎ターン終了時、自身の失ったHPを10％回復させる"
+]
+},
+{
+"name_jp": "精霊マジック CT：なし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"分散された被ダメージが70%低下し、被ダメージの際に、70%の確率で対象に【神聖設判】を付与 【神聖裁判】：2ターンの間、ターン終了時に発動者のHP5%分のダメージを受ける(最大3スタック) 戦闘不能時、即座に復活し、自身HPの40%分を回復し、【無敵】状態に入る。 【無敵】：1ターンの間、ターン内の被ダメージを全て無効化する。この効果は魂消滅状態無視。戦開中1回限り発動。",
+"※技スキルはすべて最高レベルでの値。"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"海外プレイヤーの参考"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-05-08"
+},
+"name_jp_alt": "克莉姆",
+"name_jp": "クリム",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Страж",
+"jp_release_date": "2025-06-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/lucifer/",
+"slug": "lucifer",
+"title": "ヤバ少女 ルシファーの海外評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "魔法範囲爆裂",
+"jp_release": "2025年5月15日"
+},
+"stats": {
+"ATK": 149402.0,
+"HP": 956399.0,
+"DEF": 5084.0,
+"SPD": 4466.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "誘堕",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"誘堕 発動：1T / CT：2T 種別：魔法範囲 (敵全体) 効果： 敵全体に95%の魔法ダメージを与え、60%の確率で**【猛毒】**を付与。 【猛毒】：2ターンの間、対象の魔法ダメージ軽減が5%低下。ターン終了時に自身の最大HP5%分のHPを失う（発動者のATK上限あり、最大5スタック）。 【魔法の丸呑み】状態の単体には、DEF無視の30%追加魔法ダメージを与え、80%の確率で【魔法の炎】を付与。 【魔法の炎】：2ターンの間、解除不可。ターン終了時に自身の最大HP5%分のHPを失う（発動者のATK上限あり、最大3スタック）。持続期間中、被回復量が20%低下（スタック不可）。 対象が異常状態を1スタック持つごとに、与ダメージが5%上昇（最大40%まで）。 愛と罰 発動：2T / CT：4T 種別：魔法範囲 (即時発動) 効果： 【魔法の丸呑み】でない敵単体を優先して【魔法の丸呑み】状態にする。 【魔法の丸呑み】：戦闘終了まで、解除不可。【毒】、【火傷】、【炎上】、【魔法の炎】によるダメージが15%上昇。 敵全体に140%の魔法ダメージを与える。 【魔法の丸呑み】状態の単体には、即座に【猛毒】、【火傷】、【炎上】、【魔法の炎】などの状態を発動させる。 【猛毒】 ：2ターンの間、対象の魔法ダメージ軽減が5%低下。ターン終了時に自身の最大HP5%分のHPを失う（発動者のATK上限あり、最大5スタック）。 発動ダメージ値の30%分のHPを回復し、超過分は【シールド】に変換。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "堕天使体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"堕天使体質 CT：なし (常時発動) 効果： 自身のATKが45%、HPが25%、ダメージボーナスが15%上昇。 味方全体が異常状態での被ダメージが15%低下。 戦闘開始時、2ターンの間【潜伏】を獲得（他の攻撃可能な味方がいる場合、攻撃対象に指定されなくなる）。 【潜伏】：2ターンの間、攻撃可能な味方を攻撃対象に指定できない。 堕落の贈り物 CT：なし (常時発動) 効果： 戦闘開始時、ATK最高、HP最低の敵単体に【魔法の丸呑み】を付与。 【魔法の丸呑み】持ちの敵が行動すると、自身は【儚い命】を1スタック獲得（1ターンごとに最大8スタック）。 【儚い命】：【堕落の贈り物】で獲得し、5スタックで追加【誘堕】発動のトリガーとなる。 【儚い命】を5スタック持つと、5スタック消費して制御を無視する追加【誘堕】を発動。 【誘堕】を6回発動するごとに、即座に制御を無視し【愛と罰】を発動。"
+],
+"version_note": "version not stated on page"
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"迅速／魔連／滅魂／戒律／貫通／魔力 → 副アタッカーで状態異常担当"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-05-08"
+},
+"name_jp": "ルシファー",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": "2025-05-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/tess/",
+"slug": "tess",
+"title": "ヤバ少女 テスの評価！スキル・ステータス・覚醒効果まとめ",
+"info": {},
+"stats": {
+"ATK": 134094.0,
+"HP": 850648.0,
+"SPD": 4068.0
+},
+"stats_level": null,
+"skills": [],
+"awakening": [
+"ATK +14,350 +13%",
+"HP +115,000 +13%",
+"覚醒Lv | 効果内容",
+"Lv1 | HP+10%上昇",
+"Lv5 | 「必殺射」の倍率が205%に強化。スプラッシュ対象+1体",
+"Lv10 | ATK+10%上昇",
+"Lv15 | スピード+10%上昇",
+"Lv20 | 「死狙撃」の倍率が431%、会心率25%、HP30%以下の敵への与ダメ+30%",
+"Lv25 | 「少女ケア」の会心+25%、デバフ解除が100%成功に",
+"Lv30 | 【覚醒バースト】：第3ターン開始から4ターン、被ダメージ-25%、会心+15%"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-22"
+},
+"name_jp": "テス",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/freya/",
+"slug": "freya",
+"title": "【ヤバ少女】フレイヤの評価！スキル・ステータス・覚醒効果まとめ",
+"info": {},
+"stats": {
+"ATK": 98055.0,
+"HP": 1037459.0,
+"SPD": 4381.0
+},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "鞭撃褒美",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1ターン目 CT: 4ターン バフ: ATK UP 効果: ATK最高の味方3体に【エンカレッジ】を付与し、ATKが25%上昇し、防御が15%上昇する。",
+"解説: 開幕から味方の火力を大幅に引き上げることができる強力なバフスキルです。ATKが高いアタッカーをさらに強化し、短期決戦にも貢献します。防御バフも付随するため、攻守両面で味方をサポートできます。"
+]
+},
+{
+"name_jp": "鎖舞曲",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2ターン目 CT: 4ターン タグ: 回復, バフ 効果: 味方HP割合最低の3体にATK126%分のHPを回復し、対象に【守護】を付与。 【守護】: ダメージ軽減+10%、会心抵抗+10％。",
+"解説: HPが危険な味方をピンポイントで回復し、さらに防御的なバフ【守護】を付与することで、味方の生存率を高めます。回復量はフレイヤのATKに依存するため、ATKを育成することで回復性能も向上します。"
+]
+},
+{
+"name_jp": "鎖の特性",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし 効果: ATKが40%、HPが20%上昇する。",
+"解説: 自身のステータスを底上げするパッシブスキルです。特にATKが大きく上昇するため、アクティブスキル「鎖舞曲」の回復量増加にも繋がります。"
+]
+},
+{
+"name_jp": "鎖のサクリファイス",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし 効果: 戦闘不能時、味方全体の存続単体にATK96%分のHPを回復させ、全体の与ダメージを15%上昇させる。1戦闘ごとに1回発生可能。",
+"解説: フレイヤが倒れてしまっても、最後の最後まで味方をサポートするスキルです。味方全体の回復と与ダメージアップは、劣勢を覆すきっかけになる可能性を秘めています。"
+]
+}
+],
+"awakening": [
+"フレイヤは覚醒することで、さらに強力なサポーターへと成長します。",
+"ステータス | 上昇値",
+"ATK | +11850",
+"HP | +135000",
+"ATK | +13%",
+"HP | +13%",
+"解説: 覚醒を進めることで、基礎ステータスが向上するだけでなく、既存スキルが大幅に強化されます。 特にレベル5で「鞭撃褒美」に継続回復効果が付与される点や、レベル20で「鎖舞曲」の回復量とバフ効果が強化される点は見逃せません。 最終覚醒の「覚醒バースト」は、中盤以降の耐久力と回復力をさらに高め、パーティー全体の安定性を大きく向上させます。",
+"レベル | 効果",
+"1 | [覚醒の力] HPが10%上昇する。",
+"5 | [鞭撃褒美] 対象に【継続回復】を付与：2ターンの間、ターン終了時にフレイヤのATK15%分のHPを回復する。",
+"10 | [覚醒の力] ATKが10%上昇する",
+"15 | [覚醒の力] スピードが10%上昇する",
+"20 | [鎖舞曲] 回復倍率が134%まで上昇し、ダメージ軽減と会心抵抗が15%まで上昇する。",
+"25 | [鎖のサクリファイス] 回復倍率が102％まで上昇し、与ダメージが20%まで上昇する。",
+"30 | [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する。"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-05-25",
+"published": "2025-05-22"
+},
+"name_jp": "フレイヤ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/sign/",
+"slug": "sign",
+"title": "【ヤバ少女】サインの評価！スキル・ステータス・覚醒効果まとめ",
+"info": {},
+"stats": {
+"ATK": 136435.0,
+"HP": 822223.0,
+"SPD": 4084.0
+},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "馬気功",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1ターン目 CT: 2ターン 効果: 敵前・中列優先のいずれかの3体にそれぞれ137%の魔法ダメージを与える。HPが60%以上の対象に与ダメージが30%上昇する。60%の確率で【火傷】を付与し、対象の魔法抵抗を15%低下させる。この効果は2ターン続く。 【火傷】: 2ターンの間、毎ターンサインのATK15%分のHPを失う（最大5スタック）。",
+"解説: 戦闘開始直後から複数の敵にダメージを与えつつ、高確率で火傷を付与できる主力スキル。HPが高い敵に対してはダメージがアップし、さらに火傷による継続ダメージと魔法抵抗デバフで、後続の攻撃をより効果的にします。短いCTで回転率が良いのも魅力です。"
+]
+},
+{
+"name_jp": "馬閃光",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 2ターン目 CT: 4ターン 効果: 敵全体にそれぞれ126%の魔法ダメージを与える。【火傷】または【炎上】状態の単体に会心が60%上昇する。HP割合最低の敵単体にATK50%分のダメージを追加で与え、対象HPが20%以下の場合、直接処刑する（処刑は、シールド、DEF、ダメージ分散を無視する。与ダメージは対象HPの20%分で、自身ATKの4倍を超えない）。",
+"解説: 敵全体への攻撃に加え、火傷・炎上状態の敵に対しては会心率が大幅に上昇するため、大ダメージを狙えます。さらに、HPが最も低い敵への追加ダメージと、HP20%以下での処刑効果は非常に強力。劣勢な敵を一掃するフィニッシャーとしての役割を果たします。"
+]
+},
+{
+"name_jp": "戦馬体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし 効果: ATKが40%、HPが20%上昇する。",
+"解説: 自身の基本ステータスを大幅に向上させるパッシブスキル。特にATKの上昇量が大きく、全スキルのダメージ量と火傷の継続ダメージ量を底上げします。"
+]
+},
+{
+"name_jp": "業火馬地獄",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT: なし 効果: 【火傷】または【炎上】状態の単体にダメージを20%追加し、自身の通常攻撃のダメージ倍率を40%追加で与える上、通常攻撃は【火傷】または【炎上】状態の単体を優先に攻撃する。",
+"解説: 火傷や炎上状態の敵に対する特攻能力を得るパッシブスキル。与ダメージが増加するだけでなく、通常攻撃も強化され、効率的にダメージを稼ぐことができます。火傷・炎上状態の敵を優先的に攻撃するため、取り逃しを防ぎやすくなります。"
+]
+}
+],
+"awakening": [
+"サインは覚醒することで、その火力をさらに高めることができます。",
+"ステータス | 上昇値",
+"ATK | +14350",
+"HP | +115000",
+"ATK | +13%",
+"HP | +13%",
+"解説: 覚醒を進めることで、基礎ステータスの向上はもちろん、各スキルが大幅に強化されます。 レベル5の「馬気功」はダメージアップ条件が緩和され、火傷確率も上昇。レベル20の「馬閃光」は処刑条件がHP25%以下に緩和され、より多くの敵を処刑対象に捉えやすくなります。 パッシブスキル「業火馬地獄」の追加ダメージ上昇や、最終覚醒の「覚醒バースト」による生存性と火力向上も、サインを運用する上で大きなメリットとなります。",
+"レベル | 効果",
+"1 | [覚醒の力] HPが10%上昇する。",
+"5 | [馬気功] ダメージ倍率が146%まで上昇し、HP40%以上の単体にダメージUPが効く。火傷確率は70%まで上昇する。",
+"10 | [覚醒の力] ATKが10%上昇する。",
+"15 | [覚醒の力] SPDが10%上昇する。",
+"20 | [馬閃光] ダメージ倍率が132%まで上昇し、HPが25%以下の単体は直接処刑する。",
+"25 | [業火馬地獄] 追加ダメージが30%まで上昇する。",
+"30 | [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心が15%上昇する。"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-05-25",
+"published": "2025-05-22"
+},
+"name_jp": "サイン",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/setori/",
+"slug": "setori",
+"title": "【ヤバ少女】セトリの評価！SSR・火属性・サポーター",
+"info": {
+"element_jp": "火属性",
+"class_jp": "魔法使い",
+"trait_jp": "火傷、会心ダウン"
+},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "解説",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1ターン目から発動可能な主力スキル。敵の前・中列という広範囲に攻撃しつつ、高確率で火傷を付与できます。火傷状態の敵へのダメージアップ効果もあり、継続的にダメージを稼ぐ起点となります。CTが2ターンと短いのも使いやすいポイントです。",
+"対象は3体と「鬼爪」より狭まりますが、ダメージ倍率が高いスキルです。火傷状態の敵に対して会心率ダウンを狙えるため、被ダメージ軽減にも貢献できます。さらに追加で火傷を付与するチャンスもあり、火傷スタックの維持や重ねがけに役立ちます。",
+"自身の攻撃力とHPを永続的に強化するパッシブスキル。これによりアクティブスキルの火力が底上げされ、耐久力も若干向上します。SSRとしては標準的かつ堅実な自己強化効果と言えるでしょう。"
+]
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-25"
+},
+"name_jp": "セトリ",
+"global_name": null,
+"element_ru": "Огонь",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/kyarol/",
+"slug": "kyarol",
+"title": "【ヤバ少女】キャロルの評価！SSR・氷属性・戦士",
+"info": {
+"element_jp": "氷属性",
+"class_jp": "戦士",
+"trait_jp": "スプラッシュ、治癒封印"
+},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "解説",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1ターン目から使用できる範囲攻撃スキル。敵の前・中列を攻撃し、特定の職業に対して追加ダメージ、デバフ状態の敵には防御無視効果があり、条件が噛み合えばダメージを伸ばせます。CT2ターンで回転率も良好です。",
+"単体への高倍率ダメージと、2体へのスプラッシュダメージを併せ持つスキル。このスキルの最大の魅力は、スプラッシュダメージ対象への高確率な「治癒封印」付与です。敵の回復役や自己回復能力を持つ敵を無力化するのに非常に有効です。",
+"自身の攻撃力とHPを底上げするパッシブスキル。戦士としての火力と耐久力をバランス良く向上させ、アクティブスキルのダメージ効率を高めます。SSRとしては標準的で堅実な効果です。"
+]
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-25"
+},
+"name_jp": "キャロル",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Воин",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/kyaroro/",
+"slug": "kyaroro",
+"title": "【ヤバ少女】キャロロの評価！序盤で活躍、チュートリアルで確定1体",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "アライグマ刃術",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動/CT： 1T/2T 効果： HP割合が最も低い単体に287%の物理ダメージを与えます。 対象をキルに成功した場合、このスキルは再び使用可能になります。 追加効果： 対象がガーディアンの場合、そのDEFを20%無視します。",
+"キャロロの核となるスキルの一つです。特に注目すべきは、 キル成功時にスキルが再発動する点 。これにより、体力の低い敵を次々と倒していくことで、連続攻撃を叩き込み、一気に敵陣を崩壊させることが可能です。ガーディアンへの防御無視効果も、固い敵を素早く処理する上で役立ちます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "アライグマ分身斬",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動/CT： 2T/4T 効果： HP割合が最も低い敵単体に417%の物理ダメージを与えます。 追加効果：： 対象HPが50%以下の場合、与ダメージが25%上昇します。キル成功の場合、ATK50%分の自身HPを回復させます。",
+"単体への超高火力攻撃スキルです。特に、 瀕死の敵に対してはさらにダメージが上昇する ため、とどめの一撃として非常に有効です。さらに、キル成功時のHP回復効果は、連戦や長期戦においてキャロロの生存能力を高めてくれます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "アライグマ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果： ATKが40%、HPが20%上昇します。",
+"シンプルながらも強力な自己強化スキルです。キャロロの攻撃力とHPを大幅に底上げし、戦士としての基本性能を向上させます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "アライグマの謀略",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果： 攻撃時、自身のSPDが対象より上の場合、与ダメージが20%、会心が10%追加で上昇します。そうでない場合、SPDが15%上昇し、回避が10%上昇します。この効果は2ターン続きます。",
+"キャロロのスピードと立ち回りによって効果が変わるユニークなパッシブスキルです。敵より速ければ火力を伸ばし、そうでない場合は自身のスピードと回避を上昇させることで、次のターンに有利な状況を作り出します。スピードを重視するパーティ編成であれば、常に火力アップの恩恵を受けやすいでしょう。"
+],
+"version_note": "version not stated on page"
+}
+],
+"awakening": [
+"ATK：14350、HP：115000（基礎値） ATK：13%、HP：13%（割合上昇）",
+"覚醒により、キャロロの基礎ステータスが大幅に強化され、より強力なアタッカーへと成長します。",
+"レベル1：[覚醒の力] HPが10%上昇する。 レベル5：[アライグマ術] ダメージ倍率が307%まで上昇し、DEFを25%無視する。 レベル10：[覚醒の力] ATKが10%上昇する。 レベル15：[覚醒の力] SPDが10%上昇する。 レベル20：[アライグマ分身斬] ダメージ倍率が446%まで上昇し、HPが50%以下の敵に、与ダメージが30%上昇する。キル成功の場合、HPが60%回復する。 レベル25：[アライグマの謀略] SPDが対象より上の場合、会心が15%まで上昇する。そうでない場合、回避が15%まで上昇する。 レベル30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心が15%上昇する。",
+"覚醒を進めることで、メインスキルである「アライグマ刃術」と「アライグマ分身斬」のダメージ倍率がさらに高まり、キル性能が向上します。特に「アライグマ分身斬」のHP回復量の上昇は、連続キル時の継戦能力を大幅に高めます。パッシブスキル「アライグマの謀略」の強化や、最終的な覚醒バーストでの被ダメージ軽減と会心上昇により、キャロロは戦闘終盤でも安定した火力を維持し、逆転の起点となり得る存在へと変貌します。"
+],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-26"
+},
+"name_jp": "キャロロ",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/susan/",
+"slug": "susan",
+"title": "【ヤバ少女】スーザンの評価！キル復活無効が優秀",
+"info": {},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "小熊手（最大レベル効果）",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動/CT： 1T/2T 効果： 敵後列の単体に298%の物理ダメージを与え、 攻撃時にサポーターを優先的に選びます 。さらに、サポーターに対する与ダメージが20%上昇し、対象DEFを15%無視します。",
+"敵の後列、特にサポーターを狙い撃ちできるスキルです。サポーターは耐久力が低いことが多い反面、味方の回復やバフ、敵へのデバフで戦況を大きく左右する重要な役割を担っています。スーザンは、このスキルで厄介なサポーターを早期に排除し、敵の戦略を崩すことが可能です。防御無視効果も相まって、効率的にダメージを与えられます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "大熊手（最大レベル効果）",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動/CT： 2T/4T 効果： いずれかの敵中・後列1体に404%の物理ダメージを与え、 キル成功の場合、復活不可にさせます 。",
+"単体への高火力攻撃に加え、スーザンの特性である「キル復活無効」を発動させるための主要なスキルです。このスキルで敵を倒せば、その敵は確実に戦場から排除されます。特に、復活スキルを持つボス敵や厄介なエネミーが登場するコンテンツでは、この「復活不可」の効果が非常に有効に働きます。確実に敵を減らしたい状況で活躍するでしょう。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "子豚体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"効果：： ATKが30%上昇し、HPが15%上昇します。",
+"基本的な自己強化パッシブスキルです。スーザンの攻撃力とHPを底上げし、戦士としての基本的な戦闘能力を向上させます。しかし、URキャラクターの同様のパッシブスキルと比較すると上昇率は低めです。"
+],
+"version_note": "version not stated on page"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-26"
+},
+"name_jp": "スーザン",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/bell/",
+"slug": "bell",
+"title": "【ヤバ少女】ベルの評価！SSR・氷属性・ガーディアン",
+"info": {
+"element_jp": "氷属性",
+"class_jp": "ガーディアン",
+"trait_jp": "挑発反撃"
+},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "金魚泉",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動ターン： 1ターン クールタイム： 2ターン 効果： 敵単体に227%の物理ダメージを与え、60%の確率で【挑発】を付与します。相手が戦士クラスの場合、攻撃を優先し、【挑発】の付与確率が80%に上昇します。 【挑発】： 2ターンの間、対象の通常攻撃を強制的に自身に向けさせます。",
+"「金魚泉」は、ベルの核となる挑発スキルです。クールタイム2ターンに対して効果時間2ターンと、挑発を維持しやすいのが特徴です。特に厄介な攻撃を持つ戦士クラスの敵を優先的にターゲットし、高い確率で挑発できる点は評価できます。ただし、確率が100%ではないため、確実に挑発できるわけではない点には注意が必要です。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "金魚体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイム： なし 効果： 被ダメージ時、自身のダメージ軽減が1.5%上昇します（最大10スタック）。さらに、75%の確率で攻撃者に自身のATKの100%分の反撃を行います。",
+"「金魚体質」は、ベルの耐久力と反撃能力を高めるパッシブスキルです。ダメージを受けるたびにダメージ軽減効果が上昇するため、戦闘が長引くほど硬くなります。最大10スタックで15%のダメージ軽減は、SSRガーディアンとしては十分な性能と言えるでしょう。また、75%という比較的高確率で発動する反撃も、ダメージソースとして期待できます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "鉄壁金魚",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイム： なし 効果： 自身のHPが30%上昇し、ATKが15%上昇します。",
+"「鉄壁金魚」は、ベルの基礎ステータスを底上げするシンプルなパッシブスキルです。HPが30%も上昇するため、ガーディアンとしての耐久力が大幅に向上します。ATK15%上昇は、アクティブスキル「金魚泉」のダメージや、パッシブスキル「金魚体質」による反撃ダメージの増加にも繋がり、攻防両面で恩恵があります。"
+],
+"version_note": "version not stated on page"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-26"
+},
+"name_jp": "ベル",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Страж",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/kagati/",
+"slug": "kagati",
+"title": "【ヤバ少女】カガティの評価！風属性・サポーター・SSR",
+"info": {
+"element_jp": "風属性",
+"class_jp": "サポーター",
+"trait_jp": "範囲バフ"
+},
+"stats": {},
+"stats_level": null,
+"skills": [
+{
+"name_jp": "プチケーキ",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動ターン： 1ターン クールタイム： 2ターン 効果： ATK最高の味方3体のATKが25%上昇する上、【継続回復】を付与します。この効果は2ターン続きます。 【継続回復】： 2ターンの間、ターン終了時にカガディのATK15%分のHPを回復します。",
+"「プチケーキ」は、攻撃力の高い味方をピンポイントで強化するスキルです。ATK25%上昇はダメージアップに大きく貢献し、クールタイム2ターンに対して効果時間も2ターンのため、継続的にバフを維持しやすいのが特徴です。さらに、カガディ自身のATKを参照する継続回復効果も付与するため、アタッカーの継戦能力を高めます。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "特製ケーキ",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動ターン： 2ターン クールタイム： 4ターン 効果： SPD最高の味方3体にSPDが120上昇し、魔法被ダメージ軽減が15%上昇します。この効果は2ターン続き、HP割合最低の味方2体にカガディATK96%分のHPを回復させます。 ※提供情報では「廃法被ダメージ軽減」とありましたが、本記事では一般的なゲーム用語として「魔法被ダメージ軽減」と解釈して記載しています。",
+"「特製ケーキ」は、複数の効果を併せ持つ強力なサポートスキルです。SPD（素早さ）の高い味方のSPDをさらに120も上昇させることで、行動順で優位に立ちやすくなります。魔法被ダメージ軽減15%は、特定の敵からの被ダメージを抑えるのに有効です。加えて、HPが最も減っている味方2体に対してカガディのATKに応じたHP回復を行うため、ピンチな状況からの立て直しにも貢献します。クールタイムは4ターンとやや長めですが、その分効果は多岐にわたります。"
+],
+"version_note": "version not stated on page"
+},
+{
+"name_jp": "エルフ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイム： なし 効果： 自身のHPが30%上昇し、ATKが15%上昇します。",
+"「エルフ体質」は、カガディ自身のステータスを底上げするパッシブスキルです。HP30%上昇はサポーターとしての生存力を高め、場に長く留まることを助けます。ATK15%上昇は、「プチケーキ」の継続回復量や「特製ケーキ」の直接回復量を増加させるため、サポート性能の向上に直結します。"
+],
+"version_note": "version not stated on page"
+}
+],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"published": "2025-05-26"
+},
+"name_jp": "カガティ",
+"global_name": null,
+"element_ru": "Ветер",
+"class_ru": "Поддержка",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/melias/",
+"slug": "melias",
+"title": "【ヤバ少女】黒竜メリアスの海外評価！おすすめ刻印や戒魔、編成の注意点も",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "星輝属性",
+"class_jp": "魔法使い",
+"trait_jp": "影召喚",
+"jp_release": "2025年8月1日"
+},
+"stats": {
+"ATK": 153797.0,
+"HP": 963214.0,
+"DEF": 5140.0,
+"SPD": 4586.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "黒竜の噬み",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T",
+"魔法範囲シールド 敵全体に134%+目標の現在HP15%の魔法ダメージを与え、自身にダメージの50%の【シールド】を付与。"
+]
+},
+{
+"name_jp": "龍魔虚影",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"虚影 協同",
+"戦闘開始時、黒竜虚影を召喚して戦場に登場、虚影は黒竜の110%の属性を継承。 虚影は常時【暗匿】状態で、自主行動しない。 黒竜虚影が存在する場合、ターン開始時に【制御免疫】を獲得、1ターン継続。 黒竜がスキルを使用時、虚影が同ースキルを追加攻撃として敵に発動、【影の追従】で追加発動したスキルは虚影の追加攻撃を誘発しない。 黒竜が致命傷を受けた時、虚影が自身を犠牲にして黒竜を復活させ、40％HPを回復し、【影の追従】を獲得：ダメージを20%、会心ダメージを40%上昇、スキル使用後に50%の確率で再度発動。 【暗匿】：場上に攻撃可能な味方ユニットが存在する場合、敵に攻撃目標として選択されない。"
+]
+},
+{
+"name_jp": "黒竜体質CT：なし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"ATKを45%、HPを25%、与ダメージが15%上昇する。虚影が存在する場合、黒竜が15%のDMG軽減を獲得。虚影の各攻撃は黒竜のダメージを10%上昇させ、最大5層までスタック可能。"
+]
+},
+{
+"name_jp": "黒竜の勅令",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"通常攻撃が【純黒の凝視】に強化される。黒竜のHPが初めて90%、60%、30%を下回ると、即座に1回の【純黒の凝視】を解放。",
+"【純黒の凝視】：敵のランダム3名ユニットに156%+目標の現在HP12%のダメージを与え、【龍の噬み】を付与。 【龍の噬み】：受ける治療が50%低下、解除不可、3ターン継続。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"現環境推奨： 迅速、 貫通 、会心率、 魔法連撃 、庇護、会心ダメ 、 波動 （上級か超級なら）",
+"刻印/タレントの推奨: 「貫通」は必須 「貫通」は必須。異なる貫通効果は相互に効果が薄れず、むしろ累積で効果が上昇するため、「虚影」には効果がないとしても、本体の火力を大幅に強化できる。 どんな構成でも、黒龍を使うなら1〜2つは耐久系の刻印・天賦を積む必要がある。 虚影は味方バフを受けられないため、刻印・タレントの選定がより重要。 「魔法連撃」も必須 メリットは以下の通り：分身には[庇護]の効果が適用されない。HP割合ダメージも魔連によるダメージ軽減の影響を受けない。つまり、「庇護」（＝ダメージ30%カット）に対応しようとして魔連やクリティカルを外すのは本末転倒。 その30%の軽減を意識して魔連やクリティカルを捨てると、結果的に50%以上のダメージ上昇機会を犠牲にしてしまう可能性がある。 黒龍のデバフ補完について 黒龍をルトやミラシス（魂滅・律戒未搭載）と組む場合、補助キャラに魂滅・戒律を搭載させる必要あり。そうしないとルシファーよりも実戦性能が落ちることがある。 庇護への正しい対策は、「魔連を外すこと」ではなく、 ・分身が恩恵を受けられる印刻や、 ・分身の生存率を上げられる印刻 を多めに採用し、分身の火力を直接／間接的に底上げすることである。",
+"庇護環境における黒龍ビルド（覺5推奨）",
+"【印刻例】 ・迅捷（必須） ・貫通（優先） ・魔法連撃（高評価） ・波動 or 魔力（余力） ・暴撃＋爆傷（セット） ・滅魂（対バフ用） → 生存印刻1枠 or 相手により柔軟対応（庇護 or 格擋）",
+"【対策】 ・白龍未ラシス＆雲豹ルト対面時は過多な行動回数に注意（魔連で事故死リスク） ・多段による即死圏突入防止に「生存印刻1枠」は保険として有効"
+],
+"おすすめ戒魔考察": [
+"「悪南瓜の戒」はダメ向上に最も貢献する可能性がある。ただし、相手の速度が自分より速いと効果が発揮されないので状況を見て採用。 聖域獅子王の戒 会心率アップ 髑髏花の戒 会心ダメアップ"
+],
+"おすすめアクセサリー": [
+"国内版 調査結果 竜裔の聖杯の上位者",
+"◎ ダイヤのピアス、金のバングル、金のリング、金のティアラ、金のカチューシャ、ヒスイの濃緑ブローチ、ヒスイの髪飾り",
+"◯ ダイヤのブローチ"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-05-27"
+},
+"name_line": "竜紋",
+"rarity_jp": "※おそらく クリムの竜紋「敏感な結界」 のことだと思われる。",
+"name_latin": null,
+"name_jp": "メリアス",
+"global_name": null,
+"element_ru": "Звездный свет",
+"class_ru": "Маг",
+"jp_release_date": "2025-08-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/runa/",
+"slug": "runa",
+"title": "【ヤバ少女】ルーナの海外評価！おすすめ刻印・ルーンなど考察",
+"info": {
+"element_jp": "氷属性",
+"class_jp": "魔法使い",
+"trait_jp": "元素爆発"
+},
+"stats": {
+"ATK": 1347211.0,
+"HP": 832779.0,
+"DEF": 4718.0,
+"SPD": 4327.0
+},
+"stats_level": 350,
+"skills": [],
+"awakening": [],
+"build": {},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-05-28"
+},
+"name_jp": "ルーナ",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/pocho/",
+"slug": "pocho",
+"title": "ヤバ少女 ぽちょ（プリン娘）の評価！引くべき？ステータスやスキルまとめ",
+"info": {
+"rank_site": "Bランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "劇毒増幅"
+},
+"stats": {
+"ATK": 153233.0,
+"HP": 973179.0,
+"DEF": 5179.0,
+"SPD": 4381.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "甘美の抑圧",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動タイミング： バトル開始の1ターン目に自動発動 クールタイム： 2ターン",
+"スキル効果： 敵全体に攻撃力の106%分の魔法ダメージを与える",
+"70%の確率で【猛毒】状態を付与",
+"対象が持っている【猛毒】のスタック数に応じて、その防御力を1スタックにつき12%無視",
+"HPが60%以上ある敵には、与えるダメージが30%アップ",
+"【猛毒】の効果 効果は2ターン継続",
+"魔法ダメージに対する耐性が5%ダウン",
+"ターン終了時に、自身の最大HPの5%分のダメージを受ける （ただし、与えるダメージは付与者の攻撃力の100%を上限とする）",
+"最大5スタックまで蓄積可能"
+]
+},
+{
+"name_jp": "名",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"スキル詳細"
+]
+},
+{
+"name_jp": "プリン体質 クールタイムなし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"スキル効果： 攻撃力が45%アップ",
+"HPが25%アップ",
+"与えるダメージが15%アップ",
+"敵の攻撃を受けた際、100%の確率で相手に【猛毒】を1スタック付与",
+"解放条件 このスキルはキャラの★ランクが9になると自動で解放されます"
+]
+},
+{
+"name_jp": "糖分過剰 クールタイムなし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"キル効果： 味方全体が与える【猛毒】ダメージが、プリンの攻撃力の15%分アップ",
+"チームに闇属性キャラが1人いるごとに、プリンの会心率が6%アップ（最大30%まで）",
+"闇属性キャラが4人以上いると、さらに会心ダメージが40%アップ",
+"解放条件 このスキルはキャラの★ランクが10になると自動で解放されます"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-06-17"
+},
+"name_jp_alt": "プリン娘",
+"name_jp": "ぽちょ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "B"
+},
+{
+"url": "https://surrounded-by-girls.online/character/milim/",
+"slug": "milim",
+"title": "【ヤバ少女】ミリムの海外評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "SS+ 【ヤバ少女】Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "連続バースト",
+"jp_release": "2025年9月8日"
+},
+"stats": {
+"ATK": 156445.0,
+"HP": 970552.0,
+"DEF": 5194.0,
+"SPD": 4441.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "絶命追撃",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"単体 追撃",
+"HPが最も低い対象に356%の物理ダメージを与え、分散やシールドを無視する。対象のHPが50%以下の場合、対象のDEFを40%無視する。このスキルで対象をキルした場合、スキルを再度発動し、与ダメージが30%上昇する。"
+]
+},
+{
+"name_jp": "世界の王",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"各ターン開始時に1層の【光の翼】を獲得。 任意のユニットが戦闘不能になると1層の【光の翼】を獲得。 ターン開始時、自身の【光の翼】が5層に達すると、すべての異常状態を解除し、【光の翼展開】状態に入る。【光の翼展開】状態では制御を無効化する。 死亡時に即座に復活し、HPを1%回復、同時に【不屈】を獲得し、1ターン持続。この時【光の翼展開】状態でない場合、即座に【光の翼展開】状態に入る。 この効果は1回のみ発動可能。 【光の翼】：ATKが5%上昇し、会心率が3%上昇。戦闘終了まで持続し、最大10層までスタック可能。 【光の翼展開】：与ダメージが30%上昇し、回避率が30%上昇。戦闘終了まで持続。 【不屈】：致命的なダメージを受けても死亡せず、HPが1残る。 1ターン持続。"
+]
+},
+{
+"name_jp": "白虎体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ATKを45%、HPを25%、与ダメージが15%上昇する。 HPが低いほど被ダメージ軽減が上昇し、最大で40%の軽減を得る。 【光の翼展開】状態では、会心ダメージを40%上昇。"
+]
+},
+{
+"name_jp": "殺戮の刻（さつりくのとき）",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"物傷 爆発",
+"通常攻撃が【蒼狩】に強化される：170%の物理ダメージを与え、対象のDEFを50%無視する。攻撃後、自身のHPが与えたダメージの50%を回復する",
+"ターン終了時、敵のランダムなユニットに通常攻撃を1回追加で行う。自身のHPが15%減少するごとにさらに1回追加され、最大で5回まで追加可能。"
+]
+}
+],
+"awakening": [
+"レベル | 効果",
+"1 | 【覚醒の力】 HPが10%上昇する。",
+"5 | 【絶命の追撃】 ダメージ倍率が385%まで上昇し、 DEF無視が45%まで上昇する。 追撃ダメージが35%まで上昇する。",
+"10 | 【覚醒の力】 ATKが10%上昇する。",
+"15 | 【覚醒の力】 SPDが10%上昇する。",
+"20 | 【殺戮の刻】 【蒼狩】のダメージが180%物理ダメージに上昇し、 攻撃後、自身のHPが与えたダメージの60%を回復する。",
+"25 | 【世界の王】 死亡時に即座に復活し、 HPを1%回復、 同時に【不屈】を獲得し1ターン持続。この時【光の翼展開】状態でない場合、 即座に【光の翼展開】状態に入る。この効果は4ターンに1回のみ発動可能。 【光の翼展開】状態では、 与えダメージが35%上昇し、 回避率が35%上昇する。",
+"30 | 【覚醒バースト】 第3ターン開始から4ターンの間、 被ダメージ軽減が25%、会心率が15%上昇する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"貫通・物理連撃・抹殺・会心率・会心ダメ・回避",
+"魂消滅は他のキャラに任せてもいいので、必ずしも白虎に持たせる必要はありません。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2025-12-22",
+"published": "2025-06-30"
+},
+"name_jp": "ミリム",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-09-08",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/vironica/",
+"slug": "vironica",
+"title": "【ヤバ少女】暗獄竜ヴィロニカの海外評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "反撃爆発",
+"jp_release": "2025年8月16日"
+},
+"stats": {
+"ATK": 155502.0,
+"HP": 982570.0,
+"DEF": 5213.0,
+"SPD": 4400.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "腐毒竜噬",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし 単体 バースト",
+"敵のHP割合が最低のユニットに349%の物理ダメージを与え、70%確率で【猛毒】を付与。 HPが50%以下のユニットを攻撃する場合、必ず会心発生、かつ追加20%ダメージ。",
+"【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能)"
+]
+},
+{
+"name_jp": "竜狩煉獄",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし 反撃 爆発",
+"攻撃を受けた時100%確率で【腐毒竜噬】で反撃、各ターン最大5回発動。 戦闘中に【腐毒竜噬】を7回放つごとに追加で1回【純黒竜衛】を放つ。",
+"1ターン内の反撃回数が5回未満の場合、ターン終了時に追加で【腐毒竜噬】を放つ。",
+"【純黒竜衛】：敵全体に合計900%の物理ダメージを与え、全対象で均等分担、各ユニットは攻撃の4倍を超えない、 自身にダメージ値の40%のHPを回復 、30%確率で対象に【挑発】を付与。"
+]
+},
+{
+"name_jp": "暗獄竜体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし ATKを45%、HPを25%、ダメージボーナスが15%上昇する。 HPが1%低下するごとにダメージ軽減が0.4%上昇。 【腐毒竜噬】使用ごとにATKが10%上昇、1ターン継続、最大5層スタック。"
+]
+},
+{
+"name_jp": "裁決敕令",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"毎回自分の攻撃で自身に1層【竜の敕令】を付与、最大15層。 【竜の敕令】が5層に達すると、攻撃に追加で10%ATK×敕令層数の物理ダメージ。 【竜の敕令】が10層に達すると、自身制御無効かつ攻撃が対象の30%防御を無視。 【竜の敕令】が15層に達すると、【純黒竜衛】強化：スキルダメージが30%上昇、かつ撃殺後に追加発動効果獲得。 【竜の敕令】：ATKが3%上昇、会心ダメージが4%上昇、最大15層スタック、解除不可。"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"生存系のタレント、吸収",
+"海外勢の話：吸収の30%はかなり強めですが、キャラクターの高ティア選択肢になることは稀です。吸収を有効活用できるキャラクターの例としてはヴィロニカなどが挙げられます。低ティアの才能でも使い道はあります。"
+],
+"おすすめペット": [
+"ユニコーン、キャッスルフェニックス、グリフォン、喜怒楽"
+],
+"おすすめ戒魔": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-08-15"
+},
+"name_jp": "暗獄竜ヴィロニカ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2025-08-16",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/bee/",
+"slug": "bee",
+"title": "【ヤバ少女】蜜蜂娘・東雲氷の評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Bランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "追撃猛毒",
+"jp_release": "2025年8月27日"
+},
+"stats": {
+"ATK": 154679.0,
+"HP": 970280.0,
+"DEF": 5098.0,
+"SPD": 4402.0
+},
+"stats_level": 350,
+"skills": [],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-08-24"
+},
+"name_jp": "東雲氷",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-08-27",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "B"
+},
+{
+"url": "https://surrounded-by-girls.online/character/tamamonomae/",
+"slug": "tamamonomae",
+"title": "【ヤバ少女】玉藻前 千夜瑠璃の評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "連続魔法",
+"jp_release": "2025年9月"
+},
+"stats": {
+"ATK": 153223.0,
+"HP": 973179.0,
+"DEF": 5179.0,
+"SPD": 4381.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "狐の妖術",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T",
+"魔法範囲 猛毒",
+"敵全体に106%の魔法ダメージを与え、50%の確率で 【猛毒】 を付与し、50%の確率で敵のバフを1つ解除。",
+"さらに味方全体に、与えたダメージ40%分の シールド を付与する。",
+"【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能)"
+]
+},
+{
+"name_jp": "魂を禁じる狐火",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2T CT：2T",
+"魔法範囲 復活禁止",
+"一番多い敵の一列を攻撃し、138％の魔法ダメージを与え、45%の確率で 【復活不可】 を付与する。目標のHPが50%未満の場合、追加で自身ATKの20%分のDEF無視魔法ダメージを与える。"
+]
+},
+{
+"name_jp": "狐の体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし ATKが45%、HPが25%、与ダメージが15%上昇する。 回避率が10％上昇し、自身のHPが1%減少するごとに、回避率がさらに0.3%上昇する。"
+]
+},
+{
+"name_jp": "霊異の伝説",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"味方が行動終了するたび、【霊】 を1層獲得する。 【霊】が5層に達すると、ただちにすべての【霊】を消費し、追加で 狐の妖術 を発動する。 敵が行動終了するたび 、【符】を1層獲得する。 【符】が5層に達すると、ただちにすべての【符】を消費し、追加で 魂を禁じる狐火 を発動する。 戦闘開始時、ただちに【霊】と【符】を2層ずつ変得し、追加スキル発動時に20%のDEF無視効果を獲得する。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"魔法連擊、波動、貫通、強欲、魔力、庇護"
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-09-13"
+},
+"name_jp": "玉藻前",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/yuni/",
+"slug": "yuni",
+"title": "【ヤバ少女】ユニコーン・ユーニの評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "チャージバースト",
+"jp_release": "2025年10月01日"
+},
+"stats": {
+"ATK": 159326.0,
+"HP": 944074.0,
+"DEF": 4991.0,
+"SPD": 4243.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "ユニコーンさん！",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし チャージ爆発 敵3体に108%の魔法ダメージを与え、DEFを20%無視する 【ユニコーンチャージ】が2層に達した場合：攻撃対象が1体追加され、DEF無視が30％にアップする 【ユニコーンチャージ】が4層に達した場合：スキル倍率が124%にアップし、攻撃後、自身に与ダメージの30%分のHPを回復する 【ユニコーンチャージ】が6層に達した場合：スキルが敵全体を攻撃し、DEF無視が40%にアップする 【ユニコーンチャージ】が8層に達した場合：スキル倍率が140%にアップし、70%の確率で対象に【ATK低下】を付与(ATK10％低下、最大3スタック、解除不可、2ターン持続) 【ユニコーンチャージ】が10層に達した場合：スキルが必ず会心になり、回避されなくなる。さらに会心ダメージが50％アップする 行動終了後、【ユニコーンチャージ】の数がリセットされる 戦闘不能の敵1体につき、与ダメージが8%アップ(最大40%まで) 【ユニコーンチャージ】：ATKが5%アップする。1ターン持続、解除不可"
+]
+},
+{
+"name_jp": "聖光を詠唱",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし 詠唱チャージ ターン開始時、ユニコーンは詠唱状態に入る。この時、戦闘不能の少女2体につき、【ユニコーンチャージ】を1層獲得。また、いずれかの少女が行動するたび、【ユニコーンチャージ】を1層獲得。 詠唱状態は「ユニコーンさん！」を発動すると解除される。詠唱期間中、受ける最終ダメージが20％低下。 死亡時、魂消滅効果を無視してHP最大値の15%で復活し、【ユニコーンチャージ】が10層状態の「ユニコーンさん！」を発動(このスキルは詠唱を中断せず、【ユニコーンチャージ】も消費しない)。この効果は戦闘中1回のみ発動可能。 【ユニコーンチャージ】が10未満の状態で「ユニコーンさん！」を発動するたび、【迅速詠唱】を1層獲得。 【ユニコーンチャージ】が10層の状態で「ユニコーンさん！」を発動した後、すべての【迅速詠唱】の数が解除される。 【ユニコーンチャージ】：ATKが5%アップする。1ターン持続、解除不可 【迅速詠唱】：追加の【ユニコーンチャージ】1層と見なされる。戦闘終了まで持続、解除不可、スタック可能"
+]
+},
+{
+"name_jp": "ユニコーン体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし ATKが45%、HPが25%、ダメージボーナスが15%上昇する 詠唱期間中、抵抗率が40%上昇する 戦闘開始時、自身の速度が15%低下するが、DEFとダメージ軽減が15%上昇する。この効果は戦闘終了まで持続し、解除不可"
+]
+},
+{
+"name_jp": "懲戒の刻印",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし ターン開始時、ATKが最も高い敵3体に【懲戒の炎】を1回付与する 詠唱期間中に攻撃を受けた時、80%の確率で攻撃者に【懲戒の炎】を1層付与する 戦闘不能時、敵全体に【懲戒の炎】を1層付与する ユニコーンが【懲戒の炎】を持つ少女を攻撃する時、【懲戒の炎】の数×自身のATK15%分の純粋ダメージを追加で与える 【懲戒の炎】：ダメージ軽減が8%低下し、ターン終了時にユニコーンのATKの15%分のHPを失う。1ターン持続、最大3層までスタック可能"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"鈍化、回避、魔法連擊、魔力など"
+],
+"おすすめ戒魔": [
+"【ATK / クリティカルダメージ / 魔法ダメージボーナス】×2、【回避 / 受けるヒール量 / クリティカルダメージ軽減】×2 代替：ATK → 闇/炎/風/光 特効"
+],
+"おすすめペット": [],
+"おすすめアクセサリー": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-09-29"
+},
+"name_jp": "ユーニ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2025-10-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/chara050/",
+"slug": "chara050",
+"title": "【ヤバ少女】仙鶴娘 霜嵐の評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "単回バースト",
+"jp_release": "2025年10月15日"
+},
+"stats": {
+"ATK": 151638.0,
+"HP": 948274.0,
+"DEF": 5010.0,
+"SPD": 4344.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "鶴の羽が虹を買く",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T",
+"物理ダメ 単体",
+"敵単体に317%の物理ダメージを与える（【鶴の令】を持つ敵を優先。いない場合はHP割合が最も低い敵を目標にする）。 自身に1層の【羽根】を付与。目標のHPが50%未満の場合、ダメージが30%上昇する。",
+"自身が持つ【羽根】1層につき、さらに攻撃の10%分のDEF無視物理ダメージを追加する。 【羽根】：与ダメージが4%、ATKが3%上昇する。最大10層までスタック可能、戦闘終了まで持続、解除不可。"
+]
+},
+{
+"name_jp": "墨で染めた山河",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"物傷 爆発",
+"通常攻撃が【鶴帰る】に強化：ランダムな敵（【鶴の令】を持つ敵を優先）に150%の物理ダメージを与え、自身に【羽根】を1層付与する 【羽根】が指定層数に達すると、以下の効果を獲得",
+"2層：【鶴帰る】が2連撃に強化され、会心率が25%上昇 4層：【鶴帰る】がさらに3連撃に強化され、会心率が35%上昇。さらに70%の確率で目標に【鎧砕】を付与（DEF30％ダウン、2ターン持続）",
+"8層：各ターン終了時、ランダムな敵（【鶴の令】を持つ敵を優先）に【鶴帰る】を1回発動する。 戦闘開始時、味方に光属性少女2体につき、1層の【羽根】を獲得する。 【羽根】：与ダメージが4%、ATKが3%上昇する。最大10層までスタック可能、戦闘終了まで持続、解除不可。"
+]
+},
+{
+"name_jp": "仙鶴の体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ATKが45%、HPが25%、ダメージボーナスが15%上昇する 各ターン開始時、自身の全ての制御状態を解除し、DEF無視25%を獲得する（1ターン持続）。"
+]
+},
+{
+"name_jp": "鶴九皐に鳴きて声天に聞こゆ",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"各ターン開始時、HP割合が最も低い敵に【鶴の令】を付与する。 【鶴の令】を持つ敵が戦闘不能になった時、直ちに【千層の墨影】を発動 敵全体に155%の物理ダメージを与え、同時に味方全体に【鶴の願】を付与し、さらにHP割合が最も低い敵に再度【鶴の令】を付与する。 【鶴の令】：仙鶴からの被ダメージが30%上昇する。効果は1ターン持続する。 【鶴の願】：ATKが10%、会心ダメージが15%上昇する。最大3層までスタック可能。"
+]
+}
+],
+"awakening": [
+"レベル | 効果",
+"1 | [覚醒の力] HPが10%上昇する。",
+"5 | [鶴の羽が虹を貫く] ダメージ倍率が342%に上昇 目標のHPが60%未満の場合、ダメージが35%上昇 自身が持つ【羽根】1層につき、追加で攻撃12%分のDEF無視物理ダメージを与える。",
+"10 | [覚醒の力] ATKが10%上昇する",
+"15 | [覚醒の力] SPDが10%上昇する",
+"20 | [墨で染めた山河] ダメージ倍率が160%に上昇 2連撃の会心率が30%に上昇 3連撃の会心率が40%に上昇し、80%の確率で目標に【鎧砕】を付与する 戦闘開始時、味方の光・闇属性少女が2体につき、自身に【羽根】1層を獲得する。",
+"25 | [鶴九皐に鳴きて声天に聞こゆ] ダメージ倍率が167%に上昇。",
+"30 | [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する。",
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"物理連擊、会心ダメージ、貫通、会心、抹殺"
+],
+"おすすめ戒魔": [
+"髑髏花"
+],
+"おすすめペット": [
+"キャッスルフェニックス、焔鱗谷の赤竜"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-10-14"
+},
+"name_jp": "仙鶴娘",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2025-10-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/phoenix/",
+"slug": "phoenix",
+"title": "【ヤバ少女】フェニックスの評価！強さ・ステータス・スキル",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "ガーディアン",
+"trait_jp": "復活・バースト・処刑",
+"jp_release": "2025年11月15日"
+},
+"stats": {
+"ATK": 132271.0,
+"HP": 1127832.0,
+"DEF": 5179.0,
+"SPD": 4381.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "永夜の勅令",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T 範囲 シールド",
+"敵全体に【闇の印】を付与し、103%の物理ダメージを与える。さらに75%の確率で【猛毒】と【火傷】を付与する。スキルダメージは目標のDEFを50％無視する。また、自身を除く味方全体にフェニックスの最大HP15%分の【シールド】 を付与する。 攻撃後、自身を除くHPが最も低い味方に【涅槃】を付与する。 【闇の印】：被ダメージ軽減が5%低下され、受ける持続ダメージが10%上昇される。解除不可、最大3層スタック可能、2ターン持続。 【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能) 【火傷】：毎ターン、スキル発動者ATKの15%のHPを失う、2ターン継続、最大5層スタック可能。 【涅槃】：死亡時に【涅槃】を消費して即時復活し、HPを20％回復する。1ターン持続、スタック不可。"
+]
+},
+{
+"name_jp": "幽の裁決",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2T CT：4T",
+"物理単体 処刑",
+"HP割合が最も低い敵単体に合計375%の3段物理ダメージを与える。最終段の攻撃後、HPが30%未満の目標を処刑する。 攻撃後、自身に【鳳凰の幽の加護】を付与する。このスキルで目標をキルした場合、直ちに【永夜の勅令】で追加攻撃を行う。 【鳳凰の幽の加護】効果中、致命的なダメージを受けても死亡にならず、HP1で耐える。 【鳳凰の幽の加護】：自身の最大HP30%分のダメージを吸収する。【鳳凰の幽の加護】の効果中、被ダメージは会心不可、状態異常による被ダメージが30%低下する。4ターン持続、解除不可。"
+]
+},
+{
+"name_jp": "黒の鳳凰体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"HPが45%、ATKが25%、被ダメージ軽減が20%上昇する 攻撃を受けた時、65%の確率で攻撃者に【闇の印】を1層付与する 【闇の印】を持つ対象が死亡時、フェニックスとHPが最も低い味方2休に、フェニックスのATKの120%分のHPを回復する。 【闇の印】：被ダメージ軽減が5%低下され、受ける持続ダメージが10%上昇される。解除不可、最大3層スタック可能、2ターン持続。"
+]
+},
+{
+"name_jp": "炎浴の冠",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"敵が行動した後、75%の確率でその敵に【猛毒】と【火傷】を付与する 味方が攻撃を受けた時、ダメージの15%を肩代わりする 死亡になった時、HP30%で復活し、味方全体のATKとDEFを15%上昇させ(3ターン持続）、死亡した味方1体につきHPを6％追加回復し、復活後直ちに【幽の裁決】を発動する。この効果は戦闘ごとに1回のみ発動可能 【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能) 【火傷】：毎ターン、スキル発動者ATKの15%のHPを失う、2ターン継続、最大5層スタック可能。"
+]
+}
+],
+"awakening": [
+"ATK 14350 ATK 13% HP 115000 HP 13%",
+"1 [覚醒の力] HPが10%上昇する。 5 [永夜の刺令] ダメージ倍率が110％に上昇し、【猛毒】と【火傷】の付与確率が80%に上昇する 10 [覚醒の力] ATKが10%上昇する 15 [覚醒の力] SPDが10%上昇する 20 [幽の裁決] ダメージ倍率が401%に上昇する 最終段の攻撃時にHPが35%未満の目標を処刑する。 25 [炎浴の冠] 敵が行動した後、80％の確率でその敵に【猛毒】と【火傷】を付与する 復活後、味方全休のATKとDEFを20%上昇させる(3ターン持続)：この効果は4ターンにつき1回発動可能。 30 [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [],
+"おすすめ戒魔": [],
+"おすすめアクセサリー": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-10-21"
+},
+"name_jp": "フェニックス",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Страж",
+"jp_release_date": "2025-11-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/double-headed/",
+"slug": "double-headed",
+"title": "【ヤバ少女】セイカ＆ヤレイ（双頭の狼）の評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "生贄バースト",
+"jp_release": "2025年11月1日"
+},
+"stats": {
+"ATK": 153223.0,
+"HP": 973179.0,
+"DEF": 5179.0,
+"SPD": 4381.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "凋零の夜曲",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T",
+"物理範囲 猛毒",
+"黒の狼が対象のDEFを20%無視し、敵全体に125%の物理ダメージを与え、80%の確率で【猛毒】を付与し、さらに対象の現在HP15%分の物理ダメージを与える。",
+"【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能)"
+]
+},
+{
+"name_jp": "白鳥の湖の舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2T CT：2T",
+"物理単体 回復 白の狼が敵のHP割合が最も低い単体に378%の物理ダメージを与え、与えたダメージの50%分、自身のHPを回復する。目標をキルした場合、さらに味方全休のHPを与えたダメージの50%分回復する。 HPが50%未満の目標には必ず会心が発生し、さらに会心ダメージが30%上昇する。"
+]
+},
+{
+"name_jp": "双頭の狼体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"ATKが45%、HPが25%、与ダメージが15%上昇する。 自身のHPが1%減少するごとに、ATKが0.4%上昇する。 【二匹の狼同行】状態中、対象の被ダメージ軽減を20%無視する。"
+]
+},
+{
+"name_jp": "永夜のレクイエム",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"致命的なダメージを受けると、白の狼が自身を犠牲にして黒の狼を復活させ、HPを50％回復する。 復活後、黒の狼は【二匹の狼同行】状態に入る：与ダメージと被ダメージ軽減が30%、会心率が20%上昇し、制御効果を無効化する（この効果は戦開終了まで持続）。",
+"黒の狼は復活後、直ちに【極・凋零の夜曲】を発動する。この効果は戦闘で1回のみ発動可能。",
+"【二匹の狼同行】状態中、黒の狼は代わりに【極・凋零の夜曲】を発動する。",
+"【極・凋零の夜曲】：目標のDEFを20%無視し、敵全体に目標全員で分担する合計900%の物理ダメージを与える(各目標が受けるダメージはATKの4倍まで）。80%の確率で【猛毒】を付与し、追加で目標の現在HPの15%分の物理ダメージを与える。",
+"攻撃後、味方全体のHPを与ダメージの50%分回復する。 HPが50%未満の目標に対し、必ず会心が発生し、さらに会心ダメージが30%上昇する。"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-10-24"
+},
+"name_line": "セイカ＆ヤレイ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp_alt": "双頭の狼",
+"name_jp": "セイカ＆ヤレイ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2025-11-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/senerin/",
+"slug": "senerin",
+"title": "【ヤバ少女】セネリン（吸血コウモリ）の評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "SSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "サポーター",
+"trait_jp": "吸血バフ",
+"talents_recommended_jp": "◎推奨：生命力 強靭 庇護、迅速 ◯推奨：神の赦し、回避 ☓非推奨：吸収",
+"jp_release": "2025年12月1日"
+},
+"stats": {
+"ATK": 114039.0,
+"HP": 1199976.0,
+"DEF": 5294.0,
+"SPD": 4735.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "猩紅の聖餐",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし 範囲 吸血",
+"覚醒5で強化される",
+"敵全体の現在HPの12%/ 13% を吸収する（吸収量は自身のATKの200%を超えない）。吸収したHPを、味方のHP割合が最も低い最大3人に等分して回復する。過剰分のHPは【緋紅の加護】に変換できる。"
+]
+},
+{
+"name_jp": "夜の一族の盟誓",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし 特殊 強化",
+"覚醒20で更に強化される",
+"第1ターン開始時、味方(自分も含め)の職業に応じて異なる効果を付与する",
+"戦士 ：ATKが20%上昇し、会心率が10%上昇する。攻撃時、対象のHPが10%低下するごとに、与ダメージが4%/ 4.5% 上昇する。 魔法使い ：与ダメージが20%上昇し、会心ダメージが20%上昇する。攻撃時、40%/ 50% の確率で【猛毒】を付与。対象の【猛毒】のスタック数が3/ 4 以上の場合、50%/ 80% の確率で対象に付与されているすべての【猛毒】を即時発動させ、本来の30%のダメージを与える。 ガーディアン ：ダメージ軽減が20%上昇し、被回復量が10%上昇する。攻撃を受けた時、80%/ 90% の確率で攻撃者のDEFを10%低下させ、解除不可。最大2層スタック可能、効果は2ターン持続。 サポーター ：回復量が20%上昇し、会心抵抗率が10%上昇する。行動後、味方の中でHP割合が最も低い2人のHPをATKの100%/ 107% 分回復させる。各ターンにつき最大1回まで発動。",
+"吸血コウモリが死亡した時、即時復活してHPを40％回復し、即座に 【猩紅の聖餐】 を発動。戦闘の中で1回のみ発動",
+"【猛毒】：2ターンの間、付与された対象の魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HP5%分のHPを失う(発動者のATKの100%を超えず、最大5スタックまでスタック可能)"
+]
+},
+{
+"name_jp": "吸血鬼の体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし",
+"HPが45%、ATKが25%上昇し、抵抗率が20%上昇する 各ターン開始時、自身の全てのデバフを解除し、味方の生存者1体ごとにダメージ軽減が5%上昇、解除不可"
+]
+},
+{
+"name_jp": "冥河の逆流",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし",
+"覚醒25で強化される",
+"行動開始時、味方に復活可能な戦闘不能者がいる場合、即座に味方1体を復活させ、ATKの199%/ 217% 分のHPを回復。さらに対象は2ターンの間、デバフ効果と制御効果を無効。クールタイム3ターン。",
+"味方の復活可能な戦闘不能者が4以上の場合、復活可能な味方を全員即座に復活させ、それぞれのHPをATKの277%/ 297% 分回復。その後、味方全体のHPをATKの150%/ 161% 分回復し、味方全員を2ターンの間、デバフ効果と制御効果を無効。戦闘の中で1回のみ発動",
+"復活時に対象へ 【防御シールド】 を付与し、1/ 2 回のダメージを無効化させる"
+]
+}
+],
+"awakening": [
+"1 [覚醒の力] HPが10%上昇する。 5 [猩紅の聖餐] 吸血の倍率が13%に上昇する 10 [覚醒の力] ATKが10%上昇する 15 [覚醒の力] SPDが10%上昇する 20 [夜の一族の盟誓] 戦士：攻撃時、対象のHPが10%低下ごとに与ダメージが4.5%上昇する 魔法使い：攻撃時、50%の確率で【猛毒】を付与する。対象の【猛毒】が4層以上の場合、80%の確率で付与されている【猛毒】を全て即時発動させ、本来の30%のダメージを与える。 ガーディアン：攻撃を受けた時、90%の確率で攻撃者のDEFを10%低下させ、解除不可。最大2層スタック可能、2ターン持続。 サポーター：行動後、味方のHP割合が最も低い2体のHPをATKの107%分回復させる。各ターンにつき最大1回のみ発動。 25 [冥河の逆流] 単体復活後のHP回復倍率が217%に上昇する。 複数対象復活後のHP回復倍率が297%に上昇する。その後の味方全体の回復倍率が161%に上昇する 【防御シールド】の無効化回数が2に上昇する 30 [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%、回復量が20%上昇する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：生命力 強靭 庇護、迅速 ◯推奨：神の赦し ☓非推奨：吸収",
+"海外プレイヤーの参考"
+],
+"おすすめ戒魔": [],
+"おすすめペット": [],
+"おすすめアクセサリー": [
+"2026年4月 最新竜裔の聖杯の上位者のアクセサリー",
+"タップで拡大可能",
+"上ほど推奨度高め",
+"金のバングル、金の髪飾り、ダイヤのブレスレット、ダイヤのヘアクリップ、ダイヤのペンダント、金のアームレット、ヒスイの精緻なティアラ ダイヤのリング、金のビーズアンクレット、ヒスイの氷種ブレスレット"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-11-29"
+},
+"name_line": "セネリン",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp_alt": "吸血コウモリ",
+"name_jp": "セネリン",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Поддержка",
+"jp_release_date": "2025-12-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/kanariya/",
+"slug": "kanariya",
+"title": "【ヤバ少女】カナリヤ・オリビアは引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "追撃・バースト",
+"talents_recommended_jp": "◎推奨：魔法連擊、貫通、波動（上級以上）、強欲 ◯推奨：庇護、会心、会心ダメ ☓非推奨：",
+"jp_release": "2025年12月15日"
+},
+"stats": {
+"ATK": 154665.0,
+"HP": 965216.0,
+"DEF": 5120.0,
+"SPD": 4571.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "火刑の紅炎",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"※緑色の数値は覚醒5にした場合",
+"敵のランダム3体に2段攻撃を行い、合計で184%/ 198% の魔法ダメージを与える",
+"各段の攻撃は60%の確率で【焼痕】を付与し、対象が【焼痕】を所持している場合は75%/ 80% の確率で【罪と罰】を付与する HPが50%を超える対象を攻撃する際、与ダメージが20%/ 30% 增加",
+"【焼痕】：この状態を持つ対象は攻撃を受けた時、術者のATKの20%分のHPを追加で失う。2ターン持続",
+"【罪と罰】：この状態を持つ対象が受けるダメージが10%上昇する。最大3層までスタック可能、2ターン持続"
+]
+},
+{
+"name_jp": "輝翼詠唱",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"※緑色の数値は覚醒20 にした場合",
+"毎回、ターン開始時に2枚の【羽毛】を獲得。内訳は【矢羽】と【飛羽】",
+"自身以外の味方が行動した後、オリビアが【羽毛】を所持している場合、90%/ 100% で【羽毛】をランダムに1枚消費して【金羽裁断】または【輝光敕令】を発動",
+"【羽毛】を所持していない場合は、75%でランダムな【羽毛】を1枚補充 【金羽裁断】は【囚の印】を持つ対象に与えるダメージが20%/ 25% 上昇 【輝光敕令】は【囚の印】を持つ対象にダメージを与えた時、40%/ 50% で【ATK低下】を付与 【矢羽】：会心率が10%上昇し、与ダメージが10%上昇。1ターン持続、解除不可 【飛羽】：ATKが10%上昇し、制御率が10%上昇。1ターン持続、解除不可 【金羽裁断】：【矢羽】を消費して、ランダムな敵1体に3段攻撃し、合計で234%/ 255% の魔法ダメージを与える。さらに20%で【焼痕】を付与 【輝光勅令】：【飛羽】を消費して、敵のランダムな3体に96% /103% の魔法ダメージを与え、40%で【焼痕】を付与 【ATK低下】：ATKが10%低下し、2ターン持続。最大3層までスタック可能"
+]
+},
+{
+"name_jp": "カナリヤ体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"TKが45%、HPが25%、与ダメージが15%上昇する。 戦闘開始後の3ターンの間、制御を無効化する。 攻撃後、自身の防御無視が10%上昇する。最大4層まで、2ターン持続し、解除不可"
+]
+},
+{
+"name_jp": "金糸の籠",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"※緑色の数値は覚醒25 にした場合",
+"攻撃時、対象が【焼痕】を付与されている場合、55%/ 60% の確率で【囚の印】を付与する。",
+"カナリヤが攻撃を受けた時、被ダメージが自身の最大HPの10%を上回る場合、50% /55% の確率でダメージを70%軽減する。",
+"カナリヤが【囚の印】が3層の対象を攻撃した時、20%/ 25% の確率で対象を【沈黙】にする。1ターン持続。無効効果を無視し、解除不可",
+"【囚の印】：与ダメージと被ダメージ軽減が5%低下し、この状態を持つ対象が攻撃を受けたとき、術者のATKの10%に相当するHPを追加で失う。2ターン持続、最大3層までスタック可能 【沈黙】：沈黙状態のユニットはアクティブスキルを使用できない"
+]
+}
+],
+"awakening": [
+"1[覚醒の力]HPが10%上昇する。 5 [火刑の紅炎]ダメージ倍率が198%に上昇し、【罪と罰】の確率が80%に上昇する。HPが50%を超える単体を攻撃時、追加ダメージが30%に上昇する 10[覚醒の力]ATKが10%上昇する 15[覚醒の力]SPDが10%上昇する 20[輝翼詠唱] 【羽毛】をランダムに消費してスキルを使用する確率が100%に上昇 【金羽裁断】ダメージ倍率が255%に上昇し、【金羽裁断】は【囚の印】を持つ対象への与ダメージが25%に上昇 【輝光敕令】ダメージ倍率が103%に上昇し、【ATK低下】の確率が50%になる 25[金糸の籠] 攻撃時、【焼痕】を持つ対象への【囚の印】付与確率が60%に上昇 オリビアが攻撃を受けた時、被ダメージが自身の最大HPの10%を上回る場合、55%の確率でダメージを70%軽減する カナリヤが【囚の印】が3層の対象を攻撃した時、25%の確率で対象を【沈黙】にする。1ターン持続。無効効果を無視し、解除不可 30 [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%、回復量が20%上昇する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：魔法連擊、貫通、波動（上級以上）、強欲 ◯推奨：庇護、会心、会心ダメ ☓非推奨："
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-12-14"
+},
+"name_line": "カナリヤ・オリビア",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "オリビア",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2025-12-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/ikuko/",
+"slug": "ikuko",
+"title": "【ヤバ少女】女部田郁子は引くべき？コラボキャラの評価",
+"info": {
+"rank_site": "SSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "キル追撃",
+"talents_recommended_jp": "会心ダメ、",
+"jp_release": "2026年1月1日"
+},
+"stats": {
+"ATK": 155562.0,
+"HP": 986970.0,
+"DEF": 5195.0,
+"SPD": 4394.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "たたっ斬っちゃお♡",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"追撃 バースト",
+"【イクちゃんマーカー】を持つ敵（いない場合はHP割合が最も低い敵）に237%の物理ダメージを与え、ランダムな敵3体に89%のスプラッシュダメージを与える。 このスキルはターゲットの防御力を30%無視し、 ターゲットをキルした場合、再度発動 する。 ターゲットが持つデバフ・異常状態1つにつき、攻撃力の5%分の純粋ダメージを追加で与える（最大で攻撃力の25%分まで）。 スキルはダメージ分散とシールドを無視し、回避不可。"
+]
+},
+{
+"name_jp": "逃げられないねぇ♡",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"会心確定 マーカー",
+"【たたっ斬っちゃお♡】で攻撃する時、ターゲットのHPが40%未満の場合、必ず会心になり、会心ダメージがさらに20%アップする。ターゲットをキルできなかった場合、ターゲットに【イクちゃんマーカー】を付与する。 【イクちゃんマーカー】を持つ敵がターン終了時に生存している場合、 その敵に追加で 【たたっ斬っちゃお♡】を発動する。 【たたっ斬っちゃお♡】での攻撃後、ターゲットのHPが10%未満の場合、 ターゲットを直接処刑する （前提条件は対象の残りHPが自身の攻撃力の2倍を超えない）。",
+"【イクちゃんマーカー】 被ダメージが10%アップし、女部田都子から受けるダメージがさらに10%アップする。解除不可、1ターン持続。"
+]
+},
+{
+"name_jp": "FS一番隊隊長",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"攻撃力が45%、HPが25%、与えるダメージが15%アップする。 戦闘開始から3ターンの間、制御無効化する。 攻撃するたび、自身の与えるダメージが6%アップする（最大30%まで、2ターン持続）。"
+]
+},
+{
+"name_jp": "戦闘狂",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"戦闘開始時、【スケベ】を3層獲得する。 致命的なダメージを受けた時、【スケベ】を3層消費して HPを20%回復して復活 し、その後【武士斬り】を発動する。敵をキルするたび、【スケベ】を1層獲得する。",
+"【スケベ】が5層に達すると、与えるダメージが20%アップする。 味方が戦闘不能になった時、自身の【スケベ】が3層未満の場合、【スケベ】を1層獲得する。",
+"【スケベ】 攻撃力が2%、被ダメージ軽減が2%アップする。 最大5層までスタック可能。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨： ◯推奨： ☓非推奨："
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-12-26"
+},
+"name_line": "女部田郁子（おなぶたいくこ）",
+"rarity_jp": "ぬきたし限定コラボキャラ",
+"name_latin": null,
+"name_jp": "女部田郁子",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2026-01-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/nebula-scorpion/",
+"slug": "nebula-scorpion",
+"title": "【ヤバ少女】ニクサラ（星のさそり）は引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "猛毒増幅",
+"talents_recommended_jp": "◎推奨：超級の波動、迅速、貫通、魔法連撃、会心率 ◯推奨：魂消滅 ☓非推奨：",
+"jp_release": "2026年2月15日"
+},
+"stats": {
+"ATK": 151800.0,
+"HP": 965046.0,
+"DEF": 5120.0,
+"SPD": 4492.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "星雲弾幕",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"アクティブスキル 1ターン目に発動する。クールタイム：2ターン",
+"【魔法範囲】【猛毒】",
+"敵全体に446%の魔法ダメージを与え、今回の与えたダメージの30%分のHPを自身に回復する。76%の確率で【猛毒】を付与し、【星骸】を1層獲得する。対象が既に【猛毒】を帯びている場合、追加で対象の魔法ダメージ軽減20%を無視する。【猛毒】を3層以上帯びている対象へのダメージが20%上昇する。 【星骸】 所持時、1層につき攻撃力が30%上昇する。1ターン内に獲得できる攻撃力は最大2層【星骸】まで。 【猛毒】この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に最大HPの5%のHPを失う（術者の攻撃力の100%を超えない）。2ターン持続、最大5層までスタック可能。"
+]
+},
+{
+"name_jp": "星蝕の毒針",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"アクティブスキル 2ターン目に発動する。クールタイム：4ターン",
+"【魔法範囲】【ダメージ】",
+"敵全体に537%の魔法ダメージを与え、2層の【星骸】を獲得し、今回与えたダメージの45%分のHPを自身が回復する。【猛毒】が付与された対象に命中するたびに、このスキルのダメージが25%上昇する。このスキルは、HPの割合が最も高い敵に対してさらにダメージが10%上昇する。 【星骸】所持時、1層につき攻撃力が30%上昇する。1ターン内に獲得できる攻撃力は最大2層【星骸】まで。"
+]
+},
+{
+"name_jp": "さそりの体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"攻撃力が45%、HPが25%、会心率が20%上昇する。",
+"【星蝕の毒針】はシールドとダメージ分担を無視する。"
+]
+},
+{
+"name_jp": "深淵の残響",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"すべての敵を相性属性として扱う。対象が光属性の場合は、与えダメージがさらに15%上昇する。",
+"味方の行動後、80%の確率でランダムな敵3体に【星蝕】を1層付与する。自身の【星蝕】が3層に達したとき、自身のすべてのデバフを解除し、すべての【星蝕】を消費して【星骸形態】に入る：3ターンの間、追加で【星雲弾幕】を1回発動し、直ちに1回、敵全体の【猛毒】と【星蝕】の全層数分のダメージを適用する。 【星骸形態】期間中は【星蝕】を獲得しない。攻撃を受けるたび【毒針】を獲得する。スタック可能。2層に達すると、該当層数を消費し、即座に1回、敵全体の【猛毒】と【星蝕】の全層数分のダメージを適用する。 【星骸形態】終了後、【毒針】の層数をすべて消去する。",
+"ステータス詳細",
+"【星骸形態】会心ダメージが40%上昇し、速度が50%上昇する。 【星蝕】2ターン後、術者の攻撃力の90%の純粋ダメージを与える。最大10層までスタック可能。効果は2ターン持続、解除不可。 【猛毒】この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に最大HPの5%のHPを失う（術者の攻撃力の100%を超えない）。2ターン持続、最大5層までスタック可能。"
+]
+}
+],
+"awakening": [
+"ATK 14350 HP 115000",
+"ATK 13% HP 13%",
+"◆ 覚醒Lv1：【覚醒の力】HPが10%上昇する",
+"◆ 覚醒Lv5：【星雲弾幕】ダメージ倍率が503%に上昇、HP回復が40%に上昇、【猛毒】付与確率が80%に上昇。対象が既に【猛毒】を持つ場合、対象の魔法ダメージ軽減の25%を追加で無視する。さらに、【猛毒】が3層以上付与されている対象への与えダメージが40%上昇",
+"◆ 覚醒Lv10：【覚醒の力】ATKが10%上昇する",
+"◆ 覚醒Lv15：【覚醒の力】SPDが10%上昇する",
+"◆ 覚醒Lv20：【星蝕の毒針】ダメージ倍率が605%に上昇、HP回復が60%に上昇。【猛毒】持ちの対象に命中するたびに、スキルダメージが30%上昇。HP割合が最も高い敵キャラに対して、追加で与ダメージが20%上昇",
+"◆ 覚醒Lv25：【深淵の残響】対象が光属性の場合の追加与ダメージが20%に上昇 【星骸形態】：会心ダメージが50%に上昇、速度が60%に上昇、【星蝕】によるダメージが120%に上昇",
+"◆ 覚醒Lv30：【覚醒バースト】第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：波動（超級ならば）、迅速、貫通、魔法連撃、会心率 ◯推奨：魂消滅 ☓非推奨："
+],
+"おすすめ戒魔": [
+"悪南瓜、髑髏花"
+],
+"おすすめペット": [
+"2026年3月2日12時調査時点での上位勢の利用数。",
+"「・」がついているほど使われている。",
+"赤竜・・ キャッスルフェニックス・・・・・ ナイトレオプリンス ・・ スターユニコーン ・ 喜怒楽・・・・ チェシャタートルうさぎ・・ めぇめぇ・・・・ 夢女魅る枕・・ トリプルパンティ パラダイスゴースト",
+"総評：現状まだペットをつけてない場合もあり。そのため、上位勢もメインで使っているとは言えない状況。海外でも情報が出てきづらいのは、海外でもそういった現象が起こっているからだと思われます。",
+"多くの人に使われているのは、キャッスルフェニックス、めえめえ、喜怒楽のあたり。赤竜を使いたい層も多いように思えるが、他のアタッカーに使っているため、ニクサラに使えてない状況だと思います。",
+"使われている理由",
+"喜怒楽 奇数ターン開始時に会心率アップ。それで星雲弾幕の与ダメ依存回復を高めていると思われます。 キャッスルフェニックス 行動開始前に与ダメアップ、敵を倒すと会心率100％アップかつHP依存バリア獲得。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-12-26"
+},
+"name_line": "星のさそり・ニクサラ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp_alt": "星のさそり",
+"name_jp": "ニクサラ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": "2026-02-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/vignette/",
+"slug": "vignette",
+"title": "ヤバ少女 ヴィネットの海外評価！強い？スキル・ステータスも",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "火属性",
+"class_jp": "サポート",
+"trait_jp": "回復バフ",
+"jp_release": "2025年5月25日"
+},
+"stats": {
+"ATK": 112804.0,
+"HP": 1166073.0,
+"DEF": 5174.0,
+"SPD": 4677.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "恋炎弹",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：2T 魔法範囲 回復",
+"敵全体を攻撃し、98%の魔法ダメを与え、70%の確率で【鎧砕】を付与する。 味方全体にATK69%分のHPを回復させる上、【息詰】を追加する。 自身は【烙印】を1スタック獲得する。【烙印】1スタックを持つごとに、攻撃対象のDEFを7%無視する。",
+"【鎧砕】：2ターンの間、DEFが20%低下する。 【息詰】：2ターンの間、与ダメージが25%、会心率が15%上昇する。 【烙印】：ヴィネットは【烙印】を消費して味方を復活することができる。（【烙印】は最大9スタック）"
+]
+},
+{
+"name_jp": "ソウルリンク",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：1T CT：3T 共有 復活",
+"ターン開始時、自身とHP割合最低、ATK最高の単体と【生命共有】を作る。共有がすでに存在する場合、共有相手をリセットする。",
+"行動開始時、味方に戦闘不能の単体がいると、即座に【烙印】を3スタック消費し、戦闘不能の単体を復活させ、ATK180%分のHPを回復させ、（複数の戦闘不能単体が存在する場合、それ相応の【烙印】を持てば、複数の単体を復活可能）【生命共有】に招く。",
+"行動終了後、全ての【生命共有】相手にATK46%分のHPを回復させる。",
+"共有中の味方単体が戦闘不能になった際、ヴィネットは即座に【烙印】を1スタック獲得する。",
+"【生命共有】：2ターンの間、魔法ダメージ軽減が20%、会心抵抗率が15%上昇する。【生命共有】中の味方は受けるダメージを共有する。この効果は解除されない。"
+]
+},
+{
+"name_jp": "人間体質 CT：なし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"HPが45%、ATKが25%、抵抗が20%上昇する。 ターン終了時、味方全体それぞれのデバフを1スタック解除する。 【烙印】1スタックごとに回復効果が3%上昇する。"
+]
+},
+{
+"name_jp": "レディーの特権 CT：なし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"戦闘開始時、【烙印】を4スタック獲得する。 通常攻撃は3つの対象を攻撃し、自身HP6%分の純粋ダメージを追加で与え（ATKの150%限り）、味方HP割合最低の単体にATK121%分のHPを回復させる。",
+"戦闘不能時、自身以外全ての戦闘不能味方単体を復活させ、40%の最大HPを回復させる上、味方全体を共有に加え、味方全体のATKを20%上昇させる。戦闘中1回限り発動。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"迅速＞生命力、回復薬、強靭、再生、庇護",
+"迅速は絶対必須。メリアスとヴィネットはアタッカーよりも早くすること。",
+"海外プレイヤーの参考"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2025-12-30"
+},
+"name_jp": "ヴィネット",
+"global_name": null,
+"element_ru": "Огонь",
+"class_ru": null,
+"jp_release_date": "2025-05-25",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/blue-dragon/",
+"slug": "blue-dragon",
+"title": "【ヤバ少女】青竜テッサリオン（テセリエン）の海外評価！強さ・ステータス・スキルまとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "星輝属性",
+"class_jp": "サポーター",
+"trait_jp": "制御治療",
+"jp_release": "2025年9月1日"
+},
+"stats": {
+"ATK": 112135.0,
+"HP": 1169184.0,
+"DEF": 5193.0,
+"SPD": 4675.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "滅世の氷晶",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし",
+"魔法範囲 氷結",
+"※覚醒５の場合",
+"敵全体に134%/ 159% の魔法ダメージを与え、16%/ 堕20%/耀25％ の確率で【氷結】を付与、1ターン継続。",
+"【氷結】：氷結状態のユニットは1ターンの間行動できず、2回攻撃されると氷結状態は解除される。各ユニットは1ターンに1回しか氷結されない。",
+"耀 ：目標の【冷気】層数が3以上の場合、【氷結】は免疫されず、解除不可。",
+"堕 ：スキル使用後、味方のHPが最も低い2名のユニットに42%のHPを回復。"
+]
+},
+{
+"name_jp": "再生の氷棺",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"発動：なし CT：なし 復活 治療",
+"ターン開始時、味方に陣亡ユニットが存在する場合、ランダムで1体の陣亡ユニットを復活させ、青竜のATKの180%に相当するHPを回復、クールダウン3ターン。",
+"味方ユニットが攻撃を受けた時、即座に青竜のATKの30%に相当するHPを回復、各ユニットは各ターン最大2回回復。 この効果は青竜陣亡後も有効。"
+]
+},
+{
+"name_jp": "青竜体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"HPを45%、ATKを25%、抵抗が20%上昇する。 戦闘開始後、青竜のSPDが30%上昇し制御効果を免疫、3ターン継続。 青竜が存在する場合、味方全体がATK+15%、会心ダメージ+30%を獲得。"
+]
+},
+{
+"name_jp": "極氷寒気",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CT：なし",
+"戦闘開始時、敵全体に1層の【冷気】を付与。 味方ユニットが攻撃を受けた時、20%の確率で攻撃者に1層の【冷気】を付与。 味方の任意ユニットが行動後、70%の確率で敵のランダム1名に1層の【冷気】を付与。 【冷気】：攻撃とDMG軽減が4%低下、行動開始時に最大HPの2%を損失(施術者の最大HPの4%を超えない)、2ターン継続、最大5層までスタック可能、解除不可。"
+]
+}
+],
+"awakening": [
+" | ",
+" | ",
+"レベル | 効果",
+"1 | [覚醒の力] HPが10%上昇する。",
+"5 | [減世の氷晶] ダメージ倍率が159%に上昇、【氷結】確率が20%に上昇。【覚醒効果】 [減世の氷晶-耀] 【氷結】確率が25%に上昇、目標の【冷気】層数が3以上の場合、【氷結】は免疫されず、解除不可。 [減世の氷晶-堕] スキル使用後、味方のHPが最も低い2名のユニットに42%のHPを回復。",
+"10 | [覚醒の力] ATKが10%上昇する",
+"15 | [覚醒の力] SPDが10%上昇する",
+"20 | [再生の氷棺] 復活時のHP回復が216%に上昇。 被撃時のHP回復が36%に上昇。【覚醒効果】 [再生の氷棺-耀] 復活クールダウンが2ターンに短縮。 陣亡ユニットを復活させる時、そのダメージとDMG軽減を30%上昇、戦闘終了まで継続。 対象に【無敵】状態を付与、行動後に消失。 [再生の氷棺-堕] 被撃時の回復上限回数が各ターン1回増加、ただし被撃時のHP回復が30%に低下。",
+"25 | [極氷寒気] 戦闘開始時、敵全体に1層【冷気】を付与。 味方ユニットが攻撃を受けると、25%確率で攻撃者に1層【冷気】を付与。 味方任意ユニットの行動後、80%確率で敵のランダム1名にに1層【冷気】を付与。【覚醒効果】 [極氷寒気-耀] 【冷気】効果が上昇：ATKとDMG軽減が6%低下、行動開始時に最大HPの3%を損失(施術者の最大HPの6%を超えない)、2ターン継続、最大5層スタック、この効果は解除されない [極氷寒気-堕] 【滅世の氷晶】攻撃時、40%の確率で目標に【冷気】を付与。",
+"30 | [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%、回復量が20%上昇する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"青龍テッサリオン（テセリエン）は優位性を発揮するために場に残り続ける必要があります。そのため、 耐久系タレント が重要です。",
+"現環境推奨：",
+"庇護、強靭、迅速、制御、回避、生命力、魔法連撃 ＞減速、戒律、浄化、解除、魂消滅＞精霊、生存"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-01"
+},
+"name_jp_alt": "テセリエン",
+"name_jp": "テッサリオン",
+"global_name": null,
+"element_ru": "Звездный свет",
+"class_ru": "Поддержка",
+"jp_release_date": "2025-09-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/katagirinanase/",
+"slug": "katagirinanase",
+"title": "【ヤバ少女】片桐奈々瀬は引くべき？ぬきたしコラボキャラの評価",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "ガーディアン",
+"trait_jp": "護盾保護",
+"talents_recommended_jp": "",
+"jp_release": "2026年2月1日"
+},
+"stats": {
+"ATK": 92722.0,
+"HP": 1293924.0,
+"DEF": 5412.0,
+"SPD": 4934.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "PINK EGG",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1ターン目 CT：2ターン",
+"【シールド】【回復】",
+"味方全体に【EGGシールド】を付与する。対象のHPが40%未満の場合、シールド量がさらに10%アップする。その後、味方の戦士と魔法使いの被会心ダメージ軽減を30%、防御力を15%アップさせる（2ターン持続）。さらに、味方全体のデバフを1つ解除する。対象が持つデバフが4つ以上の場合、追加でもう1つのデバフを解除する。",
+"【EGGシールド】 術者の最大HP15%分のシールドを付与し、2ターン持続する。シールド持続中に攻撃を受けた際、シールド持てる者のHPが50%以下の場合、最大HPの10%を回復する（この効果は1ターンに3回まで発動可能）。"
+]
+},
+{
+"name_jp": "BLACK EGG",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2ターン目 CT：4ターン",
+"【範囲】【バースト】 HPが50%を超えるすべての味方に【NLNS】を付与し、その対象現在HPの30%を消費させる。その後、消費したHPの合計値が120%分＋奈々瀬最大HPの15%分、奈々瀬のHPを回復する。さらにその後、敵全体に自身の攻撃力75%＋自身の現在HP10%分の純粋ダメージを与える（ダメージは自身の攻撃力の4倍を超えない）。攻撃後、HPが最も低い味方2体に【ブロックシールド】を付与し、ダメージを2回無効化する。",
+"【NLNS】 ダメージ軽減と会心抵抗率が15%アップ、2ターン持続。"
+]
+},
+{
+"name_jp": "レジェンドビ○チ",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"HPが45%、攻撃力が25%、ダメージ軽減が20%アップする。戦闘開始から3ターンの間、制御無効化し、自身の最終被ダメージを20%、異常状態による被ダメージを50%軽減する。"
+]
+},
+{
+"name_jp": "反交尾戦術",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"通常攻撃が【T-A-E襲撃】に強化される。 各ターン開始時、自身とHP割合が最も低い味方に【NLNS保護】を付与する。【NLNS保護】を持つ味方が現在HPの20%を超えるダメージを受けた場合、そのダメージをブロックし、奈々瀬は自身ダメージ60%分のみを受ける。その後、60%の確率で【T-A-E襲撃】で反撃する。このブロック効果は1ターンに3回まで発動可能。【NLNS保護】を持つ味方が戦闘不能になった時、直ちに【BLACK EGG】で敵を攻撃する。この効果は3ターンに1回のみ発動可能。",
+"【T-A-E襲撃】 敵に100%の物理ダメージを与え、自身の最大HPの5%を回復する。戦闘中、【T-A-E襲撃】を発動するたびに、追加で自身の現在HPの1%分の純粋ダメージを与え、さらに攻撃対象が1体増加する。この効果は最大5層までスタック可能。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨： ◯推奨： ☓非推奨："
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-02"
+},
+"name_line": "片桐奈々瀬 かたぎりななせ",
+"rarity_jp": "限定コラボ",
+"name_latin": null,
+"name_jp": "片桐奈々瀬",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Страж",
+"jp_release_date": "2026-02-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/hotorimisaki/",
+"slug": "hotorimisaki",
+"title": "【ヤバ少女】畔美岬は引くべき？ぬきたしコラボ限定キャラの評価",
+"info": {
+"rank_site": "SSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "サポーター",
+"trait_jp": "回復オーラ",
+"talents_recommended_jp": "迅速、魔法連撃、強靭、庇護、生命力、ダメ軽減、回避 ※迅速は戦力上位者に限った方が良いかも。詳しくは本文の推奨刻印の部分で",
+"jp_release": "2026年1月11日"
+},
+"stats": {
+"ATK": 131264.0,
+"HP": 1034.445,
+"DEF": 5333.0,
+"SPD": 4733.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "MISAKI＋CRASH!!",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"防御力を30%無視して、敵全体に合計700%の魔法ダメージを与え（単体へのダメージは攻撃の400%を超えない）、70%の確率で【骨折】を付与し、与えたダメージ総量の50%分を味方全体のHPとして回復する。 攻撃後、味方の攻撃力が最も高い3体に【鼓舞】（攻撃力＋10%、会心率＋10%、最大3層スタック、解除不可、2ターン持続）を付与する。",
+"ステータス詳細",
+"【骨折】 このBUFFを持つ少女は、魔法ダメージ軽減が5%減少し、ターン終了時に自身の最大HPの5%を失う（最大で衝撃の攻撃力の100%を超えない）。 効果は2ターン持続し、最大5層までスタック可能。この状態は特殊猛毒状態とみなされます。"
+]
+},
+{
+"name_jp": "おほぉ陣",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"結界｜バフ",
+"戦闘開始時、味方エリアに【情欲領域】を召喚する（戦闘終了まで持続）。 結界内の味方は、与えるダメージとダメージ軽減が25%アップする。 結界内の少女が攻撃する時、HP割合が最も低い味方のHPを、与えたダメージの40%分回復する。 自身を除く結界内の味方が戦闘不能になった時、その少女を復活させ、HPを40%回復する（CD：2ターン）。",
+"【情欲領域】 結界内にいる味方は、与えるダメージとダメージ軽減が30%上昇する。 結界内の少女が攻撃する時、HP割合が最も低い味方のHPを、与えたダメージの45%分回復する。 自身を除く結界内の味方が戦闘不能になった時、その少女を復活させ、HPを45%回復する（CD：2ターン）。"
+]
+},
+{
+"name_jp": "畔親方",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"攻撃力が45%、HPが25%、与えダメージが15%アップする。 戦闘開始から3ターンの間、制御無効化する。 結界内の味方はさらに会心ダメージが30%アップする。"
+]
+},
+{
+"name_jp": "FS最大の誤算",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"偶数ターン開始時、味方全体の合計HPの割合に応じて異なるスキルを発動する。 5ターン目以降は、奇数ターンでも発動可能。",
+"【トラック突撃】 味方全体の合計HPが75%を超えている場合、敵全体に118%の魔法ダメージを与え、30%の確率で【混乱】を付与する（1ターン持続）。",
+"【天降トラック】 味方全体の合計HPが40%〜75%の場合、敵の最も人数の多い列に180%の魔法ダメージを与え、HPが最も低い味方3体にダメージ50%分の【シールド】を付与する。",
+"【エロ激励】 味方全体の合計HPが40%未満の場合、味方全体のHPを攻撃力の91%分回復し、【持続回復】を付与する。",
+"ステータス詳細",
+"【混乱】 敵陣営の目標をランダムに攻撃する状態。1ターン持続。",
+"【持続治療】 ターン終了時に、発動者の攻撃力の15%分のHPを回復する。2ターン持続。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"戦力上位勢のタレントを参考。多くの人に取り入れられているものほど上に来るように記載。優先順位は１＞２＞３＞４",
+"迅速 魔法連撃、庇護、生命力、強靭 ダメ軽減 回避",
+"ただし、1位となっている迅速は相手よりも早くならなければ意味がない。そう考えると、格上相手の場合、迅速を付けた所で速度で勝ち目はないので、あえて付けないという選択肢もあり。今回は戦力上位勢の付けているタレントを分析した結果なので、それくらい戦力上位であれば迅速の効果はあるが、戦力が低い人が付けても、戦力が高い人には絶対に速度で勝てないので付ける意味がなくなる。"
+],
+"おすすめ戒魔": [
+"悪南瓜、雛菊"
+],
+"おすすめアクセサリー": [
+"上の方ほど推奨度高め",
+"金のバングル、ダイヤのペンダント、金の髪飾り 金のリング、ダイヤのピアス"
+],
+"おすすめペット": [
+"スターユニコーン、チェシャタートルウサギ、キャッスルフェニックス、めぇめぇ",
+"MISAKI＋CRASH!!で与ダメ依存の回復をするので、与ダメ上昇のキャッスルフェニックスなども有効と考えられます。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-12"
+},
+"name_line": "畔美岬 ほとりみさき",
+"rarity_jp": "限定コラボ",
+"name_latin": null,
+"name_jp": "畔美岬",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Поддержка",
+"jp_release_date": "2026-01-11",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/mckenna/",
+"slug": "mckenna",
+"title": "【ヤバ少女】凜火は引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "火属性",
+"class_jp": "戦士",
+"trait_jp": "バースト 回復",
+"talents_recommended_jp": "◎推奨：貫通・庇護・会心率 ◯推奨：戦力・会心ダメ・英勇・吸収・魂消滅・物理連撃 ☓非推奨：",
+"jp_release": "2026年3月24日"
+},
+"stats": {
+"ATK": 138982.0,
+"HP": 845722.0,
+"DEF": 4914.0,
+"SPD": 4051.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "焚天の舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：1ターン目 クールタイム：2ターン タグ：物理範囲 ／ 火傷 効果：",
+"敵全体に140%の物理ダメージ 残りHPが60%超の対象 には追加で20%ダメージ 対象に【火傷】または【激しい炎】が付与されている場合、防御力を25%無視 【火傷】／【激しい炎】が付与されていない場合、80%の確率で【火傷】を付与 このスキルで対象をキルした場合 、10%の確率で【焔】を1層獲得 各ターン1回のみ発動可",
+"ステータス詳細：",
+"【火傷】：2ターンの間、各ターン火魅の攻撃力20%分のHPを失う（最大5層） 【焔】：攻撃力+10%、会心率+5%（最大5層スタック）",
+"✦ 覚醒Lv5：[焚天の舞] ダメージ倍率が151%まで上昇する。与えダメージが30%まで上昇する。防御無視が30%まで上昇する。火傷付与の確率が90%まで上昇する"
+]
+},
+{
+"name_jp": "焔の隅",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2ターン目 クールタイム：4ターン タグ：物理範囲 ／ スプラッシュ 効果：",
+"敵の中で攻撃力が最も高い対象に462%の物理ダメージ キルできなかった場合、敵全体に【火傷】を1層付与 対象のHPが50%超の場合、会心率が追加で+30% このスキルが会心した時 、残りの敵全体に153%のスプラッシュダメージ",
+"ステータス詳細：",
+"【火傷】：2ターンの間、各ターン火魅の攻撃力20%分のHPを失う（最大5層）",
+"✦ 覚醒Lv20：[焔の隅] ダメージ倍率が494%まで上昇する。会心率が40%まで上昇する。スプラッシュダメージの倍率が164%まで上昇する"
+]
+},
+{
+"name_jp": "火蓮体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし 効果：",
+"攻撃力+40%、HP+20%、与えダメージ+5% 【焔】を所持して攻撃する時、50%の確率で【激しい炎】を1層付与（2ターン持続、最大3層スタック）",
+"ステータス詳細：",
+"【炎上】：2ターンの間、各ターン火魅の最大HP3%分のHPを失う"
+]
+},
+{
+"name_jp": "不滅の焔心",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CD：なし 効果：",
+"戦闘開始時に【焔】を3層獲得 攻撃を受けた時、【焔】を所持していれば【焔】を1層消費して【焚天の舞】を1回発動（1ターンにつき最大2回） ターン終了後に【焔】を1層回復 自身のHPが初めて60% / 30%以下に低下した時、追加で【焔】を1層獲得（各戦闘1回のみ） 【焔】を消費して攻撃する時、一時的に攻撃力+20%、与えたダメージの40%をHPとして回復",
+"ステータス詳細：",
+"【焔】：攻撃力+10%、会心率+5%（最大5層スタック）",
+"✦ 覚醒Lv25：[不滅の焔心] 戦闘開始時に4層の【焔】を獲得する。【焔】を消費して攻撃する時、一時的に攻撃力を30%上昇し、与えたダメージの50%分のHPとして回復"
+]
+}
+],
+"awakening": [
+" |  |  | ",
+"✝ ATK | 14350 | ♥ HP | 115000",
+"✝ ATK | 13% | ♥ HP | 13%",
+"✦ 覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"✦ 覚醒Lv5：[焚天の舞] ダメージ倍率が151%まで上昇する。与えダメージが30%まで上昇する。防御無視が30%まで上昇する。火傷付与の確率が90%まで上昇する",
+"✦ 覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"✦ 覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"✦ 覚醒Lv20：[焔の隅] ダメージ倍率が494%まで上昇する。会心率が40%まで上昇する。スプラッシュダメージの倍率が164%まで上昇する",
+"✦ 覚醒Lv25：[不滅の焔心] 戦闘開始時に4層の【焔】を獲得する。【焔】を消費して攻撃する時、一時的に攻撃力を30%上昇し、与えたダメージの50%分のHPとして回復",
+"✦ 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通・庇護・会心率 ◯推奨：戦力・会心ダメ・物理連撃・英勇・吸収・魂消滅 ☓非推奨："
+],
+"おすすめ 戒魔": [],
+"おすすめペット": [
+"焔鱗谷の赤竜 喜怒楽 キャッスルフェニックス ナイトレオプリンス"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-21"
+},
+"name_line": "凜火（マッケンナ）",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "凜火",
+"global_name": "mckenna",
+"element_ru": "Огонь",
+"class_ru": "Воин",
+"jp_release_date": "2026-03-24",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/yuki/",
+"slug": "yuki",
+"title": "【ヤバ少女】由紀 ユキは引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "氷属性",
+"class_jp": "魔法使い",
+"trait_jp": "デバフ 追撃",
+"talents_recommended_jp": "◎推奨： ◯推奨： ☓非推奨：",
+"jp_release": "2026年4月1日"
+},
+"stats": {
+"ATK": 154585.0,
+"HP": 973098.0,
+"DEF": 5153.0,
+"SPD": 4511.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "霜華の開花",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1T / 2T",
+"【範囲・シールド】",
+"自身に【氷晶護盾】を付与し、敵全体に96%の魔法ダメージを与え、70%の確率で【霜寒】を1層付与する。ターゲットの【霜寒】が3層以上の場合、50%の確率でさらに【氷凍】を付与する。",
+"【氷晶護盾】 : 自身の攻撃力100%分のダメージを吸収するシールド。2ターン継続。 【霜寒】 : 解除不可。速度が5%低下、防御力が3%低下。最大5層までスタック可能、戦闘終了まで継続。 【氷結】 : 行動不能。1ターン継続、または2回ダメージを受けると解除。1ユニットにつき1ターンに1回のみ氷凍状態になる。",
+"✦ 覚醒Lv5：[霜華の開花] スキル倍率が103%に上昇し、【氷晶の盾】の倍率が120%に上昇。さらに【霜寒】の付与確率が75%に上昇する。"
+]
+},
+{
+"name_jp": "永凍の花葬",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"第2ターンに解放、クールタイム2ターン必殺 バースト｜追撃",
+"敵のHP割合が最も低い単体に305%の魔法ダメージを与え、その後、敵のHPが最も低い3体に自身100%攻撃力の追加魔法ダメージを与える",
+"スキルで対象をキルした場合、再度、敵のHPが最も低い3体に自身100%攻撃力の追加魔法ダメージを与える",
+"【霜寒】、【氷結】を持つ対象にダメージを与えた時、会心率が20%上昇し、【霜寒】の層数1つにつき、このスキルの会心ダメージが8%追加上昇する",
+"✦ 覚醒Lv20：[永凍の花葬] 単体スキル倍率が326%、全体スキル倍率が108%に上昇する。【霜寒】または【氷結】状態のユニットにダメージを与える際、会心率が30%上昇し、【霜寒】1層につきスキルの会心ダメージがさらに10%上昇する。"
+]
+},
+{
+"name_jp": "雪花体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし HPが45%、攻撃力が25%、与ダメージが5%上昇する；攻撃を受けた時、50%の確率で攻撃者に1層の【霜寒】を付与する"
+]
+},
+{
+"name_jp": "雪晶の華",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"ランダムな敵単体に130%の魔法ダメージを与える。",
+"追加攻撃：【雪晶】を1層所持している場合、追加で1回攻撃する。 獲得：自身のターン開始時、【雪晶】を1層獲得する。 追撃：行動後、敵に対して追加で通常攻撃を1回行う。 氷雪の祝福：戦闘開始時、味方全体に【氷雪の祝福】を付与する。 効果：【霜寒】状態の目標を攻撃した際、目標の現在HPの2%分の固定ダメージを追加で与える。 緊急発動：自身のHPが初めて60%および30%を下回った時、即座に【霜華綻放】を発動する（この戦闘中に各段階1回のみ発動可能）。",
+"効果：攻撃力が5%上昇、会心率が3%上昇する。",
+"累積：最大4層まで累積可能。",
+"持続：解除不可（バフ消去耐性）。戦闘終了まで持続する。",
+"✦ 覚醒Lv25：[雪晶の華] 通常攻撃強化の倍率が40%に上昇する。【氷雪の祝福】の効果が次のように強化される：【霜寒】が付与された対象への攻撃は、対象の現在HPの3%の純粋ダメージを追加で与える"
+]
+}
+],
+"awakening": [
+"覚醒ステータス",
+"ATK：14350 / HP：115000 ATK：13% / HP：13%",
+"覚醒スキル ✦ 覚醒Lv1：[覚醒の力] HPが0%上昇する ✦ 覚醒Lv5：[霜華の開花] スキル倍率が103%に上昇し、【氷晶の盾】の倍率が120%に上昇。さらに【霜寒】の付与確率が75%に上昇する。✦ 覚醒Lv10：[覚醒の力] ATKが0%上昇する ✦ 覚醒Lv15：[覚醒の力] SPDが10%上昇する ✦ 覚醒Lv20：[永凍の花葬] 単体スキル倍率が326%、全体スキル倍率が108%に上昇する。【霜寒】または【氷結】状態のユニットにダメージを与える際、会心率が30%上昇し、【霜寒】1層につきスキルの会心ダメージがさらに10%上昇する。 ✦ 覚醒Lv25：[雪晶の華] 通常攻撃強化の倍率が40%に上昇する。【氷雪の祝福】の効果が次のように強化される：【霜寒】が付与された対象への攻撃は、対象の現在HPの3%の純粋ダメージを追加で与える ✦ 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が5%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"タレント一覧",
+"◎推奨：貫通・魔法連撃・波動・迅速・戒律 ◯推奨：魂消滅・精密 ☓非推奨："
+],
+"おすすめ戒魔": [
+"戒魔一覧",
+"熔岩 敵のHP割合最低の敵に攻撃することが多いため 髑髏花 ターゲットのHPが10%減少するごとに、与えるダメージが3%増加"
+],
+"おすすめペット": [
+"ペット一覧",
+"喜怒楽 焔鱗谷の赤竜 キャッスルフェニックス めぇめぇ ナイトレオプリンス"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-21"
+},
+"name_line": "雪姫：由紀（ユキ）",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "由紀",
+"global_name": null,
+"element_ru": "Лед",
+"class_ru": "Маг",
+"jp_release_date": "2026-04-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/watarai-hinami/",
+"slug": "watarai-hinami",
+"title": "【ヤバ少女】渡会ヒナミは引くべき？コラボキャラの評価",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "法術陽炎",
+"talents_recommended_jp": "",
+"jp_release": "2026年1月22日"
+},
+"stats": {
+"ATK": 155308.0,
+"HP": 966467.0,
+"DEF": 5117.0,
+"SPD": 4551.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "ちえあー・あたっく！",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"法傷 □炎",
+"自身に【椅子のご加護】を付与し、 前・中列 に103%の魔法ダメージを与える。その後、 中・後列 に同等の魔法ダメージを与える。ターゲットが所持するバフ1つにつき、ダメージが8%アップ（最大40%まで）。攻撃後、70%の確率でターゲットに【打ち身】を付与する。",
+"【椅子のご加護】：攻撃力が15%アップ（最大2層スタック）、1ターン持続、解除不可。",
+"【打ち身】：毎回行動前に、術者の攻撃力の35%分のダメージを受ける。最大3層までスタック可能、2ターン持続する。"
+]
+},
+{
+"name_jp": "ちえあー・れいん！",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"往生 爆発",
+"いずれかの少女（※ 味方・敵問わずの意味っぽい ）が戦闘不能になった時、【無事】を1層獲得する。味方が戦闘不能の場合は、追加で1層獲得する。 いずれかの少女が行動した後、【無事】が3層に達している場合、【雨のように降る椅子】を追加で発動し、その後すべての【無事】を消費する。 もし当ターンで【雨のように降る椅子】が発動しなかった場合、ターン終了時に【無事】を1層獲得する。",
+"【無事】の効果が向上：会心ダメージが15%、与える魔法ダメージが15%アップする。最大3層までスタック可能。",
+"【雨のように降る椅子】：敵全体に900%の魔法ダメージを与え、80%の確率で【打ち身】を付与する。ターゲットがすでに【打ち身】を3層所持している場合、ターゲットの【打ち身】状態を即時発動させ、本来の60%のダメージを与える。",
+"【無事】：会心ダメージが15%、与える魔法ダメージが15%アップする。最大3層までスタック可能。"
+]
+},
+{
+"name_jp": "「先輩だからね！」",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"攻撃力が45%、HPが25%、与えダメージが15%アップする。 戦闘開始から3ターンの間、制御無効化する。 戦闘開始時、味方全体の最終与ダメージが15%アップする（戦闘終了まで持続、解除不可）。"
+]
+},
+{
+"name_jp": "「ロリじゃないですけど！」",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"各ターン開始時、自身のHPが40%未満の場合、直ちに自身の攻撃力140%分のシールドを獲得する（1ターン持続、CD2ターン）。さらに、自身の被ダメージ軽減とHP吸収が20%アップする。 自身のHPが40%を超えている場合、ランダムな敵2体に【打ち身】を1層付与し、自身の与ダメージがターゲットの被ダメージ軽減と防御力を20%無視するようになる（1ターン持続）。 第4ターン開始以降、HP条件を無視して全ての効果が発動する。",
+"【打ち身】：毎回行動前に、術者の攻撃力の35%分のダメージを受ける。最大3層までスタック可能、2ターン持続する。"
+]
+}
+],
+"awakening": [],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨： ◯推奨： ☓非推奨："
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-22"
+},
+"name_line": "渡会ヒナミ わたらいひなみ",
+"rarity_jp": "限定コラボ",
+"name_latin": null,
+"name_jp": "渡会ヒナミ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2026-01-22",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/elsia/",
+"slug": "elsia",
+"title": "ヤバ少女 エルシアの海外評価！引くべき？ステータスやスキルまとめ",
+"info": {
+"rank_site": "SSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "風属性",
+"class_jp": "ガーディアン",
+"trait_jp": "守護反撃",
+"jp_release": "2025年6月15日"
+},
+"stats": {
+"ATK": 92890.0,
+"HP": 1317392.0,
+"DEF": 5511.0,
+"SPD": 4931.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "蛇鱗の障壁",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1ターン目に発動する。クールタイム：2ターン",
+"【屏障】【減傷】",
+"味方陣営に青蛇の最大生命値90%の屏障を形成し、味方全体を保護。 味方ユニットがダメージを受けた時、50%のダメージを屏障が肩代わり。 屏障が破壊されるかスキル再使用で上書きされると崩壊し、敵の前中列3名ユニットに屏障総値12%の純粋ダメージを与える； スキル使用後、味方の生命が40%未満の最大3名ユニットに青蛇の最大生命値10%を回復",
+"解放条件 少女が★7で自動的にレベルアップ"
+]
+},
+{
+"name_jp": "吐息",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"第2ターンに解放、クールタイム2ターン",
+"【蛇毒】【物群】",
+"敵全体に【蛇の毒】を付与後、敵全体を攻撃し、 113%の物理ダメージと青蛇の最大生命値8%＋【蛇の毒】層数×2%の追加物理ダメージを与え、 自身にダメージ値50%の生命を回復",
+"ステータス詳細 【蛇の毒】 防御が5%低下、2ターン後に施術者の生命5%に相当するダメージを受け、2ターン継続、駆散不可、最大4層までスタック可能",
+"解放条件 少女が★8で自動的にレベルアップ"
+]
+},
+{
+"name_jp": "青蛇体質 CDなし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"青蛇体質 パッシブスキル CDなし",
+"スキル詳細 生命を45%、攻撃を25%、DMG軽減を20%上昇；攻撃を受けるたびに自身の最大生命値1.5%を回復；戦闘開始時、味方全体の速度を5%上昇、戦闘終了まで継続",
+"解放条件 少女が★9で自動的にレベルアップ"
+]
+},
+{
+"name_jp": "神経劇毒 CDなし",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"神経劇毒 パッシブスキル CDなし",
+"スキル詳細 通常攻撃が【蛇噛】に強化：目標を2回攻撃、合計で120%の攻撃物理ダメージと青蛇の生命上限5%の純粋ダメージを与え、各攻撃で50%の確率で【蛇の毒】を付与； 青蛇が攻撃を受けた時80%の確率で通常攻撃で反撃； 通常攻撃ごとに自身に1層の【毒液】を獲得、最大15層スタック可能：",
+"5層時：通常攻撃が15%の確率で目標に【挑発】を付与、2ターン継続； 10層時：【吐息】が【極・吐息】に強化：【蛇の毒】層数の付与確率が90%で+1追加、追加ダメージが純粋ダメージに強化； 15層時：即座に【万毒蛇宴】を解放：敵全体に154%の物理ダメージを与え、【蛇の毒】ダメージを即時精算；",
+"戦闘で初めて陣亡時、即座に自身の40%生命を回復し【万毒蛇宴】を解放、この効果は滅魂状態を無視",
+"【蛇の毒】 防御が5%低下、2ターン後に施術者の生命5%に相当するダメージを受け、2ターン継続、駆散不可、最大9層までスタック可能",
+"解放条件 少女が★10で自動的にレベルアップ"
+]
+}
+],
+"awakening": [
+" | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"現環境の推奨： 強靭、迅速（超格上相手には意味無し、そもそも速度で勝てないため） 、再生、庇護、生命力、吸収、回避",
+"青蛇の基本的な構成は「迅速・庇護・強靭」、この3つが最優先。その後は「会心抵抗」か「聖霊」などから選択。人によっては「滅魂」や「解除」を持たせる人もいます。選択肢は多めですね。また、青蛇は行動回数が多いので「魂消滅」も相性良さそうですね。",
+"回復阻害は黒龍がいるため、採用する人が少ないです。減速は開幕から効果を出すには、まず青蛇やクリムに入れる必要があり、さらに持たせるキャラが最速（一番早い行動順）でないといけません。唯一、青龍 テッサリオン くらいが適性ありますが、相手に光ヒーラーがいて速度も高い場合、高確率で浄化されてしまいます。",
+"海外プレイヤーの参考",
+"シールドがダメージを受けるので反射しない部分が多いため 戒魔などでDEF要素を上げる方が良く、そうなるとダメージが入りづらくなるため"
+],
+"おすすめ戒魔": [
+"守護王",
+"SPD、回復率、DEF、HP、回避率＞物理ダメ＞その他"
+],
+"おすすめアクセサリー": [
+"最新竜裔の聖杯の上位者のアクセサリー",
+"タップで拡大可能",
+"ヒスイペンダント、金バングル ダイヤペンダント、ダイヤヘアクリップ ヒスイ氷種ヘアクリップ、ヒスイ精緻なティアラ、ヒスイバングル、ダイヤリング、金髪飾り"
+],
+"おすすめペット": [
+"グリフォン、ケンタウロス、夢みる枕、"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-28"
+},
+"name_jp": "エルシア",
+"global_name": null,
+"element_ru": "Ветер",
+"class_ru": "Страж",
+"jp_release_date": "2025-06-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/anuket/",
+"slug": "anuket",
+"title": "【ヤバ少女】アヌケトは引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "猛毒増幅",
+"talents_recommended_jp": "◎推奨：貫通、庇護、魂消滅 ◯推奨：波動、迅速、魔法連撃 ☓非推奨：",
+"jp_release": "2026年5月10日"
+},
+"stats": {
+"ATK": 194180.0,
+"HP": 1274453.0,
+"DEF": 5181.0,
+"SPD": 4575.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "幽冥の爪",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動: 1ターン目 クールタイム: 2ターン",
+"HPが最も高い敵1体に、3回182%の魔法ダメージを与え、【冥河の呪毒】を1層付与し、70%の確率で自身に【荒砂の怒り】を付与する。",
+"【幽冥の爪】発動後、80%の確率で【通常攻撃】で1回追撃し、自身に【双生の影】を1層付与する。",
+"【双生の影】が5層に達した時、スキルの対象数が+1。",
+"【冥河の呪毒】: 所持者はターン終了時に術者の攻撃力の30%に相当するHPを失う（術者の攻撃力の200%を超えない）。最大5層までスタック可能、所持者が戦闘不能になるまで解除不可。",
+"【荒砂の怒り】: 自身の攻撃力が30%上昇し、最大3層までスタック可能。",
+"【双生の影】: 防御力が10%上昇し、会心率が10%上昇し、最大5層までスタック可能、解除不可。",
+"覚醒Lv.5: [幽冥の爪] ダメージ倍率が208%まで上昇する。【荒砂の怒り】の確率が80%まで上昇する。【幽冥の爪】発動後、必ず【通常攻撃】で追撃する。"
+]
+},
+{
+"name_jp": "終焉視界",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動：2ターン目 CT4ターン",
+"敵全体に302%の魔法ダメージを与え、70%の確率で【冥河の呪毒】を1層付与する。さらに自身に【獅魂の加護】を1層追加付与する（最大5層まで）。",
+"このスキルで敵をキルしなかった場合、追加で自身の攻撃力の30%分の純粋ダメージを1回与える。",
+"【獅魂の加護】: 1層ごとにダメージが12%上昇し、最大5層までスタック可能。",
+"覚醒Lv.20: [終焉視界] ダメージ倍率が174%まで上昇する。【冥河の呪毒】の確率が80%まで上昇する。追加ダメージが30%まで上昇する。【獅魂の加護】1層につき、与ダメージ上昇量が16%になる。"
+]
+},
+{
+"name_jp": "スフィンクス体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイムなし",
+"攻撃力が45%、HPが45%、会心率が20%上昇する。",
+"HPが50%を超える時、各ターン開始時に自身の最大HPの50%分の【シールド】を付与する。",
+"HPが50%未満の時、すべてのスキルに自身の攻撃力の50%分のHP吸収を付与する。"
+]
+},
+{
+"name_jp": "王陵の禁域",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイムなし",
+"通常攻撃は【強化通常攻撃】に強化される：敵単体に436%の魔法ダメージを与え、【猛毒】を1層付与する。",
+"各ターン、自身に【荒砂の怒り】を1層付与し、70%の確率で自身のすべての弱体効果を解除する。",
+"【荒砂の怒り】が3層に達すると、【王陵の禁域】を発動する。",
+"戦闘開始時、【砂漠の統御】を発動：味方の行動後、ランダムな敵1体に【猛毒】を1層付与し、30%の確率で【強化通常攻撃】を1回行う。",
+"【王陵の禁域】 : 敵全体に260%の魔法ダメージを与え、自身の【荒砂の怒り】層をすべて解除し、対象の現在HPの30%に相当する純粋ダメージを与える（ダメージは自身攻撃力の200%を超えない）。",
+"【砂漠の統御】: 編成中の味方全員に、アヌケト攻撃力の10%に相当する攻撃力を上昇する。闇属性の味方には、さらに5%分の攻撃力を追加上昇する。",
+"覚醒Lv.25:[王陵の禁域] 与ダメージが298%まで上昇する。自身のすべての弱体効果を解除する確率が80%まで上昇する 【強化通常攻撃】 のダメージが502%まで上昇する 【砂漠の統御】 の攻撃倍率が20%まで上昇し、闇属性の味方はさらに10%上昇する 味方の行動後、ランダムな敵1体に 【強化通常攻撃】 を1回行う確率が60%まで上昇する"
+]
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv.1: [覚醒の力] HPが10%上昇する。",
+"覚醒Lv.5: [幽冥の爪] ダメージ倍率が208%まで上昇する。【荒砂の怒り】の確率が80%まで上昇する。【幽冥の爪】発動後、必ず【通常攻撃】で追撃する。",
+"覚醒Lv.10: [覚醒の力] ATKが10%上昇する。",
+"覚醒Lv.15: [覚醒の力] SPDが10%上昇する。",
+"覚醒Lv.20: [終焉視界] ダメージ倍率が174%まで上昇する。【冥河の呪毒】の確率が80%まで上昇する。追加ダメージが30%まで上昇する。【獅魂の加護】1層につき、与ダメージ上昇量が16%になる。",
+"覚醒Lv.25:[王陵の禁域] 与ダメージが298%まで上昇する自身のすべての弱体効果を解除する確率が80%まで上昇する 【強化通常攻撃】 のダメージが502%まで上昇する 【砂漠の統御】 の攻撃倍率が20%まで上昇し、闇属性の味方はさらに10%上昇する 味方の行動後、ランダムな敵1体に 【強化通常攻撃】 を1回行う確率が60%まで上昇する",
+"覚醒Lv30：",
+"[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通、庇護、魂消滅 ◯推奨：波動、迅速、魔法連撃 ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"熔岩、髑髏花",
+"戒魔一覧"
+],
+"おすすめペット": [
+"赤竜 キャッスルフェニックス 夢見る枕 めぇめぇ",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-01-31"
+},
+"name_line": "アヌケト",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "アヌケト",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": "2026-05-10",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/pollyanna/",
+"slug": "pollyanna",
+"title": "【ヤバ少女】ポリアンナは引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Aランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "水属性",
+"class_jp": "戦士",
+"trait_jp": "デバフ ＆ 追撃",
+"talents_recommended_jp": "◎推奨： ◯推奨： ☓非推奨：",
+"jp_release": "2026年3月15日"
+},
+"stats": {
+"ATK": 157902.0,
+"HP": 1010392.0,
+"DEF": 5407.0,
+"SPD": 4566.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "1 怒涛の狂宴",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1ターン目に発動する。クールタイム：2ターン",
+"［範囲］［湿潤］",
+"敵全体に3回攻撃し、毎回130%の物理ダメージを与える。さらに対象に1層の【湿潤】を付与する。",
+"【湿潤】速度が6%低下、攻撃力が6%低下。2ターン持続。最大5層までスタック可能",
+"覚醒Lv5：[怒涛の狂宴] スキル倍率が149%に上昇。味方の行動後、50%の確率で対象に【湿潤】を1層付与する"
+]
+},
+{
+"name_jp": "2 霜椰重砲",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"2ターン目に発動する。クールタイム：4ターン ［範囲｜氷結］",
+"いずれかの敵3体に276%の物理ダメージを与え、50%の確率で【氷結】を付与する。対象が制御効果を持つ場合、追加で自身の攻撃力の10%分の純粋ダメージを与える。",
+"【氷結】氷結状態のユニットは1ターンの間行動できず、2回攻撃されると氷結状態は解除される。各ユニットは1ターンに1回しか氷結されない",
+"覚醒Lv20：[霜椰重砲] スキル倍率が318%に上昇。【氷結】を付与する確率が60%に上昇。対象が制御効果を持つ場合、自身攻撃力の30%分の純粋ダメージを追加で与える"
+]
+},
+{
+"name_jp": "3 オウム体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし 攻撃力が45%、HPが25%、ダメージボーナスが15%上昇する"
+]
+},
+{
+"name_jp": "4 宿命の追跡",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"敵の行動後、30%の確率でオウム娘が追撃【強化通常攻撃】を発動。各ターン最大6回まで発動可能",
+"【強化通常攻撃】：130%の物理ダメージを与え、オウム娘が失ったHPの20%分のダメージを追加で与える。攻撃時、敵対象に【黒帆の死印】を1層付与する",
+"【黒帆の死印】が10層に達すると、全ての層数を解除し、対象の現在HPの20%のダメージを与える。同時に、敵全体の最終ダメージを10%低下させる。この効果は2ターン持続し、スタック不可",
+"【黒帆の死印】の説明：敵のダメージ軽減が2%低下し、被回復量が5%低下。最大10層までスタック可能、戦闘終了まで持続",
+"覚醒Lv25：[宿命の追跡] 敵の行動後に【強化通常攻撃】が発動する確率が50%に上昇。【強化通常攻撃】のダメージが140%に上昇。追加されるオウム娘が失ったHP分のダメージが30%に上昇。【黒帆の死印】の全層数解除時の現在HP割合ダメージが30%に上昇"
+]
+}
+],
+"awakening": [
+"覚醒ステータス ATK：14350 HP：115000 ATK：13% HP：13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する 覚醒Lv5：[怒涛の狂宴] スキル倍率が149%に上昇。味方の行動後、50%の確率で対象に【湿潤】を1層付与する 覚醒Lv10：[覚醒の力] ATKが10%上昇する 覚醒Lv15：[覚醒の力] SPDが10%上昇する 覚醒Lv20：[霜椰重砲] スキル倍率が318%に上昇。【氷結】を付与する確率が60%に上昇。対象が制御効果を持つ場合、自身攻撃力の30%分の純粋ダメージを追加で与える 覚醒Lv25：[宿命の追跡] 敵の行動後に【強化通常攻撃】が発動する確率が50%に上昇。【強化通常攻撃】のダメージが140%に上昇。追加されるオウム娘が失ったHP分のダメージが30%に上昇。【黒帆の死印】の全層数解除時の現在HP割合ダメージが30%に上昇 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨： ◯推奨： ☓非推奨："
+],
+"おすすめ戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-02-14"
+},
+"name_line": "ポリアンナ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "ポリアンナ",
+"global_name": null,
+"element_ru": null,
+"class_ru": "Воин",
+"jp_release_date": "2026-03-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "A"
+},
+{
+"url": "https://surrounded-by-girls.online/character/unsho/",
+"slug": "unsho",
+"title": "ヤバ少女 青鸞・雲韶は引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "復活・爆発",
+"talents_recommended_jp": "推奨タレント一覧表",
+"jp_release": "2026年3月1日"
+},
+"stats": {
+"ATK": 155697.0,
+"HP": 960620.0,
+"DEF": 5104.0,
+"SPD": 4577.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "碧霄絶響",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動： 1ターン目に発動する。クールタイム：2ターン タイプ： 魔法ダメ｜範囲 自身の現在HPを40%消費し、後列の敵全体に2回、246%のダメージを与える。自身が1%最大HPを失うごとに、ダメージが1%上昇する。発動後、自身の最大HPの15%を回復する。60%の確率で敵の強化効果を1個解除する 覚醒Lv5： [碧霄絶響] 消費HPを50%まで上昇する。ダメージ倍率が282%まで上昇する。HP回復量が20%まで上昇する。HP消費後の自身の現在HPが30%未満の場合、攻撃回数が1回増える。"
+]
+},
+{
+"name_jp": "驚鴻の墨の舞",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"発動： 2ターン目に発動する。クールタイム：4ターン タイプ： 魔法｜爆発 ランダムの敵3体に357%のダメージを与え、さらに自身の失っているHPの40%分の追加ダメージを与える。70%の確率で敵対象に【回復不可】を付与する。回復不可効果は1ターン続く。対象をキルした場合、自身の攻撃力の10%に相当するHPを回復する 覚醒Lv20： [驚鴻の墨の舞] ダメージ倍率が410%まで上昇する。追加ダメージが自身の失ったHPの50%まで上昇する。【回復不可】の付与確率が80%まで上昇する。対象をキルした場合、自身は攻撃力の20%分のHPを回復し、鷺の韻を1層付与する。鷺の韻が3層に達すると、スキルを再発動する。",
+"【回復不可】： 1ターンの間、付与された対象はHP回復できない"
+]
+},
+{
+"name_jp": "青鷺体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイム： なし 攻撃力が45%、HPが25%、与ダメージが15%上昇する。攻撃を受けた後、HPが50%未満の場合、合体状態に入る。合体状態中は、自身の最大HP1%失うごとにダメージ軽減が0.5%、攻撃力が1%上昇する。ターン開始時、HPが50%未満なら速度が100%上昇する。"
+]
+},
+{
+"name_jp": "燼羽余音",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"クールタイム： なし スキル発動後のたび、ランダムな敵2体に160%の魔法ダメージを与え、さらに自身の失ったHPの30%に相当する純粋ダメージを追加で与える。初回の死亡時、青鷺は即座に復活し、HPを1%回復、最大HPの80%のシールドと【不屈】を獲得する。同時に全てのデバフを解除し、このターン中は全てのデバフによるダメージを無効化する。さらに即座にスキル1を発動する。 覚醒Lv25： [燼羽余音] ダメージ倍率が180%まで上昇し、追加の純粋ダメージ倍率が自身の失ったHPの40%まで上昇する。シールド倍率が100%まで上昇する。復活効果は4ターンに1回発動するようになる。",
+"【不屈】： 1ターンの間、致命的なダメージを受けても死亡せず、HP1で生き残る"
+]
+}
+],
+"awakening": [
+"覚醒Lv1： [覚醒の力] HPが10%上昇する",
+"覚醒Lv5： [碧霄絶響] 消費HPを50%まで上昇する。ダメージ倍率が282%まで上昇する。HP回復量が20%まで上昇する。HP消費後の自身の現在HPが30%未満の場合、攻撃回数が1回増える。",
+"覚醒Lv10： [覚醒の力] ATKが10%上昇する",
+"覚醒Lv15： [覚醒の力] SPDが10%上昇する",
+"覚醒Lv20： [驚鴻の墨の舞] ダメージ倍率が410%まで上昇する。追加ダメージが自身の失ったHPの50%まで上昇する。【回復不可】の付与確率が80%まで上昇する。対象をキルした場合、自身は攻撃力の20%分のHPを回復し、鷺の韻を1層付与する。鷺の韻が3層に達すると、スキルを再発動する。",
+"覚醒Lv25： [燼羽余音] ダメージ倍率が180%まで上昇し、追加の純粋ダメージ倍率が自身の失ったHPの40%まで上昇する。シールド倍率が100%まで上昇する。復活効果は4ターンに1回発動するようになる。",
+"覚醒Lv30： [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"貫通、波動（超級）、庇護、魔法連撃、迅速（格上対策には不適）＋1つ",
+"推奨タレント一覧表"
+],
+"おすすめ戒魔": [
+"【ヤバ少女】戒魔の種類とステータス効果まとめ"
+],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-02-27"
+},
+"name_line": "青鸞・雲韶",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "雲韶",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2026-03-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/oakley/",
+"slug": "oakley",
+"title": "【ヤバ少女】オークリーは引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "マークバースト",
+"talents_recommended_jp": "◎推奨：貫通 ◯推奨：庇護、物理連撃、魂消滅、生存、会心率、会心ダメ ☓非推奨：",
+"jp_release": "2026年5月15日"
+},
+"stats": {
+"ATK": 198290.0,
+"HP": 1305117.0,
+"DEF": 5244.0,
+"SPD": 4495.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "1 ホークアイロックオン",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"1ターン目に発動する。クールタイム：2ターン",
+"スキル詳細",
+"【物理ダメージ】【単体】",
+"敵の中列・後列からランダムな1体に追跡マークを付与して狙撃し、1回の546%物理ダメージを与える。さらに混乱を付与し、2ターン持続する。味方全体が攻撃時、追跡マークの付いた目標を優先して選択し、命中率が70%上昇し、与ダメージが45%上昇する。追跡マークは2ターン持続する；目標に猛毒がある場合、即座にすべての猛毒スタックのダメージを1回分精算する。追跡マークの付いた目標を攻撃する時、白頭鷲の攻撃力が30%上昇し、2ターン持続する。撃破できなかった場合、白頭鷲は1回、スキルダメージを無効化する効果を獲得する。"
+]
+},
+{
+"name_jp": "2 デッドリーチェイス",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細",
+"【物理ダメージ】【多段】",
+"追跡マークの付いた目標に対して連続で5回射撃し、各回の射撃で230%の物理ダメージを与える。射撃するたびにダメージが10%上昇し、さらに70%の確率で猛毒を付与する。対象を撃破できなかった場合、自身の回避率が5%上昇し、2ターン持続する。攻撃のたびにスタック可能。"
+]
+},
+{
+"name_jp": "3 白頭鷲体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"スキル詳細",
+"攻撃力が45%、HPが25%、ダメージボーナスが15%上昇する。戦闘開始後、自身は必ず先手を獲得し、スキルはシールドとダメージ分担を無視する。戦闘終了まで持続する。"
+]
+},
+{
+"name_jp": "4 賞金稼ぎ（パッシブ）",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"CDなし",
+"スキル詳細",
+"自身は攻撃するたびに対象に【懸賞】マークを付与する。2ターン持続し、同じ対象に重ねて付与した場合、【懸賞】マークのランクがD/C/B/A/Sの順に上昇する：",
+"D級懸賞：対象の速度を40%低下させる C級懸賞：対象の速度を40%、防御力を40%低下させる B級懸賞：対象の速度を40%、防御力を40%、回避率を40%低下させる A級懸賞：対象の速度を40%、防御力を40%、回避率を40%、与ダメージを30%低下させる S級懸賞：対象の速度を40%、防御力を40%、回避率を40%、与ダメージを30%、被ダメージ軽減を30%低下させる",
+"S級懸賞の【懸賞】マークを持つ対象を攻撃した時、その対象のHPが30%未満なら即座に撃破（キル）する。",
+"S級懸賞の【懸賞】マークを持つ対象が死亡した時、味方全体に会心率、会心ダメージ10%上昇を付与する。2ターン持続し、スタック可能。さらに、現在HPが最も低い別の敵対象1体に即座に1回の「デッドリーチェイス」を発動する。各ターンで最大1回まで発動する。",
+"会心発生時、自身の最大HPの10%を回復する。"
+]
+}
+],
+"awakening": [
+"ATK: 14350 / ATK: 13%",
+"HP: 115000 / HP: 13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"覚醒Lv5：[ホークアイロックオン] ダメージ倍率が627%まで上昇し、命中率が80%まで上昇し、ダメージボーナスが40%まで上昇し、対象を撃破した後は攻撃力が50%まで上昇し、撃破できなかった場合は自身がスキルダメージ無効を2回獲得する",
+"覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"覚醒Lv20：[デッドリーチェイス] 射撃1回ごとのダメージ倍率が264%まで上昇し、[猛毒]付与の確率が80%まで上昇し、撃破できなかった場合は回避率が10%まで上昇する",
+"覚醒Lv25：[バウンティハンター] 対象の速度低下効果を50%、防御低下効果を50%、回避低下効果を50%、与えダメージ低下効果を40%、被ダメージ軽減低下効果を40%まで上昇。味方が行動後、80%の確率で通常攻撃を1回追加して追撃する。1ターン中最大5回発動可能。会心発生時、自身の最大HPの20%を回復する",
+"覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通 ◯推奨：庇護、物理連撃、魂消滅、生存、会心率、会心ダメ ☓非推奨：",
+"タレント一覧表"
+],
+"おすすめ戒魔": [
+"悪南瓜、髑髏花",
+"戒魔一覧表"
+],
+"おすすめペット": [
+"焔鱗谷の赤竜、キャッスルフェニックス、めぇめぇ、夢女魅る枕",
+"ペット一覧表"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-03-14"
+},
+"name_line": "白頭鷲カウガール オークリー",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "オークリー",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2026-05-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/nun/",
+"slug": "nun",
+"title": "【ヤバ少女】セラフィアは引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "海外では最高のSSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "ガーディアン",
+"trait_jp": "挑発守護",
+"talents_recommended_jp": "◎推奨：庇護、強靭、会心抵抗 ◯推奨：迅速、会心抵抗、ダメージ軽減、回避、魂消滅、再生、シールド ☓非推奨： タレント一覧表",
+"jp_release": "2026年5月1日"
+},
+"stats": {
+"ATK": 134884.0,
+"HP": 1482526.0,
+"DEF": 5493.0,
+"SPD": 5060.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "１ 聖域の祈願",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タグ: シールド ダメージ軽減",
+"発動: 1ターン目に発動。クールタイム：2ターン",
+"効果: 味方全体に 天使修道女の最大HP16%分のシールドを付与し、さらに天使修道女の加護を付与する：防御力が20%上昇し、受けるダメージが15%減少する。2ターン持続。"
+]
+},
+{
+"name_jp": "２ 悪戯の祝祷",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"タグ: 物理単体 挑発",
+"発動: 2ターン目に発動。クールタイム：4ターン",
+"効果: 敵のうち 攻撃力が最も高い対象に 1回509%の物理ダメージを与え、さらにその対象を挑発する：敵の攻撃対象を天使修道女に固定し、その対象が与えるすべてのダメージを味方の代わりに受ける。3ターン持続。無効化および解除不可。",
+"追加効果: 自身のHPが30%未満の場合、最終ダメージ軽減が10%上昇する。2ターン持続。"
+]
+},
+{
+"name_jp": "３ 聖女体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: パッシブスキル (CDなし)",
+"攻撃力が45%、HPが25%、被ダメージ軽減が15%上昇する。",
+"自身がダメージを受けた時、50%の確率でそのダメージの50%を反射する。自身が1回に受けるダメージは自身の最大HPの60%を超えない。各ターン最大5回まで発動可能。"
+]
+},
+{
+"name_jp": "４ 慈悲の転生",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"タイプ: パッシブスキル (CDなし)",
+"初回の戦闘不能後、 魂消滅を無視して 直ちに100%HPで復活し、さらに「生命の反響」を獲得する：味方全体が受けるダメージの70%を分担し、各ターン終了前、味方全体に天使修道女の最大HP8%分に相当するHPを回復する。",
+"自身が攻撃を受けた時、15%の確率で攻撃者に沈黙を付与し、無効化および解除不可。1ターン持続。"
+]
+}
+],
+"awakening": [
+" |  |  | ",
+"✝ ATK | +14,350 | ♥ HP | +115,000",
+"✝ ATK | +13% | ♥ HP | +13%",
+"Lv1: [覚醒の力] HPが10%上昇する",
+"Lv5: [聖域の祈願] シールド倍率が20%まで上昇し、防御力が25%まで上昇し、被ダメージ軽減が20%まで上昇する",
+"Lv10: [覚醒の力] ATKが10%上昇する",
+"Lv15: [覚醒の力] SPDが10%上昇する",
+"Lv20: [悪戯の祝祷] ダメージ倍率が585%まで上昇し、最終ダメージ軽減が20%まで上昇する",
+"Lv25: [慈悲の転生]ダメージ分担倍率が80%まで、回復量が最大HPの10%まで、沈黙の確率が20%まで上昇する。味方が攻撃を受けた時、ダメージがその味方現在HPの20%以上であればブロックを発動し、その味方へのダメージを防ぎ、自身はその50%のダメージのみを受け、通常攻撃で反撃する。各ターン最大1回、HPが最も低い味方を優先。",
+"Lv30: [覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：庇護、強靭、会心抵抗 ◯推奨：迅速、会心抵抗、ダメージ軽減、回避、魂消滅、再生、シールド ☓非推奨："
+],
+"おすすめ戒魔": [
+"疆域王 4セット効果：被ダメ毎に+3%ダメージ軽減、1ターン持続、最大10スタック＝30％。",
+"戒魔一覧表"
+],
+"おすすめペット": [
+"グリフォン、スターユニコーン、夢見る枕、チェシャタートルウサギ",
+"ペット一覧表"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-03-28"
+},
+"name_line": "天使修道少女 セラフィア",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "セラフィア",
+"global_name": "Angel Nun Seraphia",
+"element_ru": "Свет",
+"class_ru": "Страж",
+"jp_release_date": "2026-05-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/mimolemon/",
+"slug": "mimolemon",
+"title": "【ヤバ少女】みもれもんは引くべき？性能評価や育成等（コスプレイヤー限定コラボキャラ）",
+"info": {
+"rank_site": "暫定ランク 【ヤバ少女】Tier表 最強ランキング",
+"element_jp": "属性",
+"class_jp": "",
+"trait_jp": "",
+"talents_recommended_jp": "◎推奨： ◯推奨： ☓非推奨：",
+"jp_release": ""
+},
+"stats": {},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "１",
+"type": "active",
+"jp": [],
+"global": [],
+"other": []
+},
+{
+"name_jp": "２",
+"type": "active",
+"jp": [],
+"global": [],
+"other": []
+},
+{
+"name_jp": "３",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": []
+},
+{
+"name_jp": "４",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": []
+}
+],
+"awakening": [
+" |  |  | ",
+"✝ ATK |  | ♥ HP | ",
+"✝ ATK |  | ♥ HP | "
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [],
+"おすすめ 戒魔": [],
+"おすすめペット": []
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-04-08",
+"published": "2026-04-03"
+},
+"name_line": "みもれもん",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "みもれもん",
+"global_name": null,
+"element_ru": null,
+"class_ru": null,
+"jp_release_date": null,
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/white-bell/",
+"slug": "white-bell",
+"title": "【ヤバ少女】白鈴は引くべき？性能評価や育成等（コスプレイヤー限定コラボキャラ）",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "サポーター",
+"trait_jp": "範囲回復復活",
+"talents_recommended_jp": "◎推奨：生命力、 ◯推奨：庇護、迅速、回避、再生、ダメージ軽減、戒律 ☓非推奨：",
+"jp_release": "2026年4月10日"
+},
+"stats": {
+"ATK": 134129.0,
+"HP": 1028793.0,
+"DEF": 5329.0,
+"SPD": 4832.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "１ 祈誓の花雨",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"アクティブスキル 1ターン目に発動する。 クールタイム：2ターン",
+"【HP回復】【デバフ無効】",
+"HP割合が最も低い味方3体の失ったHPの50%分を回復する。対象に付与されているすべての制御デバフを浄化し、1ターンの間デバフ無効を付与する。（制御効果は除く）"
+]
+},
+{
+"name_jp": "２ 心縛りの聖裁",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"アクティブスキル【必殺】 2ターン目に発動する。 クールタイム：4ターン",
+"【復活】【沈黙】 味方に戦闘不能者がいる場合、白玲の最大HP80%分のHPで即時復活させ、【継続回復】を付与する：各ターン、術者の攻撃力の40%分HPを回復し、3ターン持続する。戦闘不能者がいない場合、敵全体に356%のダメージを与え、50%の確率で【沈黙】を付与する。 【継続回復】 各ターン、術者の攻撃力の40%分のHPを回復し、3ターン持続する 【沈黙】 この状態の対象はアクティブスキルを使用できない。効果は1ターン持続する"
+]
+},
+{
+"name_jp": "３ 白狐体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"パッシブスキル CDなし スキル詳細 攻撃力が45%、HPが25%、回復効果が15%上昇する"
+]
+},
+{
+"name_jp": "４ 狐霊の厄除け",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"パッシブスキル CDなし スキル詳細 自身が回復または復活スキルを使用するたび、最大HPの16%分のシールドを獲得し、さらに最終ダメージ軽減が14%上昇し、デバフ無効を付与する、1ターン持続する； 敵が行動するたび、自身は70%の確率で【御守】を1スタック獲得する。【御守】が4スタックに達すると、全スタックを消去し、HPが最も低い味方1体に1回分のダメージをブロックするブロックシールドを付与し、1ターン持続する。1ターン内の発動は最大5回まで；"
+]
+}
+],
+"awakening": [
+" |  |  | ",
+"✝ ATK | 14350 | ♥ HP | 115000",
+"✝ ATK | 13% | ♥ HP | 13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する 覚醒Lv5：[祈誓の花雨] HP回復倍率が60%まで上昇し、回復対象が4体に増加する 覚醒Lv10：[覚醒の力] ATKが10%上昇する 覚醒Lv15：[覚醒の力] SPDが10%上昇する 覚醒Lv20：[心縛りの聖裁] 復活後HP回復倍率が100%まで上昇する。【継続回復】の回復量が術者の攻撃力の50%まで上昇する。ダメージ倍率が410%まで上昇する。【沈黙】付与の確率が60%まで上昇する 覚醒Lv25：[狐霊の厄除け] シールド倍率が20%まで上昇し、最終ダメージ軽減が16%まで上昇する；【御守】獲得確率が80%まで上昇し、防御シールドを付与するために必要な【御守】数が3スタックに引き下げられ、1ターン内は最大8回まで発動する； 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する",
+"ステータス | 値",
+"ATK | 14350",
+"HP | 115000",
+"ATK | 13%",
+"HP | 13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する 覚醒Lv5：[祈誓の花雨] HP回復倍率が60%まで上昇し、回復対象が4体に増加する 覚醒Lv10：[覚醒の力] ATKが10%上昇する 覚醒Lv15：[覚醒の力] SPDが10%上昇する 覚醒Lv20：[心縛りの聖裁] 復活後HP回復倍率が100%まで上昇する。【継続回復】の回復量が術者の攻撃力の50%まで上昇する。ダメージ倍率が410%まで上昇する。【沈黙】付与の確率が60%まで上昇する 覚醒Lv25：[狐霊の厄除け] シールド倍率が20%まで上昇し、最終ダメージ軽減が16%まで上昇する；【御守】獲得確率が80%まで上昇し、防御シールドを付与するために必要な【御守】数が3スタックに引き下げられ、1ターン内は最大8回まで発動する； 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：生命力、 ◯推奨：庇護、迅速、回避、再生、ダメージ軽減、戒律 ☓非推奨："
+],
+"おすすめ 戒魔": [
+"雛菊 疆域王 聖域天使"
+],
+"おすすめペット": [
+"トリプルパンティ 聖光のケンタウロス 聖殿のグリフォン スターユニコーン パラダイスゴースト"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-04-07"
+},
+"name_line": "白鈴",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "白鈴",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Поддержка",
+"jp_release_date": "2026-04-10",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/eve/",
+"slug": "eve",
+"title": "【ヤバ少女】イヴは引くべき？海外性能評価や育成等",
+"info": {
+"rank_site": "S キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "ガーディアン",
+"trait_jp": "召喚・分担",
+"talents_recommended_jp": "◎推奨：庇護、迅速、生命力 ◯推奨：物理連撃、強靭、反射 ☓非推奨：",
+"jp_release": "2026年6月1日"
+},
+"stats": {
+"ATK": 115677.0,
+"HP": 1731174.0,
+"DEF": 5543.0,
+"SPD": 5016.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "１ 魔眷庇護",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"日本版 | 分担 | 使い魔 HPが最も低い味方3名のダメージを35%分担し、防御力30%アップを付与し、自身が受ける分担ダメージが70%減少する。2ターン持続。自身に【災厄の印】を1層付与し、自身の最大HP30%分のシールドを獲得する。2ターン持続。同時に使い魔を1体召喚して自身を守護させ、同時に最大2体まで存在可能、戦闘終了まで持続。使い魔が存在する場合、自身が受けるダメージがさらに46%減少する。",
+"グローバル版翻訳 | 1ターン目に発動する。クールタイム：2ターン スキル説明 2ターンの間、HPが最も低い3人の味方と受けるダメージの35%を分担する。[Hexbrand]を1スタック獲得する。自身を守るためにAnimarch（アニマーク）を1体召喚する。 Animarchは同時に最大2体まで存在でき、戦闘終了まで持続する。Animarchがフィールドにいる間、自身の被ダメージを46%軽減する。"
+]
+},
+{
+"name_jp": "２ 災厄猛爆",
+"type": "active",
+"jp": [],
+"global": [],
+"other": [
+"日本版 | 2ターン目に発動する。クールタイム：4ターン 物理範囲 | 猛毒 敵全体に509%の物理ダメージを与え、【猛毒】と【硫黄の灼痕】を1層付与する。2ターン持続。自身に【災厄の印】を1層付与する。【真魔顕現】状態ではない場合、このスキルを発動後、味方全体のHPをイヴの最大HPの18%分回復する。 使い魔が1体存在するごとに、このスキルのダメージが28%アップする。 攻撃後、それぞれの使い魔が1回【使い魔協撃】を発動して追撃を行う。 ステータス詳細 【硫黄の灼痕】 被ダメージが25%増加する。2ターン持続、解除可能。 【使い魔協撃】 使い魔がランダムな目標1体に150%の物理ダメージを与える。 【猛毒】 この効果を持つ対象は魔法被ダメージ軽減が5%減少する。ターン終了時、自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%まで）。2ターン持続、最大5層までスタック可能。",
+"グローバル版翻訳 | 特殊条件: 2ターン目に発動した場合、クールダウンは4ターンとなる。 物理範囲 | 猛毒 敵全体に509%の物理ダメージを与え、2ターンの間[Poison（毒）]と[Sulfur Scar（硫黄の傷跡）]を1スタック付加する。[Hexbrand]を1スタック獲得する。Animarch1体につき、このスキルのダメージが28%増加する。[Hell Incarnate]状態の場合、攻撃後に各Animarchが[Animarch Assist]による追撃を発動する。 状態説明 [Sulfur Scar]: 2ターンの間、被ダメージが25%増加する（解除可能）。 [Animarch Assist]: Animarchがランダムな敵1体に150%の物理ダメージを与える。 [Poison]: この効果を受けたユニットは魔法ダメージ耐性が5%減少し、ターン終了時に最大HPの5%（キャスターの攻撃力の100%が上限）を失う。2ターン持続し、最大5スタックまで累積可能。"
+]
+},
+{
+"name_jp": "３ フィギュア体質",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"日本版 | CDなし スキル詳細 HPが45%、攻撃力が25%、ダメージ軽減が15%上昇する 通常攻撃が【強化通常攻撃】に強化される：敵単体に300%の物理ダメージを与え、自身に【災厄の印】を1層付与する。",
+"グローバル版翻訳 | クールダウンなし スキル説明 HPを45%、攻撃力を25%、ダメージ耐性を15%増加させる。通常攻撃が[Enhanced Basic ATK（強化通常攻撃）]にアップグレードされる：単体の敵に300%の物理ダメージを与え、[Hexbrand]を1スタック獲得する。"
+]
+},
+{
+"name_jp": "４ 禁忌の技巧",
+"type": "passive",
+"jp": [],
+"global": [],
+"other": [
+"日本版 | CDなし スキル詳細 各ターン開始時、70%の確率で自身のすべてのデバフ＋制御効果を解除する。 各ターン開始時、【災厄の印】が3層に達している場合、すべての【災厄の印】をクリアして直ちに【真魔顕現】状態に入る。この状態に入った時、使い魔が2体に満たない場合は80%の確率で2体まで補充される。期間中は【災厄の印】を獲得しなくなり、2ターン持続する。解除不可。 【真魔顕現】状態終了後、すべての使い魔をクリアし、1ターンの【フィギュア化】状態に入る。さらに敵全体に1ターンの挑発を付与する。制御無効を無視、解除不可。 【フィギュア化】自身は無敵状態になるが、行動不能になる。味方全体の与ダメージが50%上昇する。この効果は解除不可で、1ターン持続する。 ステータス詳細 【真魔顕現】 状態中：味方全体の受けるダメージを70%分担し、自身が受ける分担ダメージが80%低下する。使い魔1体につき、自身の被ダメージ軽減がさらに26%上昇する。すべてのアクティブスキルがCDなしの【災厄猛爆】に入れ替わる。味方が行動するたびに、自身の最大HPの16%を回復する。1ターンに最大5回まで発動可能。",
+"グローバル版翻訳 | クールダウンなし スキル説明 各ターン開始前、70%の確率で自身のデバフを1つ解除する。[Hexbrand]が3スタックに達すると、すべての[Hexbrand]を消費して即座に[Hell Incarnate（地獄の化身）]状態に入る。変身時にAnimarchが2体未満の場合、80%の確率で最大2体まで召喚する。この状態の間は[Hexbrand]を獲得しない。2ターン持続（解除不可）。[Hell Incarnate]終了後、守備中のAnimarchをすべて消去し、1ターンの間[Figurization（偶像化）]状態に入ると同時に、敵全体を1ターン挑発する（行動制限免疫を無視）。この効果は解除できない。 [Figurization]: 無敵状態になるが行動不能。味方全員の与ダメージが50%増加する。この効果は解除できず、1ターン持続する。 状態説明 [Hell Incarnate] 中の特性: 味方全員の被ダメージの70%を分担する。 Animarch1体につき、自身のダメージ耐性が36%増加する。 すべてのアクティブスキルが、クールダウンなしの[Disaster Blast]に置き換わる。 味方が行動するたびに、最大HPの16%を回復する（1ターンにつき最大5回まで）。"
+]
+}
+],
+"awakening": [
+"⚔️ ATK：14350 / ❤️ HP：115000",
+"⚔️ ATK：13% / ❤️ HP：13%",
+"覚醒スキル",
+"✨ 覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"✨ 覚醒Lv5：[魔眷庇護] 分担倍率が40%にアップし、自身が受ける分担ダメージが80%減少し、シールド倍率が35%にアップする。使い魔が存在する場合、自身の被ダメージ軽減が50%にアップする。",
+"✨ 覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"✨ 覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"✨ 覚醒Lv20：[災厄猛爆] ダメージ倍率が585%にアップし、【真魔顕現】でない状態でこのスキルを発動した後の味方全体への回復量がイヴの最大HPの20%にアップし、使い魔が1体存在するごとのダメージアップが32％に増加し、被ダメージ増加効果が30％にアップし、【使い魔協撃】のダメージ倍率が400％にアップする。",
+"✨ 覚醒Lv25：[禁忌の技巧] 自身のデバフ＋制御効果を解除する確率が80%にアップする。【真魔顕現】状態の場合：味方全体のダメージ分担が80%にアップし、自身が受ける分担ダメージが90%減少し、使い魔が1体存在するごとの自身の追加被ダメージ軽減が30%にアップし、味方が行動するたびに自身の最大HPの20%を回復するようになり、災厄猛爆に自身の最大HPの20%分の純粋ダメージが追加される。また、【フィギュア化】は行動不能にならず、味方全体の与ダメージアップが80%に増加し、受ける持続ダメージが50%減少する。",
+"✨ 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：庇護、迅速、生命力 ◯推奨：物理連撃、強靭、反射 ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"疆域王、雛菊",
+"戒魔一覧"
+],
+"おすすめペット": [
+"聖光のケンタウロス、聖殿のグリフォン、スターユニコーン、トリプルパンティ、パラダイスゴースト",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-04-13"
+},
+"name_line": "フィギュア魔王 イヴ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "イヴ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Страж",
+"jp_release_date": "2026-06-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/saeko/",
+"slug": "saeko",
+"title": "【ヤバ少女】サエコ（冴子）は引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "魔法使い",
+"trait_jp": "連続バースト",
+"talents_recommended_jp": "◎推奨：貫通、会心率、会心ダメージ ◯推奨：魔法連撃、波動（超級）、庇護 ☓非推奨：",
+"jp_release": "2026年7月1日"
+},
+"stats": {
+"ATK": 194180.0,
+"HP": 1021122.0,
+"DEF": 5181.0,
+"SPD": 4575.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "1 怨の一撃",
+"type": "active",
+"jp": [
+"1ターン目に発動、クールダウンは2ターン。",
+"魔法範囲 | 猛毒 ランダムな敵3体に236%の魔法ダメージを与え、80%の確率で【猛毒】を付与する。自身に【凶穢】を1層付与し、さらに50%の確率で【凶穢】を1層追加で付与する。 会心が発生した場合 、対象にさらに【猛毒】を1層付与する。",
+"【猛毒】 この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%を超えない）。2ターン持続。最大5層までスタック可能。",
+"【凶穢】 1層につき会心ダメージが5%上昇する。最大4層までスタック可能。解除不可。死亡後に取り除かれる。"
+],
+"global": [
+"1ターン目に発動、クールダウンは2ターン。",
+"ランダムな敵3体に236%の魔法ダメージを与え、80%の確率で[猛毒]を付与する。自身に[邪悪なオーラ]を1スタック付与し、さらに50%の確率で追加で1スタック獲得する。会心発生時、対象にさらに[猛毒]を1スタック付与する。",
+"[猛毒] :この効果を受けたユニットは魔法ダメージ耐性が5%減少し、各ターンの終了時に最大HPの5%分のHPを失う（詠唱者の攻撃力の100%が上限）。2ターン持続、最大5スタックまで。",
+"[邪悪なオーラ]:1スタックにつき会心ダメージが5%増加する。最大4スタックまで。解除不可。死亡時に消失。"
+],
+"other": []
+},
+{
+"name_jp": "2 冥の業火",
+"type": "active",
+"jp": [
+"2ターン目に発動する。クールタイム：4ターン",
+"魔法範囲 | 治癒封印 敵全体に302%の魔法ダメージを与える。目標に【猛毒】が付与されている場合、【治癒封印】を付与し、その後目標の【猛毒】効果を即時発動する。目標に【猛毒】が付与されていない場合、【猛毒】を1層付与する。スキル発動後、目標のHPが50%未満の場合、追加で【霊障】を付与し、さらに30%の確率で【猛毒】を1層追加で付与する。",
+"【猛毒】 この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%を超えない）。2ターン持続。最大5層までスタック可能。",
+"【治癒封印】 2ターンの間、HP回復できない",
+"【霊障】 この効果を持つ対象は攻撃した後、自身の攻撃力の20%分のダメージを受ける。2ターン持続。"
+],
+"global": [
+"2ターン目に発動、クールダウンは4ターン。",
+"敵全体に302%の魔法ダメージを与える。対象が[猛毒]状態の場合、[回復禁止]を付与し、その後に[猛毒]を起爆させる。対象が[猛毒]状態でない場合、[猛毒]を付与する。攻撃後に対象のHPが50%未満の場合、追加で[恐怖の帳]を付与し、30%の確率で[猛毒]を1スタック付与する。",
+"[回復禁止] 2ターンの間、回復を受けることができない。",
+"[恐怖の帳] この効果を受けたユニットが攻撃を行った後、自身の攻撃力の20%に相当するダメージを受ける。2ターン持続。"
+],
+"other": []
+},
+{
+"name_jp": "3 幽霊体質",
+"type": "passive",
+"jp": [
+"CDなし",
+"攻撃力が45%、会心率が25%、与えダメージが15%上昇する。通常攻撃時、追加で【猛毒】を1層付与する。"
+],
+"global": [
+"クールタイムなし",
+"攻撃力が45%、会心率が25%、ダメージボーナスが15%増加する。通常攻撃時、追加で[猛毒]を1スタック付与する。"
+],
+"other": []
+},
+{
+"name_jp": "4 呪縛の印",
+"type": "passive",
+"jp": [
+"CDなし",
+"スキル（怨の一撃および冥の業火を指す。追撃、反撃、連撃を除く）を発動した後、自身に【凶穢】を1層付与し、その後スキル【黄泉幽爪】を使用して目標を攻撃する。【黄泉幽爪】は【凶穢】の層数を増加させない。目標のHPが50%未満の場合、追加で100%の魔法ダメージを与える。",
+"【凶穢】 1層につき会心ダメージが5%上昇する。最大4層までスタック可能。解除不可。死亡後に取り除かれる。",
+"【黄泉幽爪】 自身と同じ立ち位置の目標を優先して選択し、各段180%の純粋ダメージを2段与える。追加の攻撃段数は所持している【凶穢】の層数と同じになり、各段40%の確率で【猛毒】を付与する。"
+],
+"global": [
+"クールタイムなし",
+"アクティブスキルを発動するたびに（追撃、カウンター、コンボを除く）、自身に[邪悪なオーラ]を1スタック付与し、その後[ネクロクロウ]を使用してターゲットを攻撃する（[ネクロクロウ]では[邪悪なオーラ]のスタックは増加しない）。対象のHPが50%未満の場合、追加で100%の魔法ダメージを与える。",
+"[ネクロクロウ] (Necro Claw): 自身と同じ配置のターゲットを優先的に攻撃し、180%の固定ダメージを2回与える。追加の攻撃回数は[邪悪なオーラ]のスタック数に等しい。各攻撃は40%の確率で[猛毒]を付与する。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1 : 覚醒の力 HPが10%上昇する",
+"覚醒Lv5 :怨の一撃 ダメージ倍率が272%に上昇し、目標に必ず【猛毒】を付与する。自身に追加で【凶穢】を1層付与する。",
+"覚醒Lv10 :覚醒の力 ATKが10%上昇する",
+"覚醒Lv15 :覚醒の力 SPDが10%上昇する",
+"覚醒Lv20：冥の業火 ダメージ倍率が348%に上昇する。目標に【猛毒】が付与されていない場合、付与する【猛毒】が2層に増加する。【霊障】を付与する目標のHP条件が60%未満に上昇し、追加で【猛毒】を1層付与する確率が40%に上昇する。",
+"覚醒Lv25：呪縛の印 【黄泉幽爪】各段のダメージが210%に上昇する。HPが60%未満の目標に対して、追加ダメージが150%まで上昇する。目標が【黄泉幽爪】で撃破された場合、追加で2段攻撃の【黄泉幽爪】を1回発動する。",
+"覚醒Lv30：覚醒バースト 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通、会心率、会心ダメージ ◯推奨：魔法連撃、波動（超級）、庇護 ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"熔岩、髑髏花、聖域獅子王",
+"戒魔一覧"
+],
+"おすすめペット": [
+"喜怒楽 奇数ターン開始時、会心率+16%がスキル1と相性良い",
+"焔鱗谷の赤竜",
+"キャッスルフェニックス",
+"ナイトレオプリンス",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-05-11"
+},
+"name_line": "テレビ幽霊 サエコ（冴子）",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp_alt": "冴子",
+"name_jp": "サエコ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Маг",
+"jp_release_date": "2026-07-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/hymelle/",
+"slug": "hymelle",
+"title": "【ヤバ少女】妙音は引くべき？評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "状態切り替え・バースト",
+"talents_recommended_jp": "◎推奨：貫通 ◯推奨：魔法連撃、波動（超級） ☓非推奨：",
+"jp_release": "2026年6月15日"
+},
+"stats": {
+"ATK": 196818.0,
+"HP": 1257962.0,
+"DEF": 5104.0,
+"SPD": 4637.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "1 鶴の両面",
+"type": "active",
+"jp": [
+"※グローバル版と変化なし",
+"アクティブスキル CDなし",
+"【魔法ダメージ】 【状態切り替え】",
+"戦闘開始時、初期状態は実体状態となる。 実体状態の場合、現在のHPが最も低い敵目標に317%の魔法ダメージを与え、【攻撃力低下】効果を付与する。同時に自身に【冥河の魂】を1層付与する。目標のHPが50%以上の場合、さらに目標の最大HP6%分の魔法ダメージを与える。 幽霊状態の場合、敵全体に134%の魔法ダメージを与え、【冥界の火】を付与する。同時に自身に【菩提の霊】を1層付与する。目標のHPが50%以上の場合、さらにダメージが10%増加する。",
+"【攻撃力低下】 攻撃力が15%低下する。2ターン持続。",
+"【冥界の火】 各ターン発動者の15%分の魔法ダメージを与える。2ターン持続。最大5層までスタック可能。",
+"覚醒Lv5：【鶴の両面】",
+"実体状態：ダメージが342%にアップ。さらにHPが50%を超える目標に対する効果が8%にアップ",
+"幽霊状態：ダメージが159%にアップ。さらにHPが50%を超える目標に対する効果が15%にアップ"
+],
+"global": [
+"クールダウン: なし",
+"特性タグ: 魔法ダメージ/ 変身",
+"バトル開始時、実体形態（Physical Form）で入場する。",
+"実体形態（Physical Form）時: 現在のHPが最も低い敵に317%の魔法ダメージを与え、[攻撃奪取 (ATK Drain)]を付与する。さらに[ステュクス・レヴナント (Styx Revenant)]を1スタック獲得する。ターゲットのHPが50%以上の場合、追加でターゲットの最大HPの6%に相当する魔法ダメージを与える。",
+"霊体形態（Ghost Form）時: 敵全体に134%の魔法ダメージを与え、[天罰の炎 (Damnation Fire)]を付与する。同時に[菩提の悟り (Bodhi Insight)]を1スタック獲得する。ターゲットのHPが50%以上の場合、追加でダメージが10%増加する。",
+"【状態異常・バフ詳細】 [攻撃奪取 (ATK Drain)]: 2ターンの間、ターゲットの攻撃力を15%減少させる。",
+"[天罰の炎 (Damnation Fire)]: 2ターンの間、毎ターン発動者の攻撃力の15%に相当する魔法ダメージを与える（最大5スタックまで累積可能）。"
+],
+"other": []
+},
+{
+"name_jp": "2 陰陽輪転",
+"type": "passive",
+"jp": [
+"※【冥鶴裁判】のスキル倍率がグローバル版より低くなっている",
+"パッシブスキル",
+"【魔法ダメージ】 【状態切り替え】",
+"【冥河の魂】が1層に達した場合、【冥河の魂】を解除して幽霊状態に切り替わる。幽霊状態では直ちに自身の最大HPの30%を回復し、【潜伏】効果を付与する。さらに自身のダメージ軽減が10%上昇し、2ターン持続する。 【菩提の霊】が1層に達した場合、【菩提の霊】を解除して実体状態に切り替わり、直ちに【冥鶴の裁判】を発動する（この時、連撃、追撃は発動しない）",
+"ステータス詳細 【潜伏】 他に攻撃対象になる味方がいると、自分は攻撃対象にならない。1ターン持続する。",
+"【冥鶴の裁判】 敵全体に 163%の純粋ダメージ を与え、【沈黙】を付与する。対象のHPが50%以上の場合、さらにダメージが10%増加する。",
+"【沈黙】 アクティブスキルを発動できない。1ターン持続する。",
+"覚醒Lv20：【陰陽輪転】",
+"幽霊状態への切り替え時：HP回復量が自身の最大HPの35%にアップ、ダメージ軽減効果が15%にアップ",
+"実体状態への切り替え時：【冥鶴の裁判】のダメージが230%にアップ、HPが50%を超える目標に対する効果が15%にアップ"
+],
+"global": [
+"[ステュクス・レヴナント]が1スタックに達すると、それを消費して霊体形態（Ghost Form）に切り替わる。霊体形態に入ると、即座に最大HPの30%を回復し、[闇の潜伏 (Dark Stealth)]を獲得する。また、2ターンの間、自身のダメージ免役（DMG Immu）が10%増加する。",
+"[菩提の悟り]が1スタックに達すると、それを消費して実体形態（Physical Form）に切り替わり、即座に[深淵の判決 (Abyss Verdict)]を発動する（この時、コンボや追撃は発動しない）。",
+"【状態異常・バフ詳細】 [闇の潜伏 (Dark Stealth)]: フィールド上に攻撃可能な味方がいる限り、敵のターゲットにされなくなる。1ターン持続。",
+"[深淵の判決 (Abyss Verdict)]: 敵全体に194%の固定ダメージ （True DMG）を与え、[沈黙 (Silence)]を付与する。ターゲットのHPが50%以上の場合、追加でダメージが10%増加する。",
+"[沈黙 (Silence)]: 2ターンの間、アクティブスキルを発動できなくなる。ターゲットのHPが50%以上の場合、追加でダメージが10%増加する。"
+],
+"other": []
+},
+{
+"name_jp": "3 白鶴体質",
+"type": "passive",
+"jp": [
+"※グローバル版と変化なし",
+"パッシブスキル CDなし",
+"スキル詳細 攻撃力が45%、HPが25%、会心率が20%上昇する。戦闘開始から4ターンの間、50%の確率で受けたダメージの30%を攻撃者に反射する。"
+],
+"global": [
+"クールダウン: なし",
+"【スキル説明】 自身の攻撃力を45%、HPを25%、会心率（CRIT Rate）を20%増加させる。",
+"戦闘の最初の4ターンの間、50%の確率で受けたダメージの30%を攻撃者に反射する。"
+],
+"other": []
+},
+{
+"name_jp": "4 千面業劫",
+"type": "passive",
+"jp": [
+"※グローバル版と変化なし",
+"パッシブスキル CDなし",
+"【純粋ダメージ】 【処刑】 【魂消滅】",
+"状態を切り替えるたびに、自身に【輪廻の印】を1層付与する。【輪廻の印】を1層所持するごとに、自身の攻撃力が6%アップする。 2層に達すると、すべての【輪廻の印】を消費して千面状態に入り、直ちに制御効果を無視して【全てを塵と化する】を発動する：敵全体に201%の純粋ダメージを与え、その後HPが20%未満の目標に処刑と魂消滅効果を発動し、自身に【継続回復】と【無垢の瑠璃】効果を付与する。",
+"ステータス詳細 【処刑】 HPが一定値以下の場合、対象のHPをその数値分減少させる。ただし、発動者自身の攻撃力の4倍を超えることはできない。",
+"【魂消滅】 復活できない。",
+"【継続回復】 毎ターン終了時、発動者の攻撃力の10%分のHPを回復する。2ターン持続する。",
+"【無垢の瑠璃】 すべての制御とデバフを解除し、無効化する。2ターン持続する。",
+"覚醒Lv25：【千面業劫】",
+"【輪廻の印】を1層所持するごとに、自身の攻撃力が9%にアップ",
+"【全てを塵と化する】のダメージ倍率が239%にアップ",
+"HPが22%未満の目標に「処刑」と「魂消滅」を発動する"
+],
+"global": [
+"クールダウン: なし",
+"特性タグ: 固定ダメージ (True DMG) / 執刑 (Execute) / 魂の強奪者 (Soul Snatcher)",
+"【スキル説明】 形態（Form）が切り替わるたびに、[再生の刻印 (Rebirth Sigil)]を1スタック獲得する。[再生の刻印]1スタックにつき、自身の攻撃力が6%増加する。",
+"スタックが2に達すると、すべての[再生の刻印]を消費して「千面 (Thousand Faces)」状態に入り、即座にコントロール（行動制限デバフ）を無視して[灰燼のレクイエム (Ashen Requiem)]を発動する。",
+"[灰燼のレクイエム (Ashen Requiem)]: 敵全体に201%の固定ダメージ（True DMG）を与え、HPが20%未満のターゲットを執刑（Execute）して[魂の強奪者 (Soul Snatcher)]を付与する。同時に、自身は[継続回復 (Continuous Heal)]と[完璧な上薬 (Flawless Glaze)]を獲得する。",
+"【状態異常・バフ詳細】 [執刑 (Execute)]: ターゲットのHPが一定値以下になったとき、そのしきい値に等しいHPを差し引く（ただし、発動者の攻撃力の4倍を超えない）。",
+"[魂の強奪者 (Soul Snatcher)]: 撃破された際、復活できなくなる。",
+"[継続回復 (Continuous Heal)]: 2ターンの間、各ターン終了時に発動者の攻撃力の10%に相当するHPを回復する。",
+"[完璧な上薬 (Flawless Glaze)]: 2ターンの間、すべてのコントロール（行動制限）とデバフを解除し、それらを無効化する。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：【覚醒の力】",
+"HPが10%上昇する",
+"覚醒Lv5：【鶴の両面】",
+"実体状態：ダメージが342%にアップ。さらにHPが50%を超える目標に対する効果が8%にアップ",
+"幽霊状態：ダメージが159%にアップ。さらにHPが50%を超える目標に対する効果が15%にアップ",
+"覚醒Lv10：【覚醒の力】",
+"ATK（攻撃力）が10%上昇する",
+"覚醒Lv15：【覚醒の力】",
+"SPD（速度）が10%上昇する",
+"覚醒Lv20：【陰陽輪転】",
+"幽霊状態への切り替え時：HP回復量が自身の最大HPの35%にアップ、ダメージ軽減効果が15%にアップ",
+"実体状態への切り替え時：【冥鶴の裁判】のダメージが230%にアップ、HPが50%を超える目標に対する効果が15%にアップ",
+"覚醒Lv25：【千面業劫】",
+"【輪廻の印】を1層所持するごとに、自身の攻撃力が9%にアップ",
+"【全てを塵と化する】のダメージ倍率が239%にアップ",
+"HPが22%未満の目標に「処刑」と「魂消滅」を発動する",
+"覚醒Lv30：【覚醒バースト】",
+"第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する",
+"覚醒レベル 1：[覚醒の力 (Awakening Power)] 自身のHPが10%増加する。",
+"覚醒レベル 5：[クレーン・デュアリティ (Crane Duality)] 強化 実体形態（Physical Form）時: ダメージが342%に増加し、HPが50%以上のターゲットに対する効果（追加最大HPダメージ）が8%に増加する。",
+"霊体形態（Ghost Form）時: ダメージが159%に増加し、HPが50%以上のターゲットに対する効果（追加ダメージ増加）が15%に増加する。",
+"覚醒レベル 10：[覚醒の力 (Awakening Power)] 自身の攻撃力（ATK）が10%増加する。",
+"覚醒レベル 15：[覚醒の力 (Awakening Power)] 自身の速度（SPD）が10%増加する。",
+"覚醒レベル 20：[ポラリティ・サイクル (Polarity Cycle)] 強化 霊体形態（Ghost Form）切り替え時: HP回復量が最大HPの35%に増加し、ダメージ免役（DMG Immu）が15%に増加する。",
+"実体形態（Physical Form）切り替え時: 即座に発動する[深淵の判決 (Abyss Verdict)]のダメージが230%に増加し、HPが50%以上のターゲットに対する効果が15%に増加する。",
+"覚醒レベル 25：[ミリアド・アフリクションズ (Myriad Afflictions)] 強化 [再生の刻印 (Rebirth Sigil)] 1スタックにつき、自身の攻撃力の上昇量が9%に増加する。",
+"[灰燼のレクイエム (Ashen Requiem)]のダメージ係数が239%に増加し、執刑（Execute）の対象となるターゲットのHPしきい値が22%未満に拡張される。",
+"覚醒レベル 30：[覚醒バースト (Awakening Burst)] 戦闘の3ターン目から、自身が与えるダメージが25%、会心率（CRIT Rate）が15%増加する。この効果は4ターン持続する。"
+],
+"build": {
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通、 ◯推奨：魔法連撃、波動（超級） ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"戒魔一覧"
+],
+"おすすめペット": [
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-05-24"
+},
+"name_line": "白鶴僧侶 妙音 みょうおん",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "妙音",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2026-06-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/ailsa/",
+"slug": "ailsa",
+"title": "【ヤバ少女】エルザは引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "決闘・反射・純粋ダメージ",
+"talents_recommended_jp": "◎推奨：貫通、庇護、会心率、会心ダメ ◯推奨：迅速、会心抵抗 ☓非推奨：",
+"jp_release": "2026年7月15日"
+},
+"stats": {
+"ATK": 197765.0,
+"HP": 1018340.0,
+"DEF": 5194.0,
+"SPD": 44501.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "灼熱の咬殺",
+"type": "active",
+"jp": [
+"発動条件・クールタイム：1ターン目に発動する。クールタイム：2ターン",
+"スキル詳細（物理単体 / 被ダメージ増加）： HPが最も低い敵に364%の物理ダメージを与え、90%の確率で目標に【狩猟の印】と【魂消滅】効果を付与する。目標のHPが50%未満の場合、与えるダメージが20%増加する。目標をキルした場合、【覇星墜落】を発動する：敵全体に158%の物理ダメージを与え、90%の確率で目標に【狩猟の印】を付与する。",
+"ステータス詳細：",
+"【狩猟の印】：被ダメージが10%増加する。2ターン持続、最大3層までスタック可能、解除不可。",
+"【魂消滅】：復活不可。4ターン持続。"
+],
+"global": [
+"1ターン目、クールダウンは2ターン持続する。",
+"最もHPが低い敵に364%の物理ダメージを与え、90%の確率で【狩猟の印】と【魂消滅】を付与する。ターゲットのHPが50%未満の場合、与えるダメージが20%増加する。ターゲットを撃破した場合、【覇星墜落】を詠唱する：すべての敵に158%の物理ダメージを与え、90%の確率で【狩猟の印】を付与する。",
+"【狩猟の印】：被ダメージが10%増加する。2ターン持続、最大3層までスタック可能、解除不可。",
+"【魂消滅】：復活不可。4ターン持続。"
+],
+"other": []
+},
+{
+"name_jp": "黄金の裂目",
+"type": "active",
+"jp": [
+"発動条件・クールタイム：2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細（物理単体 / 純粋ダメージ）： HPが最も低い敵に593%の物理ダメージを与え、90%の確率で目標に【断絶の威】を付与し、同時に与えたダメージの40%分のHPを回復する。この攻撃は追加で【狩猟の印】の層数 * 対象最大HPの5%分の純粋ダメージを与える（自身の攻撃力の300%を超えない）。 通常攻撃およびスキル攻撃時、【覇者の魂】能力を備える：反撃を無効化する。",
+"ステータス詳細：",
+"【断絶の威】：回復効果が20% + 【狩猟の印】の層数 * 5%低下する。2ターン持続。"
+],
+"global": [
+"発動条件: 2ターン目、クールダウンは4ターン持続する。",
+"最もHPが低い敵に593%の物理ダメージを与え、90%の確率で［致命的な切断 / Fatal Severance］を付与し、与えたダメージの40%に相当するHPを回復する。この攻撃はさらに、［追跡の烙印］のスタック数 × 自身の最大HPの5%（自身の攻撃力の最大300%まで）に相当する固定ダメージ（True DMG）を与える。通常攻撃およびスキル攻撃時、［王の魂 / Kingborn Soul］を獲得する：反撃（Counter）を無効化する。",
+"［致命的な切断 / Fatal Severance］ 2ターンの間、回復効果を 20% ＋（［追跡の烙印］のスタック数 × 5%） 減少させる。"
+],
+"other": []
+},
+{
+"name_jp": "ライオン体質",
+"type": "passive",
+"jp": [
+"発動条件・クールタイム：CDなし",
+"スキル詳細： 攻撃力が45%、会心率が25%、与えダメージが15%上昇する。通常攻撃時、自身に【王の闘気】を1層付与する。"
+],
+"global": [
+"CDなし",
+"攻撃力を45%、会心率（CRIT Rate）を25%、ダメージボーナスを15%増加させる。通常攻撃時、自身に［覇王の怒り / Kingly Fury］を1スタック付与する。"
+],
+"other": []
+},
+{
+"name_jp": "王の死闘",
+"type": "passive",
+"jp": [
+"発動条件・クールタイム：CDなし",
+"スキル詳細： 戦闘開始時、HPが最も低い敵を決闘対象に指定する。決闘する双方が互いに与えるダメージが20%増加し、自身に【覇体】を付与する。決闘対象が死亡すると、金のライオンは直ちに自身の最大HPの40%分のHPを回復し、【王の闘気】を3層獲得する。同時に、現在のHPが最も低い敵を新たな決闘対象として直ちに指定する。 任意の敵が復活、または復活に失敗（「生存」「神護」「聖霊」の確率判定による失敗のみ）した時、金のライオンが1層の【王の闘気】を獲得し、さらに直ちに【覇星墜落】を発動する。各ターン最大1回まで発動可能（「焔牙一撃」の誘発回数は含まない）。 自身が致命的なダメージを受けた時、直ちに自身の最大HP of 30% + 【王の闘気】の層数 * 5%分のHPを回復し、与えダメージが25%増加する（2ターン持続）。戦闘につき2回まで発動可能。",
+"ステータス詳細：",
+"【王の闘気】：与えダメージが6%、攻撃力が3%上昇する。最大10層までスタック可能。戦闘終了まで持続し、解除不可。【5層王の闘気】追加で40%の会心ダメージボーナスを獲得する。スタック不可。戦闘終了まで持続し、解除不可。",
+"【覇体】：各ターン終了時、決闘対象以外の他の敵がそのターン中に金のライオンに与えた全ダメージの120%を、決闘対象に反射する（ダメージ分担とシールド効果を無視）。"
+],
+"global": [
+"戦闘開始時、最もHPが低い敵を「決闘ターゲット」として選択する。決闘の参加者同士の間で与え合うダメージが20%増加する。自身は［スーパーアーマー / Super Armor］を獲得する。 決闘ターゲットが死亡した時、Gilded Lioness（輝ける雌獅子）は最大HPの40%に相当するHPを回復し、［覇王の怒り］を3スタック獲得し、残りの敵の中から最も現在HPが低い敵を新たな決闘ターゲットとして選択する。 敵が復活した時、または復活に失敗した時（「最後の生命力 / Last Vitality」「神聖な祝福 / Divine Blessing」「神聖の判定 / Holiness chance check」に失敗した場合のみ）、Gilded Lionessは［覇王の怒り］を1スタック獲得し、［支配の失墜 / Dominion Fall］を詠唱する。これは1ターンにつき最大1回まで発動可能（「Searing Bite」からの誘発を除く）。 致命的なダメージを受けた時、最大HPの30% ＋（［覇王の怒り］のスタック数 × 5%）に相当するHPを回復し、2ターンの間、ダメージが25%増加する。この効果は1回の戦闘につき2回までしか発動しない。",
+"［覇王の怒り / Kingly Fury］ 与えるダメージが6%、攻撃力が3%増加する。最大10スタックまで、戦闘終了まで持続。解除不可。 さらに［覇王の怒り］が5スタックになると、会心ダメージ（CRIT DMG）ボーナスが40%増加する。戦闘終了まで持続（重複不可、解除不可）。",
+"［スーパーアーマー / Super Armor］ 各ターンの終了時、そのターン中に決闘ターゲット「以外の」敵からGilded Lionessに与えられたすべてのダメージの120%を、決闘ターゲットへと反射する（ダメージ分担効果やシールド効果を無視する）。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：［覚醒の力］ HPが10%上昇する。",
+"覚醒Lv5：［焔牙一撃］ ダメージが418%に増加し、必ず【狩猟の印】と【魂消滅】効果を付与する。HPが50%未満の対象に対して、与えるダメージが25%増加し、【覇星墜落】の純粋ダメージが182%に増加し、さらに必ず【狩猟の印】を付与する。",
+"覚醒Lv10：［覚醒の力］ ATKが10%上昇する。",
+"覚醒Lv15：［覚醒の力］ SPDが10%上昇する。",
+"覚醒Lv20：［煌金断空］ ダメージが682%に増加し、自身のHP回復量が与えたダメージの50%に増加する。【覇者の魂】の能力にダメージ反射無効が追加される。毎回の攻撃による追加純粋ダメージが、【狩猟の印】の層数*最大HPの7%分の純粋ダメージに増加する（自身の攻撃力の420%を超えない）。",
+"覚醒Lv25：［王の死闘］ 【覇体】ダメージ反射が150%に上昇し、決闘対象が死亡した際のHP回復量が自身の最大HPの50%に上昇する。【覇星墜落】各ターンの発動可能回数が2回に上昇する。【5層王の闘気】効果の会心ダメージボーナスが50%に上昇し、致命ダメージを受けた際のHP回復量が最大HPの40% + 【王の闘気】の層数*6%に上昇し、与えダメージ上昇効果が30%に上昇する。戦闘での最大発動回数が3回に上昇する。",
+"覚醒Lv30：［覚醒バースト］ 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する。"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通、庇護、会心率、会心ダメ ◯推奨：迅速、会心抵抗 ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"疆域王 悪南瓜、髑髏花、聖域天使、聖域獅子王 隻眼、熔岩",
+"戒魔一覧"
+],
+"おすすめペット": [
+"喜怒楽、焔鱗谷の赤竜、聖殿のグリフォン、めぇめぇ ナイトレオプリンス、スターユニコーン、キャッスルフェニックス",
+"ペット一覧"
+],
+"アクセサリー": [
+"海外の方の使っているアクセサリー",
+"※必ずしもこの組み合わせが良いとは限らず、見つけたものを貼っているので参考程度にしてください。"
+],
+"編成例": [
+"海外の方の参考にしました。",
+"エルシア、クリム、セネリン、メリアス、ヴィネット、エルザ"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-06-22"
+},
+"name_line": "金のライオン・エルザ",
+"rarity_jp": "光属性・戦士・限定GR",
+"name_latin": null,
+"name_jp": "エルザ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2026-07-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/nurse-girl/",
+"slug": "nurse-girl",
+"title": "【ヤバ少女】ヴィラフィルは引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "サポーター",
+"trait_jp": "呪い治療",
+"talents_recommended_jp": "◎推奨：庇護、生命力 ◯推奨：貫通、魔法連撃、迅速、波動超級、会心抵抗、ダメージ軽減 ☓非推奨：",
+"jp_release": "2026年8月1日"
+},
+"stats": {
+"ATK": 166939.0,
+"HP": 1355919.0,
+"DEF": 5294.0,
+"SPD": 4795.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "いたずら注射",
+"type": "active",
+"jp": [
+"アクティブスキル 1ターン目に発動する。クールタイム：2ターン",
+"スキル詳細 【範囲】【感染】",
+"敵全体に合計600%の魔法ダメージを与え、全ての対象が分担する。1対象の被ダメージは攻撃力の4倍を超えない。さらに1層の【感染】を付与し、85%の確率で【魅惑】を付与する。HPが最も低い敵対象に、さらに攻撃力100%分の純粋ダメージを与える。",
+"ステータス詳細 【魅惑】 この状態を持つ対象は、通常攻撃でランダムな味方を攻撃する。味方が存在しない場合はランダムな敵を攻撃する。1ターン持続する。",
+"【感染】 受けるダメージが5%増加し、受ける回復効果が5%低下する。戦闘終了まで持続し、最大5層までスタック可能。解除不可、死亡しても解除されない。"
+],
+"global": [
+"スキルタイプ: アクティブスキル",
+"クールダウン: 1ターン目に発動した場合、クールダウンは2ターン持続する。",
+"スキルタグ: AoE（範囲攻撃） / Contagion（伝染）",
+"敵全体に合計600%の魔法ダメージ（M. DMG）を与え、すべての対象で分割する。各ユニットが受けるダメージは自身の攻撃力（ATK）の4倍を超えない。さらに「伝染（Contagion）」を1スタック付与し、85%の確率で「魅了（Glamour）」を付与する。追加で、最もHPが低い敵ユニットに攻撃力の100%の固定ダメージ（True DMG）を与える。",
+"[魅了 (Glamour)] この状態のユニットは、通常攻撃（Basic ATK）でランダムな味方を攻撃する。味方が存在しない場合は、ランダムな敵を攻撃する。効果は1ターン持続。",
+"[伝染 (Contagion)] 受けるダメージが5%増加し、受ける回復量が5%減少する。戦闘終了まで持続し、最大5スタックまで。解除不可（Undispellable）、死亡時も消失しない。"
+],
+"other": []
+},
+{
+"name_jp": "特級看護",
+"type": "active",
+"jp": [
+"アクティブスキル 2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細 【範囲回復】【魔法薬】",
+"味方全体のHPを攻撃力112%分回復し、1層の【魔法薬】を付与する。85%の確率で、さらに味方全体に1の【魔法薬】を付与する。味方対象のHPが50%未満の場合、さらに攻撃力50%分のHPを回復する。",
+"ステータス詳細 【魔法薬】 与えダメージが5%増加し、受ける回復効果が5%増加する。戦闘終了まで持続し、最大5層までスタック可能。解除不可、死亡しても解除されない。"
+],
+"global": [
+"スキルタイプ: アクティブスキル（アルティメット）",
+"クールダウン: 2ターン目に発動した場合、クールダウンは4ターン持続する。",
+"スキルタグ: AoE Heal（範囲回復） / Philter（秘薬）",
+"味方全体のHPを攻撃力の112%分回復し、「秘薬（Philter）」を1スタック付与する。さらに85%の確率で、味方全体に追加で「秘薬」を1スタック付与する。味方のHPが50%未満の場合、追加で攻撃力の50%分のHPを回復する。",
+"[秘薬 (Philter)] 与えるダメージが5%増加し、受ける回復量が5%増加する。戦闘終了まで持続し、最大5スタックまで。解除不可、死亡時も消失しない。"
+],
+"other": []
+},
+{
+"name_jp": "小悪魔体質",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 攻撃力が45%、HPが25%、抵抗率が20%上昇する。いずれかの少女が戦闘不能時、自身の攻撃力が10%上昇する。この効果は戦闘終了まで続き、最大6層までスタック可能"
+],
+"global": [
+"スキルタイプ: パッシブスキル",
+"クールダウン: なし",
+"【スキル説明】 自身の攻撃力を45%、HPを25%、耐性（RES）を20%増加させる。フィールド上のいずれかのユニットが死亡した時、自身の攻撃力が10%増加する（戦闘終了まで持続、最大6スタックまで）。"
+],
+"other": []
+},
+{
+"name_jp": "生死の間",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 毎ターン開始時、敵全体に1層の【感染】を付与し、味方全体に1層の【魔法薬】を付与する。 ターン終了時、敵全体は【感染】の層数×悪魔ナースの攻撃力40%分の純粋ダメージを受ける。さらに、味方全体は【魔法薬】の層数×悪魔ナースの攻撃力40%分のHPを回復する。 敵対象の【感染】が3層に達した時、直ちに【終末診断】を受ける：悪魔ナースの攻撃力×160%分の純粋ダメージを受け、HPが15%未満の場合は対象を即死させる。5層に達した時、再度【終末診断】を1回受ける。 味方対象の【魔法薬】が3層に達した時、直ちに【奇跡蘇生】を受ける：悪魔ナースの攻撃力×160%分のHPを回復し、HPが50%未満の場合はさらに自身の最大HP12%分のHPを回復する。5層に達した時、再度【奇跡蘇生】を1回受ける。 悪魔ナースが致命的なダメージを受けた時、直ちにHPを40%回復し、自身のすべてのデバフと制御状態を解除する。戦闘につき1回のみ発動可能。"
+],
+"global": [
+"スキルタイプ: パッシブスキル",
+"クールダウン: なし",
+"各ターンの開始時、敵全体に「伝染」を1スタック付与し、味方全体に「秘薬」を1スタック付与する。 各ターンの終了時、すべての敵は「伝染」のスタック数 × ヴェラフィエル（Veraphiel）の攻撃力の40%分の固定ダメージを受ける。すべての味方は「秘薬」のスタック数 × ヴェラフィエルの攻撃力の40%分のHPを回復する。",
+"敵ユニットの「伝染」が3スタックに達すると、即座に「末期診断（Terminal Diagnosis）」を受ける：ヴェラフィエルの攻撃力の160%分の固定ダメージを受ける。対象のHPが15%未満の場合、即座に即死（撃破）させる。スタックが5に達した時、もう一度「末期診断」を受ける。",
+"味方ユニットの「秘薬」が3スタックに達すると、即座に「奇跡の復活（Miracle Revival）」を受ける：ヴェラフィエルの攻撃力の160%分のHPを回復する。対象のHPが50%未満の場合、追加で自身の最大HPの12%分のHPを回復する。スタックが5に達した時、もう一度「奇跡の復活」を受ける。",
+"ヴェラフィエルが致命的なダメージを受けた時、即座にHPを40%回復し、自身からすべてのデバフと行動不能（コントロール）効果を解除する。この効果は1回の戦闘中に1回のみ発動する。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1： [覚醒の力]HPが10%上昇する 覚醒Lv5： [いたずら注射]ダメージが700%に上昇し、【魅惑】の付与確率が100%に上昇する。HPが最も低い対象に追加で与える純粋ダメージが150%に上昇する。 覚醒Lv10： [覚醒の力]ATKが10%上昇する 覚醒Lv15： [覚醒の力]SPDが10%上昇する 覚醒Lv20： [特級看護]HP回復量が128%に上昇し、追加で100%の確率で【魔法薬】を1層付与する。HPが50%未満の場合、追加のHP回復量が攻撃力の75%に上昇する。 覚醒Lv25： [生死の間]ターン終了時、敵全体が受ける純粋ダメージが【感染】の層数×悪魔ナースの攻撃力50%に上昇し、味方全体のHP回復量が【感染】の層数×悪魔ナースの攻撃力50%に上昇する。【終末診断】の純粋ダメージが200%に上昇し、【奇跡蘇生】のHP回復量が200%に上昇する。HPが50%未満の場合、追加のHP回復量が自身の最大HPの15%に上昇する。 覚醒Lv30： [覚醒バースト]第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する",
+"覚醒レベル 1: [覚醒の力 (Awakening Power)] HPが10%増加する。 覚醒レベル 5: [いたずらな射撃 (Mischief Shot)] ダメージが700%に増加し、「魅了」の付与確率が100%に増加、さらに最もHPが低いユニットへの追加固定ダメージが150%に増加する。 覚醒レベル 10: [覚醒の力] 攻撃力が10%増加する。 覚醒レベル 15: [覚醒の力] 速度（SPD）が10%増加する。 覚醒レベル 20: [プレミアムケア (Premium Care)] HP回復量が128%に増加し、100%の確率で「秘薬」を1スタック追加付与する。HPが50%未満の時の追加HP回復量が攻撃力の75%に増加する。 覚醒レベル 25: [死の契約 (Mortal Pact)]各ターン終了時、すべての敵が受ける固定ダメージが「伝染」のスタック数 × ヴェラフィエルの攻撃力の50%に増加する。すべての味方のHP回復量が「秘薬」のスタック数 × ヴェラフィエルの攻撃力の50%に増加する。「末期診断」の固定ダメージが200%に増加する。「奇跡の復活」のHP回復量が200%に増加する。HPが50%未満の時、追加のHP回復量が自身の最大HPの15%に増加する。 覚醒レベル 30: [覚醒のバースト (Awakening Burst)] 3ターン目から開始し、ダメージ免役（DMG Immu）が20%増加、回復効果（Healing）が20%増加する（4ターン持続）。"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：庇護、生命力 ◯推奨：貫通、魔法連撃、迅速、波動超級、会心抵抗、ダメージ軽減 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"雛菊 聖域天使 疆域王、幻蝶",
+"戒魔一覧"
+],
+"おすすめペット": [
+"聖光のケンタウロス トリプルパンティ 聖殿のグリフォン パラダイスゴースト めぇめぇ",
+"ペット一覧"
+]
+},
+"overseas_eval": [
+"事前の予想通り、実質は「サポート」枠でした。攻撃バフ（秘薬）やHP回復、デバフ解除といった強力な支援スキルを多数所持しています。",
+"パッシブスキル（Mortal Pact）などによる固定ダメージ性能が高く、「（性能検証はこれからだが）面白そうだから引いてみる」というプレイヤーもいます。",
+"「もし500日前に実装されていれば強力だったかもしれない」という意見があり、現在のインフレした最前線の環境（環境トップ）に食い込めるかは怪しいという見方があります。",
+"現環境で非常に強力とされる「ヴィネット」や「セネリン」といったキャラクターが持つ「味方の蘇生（チームリバイブ）」スキルを所持していないため、それらのトップキャラに比べると見劣りするという指摘があります。",
+"どちらかというと、ウムの上位互換って感じかな。という評価も。優秀なサポーターにしてはスキル構成がダメージに寄りすぎてるし、優秀なDPS（アタッカー）にしては回復に寄りすぎてる。",
+"無課金〜微課金の新規・中堅プレイヤーで、賛歌からヴィネットの素体を引くのに数ヶ月待つしかないような人なら、ガチャを引く価値は間違いなくあると思う。今回のガチャと復刻を合わせれば、星9.5〜10まで育てるのを期待できるしね。",
+"第2か第3パーティー行き決定だな！",
+"高難易度のドラゴネスとか、他のPvEのスコア稼ぎには使えるかもしれない。でもPvPで使われるかは怪しいな。特にクリムのシールドで彼女の第1スキルの行動阻害（CC）が防がれちゃうなら。"
+],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-07-04"
+},
+"name_line": "悪魔ナース・ヴィラフィル Veraphiel",
+"rarity_jp": "限定GR",
+"name_latin": "Veraphiel",
+"name_jp": "ヴィラフィル",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Поддержка",
+"jp_release_date": "2026-08-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/kira/",
+"slug": "kira",
+"title": "【ヤバ少女】キラ（綺羅）は引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "サポーター",
+"trait_jp": "シールド・回復",
+"talents_recommended_jp": "◎推奨：生命力、庇護、迅速 ◯推奨：会心抵抗、ダメージ軽減、強靭、SPDダウンなど ☓非推奨：",
+"jp_release": "2026年8月18日"
+},
+"stats": {
+"ATK": 169538.0,
+"HP": 1347297.0,
+"DEF": 5329.0,
+"SPD": 4892.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "桜落回生",
+"type": "active",
+"jp": [
+"1ターン目に発動する。クールタイム：2ターン",
+"回復 多段",
+"味方のHPが最も低い対象に攻撃力111%分のHP回復を6回連続で行う。さらに40%の確率で【花影お守り】を1層付与する。対象のHPが50%未満の場合、追加で最大HP10%分のHPを回復する。（HPが50%未満の場合の追加回復は、6回の回復処理それぞれで独立に判定される。6回すべてで対象のHPが50%未満の場合、追加回復も6回行われる。）",
+"ダメージ軽減と与えダメージが5%上昇する（3ターン持続）。最大10層までスタック可能。解除不可。",
+"ステータス詳細"
+],
+"global": [
+"1ターン目に使用した場合、クールダウンは2ターン。",
+"【回復】【多段ヒット】",
+"HPが最も低い味方1体のHPを、攻撃力の111%分回復する。この回復を6回連続で行う。さらに40%の確率で対象に「花護」を1スタック付与する。対象のHPが50%未満の場合は、追加で最大HPの10%を回復する。",
+"状態効果",
+"ダメージ無効（DMG Immunity）を5%上昇 効果時間：3ターン 最大10スタックまで重複可能 解除不可"
+],
+"other": []
+},
+{
+"name_jp": "御鏡華盾",
+"type": "active",
+"jp": [
+"2ターン目に発動する。クールタイム：4ターン",
+"味方全体に綺麗の最大HPの10%分の【瑠璃花の障】を付与し、HPが最も低い味方は追加で 6%分 の【瑠璃花の障】を獲得する。シールドが存在する間、スキルダメージを受けた際、25%の確率でそのダメージを完全に無効化し、25%の確率でダメージ量の30%を自身のHPに変換し、25%の確率でダメージ量の30%をスキル発動者に反射する。同時に発動する効果は最大1つまで。",
+"ダメージを吸収するシールド。自身の最大HPの100%までスタック可能（2ターン持続）。解除不可。死亡時に消失する。"
+],
+"global": [
+"2ターン目に使用した場合、クールダウンは4ターン。",
+"【ラピスバリア】",
+"味方全体に最大HPの10%分のラピスバリアを付与する。さらに、HPが最も低い味方には追加で最大HPの5%分のラピスバリアを付与する。バリアが有効な間、スキルダメージを受けると以下の効果のいずれかが25%の確率で発動する。",
+"ダメージを完全に無効化する。 受けたダメージの30%をHPとして回復する。 受けたダメージの30%を攻撃者へ反射する。",
+"※1回の攻撃で発動するのは、このうち1つのみ。",
+"ラピスバリア（Lapis Barrier）",
+"ダメージを吸収するシールド 最大で最大HPの50%まで重複可能 効果時間：2ターン 解除不可 戦闘不能になると消滅"
+],
+"other": []
+},
+{
+"name_jp": "花の芸者体質",
+"type": "passive",
+"jp": [
+"CDなし",
+"攻撃力が45%、HPが25%、ダメージ軽減が20%上昇する。スキルダメージを受けた時、直ちに自身の最大HPの1%分のHPを回復する"
+],
+"global": [
+"クールダウンなし。",
+"スキル効果 攻撃力を45%上昇 最大HPを25%上昇 ダメージ無効を20%上昇",
+"さらに、スキルダメージを受けるたびに、最大HPの1%を即座に回復する。"
+],
+"other": []
+},
+{
+"name_jp": "百花繚乱",
+"type": "passive",
+"jp": [
+"CDなし",
+"綺羅は【落桜流転】、【鏡花水月】、【浮生華夢】の能力を持つ。",
+"【落桜流転】：スキルダメージを受けた後、HPが最も低い味方（【瑠璃花の障】が付与されていない味方を優先）に最大HPの7%分の【瑠璃花の障】を付与する。さらに味方全体に【花影お守り】を1層付与する。",
+"【鏡花水月】：行動時、自身が受けている制御効果とデバフを即座にランダムな敵に転移させる（制御状態ではない敵を優先）。さらに85%の確率で自身に【花影お守り】を1層付与する。",
+"【浮生華夢】：【落桜流転】を7回発動した後、即座に【御鏡華盾】を発動する。戦闘につき最大1回まで発動可能。",
+"戦闘開始時、味方全体が【彼岸花祝】を獲得する。この効果は解除不可であり、戦闘終了まで持続する：スキルで攻撃する時、行動する味方の最大HPの5%分の純粋ダメージを追加で与える。致命的なダメージを受けた時、自身に【瑠璃花の障】が付与されている場合、今回のダメージを無効化し、【瑠璃花の障】を同量の回復効果に変換して自身のHPを回復する。",
+"綺羅が致命的なダメージを受けた際、自身の【花影お守り】を4層消費し、即座に自身の最大HPの25%分のHPを回復する。さらにダメージ軽減が15%上昇する（3ターン持続）。各戦闘につき最大1回まで発動可能。"
+],
+"global": [
+"スキルタイプ: パッシブスキル",
+"【スキル説明】 花魁（Blossom Geisha）は［落桜］、［幻月］、［浮世の夢］の能力を持つ。",
+"［落桜（Falling Sakura）］： スキルダメージを受けた後、一番HP割合が低い味方（［ラピスバリア］を持っていない味方を優先）に最大HPの7%相当の［ラピスバリア（Lapis Barrier）］を付与する。さらに、味方全体に［花護（Blossom Ward）］を1スタック付与する。",
+"［幻月（Phantom Moon）］： 自身が行動するたび、自分が受けている行動制限（妨害）効果およびデバフをランダムな敵1体（現在行動制限を受けていない敵を優先）に即座に押し付け（転送し）、85%の確率で自身に［花護］を1スタック付与する。",
+"［浮世の夢（Fleeting Dream）］： ［落桜］が7回発動した後、即座に［鏡花バリア（Mirrorblossom Shield）］を発動する。戦闘中に最大1回まで発動可能。",
+"【戦闘時の特殊効果】 ［百合の加護（Lily Blessing）］： 戦闘開始時、味方全員が解除不可の［百合の加護］を獲得し、戦闘終了まで持続する。",
+"攻撃時： スキルで攻撃する際、花魁の最大HPの5%に相当する追加の確定ダメージを与える。",
+"食いしばり＆回復： 致死ダメージを受けた際、そのユニットが［ラピスバリア］を持っていればそのダメージを無効化し、［ラピスバリア］の耐久値を同量の回復量に変換する。",
+"［食いしばり（花魁本人）］： 花魁が致死ダメージを受けた時、［花護］を4スタック消費して即座に最大HPの25%を回復し、3ターンの間ダメージ免除を10%増加させる。戦闘中に最大1回まで発動可能。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"覚醒Lv5：[桜落回生] 味方のHPを回復する倍率が攻撃力の133%に上昇する。【花影お守り】を付与する確率が50%に上昇する。追加で回復するHPが最大HPの15%に上昇する。",
+"覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"覚醒Lv20：[御鏡華盾] 【瑠璃花の障】のシールド割合が最大HPの12%に上昇し、HPが最も低い味方が追加で獲得する【瑠璃花の障】のシールド割合が8%に上昇する。シールドが存在する間、スキルダメージを受けた際に3種類の効果が発動する確率がそれぞれ30%に上昇する。同時に発動できる効果は最大1つまで。",
+"覚醒Lv25：[百花繚乱]",
+"【落桜流転】：スキルダメージを受けた後、味方に付与する【瑠璃花の障】のシールド割合が最大HPの8%に上昇する。",
+"【鏡花水月】：行動するたびに、自身に【花影お守り】を1層付与する確率が100%に上昇する。",
+"追加で【御鏡華盾】を発動するために必要な【落桜流転】の発動回数が6回に減少する。",
+"味方が【彼岸花祝】を獲得：スキルで攻撃する際、行動する味方の最大HPに基づく純粋ダメージの割合が6%に上昇する。",
+"綺羅が致命的なダメージを受けた際、自身の【花影お守り】を4層消費し、即座に回復する自身の最大HPの割合が30%に上昇し、ダメージ軽減の上昇割合が20%に上昇する。",
+"覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：生命力、庇護、迅速 ◯推奨：会心抵抗、ダメージ軽減、強靭、SPDダウンなど ☓非推奨：",
+"刻印タレント一覧"
+],
+"おすすめ戒魔": [
+"雛菊 悪南瓜、聖域天使、奇夢うさぎ 幻蝶",
+"戒魔一覧"
+],
+"おすすめペット": [
+"聖光のケンタウロス、聖殿のグリフォン、トリプルパンティ、パラダイスゴースト、チェシャタートルウサギ",
+"ペット一覧"
+]
+},
+"overseas_eval": [
+"ゲームバランスを完全に壊してしまうレベルのキャラクターです。",
+"そんなに強いの！？",
+"つまり、クリム（Klim）みたいなキャラだね。",
+"シールドを付与できる シールドは重ね掛けできる パンドラ（Pandora）タイプの回復能力を持つ ダメージ無効効果を重ねられる 行動阻害やデバフを相手に跳ね返す 確定ダメージ（True Damage）を与えられる シールドが残っていれば致命的な攻撃を無効化し、そのダメージを回復に変換できる",
+"だから環境トップクラス（メタ）のキャラの勢力図が少し変わるくらいのポテンシャルはあるね。"
+],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-07-18"
+},
+"name_line": "花の芸者・綺羅 キラ Kira",
+"rarity_jp": "限定GR",
+"name_latin": "Kira",
+"name_jp_alt": "綺羅",
+"name_jp": "キラ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Поддержка",
+"jp_release_date": "2026-08-18",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/chloe/",
+"slug": "chloe",
+"title": "【ヤバ少女】クロエは引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "即死バースト",
+"talents_recommended_jp": "◎推奨：貫通 ◯推奨：庇護、物理連撃、精密、迅速、会心率、会心ダメ、会心抵抗、 ☓非推奨：",
+"jp_release": "2026年9月1日"
+},
+"stats": {
+"ATK": 198290.0,
+"HP": 1305117.0,
+"DEF": 5244.0,
+"SPD": 4495.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "幽冥の爪",
+"type": "active",
+"jp": [
+"アクティブスキル 1ターン目に発動する。クールタイム：2ターン",
+"物理単体 処刑",
+"敵のHP割合が最も低い対象に436%の物理ダメージを与え、85%の確率で【猛毒】1層と【死亡の印し】1層を付与する。 対象のHPが25%未満の場合、即死させる 。 対象を即死させた後、85%の確率でこのスキルを再度発動する。 このスキルは【閃襲】効果を持ち、対象をキルした後、85%の確率で【魔影の庇護】を1層獲得する。",
+"ステータス詳細",
+"【猛毒】この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%まで）。2ターン持続。最大5層までスタック可能。",
+"【閃襲】ダメージを与えた時、目標は反撃や反射効果を発動できなくなる。"
+],
+"global": [
+"アクティブスキル",
+"※1ターン目に発動した場合、クールダウンは2ターン。",
+"【スキル説明】 【物理単体 / 処刑】",
+"HP割合が最も低い敵単体に436%の物理ダメージを与え、85%の確率で［毒］を1スタック、［死の烙印］を1スタック与える。ターゲットのHPが25%未満の場合、即座に処刑（即死）させる。ターゲットを処刑した後、85%の確率でこのスキルを再発動する。このスキルは［急襲（Flash Strike）］効果を持つ。ターゲットを倒すと、85%の確率で［影の護り（Shadowguard）］を1スタック獲得する。",
+"【ステータス説明】 ［毒］： この効果を受けたユニットは魔法ダメージ免除が5%減少する。ターン終了時、最大HPの5%に相当するHPを失う（攻撃者の攻撃力の100%を超えない）。2ターン持続、最大5スタックまで重複可能。",
+"［急襲］： ダメージを与える際、ターゲットの反撃および反射効果の発動を防ぐ。"
+],
+"other": []
+},
+{
+"name_jp": "燭影夜爆",
+"type": "active",
+"jp": [
+"アクティブスキル 2ターン目に発動する。クールタイム：4ターン",
+"物理範囲",
+"敵全体に攻撃力112%分の物理ダメージを与え、【死亡の印し】状態の対象には追加で112%の純粋ダメージを与える。ランダムな敵2体（【死亡の印し】状態ではない対象を優先）に【死亡の印し】を1層付与し、自身は【魔影の庇護】を1層獲得する。",
+"【死亡の印し】この状態は魂消滅効果を持ち、 死亡した時、復活が必ず失敗する 。戦闘終了まで持続し、解除できない。"
+],
+"global": [
+"【スキル説明】 【物理全体 / 死の烙印 / 影の護り】",
+"敵全体に攻撃力の112%の物理ダメージを与え、さらに［死の烙印］がついているユニットには112%の確定ダメージを与える。［死の烙印］がつ出ない敵を優先して、ランダムな敵2体に［死の烙印］を1スタック付与し、自身は［影の護り］を1スタック獲得する。",
+"［死の烙印］： このステータスは［魂奪］効果を持ち、死亡時の復活が確実に失敗する。戦闘終了まで持続し、解除不可。"
+],
+"other": []
+},
+{
+"name_jp": "フェレット娘体質",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"攻撃力が45%、HPが25%、与えダメージが20%上昇する 通常攻撃時、【死亡の印し】状態ではない対象を優先して選び、【死亡の印し】と【猛毒】を1層付与する"
+],
+"global": [
+"攻撃力が45%、HPが25%、与ダメージが20%増加する。",
+"通常攻撃： ［死の烙印］が付与されていないユニットを優先し、［死の烙印］と［毒］を1スタックずつ付与する。"
+],
+"other": []
+},
+{
+"name_jp": "骨を侵す毒心",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"戦闘開始後、味方全体が与える火傷や猛毒などの継続ダメージが50%増加し、さらに【死亡の印し】状態の対象に与えるダメージが30%増加する。 毎回のターン開始時、40%の確率で敵全体に【猛毒】を1層付与する。最初のターンは確率が80%に上昇する。 毒霊反哺：敵の【猛毒】の層数が初めて1/2/3/4層に達した時、フェレット娘は【魔影の庇護】を1層獲得する。フェレット娘が【魔影の庇護】を獲得した際、常に自身と味方の中で最も攻撃力が高い対象のHPを最大HPの25%分回復し、超過した回復量はシールドに変換される。 夜の帳の恵み：ターン終了時、フェレット娘は【魔影の庇護】を1層消費して味方全体に【暗夜狂熱】を付与し、スキル1：【幽冥の爪】を発動する。 九命の毒体：フェレット娘が致命的なダメージを受けた時、自身の【魔影の庇護】を1層消費し、即座に自身の最大HPの40%分のHPを回復する。【死亡の印し】状態の対象が死亡した時、即座に敵全体へ【猛毒】を1層付与する。",
+"【暗夜狂熱】：与えダメージが15%、HP吸収が15%、ダメージ軽減が15%上昇する。最大5層までスタック可能。戦闘終了まで持続し、解除不可。死亡時に消失する。"
+],
+"global": [
+"パッシブスキル",
+"※クールダウンなし。",
+"【スキル説明】 戦闘開始後、味方全員が与える火傷や毒などの継続ダメージ（DoT）が50%増加し、［死の烙印］を持つユニットへのダメージが30%増加する。",
+"各ターンの開始時、40%の確率で敵全体に［毒］を1スタック付与する（1ターン目は確率が80%に増加）。",
+"［毒霊の報い］： 敵ユニットの［毒］スタックが初めて1/2/3/4に達した時、スカンクの乙女は［影の護り］を1スタック獲得する。スカンクの乙女が［影の護り］を獲得するたび、自身と最も攻撃力が高い味方のHPを最大HPの25%回復し、超過分はシールドに変換される。",
+"［夜の恩寵］： ターン終了時、スカンクの乙女は［影の護り］を1スタック消費して味方全体に［夜の狂乱（Night Frenzy）］を付与し、［スペクトルクロウ］を発動する。",
+"［九生毒体］： スカンクの乙女が致死ダメージを受けた時、自身の［影の護り］を1スタック消費して即座に最大HPの40%を回復する。",
+"［死の烙印］を持つユニットが死亡した時 、即座に敵全体に［毒］を1スタック付与する。",
+"【ステータス説明】 ［夜の狂乱］： 与ダメージ15%UP、吸血15%UP、ダメージ免除15%UP。最大5スタックまで重複可能。戦闘終了まで持続（解除不可、死亡時に解除）。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"覚醒Lv5：[幽冥の爪] ダメージ倍率が501%に上昇し、【猛毒】と【死亡の印し】の付与確率が100%に上昇する。目標をキルした後、100%の確率でこのスキルを再度発動し、【魔影の庇護】を1層獲得する。",
+"覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"覚醒Lv20：[燭影夜爆] ダメージ倍率が128%に上昇し、【死亡の印し】状態の対象に与える追加の純粋ダメージが128%に上昇する。【死亡の印し】を付与する対象の数が3体に増加する。",
+"覚醒Lv25：[骨を侵す毒心] 味方全体が与える火傷や猛毒などの継続ダメージが60%に上昇し、【死亡の印し】状態の対象に与えるダメージが40%に上昇する。毎回のターン開始時、敵全体に【猛毒】を付与する確率が50%に上昇し、最初のターンはその確率が100%に上昇する。【魔影の庇護】を獲得した際、自身と味方の中で最も攻撃力が高い対象のHP回復量が最大HPの30%に上昇する。致命的なダメージを受けた時、回復するHPが自身の最大HPの50%に上昇する。",
+"覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通 ◯推奨：庇護、物理連撃、精密、迅速、会心率、会心ダメ、会心抵抗、 ☓非推奨：",
+"追撃（要検証）",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"隻眼",
+"HP25％未満の敵は処刑するので、熔岩は除外。髑髏花も効果が薄れるので除外。初期スピード低めのため悪南瓜は除外。",
+"戒魔一覧"
+],
+"おすすめペット": [
+"キャッスルフェニックス、めぇめぇ、焔鱗谷の赤竜、ナイトレオプリンス、夢女魅る枕",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-08-04"
+},
+"name_line": "クロエ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "クロエ",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2026-09-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/yusa/",
+"slug": "yusa",
+"title": "【ヤバ少女】巫女・結紗は引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "Sランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "吸血・反撃",
+"talents_recommended_jp": "◎推奨：会心抵抗、庇護、ダメ軽減 ◯推奨：貫通、物理連撃、会心率、会心ダメ、迅速、戦力、 ☓非推奨：",
+"jp_release": "2026年8月12日"
+},
+"stats": {
+"ATK": 197765.0,
+"HP": 1270975.0,
+"DEF": 5194.0,
+"SPD": 4501.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "狛犬の噬",
+"type": "active",
+"jp": [
+"アクティブスキル 1ターン目に発動する。クールタイム：2ターン",
+"スキル詳細 [物理単体] [吸血] [被治療低下]",
+"敵の攻撃力が最も高い対象に2段攻撃を行い、各段で218%の物理ダメージ+自身の最大HPの5%の物理ダメージを与え、与えたダメージの20%分自身のHPを回復し、超過した回復量はシールドに変換される。さらに42%の確率で対象に【気枯れ】を付与する。対象のHPが50%以上の場合、今回のダメージが20%増加する。",
+"ステータス詳細",
+"【気枯れ】 受ける回復効果が20%低下する。2ターン持続。最大2層までスタック可能。解除不可。",
+"解放条件 少女が★7で自動的にレベルアップ"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "破邪の突撃",
+"type": "active",
+"jp": [
+"アクティブスキル 2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細 [物理単体] [吸血] [与ダメージ低下]",
+"HP割合が最も低い敵に2段攻撃を行い、1段につき316%の物理ダメージを与える。この攻撃は防御力を30%無視する。与えたダメージの25%分のHPを回復し、超過した回復量はシールドに変換される。さらに42%の確率で対象に【退魔縛り】を付与する。対象をキルした場合、このスキルを再度発動する。",
+"ステータス詳細",
+"【退魔縛り】 与ダメージが20%低下する。2ターン持続。最大2層までスタック可能。解除不可。",
+"解放条件 少女が★8で自動的にレベルアップ"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "巫女体質",
+"type": "passive",
+"jp": [
+"巫女体質 パッシブスキル CDなし",
+"スキル詳細",
+"攻撃力が45%、HPが25%、与ダメージが20%上昇し、HP吸収が20%上昇する。",
+"解放条件 少女が★9で自動的にレベルアップ"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "神域の加護",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細",
+"戦闘開始時、味方全体の攻撃力が18%、ダメージ軽減が18%上昇する。この効果は解除不可であり、戦闘終了まで持続する。自身は【高天原の賜り】を獲得し、敵全体に【気枯れ】と【退魔縛り】を1層付与する。",
+"各ターン開始時、攻撃力が最も高い味方（自身を除く）に【神降ろしの契約】を付与する。【神降ろしの契約】は1ターン持続し、解除不可、死亡時に失われる。 【神降ろしの契約】状態の味方は、攻撃力が18%上昇し、毎回スキルで攻撃した後、神社の巫女が即座に【蒼蓮浄世】を発動して追撃を行う。毎ターン最大1回まで追撃を発動可能。",
+"【神降ろしの契約】終了時、対象は最大HPの20%を回復し、超過した回復量はシールドに変換される。",
+"【蒼蓮浄世】：敵全体に108%の物理ダメージを与え、85%の確率でバフを1つ解除する。与えたダメージの25%分、HPが最も低い味方のHPを回復し、超過した回復量はシールドに変換される。毎ターン最大4回まで発動可能。制御状態でも発動でき、回避を無視し、反撃およびダメージ反射を無視する。 味方のいずれかが初めて死亡した時、神社の巫女は90%の確率で【蒼蓮浄世】を発動する。",
+"ステータス詳細",
+"【高天原の賜り】 ダメージが15%、ダメージ軽減が15%上昇する。戦闘終了まで持続。解除不可。死亡時にも消失しない。"
+],
+"global": [],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"覚醒Lv5：[狛犬の噬] 各段攻撃のダメージ倍率が250%、追加の物理ダメージが自身の最大HPの6%、自身のHP回復割合が与えたダメージの30%にそれぞれ上昇する。対象に【気枯れ】を付与する確率が50%に上昇し、対象のHPが40%以上場合、今回のダメージが30%に上昇する。",
+"覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"覚醒Lv20：[破邪の突撃] 各段攻撃のダメージ倍率が365%に、攻撃の防御無視割合が35%に、会心率が20%に上昇し、自身のHP回復割合が与えたダメージの30%に上昇する。対象に【退魔縛り】を付与する確率が50%に上昇する。",
+"覚醒Lv25：[神域の加護] 味方全体の攻撃力とダメージ軽減のアップ割合が20%に上昇する。【神降ろしの契約】状態の味方は、攻撃力が20%に上昇し、【神降ろしの契約】終了時、対象のHP回復割合が最大HPの30%に上昇する。【蒼蓮浄世】のダメージ倍率が125%に、バフを解除する確率が100%に、HPが最も低い味方の回復割合が与えたダメージの30%にそれぞれ上昇する。いずれかの味方が初めて死亡した時、【蒼蓮浄世】を発動する確率が100%に上昇する。",
+"覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：会心抵抗、庇護、ダメ軽減 ◯推奨：貫通、物理連撃、会心率、会心ダメ、迅速、戦力、 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"熔岩 与ダメに依存した回復量を持つため 髑髏花 輝く星 悪南瓜 雛菊",
+"戒魔一覧"
+],
+"おすすめペット": [
+"喜怒楽、キャッスルフェニックス、焔鱗谷の赤竜、スターユニコーン、めぇめぇ、ナイトレオプリンス",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-08-11"
+},
+"name_line": "巫女・結紗",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "結紗",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2026-08-12",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/elnora/",
+"slug": "elnora",
+"title": "【ヤバ少女】陽菜は引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SS上位ランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "戦士",
+"trait_jp": "制御・バースト",
+"talents_recommended_jp": "◎推奨：庇護、会心耐性、迅速、ダメージ軽減 ◯推奨：物理連撃、魔法耐性、物理耐性、生命力、強靭、貫通 ☓非推奨：",
+"jp_release": "2026年9月15日"
+},
+"stats": {
+"ATK": 197765.0,
+"HP": 1270975.0,
+"DEF": 5194.0,
+"SPD": 4501.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "聖角奔烈",
+"type": "active",
+"jp": [
+"1ターン目に発動する。クールタイム：2ターン",
+"物理単体 鎧裂の創傷",
+"HPが最も低い敵に436%の物理ダメージを与え、85%の確率で【鎧裂の創傷】を1層付与し、自身は【激怒闘者】を1層獲得する。対象がすでに【鎧裂の創傷】を付与されている場合、今回のダメージが25%増加し、さらに50%の確率で【鎧裂の創傷】を1層追加で付与する。追加で【鎧裂の創傷】の層数×攻撃力の40%分の純粋ダメージを与える。",
+"【鎧裂の創傷】対象の被ダメージが8%増加し、被回復量が8%減少する。戦闘終了まで持続。最大5層までスタック可能。解除可能。死亡時に解除。"
+],
+"global": [
+"1ターン目に発動、クールダウンは2ターン。",
+"物理単体攻撃 / 破甲の傷",
+"HPが最も低い敵に436%の物理ダメージを与え、85%の確率で[破甲の傷]を1層付与し、[戦士の怒り]を1層獲得する。対象がすでに[破甲の傷]状態の場合、この攻撃のダメージが25%増加し、50%の確率でさらに[破甲の傷]を1層付与する。さらに、[破甲の傷]の層数 × 攻撃力の40%に相当する固定ダメージを与える。",
+"[破甲の傷] 被ダメージ+8%、受ける回復量-8%。戦闘終了まで持続（最大5層まで重複可能、解除可能、死亡時に消滅）。"
+],
+"other": []
+},
+{
+"name_jp": "山崩れ咆哮",
+"type": "active",
+"jp": [
+"2ターン目に発動する。クールタイム：4ターン",
+"物理範囲 鎧裂の創傷 吸血",
+"敵全体に合計870%の物理ダメージを与え（単体へのダメージは攻撃力の4倍を超えない）、85%の確率で【鎧裂の創傷】を1層付与し、自身は【激怒闘者】を1層獲得する。このスキルで与えたダメージの25%分自身のHPを回復し、超過した回復分はシールドに変換される。HPが最も低い敵にさらに120%の純粋ダメージを与え、【スタン】を付与する。",
+"スタン：行動不能になる。2ターン持続する。"
+],
+"global": [
+"2ターン目に発動する。クールタイム：4ターン",
+"物理全体攻撃 / 破甲の傷 / 吸血",
+"敵全体に合計870%の物理ダメージ（1体あたり攻撃力の最大4倍まで）を与え、85%の確率で[破甲の傷]を1層付与し、[戦士の怒り]を1層獲得する。与えたダメージの25%に相当するHPを回復し、超過したHPはシールドに変換される。さらに、HPが最も低い敵に120%の固定ダメージを与え、[スタン]を付与する。",
+"[スタン] 2ターンの間、行動不能になる。"
+],
+"other": []
+},
+{
+"name_jp": "角牛体質",
+"type": "passive",
+"jp": [
+"CDなし",
+"攻撃力が45%、HPが25%、与えダメージが20%上昇する。",
+"通常攻撃時に【スタン】を付与し、自身は【激怒闘者】を1層獲得する。"
+],
+"global": [
+"クールダウン: なし",
+"攻撃力が45%、HPが25%、与ダメージ20%増加する。 通常攻撃時に[スタン]を付与し、自身に[戦士の怒り]を1層獲得する。"
+],
+"other": []
+},
+{
+"name_jp": "統御の力",
+"type": "passive",
+"jp": [
+"CDなし",
+"各ターン開始時、HPが最も低い敵をマーク対象として選び、【鎧裂の創傷】を1層付与する。ターン終了後、マーク対象およびその周囲の敵にダメージを与える。ダメージ量は、マーク対象がそのターン中に受けた全ダメージの80%となる。",
+"スキル攻撃を受けるたびに、自身は【激怒闘者】を1層獲得する。",
+"【激怒闘者】を1層獲得するごとに、味方全体の攻撃力とダメージ軽減が8%上昇する。最大3回まで上昇可能。この上昇効果は戦闘終了まで持続し、解除不可、死亡しても解除されない。",
+"【激怒闘者】を1層獲得するごとに、角牛戦士は即座に自身の最大HPの6%分のHPを回復し、超過した回復分はシールドに変換される。",
+"【激怒闘者】が3層に達するごとに、即座に全層数を消費し、【撼天動地の斬首】を発動する。",
+"【撼天動地の斬首】：HPが最も低い敵に150%の純粋ダメージを与え、【鎧裂の創傷】を1層と【スタン】を付与する。目標のHPが20%未満の場合、即座にキルする。対象をキルした場合、再度【撼天動地の斬首】を発動する。",
+"自身が死亡した時、25%の確率で敵全体に【スタン】を付与する。"
+],
+"global": [
+"クールダウン: なし",
+"毎ターン開始時、最もHPが低い敵をマーク対象として選択し、[破甲の傷]を1層付与する。ターン終了時、 マーク対象とその周囲の敵は、そのターン中にマーク対象が受けた全ダメージの80%に相当するダメージを受ける。",
+"自身がスキル攻撃を受けるたび、[戦士の怒り]を1層獲得する。 [戦士の怒り]を1層獲得するたび、味方全体の攻撃力が8%、被ダメージ軽減が8%増加する（最大3層まで）。この効果は戦闘終了まで持続し、解除不可で、死亡しても消滅しない。",
+"[戦士の怒り]を1層獲得するたび、ミノタウロス戦士は即座に最大HPの6%に相当するHPを回復する（超過HPはシールドに変換）。",
+"[戦士の怒り]が3層に達すると、即座に全層を消費して[地裂の処刑]を発動する。",
+"[地裂の処刑]: 最もHPが低い敵に150%の固定ダメージを与え、[破甲の傷]1層と[スタン]を付与する。対象のHPが20%未満の場合、即座に処刑する。対象を撃破した場合、再度[地裂の処刑]を発動する。",
+"死亡時、25%の確率で敵全体に[スタン]を付与する。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"覚醒Lv5：[聖角奔烈] ダメージ倍率が501%に上昇し、【鎧裂の創傷】を付与する確率が100%に上昇する。目標がすでに【鎧裂の創傷】を持っている場合、今回のダメージが30%増加し、追加で1層の【鎧裂の創傷】を付与する確率が60%に上昇する。追加で与え純粋ダメージが【鎧裂の創傷】の層数×攻撃力の50%に上昇する。",
+"覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"覚醒Lv20：[山崩れ咆哮] ダメージ倍率が1000%に上昇し、【鎧裂の創傷】を付与する確率が100%に上昇する。自身のHP回復量が与えたダメージの30%に上昇する。HPが最も低い敵に追加で与え純粋ダメージが150%に上昇する。",
+"覚醒Lv25：[統御の力] ターン終了時、マーク対象およびその周囲の敵が受けるダメージ量が、マーク対象がそのターン内に受けた全ダメージの90%に上昇する。【激怒闘者】を獲得した時、味方全体の攻撃力とダメージ軽減が10%上昇する。最大3回まで上昇可能。自身のHP回復量が最大HPの7%に上昇する。【撼天動地の斬首】：与え純粋ダメージが180%に上昇し、対象の即死ラインがHPの25%に上昇する。死亡時、敵に【スタン】を付与する確率が30%に上昇する。",
+"覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：庇護、会心耐性、迅速、ダメージ軽減 ◯推奨：物理連撃、魔法耐性、物理耐性、生命力、強靭、貫通 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"疆域王 スキルダメージを受けるたび自身は【激怒闘者】を1層獲得というスキル4があるため、疆域王4セット効果「ダメージを受けるたび、3%ダメージ軽減が上昇、1ターン持続、最大10層までスタック可能」と相性はよさそうという判断 悪南瓜 敵にデバフを与えるなら早い段階で付与したいため。",
+"戒魔一覧"
+],
+"おすすめペット": [
+"聖殿のグリフォン、スターユニコーン、夢女魅る枕、ナイトレオプリンス、めぇめぇ",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-08-30"
+},
+"name_line": "角牛戰士・陽菜",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "陽菜",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Воин",
+"jp_release_date": "2026-09-15",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/celestine/",
+"slug": "celestine",
+"title": "【ヤバ少女】風竜・雲璟は引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSS暫定ランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "星輝属性",
+"class_jp": "サポート",
+"trait_jp": "挑発シールド",
+"talents_recommended_jp": "◎推奨：会心耐性、庇護、迅速、強靭、ダメージ軽減 ◯推奨：魔法耐性、物理耐性、生存、シールド ☓非推奨：",
+"jp_release": "2026年9月24日"
+},
+"stats": {
+"ATK": 164146.0,
+"HP": 1321137.0,
+"DEF": 5193.0,
+"SPD": 4735.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "蒼鱗神覆",
+"type": "active",
+"jp": [
+"1ターン目に発動する。クールタイム：2ターン",
+"シールド 風の枷 HPが最も低い味方に、風竜最大HPの25%分の【翠竜の鱗】を付与する。 【翠竜の鱗】：2ターン持続し、解除不可。ターン終了時またはシールドが破壊された時、敵全体に風竜の攻撃力120%の純粋ダメージ+風竜の最大HPの8%分の魔法ダメージを与え、さらに85%の確率で対象に【風の枷】を付与する。",
+"ステータス詳細 【風の枷】 速度が15%低下し、防御力が10%低下する。3ターン持続。最大3層までスタック可能。"
+],
+"global": [
+"クールダウン: 1ターン目に発動した場合、クールダウンは2ターン。",
+"タグ: 【シールド】【風の足枷】",
+"最もHPが低い味方1体に、最大HPの25%分に相当する【青竜の鱗】シールドを付与する。",
+"【青竜の鱗】: 2ターン持続（解除不可）。ターン終了時、またはシールドが破壊された時、敵全体に120%の確定ダメージ＋青竜の最大HPの8%相当の魔法ダメージを与え、各敵に85%の確率で【风の足枷】を付与する。",
+"【風の足枷】: 3ターンの間、速度（SPD）を15%、防御力（DEF）を10%減少させる。最大3回まで重複可能。"
+],
+"other": []
+},
+{
+"name_jp": "嵐天星墜",
+"type": "active",
+"jp": [
+"2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細 挑発 風神の真霊 敵全体に113%の魔法ダメージを与え、50%の確率で【挑発】を付与する。自身に【風神の真霊】を付与する。2ターン持続し、解除不可。【風神の真霊】期間中、自身が受ける全ダメージの120%を回復に変換する（分担ダメージを含む）。既死されず、魂消滅を無視する。",
+"【挑発】 挑発者を強制的に通常攻撃する。2ターン持続。"
+],
+"global": [
+"タグ: 【挑発】【風神の真霊】",
+"敵全体に113%の魔法ダメージを与え、50%の確率で【挑発】を付与する。自身に【風神の真霊】を付与する（2ターン持続、解除不可）。効果中、自身が受けた全ダメージ（分担ダメージを含む）の120%分、自身を回復する。即死効果を防ぎ、【魂の封印】を無視する。",
+"【挑発】: 挑発されたユニットは2ターンの間、挑発者に対して通常攻撃しか行えなくなる。"
+],
+"other": []
+},
+{
+"name_jp": "風竜体質",
+"type": "passive",
+"jp": [
+"CDなし",
+"攻撃力が45%、HPが25%、ダメージ軽減が20%上昇する。 通常攻撃時、【風の枷】を1層付与する。",
+"【風の枷】 速度が15%低下し、防御力が10%低下する。3ターン持続。最大3層までスタック可能。"
+],
+"global": [
+"クールダウン: なし",
+"攻撃力が45%、HPが25%、ダメージ免役が20%増加する。通常攻撃時、敵に【風の足枷】を1スタック付与する。",
+"【風の足枷】: 3ターンの間、速度（SPD）を15%、防御力（DEF）を10%減少させる。最大3回まで重複可能。"
+],
+"other": []
+},
+{
+"name_jp": "蒼風の誓約",
+"type": "passive",
+"jp": [
+"CDなし",
+"風竜がいる時、味方全体が受ける持続ダメージが70%減少する。 スキルまたは通常攻撃によるダメージを受けた時、対象に通常攻撃で反撃する。毎ターン最大5回まで反撃可能。 毎ターン開始時、攻撃力が最も高い味方2体とリンクする。リンク対象が受けるダメージの30%を分担し、デバフを1つ解除し、このターン中、リンク対象の与えダメージが25%上昇する。 HP割合が初めて85%/70%/55%/40%/25%に達した時、味方全体に風竜の最大HP15%分のシールドを付与する。2ターン持続。シールド付与効果は戦闘につき最大5回まで発動可能。"
+],
+"global": [
+"青竜が場にいる間、味方全員が受ける持続ダメージが70%軽減される。",
+"青竜がスキルまたは通常攻撃のダメージを受けた時、攻撃対象へ通常攻撃で反撃する（1ターンにつき最大5回まで）。",
+"各ターンの開始時、攻撃力（ATK）が最も高い味方2体とリンクを構築する：リンクした味方が受けるダメージの30%を青竜が肩代わりする。リンクした各味方からデバフを1つ解除する。そのターンの間、対象の与ダメージを25%増加させる。",
+"青竜のHPが初めて85% / 70% / 55% / 40% / 25%に達した時、味方全員に最大HPの15%分のシールドを2ターン付与する（この効果は1戦闘につき最大5回まで発動可能"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力]HPが10%上昇する",
+"覚醒Lv5： [蒼鱗神覆-耀]【翠竜の鱗】※推奨 の効果が最大HPの35%に上昇する。シールド期間中、対象の防御力とダメージ軽減が40%上昇し、すべてのデバフを解除し、既死されない。ターン終了時またはシールドが破壊された時、敵全体へのダメージが135%の純粋ダメージ+風竜の最大HPの10%分の魔法ダメージに上昇し、100%の確率で対象に【風の枷】を付与する。",
+"覚醒Lv5：[蒼鱗神覆-堕]【翠竜の鱗】の効果が最大HPの30%に上昇する。ターン終了時またはシールドが破壊された時、敵全体へのダメージが135%の純粋ダメージ+風竜の最大HPの10%分の魔法ダメージに上昇し、100%の確率で対象に【風の枷】を付与する。同時に、味方の中でHPが最も低い対象のHPを30%回復し、すべてのデバフを解除する。",
+"覚醒Lv10：[覚醒の力]ATKが10%上昇する",
+"覚醒Lv15：[覚醒の力]SPDが10%上昇する",
+"覚醒Lv20：[嵐天星墜-耀]敵全体へのダメージが121%に上昇し、100%の確率で【風の枷】を付与する。さらに【挑発】の確率が75%に上昇し、戦士とサポーターに対する【挑発】の確率は100%に上昇する。自身に【風神の真霊】を付与する期間中、自身が受ける全ダメージ（分担ダメージを含む）の200%分、自身のHPを回復する。",
+"覚醒Lv20：[嵐天星墜-堕]敵全体へのダメージが121%に上昇し、100%の確率で【風の枷】を付与し、【挑発】の付与確率が60%に上昇する。このスキルでダメージを与えた後、対象のHPが50%未満の場合、追加で150%の魔法ダメージを与え、このスキルで与えたダメージの30%分、HPが最も低い味方（自分も含む）のHPを回復する。自身に【風神の真霊】を付与する期間中、自身が受ける全ダメージ（分担ダメージを含む）の150%分、自身のHPを回復する。",
+"覚醒Lv25：[蒼風の誓約-耀]風竜がいる時、味方全体が受ける持続ダメージが80%減少する。スキルまたは通常攻撃によるダメージを受けた時、対象に通常攻撃で反撃する。毎ターン最大8回まで反撃可能。毎ターン開始時、攻撃力が最も高い味方2体とリンクする。リンク対象が受けるダメージの35%を分担し、デバフを1つ解除し、このターン中、リンク対象の与えダメージが30%上昇する。HP割合が初めて85%/70%/55%/40%/25%に達した時、味方全体に風竜の最大HP20%分のシールドを付与する。2ターン持続。さらに自身の最大HPの25%分のHPを回復する。シールド付与効果と自身HP回復は戦闘につき最大5回まで発動可能。自身のHPが50%未満の場合、直ちに【嵐天星墜】を発動する。戦闘につき最大1回まで発動可能。",
+"覚醒Lv25：[蒼風の誓約-堕]風竜がいる時、味方全体が受ける持続ダメージが80%減少する。スキルまたは通常攻撃によるダメージを受けた時、対象に通常攻撃で反撃し、反撃後、HPが最も低い味方（自分も含む）に風竜攻撃力150%分のHPを回復する。毎ターン最大8回まで反撃可能。毎ターン開始時、攻撃力が最も高い味方4体とリンクする。リンク対象が受けるダメージの35%を分担し、デバフを1つ解除し、このターン中、リンク対象の与えダメージが30%上昇する。HP割合が初めて85%/70%/55%/40%/25%に達した時、味方全体に風竜の最大HP20%分のシールドを付与する。2ターン持続。シールド付与効果は戦闘につき最大5回まで発動可能。自身のHPが50%未満の場合、直ちに【嵐天星墜】を発動する。戦闘につき最大1回まで発動可能。",
+"覚醒Lv30：[覚醒バースト]第3ターン開始から4ターンの間、被ダメージ軽減が20%上昇し、回復量が20%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：会心耐性、庇護、迅速、強靭、ダメージ軽減 ◯推奨：魔法耐性、物理耐性、生存、シールド ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"聖域天使 疆域王 青ダイヤ",
+"戒魔一覧"
+],
+"おすすめペット": [
+"スターユニコーン",
+"チェシャタートルウサギ",
+"夢女魅る枕",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-09-13"
+},
+"name_line": "セレスティン（風竜・雲璟）",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "雲璟",
+"global_name": null,
+"element_ru": "Звездный свет",
+"class_ru": null,
+"jp_release_date": "2026-09-24",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+},
+{
+"url": "https://surrounded-by-girls.online/character/lilica/",
+"slug": "lilica",
+"title": "【ヤバ少女】リリカは引くべき？海外評価や推奨タレント等まとめ",
+"info": {
+"rank_site": "SSSランク ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "光属性",
+"class_jp": "魔法使い",
+"trait_jp": "即死・バースト",
+"talents_recommended_jp": "◎推奨：貫通、庇護 ◯推奨：会心抵抗、戒律、迅速、生存、ダメージ軽減 ☓非推奨：",
+"jp_release": "2026年10月1日"
+},
+"stats": {
+"ATK": 196818.0,
+"HP": 1257962.0,
+"DEF": 5104.0,
+"SPD": 4637.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "魔術カード",
+"type": "active",
+"jp": [
+"条件/CD：1ターン目に発動する。クールタイム：2ターン タグ：[魔法ダメージ] [範囲]",
+"魔術カードを投げ、敵の中後列に164%の魔法ダメージを与え、85%の確率で【スペードマーク】を1層付与する。さらに85%の確率で、HPが最も低い敵2体に【魔術トラップ】を生成する。このスキル発動時、対象のHPが50%以上の場合、ダメージがさらに30%増加する。",
+"【スペードマーク】対象の速度が5%低下する。最大3層までスタック可能。戦闘終了まで持続。解除可能。 【魔術トラップ】対象が2回攻撃を受けるか死亡した時、敵全体に妖精魔術師の最大HP25%分の純粋ダメージを与える。解除不可。3ターン持続。最大3層までスタック可能。"
+],
+"global": [
+"アクティブスキル | 発動：1ターン目 / クールダウン：2ターン 魔法ダメージ / 範囲攻撃",
+"中列および後列の敵に164%の魔法ダメージを与え、85%の確率で【スペードマーク】を1スタック付与する。また、85%の確率でHPが最も低い敵2体に【魔術トラップ】を生成する。スキル発動時、対象のHPが50%以上である場合、さらにダメージが30%増加する。",
+"【スペードマーク】：対象の速度が5%低下する。最大3スタックまで重複可能。戦闘終了まで持続。解除可能。",
+"【魔術トラップ】：対象が2回攻撃を受けるか死亡した時、対象側の全ユニットにマジシャンの最大HPの25%に相当する固定ダメージを与える。解除不可。3ターン持続。最大3スタックまで重複可能。"
+],
+"other": []
+},
+{
+"name_jp": "幻影のカード陣",
+"type": "active",
+"jp": [
+"条件/CD：2ターン目に発動する。クールタイム：4ターン タグ：[魔法ダメージ] [範囲] [魔術トラップ]",
+"敵全体に157%の魔法ダメージを与え、対象のHPが20%未満の場合は即死させる。さらに85%の確率で【スペードマーク】を1層付与する。与えたダメージの30%分自身のHPを回復し、最大HPを超えた回復分はシールドに変換される。",
+"スキル発動時、ランダムに赤のカードか黒のカードを1枚めくる。",
+"赤のカードの場合：今回のダメージが26%増加する。 黒のカードの場合：今回の攻撃時、85%の確率で対象に【盲目】および【ダメージ軽減低下】を付与する（各デバフの確率独立して判定される）。",
+"スキル発動後、HPが最も低い敵2体に【魔術トラップ】を生成する。",
+"【盲目】命中率が20％低下する。2ターン持続、スタック不可、解除可能。 【ダメージ軽減低下】ダメージ軽減が20％低下する。2ターン持続、スタック不可、解除可能 【魔術トラップ】対象が2回攻撃を受けるか死亡した時、敵全体に妖精魔術師の最大HP25%分の純粋ダメージを与える。解除不可。3ターン持続。最大3層までスタック可能。"
+],
+"global": [
+"アクティブスキル（奥義） | 発動：2ターン目 / クールダウン：4ターン",
+"魔法ダメージ / 範囲攻撃 / 魔法の罠",
+"敵全体に157%の魔法ダメージを与え、対象のHPが20%未満の場合は即死させる。85%の確率で[スペードの印]を1スタック付与する。与えたダメージの30%分、自身のHPを回復し、超過した回復量はシールドに変換される。",
+"発動時、ランダムに赤または黒のカードを公開する：",
+"赤の場合、この攻撃のダメージが26%増加する。 黒の場合、この攻撃は85%の確率で対象に[暗闇]と[ダメージ軽減低下]を付与する（各デバフは個別に判定される）。",
+"スキル発動後、HPが最も低い敵2体に[魔法の罠]を生成する。",
+"[暗闇]：命中率が20%低下する。2ターン持続。重複不可。解除可能。",
+"[ダメージ軽減低下]：ダメージ軽減が20%低下する。2ターン持続。重複不可。解除可能。"
+],
+"other": []
+},
+{
+"name_jp": "妖精体質",
+"type": "passive",
+"jp": [
+"条件/CD：CDなし",
+"攻撃力が45%、HPが25%、会心率が20%、吸血が30%上昇する。【スペードマーク】を持つ対象を攻撃する際、対象の防御力を20%無視する。",
+"【スペードマーク】対象の速度が5%低下する。最大3層までスタック可能。戦闘終了まで持続。解除可能。"
+],
+"global": [
+"パッシブスキル | クールダウンなし",
+"※おそらく海外版の提供情報はレベル3ではないものだと思われます。",
+"攻撃力を35%、HPを20%、クリティカル率を15%増加させる。"
+],
+"other": []
+},
+{
+"name_jp": "大魔術師",
+"type": "passive",
+"jp": [
+"条件/CD：CDなし",
+"毎ターン開始時、敵の【スペードマーク】の合計層数が3層より多い場合、自身を【透明マント】状態にする（CD：2ターン）。さらに、味方全体に妖精魔術師の攻撃力400%分の【スペードシールド】を付与し、ダメージを受けた際にそのダメージの35%を自身のHPに変換する。",
+"自身が【スペードマーク】を持つ対象を攻撃した時、35%の確率で対象を【猛獣の檻】状態にする（1ターン持続）。",
+"毎ターン開始時、ランダムな味方3名を選び、【剽窃のトリック】状態にする：ダメージ軽減が40%上昇し、攻撃を受けた時、35%の確率で攻撃者のランダムなバフを1つ盗み（解除不可のバフは盗まれない）、70%の確率で攻撃者に【スペードマーク】を1層付与する。【剽窃のトリック】はターン終了時に解除される。",
+"ターン終了時、【スペードマーク】を持つすべての敵に、【スペードマーク】の層数×攻撃力の36%分の純粋ダメージを与える。",
+"すべての魔術トラップが爆発する時、85%の確率で【魔術オーラ】を1層獲得し、自身の最大HPの30%分のHPを回復する。超過した回復量はシールドに変換される。",
+"【スペードマーク】を持つ敵が死亡するたびに、85%の確率で【魔術オーラ】を1層獲得する。",
+"【魔術オーラ】を2層獲得するたびに、即座に2層消費し、制御を無視して【幻影のカード陣】を発動する。",
+"【透明マント】回避率が80%上昇し、2ターンの間、他に攻撃対象になる味方がいると、自分は攻撃対象にならない。2ターン持続。",
+"【猛獣の檻】行動不能になり、被ダメージが20%上昇する。1ターン持続。スタック不可。解除可能。"
+],
+"global": [
+"パッシブスキル | クールダウンなし",
+"毎ターン開始時、フィールド上の[スペードの印]の合計スタック数が3を超えている場合、[透明のカード]状態になり（クールダウン：2ターン）、味方全体にマジシャンの攻撃力の400%に相当する[スペードシールド]を付与する。ダメージを受けた時、受けたダメージの35%を自分のHPに変換する。",
+"[スペードの印]が1スタック付与されている対象を攻撃する時、35%の確率で対象に[野獣の檻]を1ターン付与する。",
+"毎ターン開始時、ランダムな味方3体を選択して[スリの手品]状態にし、ダメージ軽減を40%増加させる。対象が攻撃された時、35%の確率で攻撃者からランダムなバフを1つ奪い、70%の確率で攻撃者に[スペードの印]を1スタック付与する。[スリの手品]はターン終了時に解除される。",
+"ターン終了時、[スペードの印]を持つすべての敵に、[スペードの印のスタック数 × 攻撃力の36%] に相当する固定ダメージを与える。",
+"すべての[魔法の罠]が爆発した時、85%の確率で[魔法の洞察]を1スタック獲得し、自身の最大HPの30%分回復する（超過回復量はシールドに変換）。",
+"[スペードの印]を持つ敵ユニットが死亡するたび、85%の確率で[魔法の洞察]を1スタック獲得する。",
+"[魔法の洞察]を2スタック獲得するごとに、即座に2スタック消費して行動阻害を無視し、[ファントムカードフォーメーション]を発動する。",
+"[透明のカード]：回避率が80%増加し、フィールド上に攻撃可能な味方ユニットがいる場合、敵の攻撃対象として選択されなくなる。2ターン持続。",
+"[野獣の檻]：行動不能になり、受けるダメージが20%増加する。1ターン持続。重複不可。解除可能。"
+],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"✦ 覚醒Lv1：[覚醒の力] HPが10%上昇する",
+"✦ 覚醒Lv5：[魔術カード] ダメージ倍率が189%に上昇し、【スペードマーク】を付与する確率が100%に上昇する。HPが最も低い敵2体に【魔術トラップ】を生成する確率が100%に上昇する。スキル発動時、対象のHPが50%以上の場合、ダメージがさらに40%上昇する。",
+"✦ 覚醒Lv10：[覚醒の力] ATKが10%上昇する",
+"✦ 覚醒Lv15：[覚醒の力] SPDが10%上昇する",
+"✦ 覚醒Lv20：[幻影のカード陣] ダメージ倍率が180%に上昇し、対象の即死HPラインが30%に上昇する。【スペードマーク】を付与する確率が100%に上昇する。今回のダメージによる自身のHP回復量がダメージの36%に上昇する。赤のカードの場合：今回のダメージが30%に上昇する。黒のカードの場合：今回の攻撃で対象に【盲目】と【ダメージ軽減低下】を付与する確率が100%に上昇する。",
+"✦ 覚醒Lv25：[大魔術師]【スペードシールド】のシールド割合が450%に上昇し、受けたダメージを自身に転換する割合が40%に上昇する。【スペードマーク】を持つ対象を攻撃した際、対象を【猛獣の檻】状態にする確率が40%に上昇する。味方が【剽窃のトリック】状態の時、攻撃を受けた際に攻撃者のバフ効果を盗む確率が40%に上昇し、攻撃者に【スペードマーク】を付与する確率が80%に上昇する。ターン終了時、【スペードマーク】を持つ敵に与える純粋ダメージが【スペードマーク】の層数×40%の攻撃力分に上昇する。【魔術トラップ】爆発時、【魔術オーラ】を1層獲得する確率が100%に上昇し、自身のHP回復量が最大HPの40%に上昇する。【スペードマーク】を持つ敵が死亡した際、【魔術オーラ】を1層獲得する確率が100%に上昇する。",
+"✦ 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：貫通、庇護 ◯推奨：会心抵抗、戒律、迅速、生存、ダメージ軽減 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"悪南瓜、奇夢うさぎ、疆域王、青ダイヤ",
+"戒魔一覧"
+],
+"おすすめペット": [
+"聖殿のグリフォン、スターユニコーン、夢女魅る枕、チェシャタートルウサギ",
+"ペット一覧"
+],
+"使い方": [
+"魔術トラップに「対象が2回攻撃を受けるか死亡した時」という条件があるので、全体攻撃持ちのキャラクターとの組み合わせが最適だと考えられます。"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-13",
+"published": "2026-09-27"
+},
+"name_line": "妖精魔術師・リリカ",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "リリカ",
+"global_name": null,
+"element_ru": "Свет",
+"class_ru": "Маг",
+"jp_release_date": "2026-10-01",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "SSS"
+},
+{
+"url": "https://surrounded-by-girls.online/character/serina/",
+"slug": "serina",
+"title": "【ヤバ少女】芹奈は引くべき？海外評価はこれから（日本先行実装）",
+"info": {
+"rank_site": "暫定SS下位ランク～Sランク上位 キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "氷結・制御",
+"talents_recommended_jp": "◎推奨：会心ダメージ、会心率、貫通 ◯推奨：迅速、精密、会心抵抗、魔法抵抗、物理抵抗、ダメージ軽減、物理連撃 ☓非推奨：",
+"jp_release": "2026年10月10日"
+},
+"stats": {
+"ATK": 198290.0,
+"HP": 1305117.0,
+"DEF": 5244.0,
+"SPD": 4495.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "霜獄の魔の手",
+"type": "active",
+"jp": [
+"アクティブスキル 1ターン目に発動する。クールタイム：2ターン",
+"【物理範囲】【猛毒】【骨刺す】",
+"敵全体に108%の物理ダメージを与え、85%の確率で対象に【猛毒】を1層付与する。 42%の確率で【骨刺す】を1層付与し、対象が【猛毒】を所持している場合、【骨刺す】の付与確率が85%まで上昇する。",
+"HPが最も低い敵に、さらに攻撃力の204%分の純粋ダメージを与える。スキル発動後、自身は自身の最大HPの30%分の【霜のシールド】を獲得する。",
+"【霜のシールド】 ダメージを吸収できるシールド。自身の最大HPの200%までスタック可能。解除不可、死亡時にも消失しない。シールドが存在する間、攻撃を受けた際に50%の確率で攻撃者に【骨刺す】を1層付与する。",
+"【猛毒】 この効果を所持する対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%を超えない）。2ターン持続する。最大5層までスタック可能。",
+"【骨刺す】 この効果を所持する対象は速度が6%、攻撃力が10%低下する。最大5層までスタック可能。2ターン持続する。解除可能。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "極寒領域",
+"type": "active",
+"jp": [
+"アクティブスキル 2ターン目に発動する。クールタイム：4ターン",
+"スキル詳細 【物理範囲】【骨刺す】【霜のシールド】",
+"HP割合が最も低い敵3体に238%の物理ダメージを与え、85%の確率で対象に【猛毒】と【骨刺す】を1層付与する。",
+"会心時 、さらに【猛毒】と【骨刺す】の合計層数×攻撃力40%分の純粋ダメージを与える。 対象をキルした場合 、自身の最大HP30%分の【霜のシールド】を獲得する。 対象のHPが50%未満の場合、今回のダメージが20%増加する。",
+"ステータス詳細",
+"【猛毒】 この効果を所持する対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う（最大で発動者の攻撃力の100%を超えない）。2ターン持続する。最大5層までスタック可能。",
+"【骨刺す】 この効果を所持する対象は速度が6%、攻撃力が10%低下する。最大5層までスタック可能。2ターン持続する。解除可能。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "氷獄体質",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 攻撃力が45%、HPが25%、与えダメージが20%増加する。 ターン終了時、【猛毒】を持つ対象は50%の確率で【骨刺す】を1層獲得する。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "氷結王座",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 戦闘開始時、味方全体に自身の最大HPの30%分の【霜のシールド】を付与し、85%の確率で敵全体に1層の【猛毒】と【骨刺す】を付与する。 毎ターン開始時、敵の【骨刺す】が5層に達している場合、85%の確率で【骨刺す霜寒】を付与する。 攻撃時、対象の【骨刺す】が1層につき、会心率が12%上昇する。 致命的なダメージを受けると、2ターンの間【寒鉄の氷牢】状態になる。各戦闘で最大2回まで発動する。 HPが50%より高い場合は【傲慢形態】となる：与えダメージが40%上昇し、攻撃時65%の確率で対象に追加で1層の【骨刺す】と【猛毒】を付与する。 HPが50%以下の場合は【凛冽形態】に切り替わる：ダメージ軽減が40%上昇し、被撃時に65%のダメージを反射する。 味方が初めて死亡した時、味方全体に自身の最大HPの30%分の【霜のシールド】を付与し、70%の確率で制御を無視して【極寒領域】を1回発動する（毎ターン1回発動可能）。",
+"【霜のシールド】 ダメージを吸収できるシールド。自身の最大HPの200%までスタック可能。解除不可、死亡時にも消失しない。シールドが存在する間、被撃時に50%の確率で攻撃者に【骨刺す】を1層付与する。",
+"【骨刺す霜寒】 対象は行動不能になる（1ターン持続）。2回攻撃を受けると解除される。各対象は1ターン内に1回のみ凍結される。",
+"【寒鉄の氷牢】 デバフを解除せず、死亡判定も発生しない。強制的に最大HP50%分のHPを保持し、最大HP50%分の【霜のシールド】を獲得する。 この間は攻撃できず、制御を無効化する。【寒鉄の氷牢】効果終了後、味方全体のHPを最大HPの100%分回復し、味方全体の攻撃力が30%増加する（3ターン持続）。"
+],
+"global": [],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13%",
+"HP: 115000 / +13%",
+"◇ 覚醒Lv1：[覚醒の力]HPが10%上昇する",
+"◇ 覚醒Lv5：[霜獄の魔の手]ダメージ倍率が124%に上昇し、【猛毒】の付与確率が 100% に上昇する。 【骨刺す】の付与確率が50%に上昇する。対象が【猛毒】を所持している場合、【骨刺す】の付与確率が100%に上昇する。 HPが最も低い敵に与える純粋ダメージが攻撃力の240%に上昇する。 スキル発動後に獲得する【霜のシールド】が自身の最大HPの40%に上昇する。",
+"◇ 覚醒Lv10：[覚醒の力]ATKが10%上昇する",
+"◇ 覚醒Lv15：[覚醒の力]SPDが10%上昇する",
+"◇ 覚醒Lv20：[極寒領域]ダメージ倍率が274%に上昇し、【猛毒】と【骨刺す】の付与確率が 100% に上昇する。 会心時、追加で与え純粋ダメージが【猛毒】と【骨刺す】の合計層数×攻撃力の50%に上昇する。 対象をキルした際に獲得する【霜のシールド】が自身の最大HPの30%に上昇する。 対象のHPが50%未満の場合、今回のダメージが30%上昇する。",
+"◇ 覚醒Lv25：[氷結王座]戦闘開始時、味方全体に付与する【霜のシールド】が自身の最大HPの40%に上昇し、敵全体に【猛毒】と【骨刺す】を1層付与する 確率が100% に上昇する。 毎ターンの開始時、敵の【骨刺す】が5層に達している場合、【骨刺す霜寒】の付与確率が 100%に上昇 する。 攻撃時、対象の【骨刺す】が1層につき、会心率が15%上昇する。 【傲慢形態】：与えダメージが45%に上昇し、攻撃時に対象へ【骨刺す】と【猛毒】をさらに1層付与する確率が70%に上昇する。",
+"【凛冽形態】：ダメージ軽減が45%に上昇し、被撃時に反射するダメージの割合が70%に上昇する。 味方が初めて死亡した時、味方全体に付与する【霜のシールド】が自身の最大HPの40%に上昇し、制御を無視して【極寒領域】を1回発動する 確率が100% に上昇する（毎ターン1回発動可能）",
+"◇ 覚醒Lv30：[覚醒バースト]第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：会心ダメージ、会心率、貫通 ◯推奨：迅速、精密、会心抵抗、魔法抵抗、物理抵抗、ダメージ軽減、物理連撃 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"聖域獅子王、悪南瓜、髑髏花、熔岩",
+"戒魔一覧"
+],
+"おすすめペット": [
+"キャッスルフェニックス、めぇめぇ、ナイトレオプリンス、焔鱗谷の赤竜、聖殿のグリフォン、スターユニコーン",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-10-08"
+},
+"name_line": "氷獄女帝・芹奈",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "芹奈",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2026-10-10",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": "S"
+},
+{
+"url": "https://surrounded-by-girls.online/character/yuuyou/",
+"slug": "yuuyou",
+"title": "【ヤバ少女】キョンシー童子・幽瑶は引くべき？日本先行実装・海外これから",
+"info": {
+"rank_site": "SS暫定ランク キャラ紹介個別ページのTier評価は更新が遅れるので、最新評価は以下のTier表をご確認ください。 ⇒ 【ヤバ少女】 国内版 Tier表 最強ランキング ⇒ 【ヤバ少女】 海外版 Tier表 最強ランキング",
+"element_jp": "闇属性",
+"class_jp": "戦士",
+"trait_jp": "屍毒 / バースト",
+"talents_recommended_jp": "◎推奨：物理連撃、迅速、貫通 ◯推奨：会心ダメ、会心率、追撃、庇護、生存、生命力 ☓非推奨：",
+"jp_release": "2026年10月24日"
+},
+"stats": {
+"ATK": 198290.0,
+"HP": 1305117.0,
+"DEF": 5244.0,
+"SPD": 4495.0
+},
+"stats_level": 350,
+"skills": [
+{
+"name_jp": "厄除け剣法",
+"type": "active",
+"jp": [
+"アクティブスキル 1ターン目に発動する。クールタイム:2ターン",
+"スキル詳細 物理単体 猛毒 伏魔",
+"HP割合が最も低い敵に364%の物理ダメージを与える。対象が【猛毒】を1層持つごとに、このダメージがさらに10%増加する(最大50%まで)。また、このダメージの32%分を 自分のHPを回復 する。85%の確率で対象に【猛毒】を1層付与する。スキル発動後、自身は【伏魔】を2層獲得する。対象がすでに【猛毒】を持っている場合、ランダムな敵2体にスプラッシュし、60%のダメージを与え、【猛毒】を1層付与する。",
+"ステータス詳細",
+"【猛毒】 この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う(最大で発動者の攻撃力の100%を超えない)。2ターン持続。最大5層までスタック可能。",
+"【伏魔】 キョンシー童子自身の専用マーク。15層までスタック可能。戦闘終了まで持続し、解除不可。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "雷鳴の陣",
+"type": "active",
+"jp": [
+"アクティブスキル 2ターン目に発動する。クールタイム:4ターン",
+"スキル詳細 物理範囲 即死 伏魔",
+"敵の中後列からランダムな3体 に238%の物理ダメージを与える。【猛毒】を持つ対象には、さらに【猛毒】の層数×攻撃力の30%分の純粋ダメージを与える。 HPが25%未満の対象を即死する 。また、このダメージの32%分を 自分のHPを回復 する。85%の確率で対象に【猛毒】と【死毒】を1層付与する。1体命中するごとに、【伏魔】を2層獲得する。",
+"ステータス詳細",
+"【猛毒】 この効果を持つ対象は魔法ダメージ軽減が5%低下し、ターン終了時に自身の最大HPの5%分のHPを失う(最大で発動者の攻撃力の100%を超えない)。2ターン持続。最大5層までスタック可能。",
+"【伏魔】 キョンシー童子自身の専用マーク。15層までスタック可能。戦闘終了まで持続し、解除不可。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "童子体質",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 攻撃力が45%、HPが25%、与えダメージが20%増加する。 攻撃を受けた時、自身は50%の確率で【伏魔】を1層獲得し、50%の確率で攻撃者に【猛毒】を1層付与する。"
+],
+"global": [],
+"other": []
+},
+{
+"name_jp": "道法天成",
+"type": "passive",
+"jp": [
+"パッシブスキル CDなし",
+"スキル詳細 戦闘開始時、自身は【伏魔】を5層獲得する。 毎ターン開始時、85%の確率で敵からランダムな3体に【猛毒】を1層と【死毒】を1層付与する。付与対象がすでに【猛毒】を持っている場合、自身は【伏魔】を2層獲得する。 自身の【伏魔】が8層に達した時、即座に8層の【伏魔】を消費し、制御を無視して 【伏魔万剣陣】 を発動する:敵全体に400%の物理ダメージを与え、各対象に【猛毒】を1層付与する(毎ターンで最大1回まで発動可能)。 【猛毒】を持つ対象を攻撃する時、対象のダメージ軽減を25%無視し、70%の確率で【死毒】を1層付与する。 【死毒】が3層に達している対象を攻撃する時、85%の確率で即座に起爆する(即座に死毒の層数に応じたダメージを与え、死毒の層数は維持される)。 致命的なダメージを受けた時、3層の【伏魔】を消費してそのダメージを無効化し、自身のHPを70%回復する (複数回発動可能) 。【伏魔】が3層未満の場合、全ての【伏魔】を消費し、HP50%の状態で1回復活する(戦闘につき1回まで発動可能)。 自身が敵をキルした時、【伏魔】を2層獲得し、自身の最大HPの15%を回復する。【死毒】を付与された敵が死亡した時、【死毒】はランダムな敵2体に拡散し、自身は追加で2層の【伏魔】を獲得する。",
+"ステータス詳細",
+"【死毒】 被回復効果が10%低下し、ターン終了時にキョンシー童子の攻撃力の120%分のHPを失う。2ターン持続。最大3層までスタック可能。解除可能。"
+],
+"global": [],
+"other": []
+}
+],
+"awakening": [
+"ATK: 14350 / +13% HP: 115000 / +13%",
+"覚醒Lv1：[覚醒の力] HPが10%上昇する。 覚醒Lv5：[厄除け剣法] ダメージ倍率が418%に上昇する。対象が1層の【猛毒】を所持するごとに、今回のダメージが追加で12%上昇し、最大で60%まで追加上昇する。HP回復量が今回のダメージの40%に上昇する。対象に1層の【猛毒】を付与する 確率が100%に上昇 する。スプラッシュダメージが100%に上昇する。 覚醒Lv10：[覚醒の力] ATKが10%上昇する。 覚醒Lv15：[覚醒の力] SPDが10%上昇する。 覚醒Lv20：[雷鳴の陣] ダメージ倍率が274%に上昇する。追加で与える純粋ダメージが【猛毒】の層数×攻撃力の40%に上昇する。 対象に対するHP即死ラインが30%に上昇 する。HP回復量が今回のダメージの40%に上昇する。対象に1層の 【猛毒】と【死毒】を付与する確率が100% に上昇する。 覚醒Lv25：[道法天成] 毎ターンの開始時、ランダムな敵3体に1層の【猛毒】と1層の【死毒】を 付与する確率が100% に上昇する。",
+"【伏魔万剣陣】のダメージ倍率が450%に上昇し、追加で各対象に1層の【死毒】を付与する。",
+"自身が【猛毒】を所持する対象を攻撃する時、無視するダメージ軽減の割合が30%に上昇し、対象に1層の【死毒】を付与する確率が80%に上昇する。",
+"自身が【死毒】が3層に達した対象を攻撃する時、即座に起爆する確率が100%に上昇する。",
+"【伏魔】を消費してダメージを無効化し、自身のHPを回復する割合が75%に上昇する。",
+"すべての【伏魔】を消費して復活した後のHP割合が55%に上昇する。",
+"自身が敵をキルした時、獲得する【伏魔】の数が3層に上昇し、自身の最大HPを回復する割合が20%に上昇する。 覚醒Lv30：[覚醒バースト] 第3ターン開始から4ターンの間、被ダメージ軽減が25%、会心率が15%上昇する。"
+],
+"build": {
+"推奨ビルド": [],
+"おすすめ刻印＆ルーン考察": [
+"◎推奨：物理連撃、迅速、貫通 ◯推奨：会心ダメ、会心率、追撃、庇護、生存、生命力 ☓非推奨：",
+"刻印タレント一覧 刻印の効果確認"
+],
+"おすすめ戒魔": [
+"悪南瓜、髑髏花、聖域獅子王",
+"戒魔一覧"
+],
+"おすすめペット": [
+"キャッスルフェニックス、めぇめぇ、喜怒楽、焔鱗谷の赤竜、スターユニコーン、夢女魅る枕",
+"ペット一覧"
+]
+},
+"overseas_eval": [],
+"dates": {
+"updated": "2026-10-24",
+"published": "2026-10-21"
+},
+"name_line": "キョンシー童子・幽瑶",
+"rarity_jp": "限定GR",
+"name_latin": null,
+"name_jp": "幽瑶",
+"global_name": null,
+"element_ru": "Тьма",
+"class_ru": "Воин",
+"jp_release_date": "2026-10-24",
+"is_character": true,
+"not_in_jp_yet": false,
+"rank": null
+}
+]

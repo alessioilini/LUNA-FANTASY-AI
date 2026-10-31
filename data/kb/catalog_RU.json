@@ -432,7 +432,7 @@
    "aliases": [
     "ルーナ"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Маг",
    "role": "mage",
    "rarity": "GR",
@@ -632,7 +632,7 @@
     "メリアス",
     "Мелиас"
    ],
-   "element": null,
+   "element": "Звездный свет",
    "class": "Маг",
    "role": "mage",
    "rarity": "GR",
@@ -701,7 +701,7 @@
     "ミラシス",
     "Миласис"
    ],
-   "element": null,
+   "element": "Звездный свет",
    "class": "Воин",
    "role": "warrior",
    "rarity": "GR",
@@ -1319,7 +1319,7 @@
     "Тесериен",
     "Тесса"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Поддержка",
    "role": "support",
    "rarity": "GR",
@@ -1973,7 +1973,7 @@
    "aliases": [
     "ジェニー"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Страж",
    "role": "tank",
    "rarity": "LR",
@@ -2805,7 +2805,7 @@
    "aliases": [
     "ウンディーネ"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Маг",
    "role": "mage",
    "rarity": "LR",
@@ -2869,7 +2869,7 @@
    "aliases": [
     "フィル"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Воин",
    "role": "warrior",
    "rarity": "LR",
@@ -3124,7 +3124,7 @@
    "aliases": [
     "ウム"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Поддержка",
    "role": "support",
    "rarity": "LR",
@@ -3253,7 +3253,7 @@
     "テス",
     "Дейзи"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Воин",
    "role": "warrior",
    "rarity": "UR",
@@ -3442,7 +3442,7 @@
    "aliases": [
     "レニー"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Маг",
    "role": "mage",
    "rarity": "UR",
@@ -3694,7 +3694,7 @@
    "aliases": [
     "フレイヤ"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Поддержка",
    "role": "support",
    "rarity": "UR",
@@ -3820,7 +3820,7 @@
    "aliases": [
     "ベル"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Страж",
    "role": "tank",
    "rarity": "SSR",
@@ -3938,7 +3938,7 @@
    "aliases": [
     "キャロル"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Воин",
    "role": "warrior",
    "rarity": "SSR",
@@ -4175,7 +4175,7 @@
    "aliases": [
     "アイリーン"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Маг",
    "role": "mage",
    "rarity": "SR",
@@ -4234,7 +4234,7 @@
    "aliases": [
     "アヌラ"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Поддержка",
    "role": "support",
    "rarity": "SR",
@@ -4411,7 +4411,7 @@
    "aliases": [
     "サリー"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Воин",
    "role": "warrior",
    "rarity": "SR",
@@ -4818,7 +4818,7 @@
    "aliases": [
     "フラン"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Воин",
    "role": "warrior",
    "rarity": "HR",
@@ -4928,7 +4928,7 @@
    "aliases": [
     "ジーナ"
    ],
-   "element": null,
+   "element": "Лед",
    "class": "Маг",
    "role": "mage",
    "rarity": "R",

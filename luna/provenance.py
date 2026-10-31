@@ -58,7 +58,9 @@ class Region(str, Enum):
     EN = "EN"          # Tales of Angels
     SEA = "SEA"        # Maidens Fantasy: LUST | SEA
     KR = "KR"          # 각성소녀: 욕망의 여정 (not confirmed by any fetched source yet)
-    RR = "RR"          # Realm Rush: Bonded Maidens (not confirmed by any fetched source yet)
+    RR = "RR"          # Realm Rush: Bonded Maidens (Vietnamese, QooApp 132451)
+    GLOBAL = "GLOBAL"  # "グローバル版/海外版" texts as quoted by JP guides (exact client not specified)
+    TW = "TW"          # 完蛋！我被美少女攻略了 (traditional Chinese)
     OTHER = "OTHER"
     SYNTHETIC = "SYNTHETIC"  # test fixtures only - never game data
 

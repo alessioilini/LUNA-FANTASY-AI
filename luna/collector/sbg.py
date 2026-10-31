@@ -13,7 +13,10 @@ SITE = "https://surrounded-by-girls.online"
 STAT_JP = {"ATK": "ATK", "攻撃力": "ATK", "体力": "HP", "HP": "HP", "防御力": "DEF", "DEF": "DEF", "スピード": "SPD", "SPD": "SPD"}
 INFO_KEYS = {"評価ランク": "rank_site", "属性": "element_jp", "職業": "class_jp", "特性": "trait_jp",
              "推奨タレント刻印": "talents_recommended_jp", "日本版実装日": "jp_release"}
-ELEMENT_RU = {"光属性": "Свет", "闇属性": "Тьма", "火属性": "Огонь", "水属性": "Вода", "風属性": "Ветер"}
+# confirmed by cross-checking 47 heroines present on both sites (lunafantasy.ru RU names);
+# 水属性 (water) has no RU counterpart on lunafantasy.ru yet -> pending approval (docs/SOGLASOVANIE.md, С2)
+ELEMENT_RU = {"光属性": "Свет", "闇属性": "Тьма", "火属性": "Огонь", "風属性": "Ветер", "氷属性": "Лед",
+              "星輝属性": "Звездный свет", "星耀属性": "Звездный свет"}
 CLASS_RU = {"サポーター": "Поддержка", "ガーディアン": "Страж", "魔法使い": "Маг", "ウォーリア": "Воин", "戦士": "Воин"}
 
 
@@ -53,9 +56,47 @@ def sections(html: str) -> list[dict]:
             cur["tables"].append(rows)
         elif el.find_parent("table") is None and el.find_parent(["ul", "ol"]) is None or el.name in ("ul", "ol"):
             t = _clean(el.get_text(" "))
-            if t:
-                cur["text"].append(t)
+            if t and not any(t in x for x in cur["text"]):
+                cur["text"] = [x for x in cur["text"] if x not in t] + [t]
     return blocks
+
+
+SKILL_HEAD = re.compile(r"^(?P<name>[^\s：:]{1,24})\s+(?:発動|CT|CD|クールタイム)[：:]")
+
+
+def _legacy_skills(blocks: list[dict]) -> list[dict]:
+    """Older page layouts: h3 'アクティブスキル：<name>' or skill name at the start of a paragraph."""
+    out = []
+    for b in blocks:
+        h3 = b["path"]["h3"]
+        if "スキル" not in h3 or ("アクティブ" not in h3 and "パッシブ" not in h3) or b["path"]["h4"]:
+            continue
+        typ = "active" if "アクティブ" in h3 else "passive"
+        for tbl in b["tables"]:
+            if tbl and tbl[0] and tbl[0][0] == "スキル名":
+                head = tbl[0]
+                for row in tbl[1:]:
+                    if row and row[0]:
+                        cells = [f"{h}: {v}" for h, v in zip(head[1:], row[1:]) if v]
+                        out.append({"name_jp": row[0], "type": typ, "jp": [], "global": [], "other": cells,
+                                    "version_note": "version not stated on page (table layout)"})
+        if any(t and t[0] and t[0][0] == "スキル名" for t in b["tables"]):
+            continue
+        if "：" in h3 or ":" in h3:
+            name = _clean(re.split(r"[：:]", h3, maxsplit=1)[1])
+            out.append({"name_jp": name, "type": typ, "jp": [], "global": [], "other": list(b["text"]),
+                        "version_note": "version not stated on page"})
+            continue
+        cur = None
+        for t in b["text"]:
+            m = SKILL_HEAD.match(t)
+            if m:
+                cur = {"name_jp": m.group("name"), "type": typ, "jp": [], "global": [], "other": [t],
+                       "version_note": "version not stated on page"}
+                out.append(cur)
+            elif cur is not None:
+                cur["other"].append(t)
+    return out
 
 
 def parse_character(html: str, url: str) -> dict:
@@ -77,10 +118,13 @@ def parse_character(html: str, url: str) -> dict:
         out["rarity_jp"] = _clean(m.group(2))
         latin = re.findall(r"[A-Za-z][A-Za-z .'\-]+", m.group(1))
         out["name_latin"] = _clean(latin[-1]) if latin else None
-    tm = re.match(r"【ヤバ少女】\s*([^\s（(は]+)(?:[（(]([^）)]+)[）)])?", title)
-    if tm:
-        out["name_jp"] = tm.group(1)
-        out["name_jp_alt"] = tm.group(2)
+    t2 = re.sub(r"^(?:【[^】]*】|ヤバ少女|やばい少女)\s*", "", title)
+    t2 = re.split(r"の(?:徹底|海外)?評価|は引くべき|の性能|！|!|\s", t2)[0]
+    am = re.match(r"(.+?)[（(]([^）)]+)[）)]$", t2)
+    if am:
+        t2, out["name_jp_alt"] = am.group(1), am.group(2)
+    t2 = re.sub(r"^(?:黒竜|赤竜|白竜|青竜)[・]?", "", t2)
+    out["name_jp"] = t2.split("・")[-1] if t2 else None
     for b in sections(html):
         p = b["path"]
         for tbl in b["tables"]:
@@ -94,8 +138,8 @@ def parse_character(html: str, url: str) -> dict:
         if "ステータス" in p["h3"]:
             lm = re.search(r"レベル\s*(\d+)", p["h3"])
             out["stats_level"] = int(lm.group(1)) if lm else out["stats_level"]
-        if p["h4"].startswith("スキル") and ("アクティブ" in p["h3"] or "パッシブ" in p["h3"]):
-            name = _clean(p["h4"].replace("スキル", "", 1))
+        if p["h4"] and ("アクティブ" in p["h3"] or "パッシブ" in p["h3"]):
+            name = _clean(re.sub(r"^スキル[\s　]*", "", p["h4"]))
             sk = next((s for s in out["skills"] if s["name_jp"] == name), None)
             if sk is None:
                 sk = {"name_jp": name, "type": "active" if "アクティブ" in p["h3"] else "passive", "jp": [], "global": [], "other": []}
@@ -109,11 +153,16 @@ def parse_character(html: str, url: str) -> dict:
             out["build"].setdefault(key, []).extend(b["text"])
         elif "海外" in p["h2"] and "評価" in p["h2"]:
             out["overseas_eval"] += b["text"]
+    gm = re.search(r"海外版では[、,]?\s*(.+?)\s*(?:と)?いう表記", soup.get_text(" "))
+    out["global_name"] = _clean(gm.group(1)) if gm else None
+    if not out["skills"]:
+        out["skills"] = _legacy_skills(sections(html))
     info = out["info"]
     out["element_ru"] = ELEMENT_RU.get(info.get("element_jp", ""))
     out["class_ru"] = CLASS_RU.get(info.get("class_jp", ""))
     rel = re.search(r"(\d{4})年(\d{1,2})月(\d{1,2})日", info.get("jp_release", "") or "")
     out["jp_release_date"] = f"{rel.group(1)}-{int(rel.group(2)):02d}-{int(rel.group(3)):02d}" if rel else None
+    out["is_character"] = bool(out["stats"] or out["skills"])
     out["not_in_jp_yet"] = "未実装" in (info.get("jp_release") or "") or "未実装" in title
     rk = re.search(r"(SSS|SS|S|A|B|C|D)ランク", info.get("rank_site", "") or "")
     out["rank"] = rk.group(1) if rk else None
