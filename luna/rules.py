@@ -126,7 +126,7 @@ def validate_hero(hb: HeroBuild, cat: Catalog, rules: GameRules, idx: int = 0,
                 rep.add("ERROR", "UNKNOWN_ITEM", f"талант {t} не найден", sp)
                 continue
             kind = cat.get("talents", t).get("system", "sigil")
-            if kind != "sigil":
+            if kind not in ("sigil", "any"):
                 rep.add("ERROR", "SYSTEM_MIX", f"талант {t} относится к системе «{kind}», а не к сигилам", sp)
             sigil_talents.append(t)
     _limit(rep, rules, "build.separate_talent_count", len(hb.talents), p + ".talents", "отдельные таланты")
@@ -135,7 +135,7 @@ def validate_hero(hb: HeroBuild, cat: Catalog, rules: GameRules, idx: int = 0,
             rep.add("ERROR", "UNKNOWN_ITEM", f"талант {t} не найден", p + ".talents")
             continue
         kind = cat.get("talents", t).get("system", "personal")
-        if kind != "personal":
+        if kind not in ("personal", "any"):
             rep.add("ERROR", "SYSTEM_MIX", f"талант {t} относится к системе «{kind}», а не к личным талантам", p + ".talents")
 
     # duplicate effects: needs an explicit stacking assumption
