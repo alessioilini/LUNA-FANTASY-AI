@@ -1,0 +1,1846 @@
+{
+ "vironika": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_absorption",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_crit_resistance",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil:庇護",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil:強靭",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:生存",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_kyouiki_ou",
+    "label": "Кольцо владычества tank RU БИС 2 части: Сопротивление урону +5%. 4 части: При ка"
+   },
+   {
+    "id": "limb:limb_set_shugou_ou",
+    "label": "Кольцо Эгиды sustain RU вариант жизни 2 части: ОЗ +5%. 4 части: При получении ур"
+   },
+   {
+    "id": "limb:limb_set_seiiki_tenshi",
+    "label": "Кольцо небес anti_crit антикрит вариант 2 части: СОПР крит. УРН +10%. 4 части: П"
+   },
+   {
+    "id": "limb:limb_set_seiiki_shishiou",
+    "label": "Кольцо льва crit_damage Рейтинг 5/5 2 части: Шанс крита +5%. 4 части: При нанесе"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_pierce",
+    "sigil-talent:talent_advanced_absorption"
+   ],
+   [
+    "sigil-talent:talent_advanced_crit_resistance",
+    "sigil:庇護"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/vironika"
+ },
+ "vinette": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_healing_item",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:生存",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_magic_combo",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_agility",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_cleanse",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:神護",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_kimuyusagi",
+    "label": "Кольцо кролика debuff_control БИС 2 части: АТК +5%. 4 части: При атаке с вероятн"
+   },
+   {
+    "id": "limb:limb_set_housou",
+    "label": "Кольцо трав cleanse_support Рейтинг 5/5 2 части: АТК +5%. 4 части: После выполне"
+   },
+   {
+    "id": "limb:limb_set_hinagiku",
+    "label": "Кольцо цветов healing Рейтинг 4/5 2 части: Лечение +5%. 4 части: В конце каждого"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_healing_item",
+    "sigil:生存"
+   ],
+   [
+    "sigil-talent:talent_advanced_magic_combo",
+    "sigil-talent:talent_advanced_agility"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/vinette"
+ },
+ "illusia": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_physical_combo",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_tenacity",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:鈍化",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil:生存",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_agility",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:神護",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_aku_kabocha",
+    "label": "Кольцо-тыква speed_damage 5/5 2 части: СКР +5%. 4 части: При нанесении урона цел"
+   },
+   {
+    "id": "limb:limb_set_kyouiki_ou",
+    "label": "Кольцо владычества tank 5/5 2 части: Сопротивление урону +5%. 4 части: При каждо"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_physical_combo",
+    "sigil-talent:talent_advanced_tenacity"
+   ],
+   [
+    "sigil:鈍化",
+    "sigil:生存"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/illusia"
+ },
+ "kurimu": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_physical_combo",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:制御",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:生存",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_cleanse",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_dispel",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:生命力",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_shiro_daiya",
+    "label": "Кольцо поларис defense 5/5 2 части: ЗАЩ +5%. 4 части: После выполнения действия "
+   },
+   {
+    "id": "limb:limb_set_housou",
+    "label": "Кольцо трав cleanse_support 4/5 2 части: АТК +5%. 4 части: После выполнения дейс"
+   },
+   {
+    "id": "limb:limb_set_hitokui_bana",
+    "label": "Кольцо людоеда attack_buff 3/5 2 части: АТК +5%. 4 части: После действия АТК +15"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_physical_combo",
+    "sigil:制御"
+   ],
+   [
+    "sigil:生存",
+    "sigil-talent:talent_advanced_cleanse"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/kurimu"
+ },
+ "cthulhu": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/cthulhu"
+ },
+ "ruto": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/ruto"
+ },
+ "luna": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/luna"
+ },
+ "chiyo-ruri": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/chiyo-ruri"
+ },
+ "lucifer": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_magic_combo",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_magic_power",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_dispel",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil:集中",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:波動",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_kimuyusagi",
+    "label": "Кольцо кролика debuff_control 5/5 2 части: АТК +5%. 4 части: При атаке с вероятн"
+   },
+   {
+    "id": "limb:limb_set_housou",
+    "label": "Кольцо трав cleanse_support 4/5 2 части: АТК +5%. 4 части: После выполнения дейс"
+   },
+   {
+    "id": "limb:limb_set_genchou",
+    "label": "Кольцо миражей anti_heal 3/5 2 части: ОЗ +5%. 4 части: В начале каждого хода пол"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_magic_combo",
+    "sigil-talent:talent_advanced_magic_power"
+   ],
+   [
+    "sigil-talent:talent_advanced_pierce",
+    "sigil-talent:talent_advanced_dispel"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/lucifer"
+ },
+ "meylis": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_magic_combo",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_wave",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_crit",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_crit_damage",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:強欲",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_dokuro_bana",
+    "label": "Кольцо лепестков execute_damage 5/5 2 части: Урон от крита +10%. 4 части: За каж"
+   },
+   {
+    "id": "limb:limb_set_seki_gan",
+    "label": "Кольцо циклопа damage 4/5 2 части: АТК +5%. 4 части: Урон +15% против целей с ур"
+   },
+   {
+    "id": "limb:limb_set_seiiki_shishiou",
+    "label": "Кольцо льва crit_damage 4/5 2 части: Шанс крита +5%. 4 части: При нанесении крит"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_magic_combo",
+    "sigil-talent:talent_advanced_wave"
+   ],
+   [
+    "sigil-talent:talent_advanced_crit",
+    "sigil-talent:talent_advanced_pierce"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/meylis"
+ },
+ "milasis": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/milasis"
+ },
+ "milim": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:抹殺",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_crit_damage",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_absorption",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_evasion",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:浄化",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_seiiki_shishiou",
+    "label": "Кольцо льва crit_damage 5/5 2 части: Шанс крита +5%. 4 части: При нанесении крит"
+   },
+   {
+    "id": "limb:limb_set_dokuro_bana",
+    "label": "Кольцо лепестков execute_damage 4/5 2 части: Урон от крита +10%. 4 части: За каж"
+   },
+   {
+    "id": "limb:limb_set_yougan",
+    "label": "Кольцо магмы damage 3/5 2 части: Урон +5%. 4 части: Крит. шанс +20% против целей"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_lunar_three_headed_wolf"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   },
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_pierce",
+    "sigil:抹殺"
+   ],
+   [
+    "sigil-talent:talent_advanced_crit_damage",
+    "sigil-talent:talent_advanced_absorption"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/milim"
+ },
+ "soran": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/soran"
+ },
+ "niksara": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_shield",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_damage_immunity",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil:крит-сопр",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil:волна",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:крит-урон",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_dokuro_bana",
+    "label": "Кольцо лепестков execute_damage 5/5 2 части: Урон от крита +10%. 4 части: За каж"
+   },
+   {
+    "id": "limb:limb_set_seiiki_shishiou",
+    "label": "Кольцо льва crit_damage 4/5 2 части: Шанс крита +5%. 4 части: При нанесении крит"
+   },
+   {
+    "id": "limb:limb_set_kimuyusagi",
+    "label": "Кольцо кролика debuff_control 3/5 2 части: АТК +5%. 4 части: При атаке с вероятн"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_pierce",
+    "sigil-talent:talent_advanced_shield"
+   ],
+   [
+    "sigil-talent:talent_advanced_damage_immunity",
+    "sigil:крит-сопр"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/niksara"
+ },
+ "olivia": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/olivia"
+ },
+ "pocho": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/pocho"
+ },
+ "seika-yarei": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/seika-yarei"
+ },
+ "seneren": {
+  "sigils": [
+   {
+    "id": "sigil:庇護",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_survival",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:生存",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_evasion",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil:庇護",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:生命力",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_genchou",
+    "label": "Кольцо миражей anti_heal основной вариант внешнего рейтинга 2 части: ОЗ +5%. 4 ч"
+   },
+   {
+    "id": "limb:limb_set_hinagiku",
+    "label": "Кольцо цветов healing вариант под лечение 2 части: Лечение +5%. 4 части: В конце"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   },
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil:庇護",
+    "sigil-talent:talent_advanced_survival"
+   ],
+   [
+    "sigil:生存",
+    "sigil-talent:talent_advanced_evasion"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/seneren"
+ },
+ "seraphia": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/seraphia"
+ },
+ "teselien": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_healing_item",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:生存",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_magic_combo",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_agility",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_cleanse",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:神護",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_hinagiku",
+    "label": "Кольцо цветов healing 5/5 2 части: Лечение +5%. 4 части: В конце каждого хода ис"
+   },
+   {
+    "id": "limb:limb_set_housou",
+    "label": "Кольцо трав cleanse_support 4/5 2 части: АТК +5%. 4 части: После выполнения дейс"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_healing_item",
+    "sigil:生存"
+   ],
+   [
+    "sigil-talent:talent_advanced_magic_combo",
+    "sigil-talent:talent_advanced_agility"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/teselien"
+ },
+ "tina": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/tina"
+ },
+ "tairexiu": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/tairexiu"
+ },
+ "phoenix": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_physical_combo",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_tenacity",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil:庇護",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_evasion",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil-talent:talent_advanced_accuracy",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:戦意",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_shugou_ou",
+    "label": "Кольцо Эгиды sustain 4/5 2 части: ОЗ +5%. 4 части: При получении урона с вероятн"
+   },
+   {
+    "id": "limb:limb_set_hinagiku",
+    "label": "Кольцо цветов healing 3/5 2 части: Лечение +5%. 4 части: В конце каждого хода ис"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_physical_combo",
+    "sigil-talent:talent_advanced_tenacity"
+   ],
+   [
+    "sigil:庇護",
+    "sigil-talent:talent_advanced_evasion"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/phoenix"
+ },
+ "shinonome-hyo": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/shinonome-hyo"
+ },
+ "amatsuki-ai": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/amatsuki-ai"
+ },
+ "yun-shao": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [
+   {
+    "id": "pet:pet_shining_hoof"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_pantsu"
+   },
+   {
+    "id": "pet:pet_paradise_ghost"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_sacred_griffin"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/yun-shao"
+ },
+ "evelyn": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/evelyn"
+ },
+ "yuni": {
+  "sigils": [
+   {
+    "id": "sigil-talent:talent_advanced_pierce",
+    "rank": "1",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_crit_damage",
+    "rank": "2",
+    "group": "Сигил 1"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_belligerence",
+    "rank": "1",
+    "group": "Сигил 2"
+   },
+   {
+    "id": "sigil-talent:talent_advanced_wave",
+    "rank": "2",
+    "group": "Сигил 2"
+   }
+  ],
+  "personal_talents": [
+   {
+    "id": "sigil:庇護",
+    "slot_note": "1"
+   },
+   {
+    "id": "sigil:鈍化",
+    "slot_note": "11*"
+   }
+  ],
+  "limbs": [
+   {
+    "id": "limb:limb_set_dokuro_bana",
+    "label": "Кольцо лепестков execute_damage 5/5 2 части: Урон от крита +10%. 4 части: За каж"
+   },
+   {
+    "id": "limb:limb_set_seiiki_shishiou",
+    "label": "Кольцо льва crit_damage 4/5 2 части: Шанс крита +5%. 4 части: При нанесении крит"
+   },
+   {
+    "id": "limb:limb_set_seki_gan",
+    "label": "Кольцо циклопа damage 3/5 2 части: АТК +5%. 4 части: Урон +15% против целей с ур"
+   }
+  ],
+  "pets": [
+   {
+    "id": "pet:pet_lunar_three_headed_wolf"
+   },
+   {
+    "id": "pet:pet_royal_phoenix"
+   },
+   {
+    "id": "pet:pet_dream_pillow"
+   },
+   {
+    "id": "pet:pet_dream_sheep"
+   },
+   {
+    "id": "pet:pet_scaled_drake"
+   },
+   {
+    "id": "pet:pet_leopard_prince"
+   },
+   {
+    "id": "pet:pet_star_unicorn"
+   },
+   {
+    "id": "pet:pet_cheshire_rabbit"
+   }
+  ],
+  "accessories": [
+   "accessory:accessory_jade_ice_hairpin",
+   "accessory:accessory_jade_necklace",
+   "accessory:accessory_diamond_hairpin",
+   "accessory:accessory_diamond_necklace",
+   "accessory:accessory_gold_smooth_hairpin",
+   "accessory:accessory_gold_necklace",
+   "accessory:accessory_silver_simple_hairpin",
+   "accessory:accessory_silver_necklace"
+  ],
+  "notes": [],
+  "sigil_pairs": [
+   [
+    "sigil-talent:talent_advanced_pierce",
+    "sigil-talent:talent_advanced_crit_damage"
+   ],
+   [
+    "sigil-talent:talent_advanced_belligerence",
+    "sigil-talent:talent_advanced_wave"
+   ]
+  ],
+  "source": "https://lunafantasy.ru/characters/yuni"
+ },
+ "bunina": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/bunina"
+ },
+ "jenny": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/jenny"
+ },
+ "koto": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/koto"
+ },
+ "christine": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/christine"
+ },
+ "risa": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/risa"
+ },
+ "lilith": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/lilith"
+ },
+ "liadora": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/liadora"
+ },
+ "renka": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/renka"
+ },
+ "minos": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/minos"
+ },
+ "ume": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/ume"
+ },
+ "nia": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/nia"
+ },
+ "pandora": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/pandora"
+ },
+ "pekka": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/pekka"
+ },
+ "sere": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/sere"
+ },
+ "undine": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/undine"
+ },
+ "phil": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/phil"
+ },
+ "ferry": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/ferry"
+ },
+ "harit": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/harit"
+ },
+ "elena": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/elena"
+ },
+ "umu": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/umu"
+ },
+ "yula": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/yula"
+ },
+ "tess": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/tess"
+ },
+ "caroro": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/caroro"
+ },
+ "oumu": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/oumu"
+ },
+ "leny": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/leny"
+ },
+ "siena": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/siena"
+ },
+ "sain": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/sain"
+ },
+ "sophia": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/sophia"
+ },
+ "freya": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/freya"
+ },
+ "tsubaki": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/tsubaki"
+ },
+ "bell": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/bell"
+ },
+ "kagadi": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/kagadi"
+ },
+ "carol": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/carol"
+ },
+ "susan": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/susan"
+ },
+ "uni": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/uni"
+ },
+ "setori": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/setori"
+ },
+ "aileen": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/aileen"
+ },
+ "anura": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/anura"
+ },
+ "veena": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/veena"
+ },
+ "ruth": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/ruth"
+ },
+ "sally": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/sally"
+ },
+ "triste": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/triste"
+ },
+ "helen": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/helen"
+ },
+ "sheena": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/sheena"
+ },
+ "shira": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/shira"
+ },
+ "rachel": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/rachel"
+ },
+ "toby": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/toby"
+ },
+ "fran": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/fran"
+ },
+ "debbie": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/debbie"
+ },
+ "gina": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/gina"
+ },
+ "lahn": {
+  "sigils": [],
+  "personal_talents": [],
+  "limbs": [],
+  "pets": [],
+  "accessories": [],
+  "notes": [],
+  "sigil_pairs": [],
+  "source": "https://lunafantasy.ru/characters/lahn"
+ }
+}

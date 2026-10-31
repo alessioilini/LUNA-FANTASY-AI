@@ -43,8 +43,9 @@ def main():
     for h in heroes:
         aliases = [a for a in h.get("aliases", []) if not JP_RX.search(a)]
         brief = [b for b, s in mapping.items() if s == h["id"]]
+        user_aliases = [BRIEF_RU[x] for x in brief if x in BRIEF_RU and BRIEF_RU[x] != h["names"].get("ru")]
         entries.append({"key": f"hero.{h['id']}", "category": "hero", "ru": h["names"].get("ru"), "en": brief[0] if brief else h["id"],
-                        "jp": h["names"].get("jp"), "kr": None, "aliases_ru": aliases + brief,
+                        "jp": h["names"].get("jp"), "kr": None, "aliases_ru": aliases + brief + user_aliases,
                         "ru_status": "site_lunafantasy.ru", "jp_status": "site_alias" if h["names"].get("jp") else None,
                         "note": f"lunafantasy.ru slug {h['id']}"})
     for b, s in mapping.items():

@@ -66,7 +66,7 @@ def test_catalogs(base):
     assert status == 200
     cats = {c["id"]: c for c in json.loads(body)}
     assert {"ru", "whatif", "synthetic"} <= set(cats)
-    assert cats["ru"]["empty"] is True                      # real RU site could not be fetched
+    assert cats["ru"]["empty"] is False and cats["ru"]["heroes"] > 0   # lunafantasy.ru snapshot imported
     assert cats["synthetic"]["region"] == "SYNTHETIC" and cats["synthetic"]["heroes"] > 0
     assert cats["whatif"]["kind"] == "whatif"
 
