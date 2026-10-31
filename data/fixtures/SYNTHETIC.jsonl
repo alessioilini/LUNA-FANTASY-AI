@@ -1,0 +1,9 @@
+{"key": "rules.team.size", "value": 6, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.sigil_count", "value": 2, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.talents_per_sigil", "value": 2, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.separate_talent_count", "value": 2, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.limb_slots", "value": 4, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.decoration_slots", "value": 8, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.build.pet_slots_by_rarity", "value": {"SSR": 2, "SR": 1}, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.team.rune_count", "value": 4, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}
+{"key": "rules.team.princess_weapon_positions", "value": 4, "region": "SYNTHETIC", "source": {"url": "fixture"}, "confidence": "synthetic"}

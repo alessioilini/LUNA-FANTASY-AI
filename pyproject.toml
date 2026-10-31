@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luna-fantasy-ai"
+version = "0.1.0"
+description = "Luna Fantasy: knowledge base, event-driven combat engine, Monte Carlo simulator, team optimizer, matchup analyzer"
+requires-python = ">=3.11"
+dependencies = ["openpyxl>=3.1", "ortools>=9.10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+scrape = ["requests>=2.31", "beautifulsoup4>=4.12", "lxml>=5"]
+
+[project.scripts]
+luna = "luna.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["luna*"]
+
+[tool.setuptools.package-data]
+"luna.dashboard" = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,8 @@
+{
+ "region": "RU",
+ "balance_version": "UNKNOWN",
+ "meta": {"status": "EMPTY: no RU item/hero numbers could be fetched (lunafantasy.ru blocked by session network policy on 2026-10-31). Import with `luna kb import` or `luna collect --offline-dir`."},
+ "heroes": [], "sigils": [], "talents": [], "limbs": [], "limb_sets": [], "decorations": [], "pets": [],
+ "charm_cards": [], "charm_combos": [], "runes": [], "princess_weapon_parts": [], "princess_resonance": [],
+ "relics": [], "factions": [], "formations": []
+}

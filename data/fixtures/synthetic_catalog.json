@@ -1,0 +1,1241 @@
+{
+ "region": "SYNTHETIC",
+ "balance_version": "fixture-1",
+ "meta": {
+  "warning": "Synthetic catalog for engine tests and demos. Numbers are invented and DO NOT describe Luna Fantasy."
+ },
+ "heroes": [
+  {
+   "id": "s_striker",
+   "names": {
+    "ru": "Синт-s_striker",
+    "en": "Synth-s_striker"
+   },
+   "role": "attacker",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 1000,
+    "HP": 10000,
+    "DEF": 300,
+    "SPD": 120,
+    "CRIT": 0.2,
+    "CRIT_DMG": 1.5
+   },
+   "abilities": [
+    {
+     "id": "s_striker_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_striker_burst",
+     "kind": "active",
+     "priority": 10,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 2,
+      "initial_cooldown": 1
+     },
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_all",
+       "coef": 0.8
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_mage",
+   "names": {
+    "ru": "Синт-s_mage",
+    "en": "Synth-s_mage"
+   },
+   "role": "attacker",
+   "rarity": "SSR",
+   "faction": "f_dark",
+   "base_stats": {
+    "ATK": 1100,
+    "HP": 8000,
+    "DEF": 200,
+    "SPD": 110
+   },
+   "abilities": [
+    {
+     "id": "s_mage_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "magic"
+      }
+     ],
+     "tags": [
+      "magic"
+     ]
+    },
+    {
+     "id": "s_mage_combo",
+     "kind": "passive",
+     "trigger": {
+      "on": "after_attack",
+      "chance": 0.3,
+      "ability_tag": "magic"
+     },
+     "effects": [
+      {
+       "op": "extra_attack",
+       "ability": "basic"
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_tank",
+   "names": {
+    "ru": "Синт-s_tank",
+    "en": "Synth-s_tank"
+   },
+   "role": "tank",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 500,
+    "HP": 20000,
+    "DEF": 800,
+    "SPD": 90
+   },
+   "abilities": [
+    {
+     "id": "s_tank_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.6,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_tank_taunt",
+     "kind": "passive",
+     "trigger": {
+      "on": "battle_start"
+     },
+     "effects": [
+      {
+       "op": "status",
+       "target": "self",
+       "status": {
+        "key": "taunt",
+        "kind": "buff",
+        "duration": 2
+       }
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "tank"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_healer",
+   "names": {
+    "ru": "Синт-s_healer",
+    "en": "Synth-s_healer"
+   },
+   "role": "support",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 600,
+    "HP": 9000,
+    "DEF": 300,
+    "SPD": 130
+   },
+   "abilities": [
+    {
+     "id": "s_healer_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.5,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_healer_heal",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 1
+     },
+     "effects": [
+      {
+       "op": "heal",
+       "target": "ally_lowest_hp",
+       "coef": 1.5
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "support"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_reviver",
+   "names": {
+    "ru": "Синт-s_reviver",
+    "en": "Synth-s_reviver"
+   },
+   "role": "support",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 500,
+    "HP": 9000,
+    "DEF": 300,
+    "SPD": 100
+   },
+   "abilities": [
+    {
+     "id": "s_reviver_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.5,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_reviver_revive",
+     "kind": "passive",
+     "trigger": {
+      "on": "ally_death",
+      "per_battle": 1
+     },
+     "effects": [
+      {
+       "op": "revive",
+       "target": "dead_ally_random",
+       "count": 1,
+       "hp_pct": 0.5
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "support"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_controller",
+   "names": {
+    "ru": "Синт-s_controller",
+    "en": "Synth-s_controller"
+   },
+   "role": "control",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 700,
+    "HP": 9000,
+    "DEF": 300,
+    "SPD": 140
+   },
+   "abilities": [
+    {
+     "id": "s_controller_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 0.7,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_controller_stun",
+     "kind": "active",
+     "priority": 5,
+     "trigger": {
+      "on": "turn",
+      "cooldown": 3
+     },
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_back",
+       "coef": 0.5
+      },
+      {
+       "op": "status",
+       "target": "hit",
+       "chance": 0.6,
+       "status": {
+        "key": "stun",
+        "control": "stun",
+        "duration": 1
+       }
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "control"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_reaper",
+   "names": {
+    "ru": "Синт-s_reaper",
+    "en": "Synth-s_reaper"
+   },
+   "role": "attacker",
+   "rarity": "SSR",
+   "faction": "f_light",
+   "base_stats": {
+    "ATK": 1000,
+    "HP": 9000,
+    "DEF": 250,
+    "SPD": 115
+   },
+   "abilities": [
+    {
+     "id": "s_reaper_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    },
+    {
+     "id": "s_reaper_ban",
+     "kind": "passive",
+     "trigger": {
+      "on": "kill"
+     },
+     "effects": [
+      {
+       "op": "status",
+       "target": "event_target",
+       "status": {
+        "key": "revive_ban",
+        "kind": "debuff",
+        "revive_ban": true,
+        "duration": 3
+       }
+      }
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "s_bruiser",
+   "names": {
+    "ru": "Синт-s_bruiser",
+    "en": "Synth-s_bruiser"
+   },
+   "role": "attacker",
+   "rarity": "SSR",
+   "faction": "f_dark",
+   "base_stats": {
+    "ATK": 900,
+    "HP": 12000,
+    "DEF": 400,
+    "SPD": 105
+   },
+   "abilities": [
+    {
+     "id": "s_bruiser_basic",
+     "kind": "basic",
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_single",
+       "coef": 1.0,
+       "dtype": "physical"
+      }
+     ],
+     "tags": [
+      "physical"
+     ]
+    }
+   ],
+   "tags": [
+    "attacker"
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "sigils": [
+  {
+   "id": "sig_a",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 0.05,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "sig_b",
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 0.05,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "talents": [
+  {
+   "id": "tal_power",
+   "system": "sigil",
+   "effect_key": "power",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 100
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "tal_guard",
+   "system": "sigil",
+   "effect_key": "guard",
+   "mods": [
+    {
+     "stat": "DEF",
+     "value": 50
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "tal_power_b",
+   "system": "sigil",
+   "effect_key": "power",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 100
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "tal_swift",
+   "system": "personal",
+   "effect_key": "swift",
+   "mods": [
+    {
+     "stat": "SPD",
+     "value": 10
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "tal_pierce",
+   "system": "personal",
+   "effect_key": "pierce",
+   "mods": [
+    {
+     "stat": "IGNORE_DEF",
+     "value": 0.2
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "limbs": [
+  {
+   "id": "limb_war_0",
+   "set": "set_war",
+   "position": 0,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_war_1",
+   "set": "set_war",
+   "position": 1,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_war_2",
+   "set": "set_war",
+   "position": 2,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_war_3",
+   "set": "set_war",
+   "position": 3,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_life_0",
+   "set": "set_life",
+   "position": 0,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_life_1",
+   "set": "set_life",
+   "position": 1,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_life_2",
+   "set": "set_life",
+   "position": 2,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "limb_life_3",
+   "set": "set_life",
+   "position": 3,
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 500
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "limb_sets": [
+  {
+   "id": "set_war",
+   "bonuses": {
+    "2": {
+     "mods": [
+      {
+       "stat": "ATK",
+       "value": 0.1,
+       "mode": "pct"
+      }
+     ]
+    },
+    "4": {
+     "mods": [
+      {
+       "stat": "CRIT",
+       "value": 0.1
+      }
+     ]
+    }
+   },
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "set_life",
+   "bonuses": {
+    "2": {
+     "mods": [
+      {
+       "stat": "HP",
+       "value": 0.1,
+       "mode": "pct"
+      }
+     ]
+    },
+    "4": {
+     "mods": [
+      {
+       "stat": "DR",
+       "value": 0.1
+      }
+     ]
+    }
+   },
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "decorations": [
+  {
+   "id": "deco_0",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_1",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_2",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_3",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_4",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_5",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_6",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_7",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_8",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "deco_9",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 20
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "pets": [
+  {
+   "id": "pet_owl",
+   "rarity": "SR",
+   "bond_mods": [
+    {
+     "stat": "SPD",
+     "value": 5
+    }
+   ],
+   "abilities": [
+    {
+     "id": "pet_owl_peck",
+     "kind": "passive",
+     "trigger": {
+      "on": "pet_phase"
+     },
+     "effects": [
+      {
+       "op": "damage",
+       "target": "enemy_lowest_hp",
+       "dtype": "fixed",
+       "amount": 100
+      }
+     ]
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "charm_cards": [
+  {
+   "id": "card_a",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 30
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "card_b",
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 300
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "charm_combos": [
+  {
+   "id": "combo_ab",
+   "requires": [
+    "card_a",
+    "card_b"
+   ],
+   "mods": [
+    {
+     "stat": "DEF",
+     "value": 40
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "runes": [
+  {
+   "id": "rune_0",
+   "trigger": {
+    "on": "round_start",
+    "round": 1
+   },
+   "effects": [
+    {
+     "op": "damage",
+     "target": "enemy_all",
+     "dtype": "fixed",
+     "amount": 200
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "rune_1",
+   "trigger": {
+    "on": "round_start",
+    "round": 2
+   },
+   "effects": [
+    {
+     "op": "damage",
+     "target": "enemy_all",
+     "dtype": "fixed",
+     "amount": 200
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "rune_2",
+   "trigger": {
+    "on": "round_start",
+    "round": 3
+   },
+   "effects": [
+    {
+     "op": "damage",
+     "target": "enemy_all",
+     "dtype": "fixed",
+     "amount": 200
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "rune_3",
+   "trigger": {
+    "on": "round_start",
+    "round": 4
+   },
+   "effects": [
+    {
+     "op": "damage",
+     "target": "enemy_all",
+     "dtype": "fixed",
+     "amount": 200
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "rune_nest_parent",
+   "trigger": {
+    "on": "round_start",
+    "round": 1
+   },
+   "effects": [],
+   "nested": [
+    {
+     "rune": "rune_nest_child",
+     "prob": 0.5
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "rune_nest_child",
+   "effects": [
+    {
+     "op": "damage",
+     "target": "enemy_all",
+     "dtype": "fixed",
+     "amount": 50
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "princess_weapon_parts": [
+  {
+   "id": "pw_0",
+   "position": 0,
+   "set": "pw_set_star",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 0.02,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "pw_1",
+   "position": 1,
+   "set": "pw_set_star",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 0.02,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "pw_2",
+   "position": 2,
+   "set": "pw_set_star",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 0.02,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  },
+  {
+   "id": "pw_3",
+   "position": 3,
+   "set": "pw_set_star",
+   "mods": [
+    {
+     "stat": "ATK",
+     "value": 0.02,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "princess_resonance": [
+  {
+   "id": "res_star4",
+   "requires": {
+    "set": "pw_set_star",
+    "count": 4
+   },
+   "mods": [
+    {
+     "stat": "SPD",
+     "value": 3
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "relics": [
+  {
+   "id": "relic_x",
+   "mods": [
+    {
+     "stat": "HP",
+     "value": 0.03,
+     "mode": "pct"
+    }
+   ],
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "factions": [
+  {
+   "id": "f_dark",
+   "bonuses": {
+    "2": {
+     "mods": [
+      {
+       "stat": "ATK",
+       "value": 0.05,
+       "mode": "pct"
+      }
+     ]
+    }
+   },
+   "provenance": {
+    "source": "fixture",
+    "confidence": "synthetic",
+    "note": "Synthetic test data - NOT Luna Fantasy values"
+   }
+  }
+ ],
+ "formations": []
+}

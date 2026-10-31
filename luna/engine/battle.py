@@ -1,0 +1,885 @@
+"""Event-driven 6x6 combat engine.
+
+Flow per battle:
+  battle_start triggers -> for each round: round_start triggers, pet phase (if round_start),
+  action order (order.mode / order.tie_break) -> every unit takes a turn; after each action the
+  reaction queue is drained (priority key: depth, event rank, -priority, speed order, seq) ->
+  round_end: DoT/HoT, pet phase, round_end triggers, end-of-round extra actions, status ticks.
+
+Every formula that is not confirmed reads its form from AssumptionSet (see assumptions.py).
+"""
+from __future__ import annotations
+
+import heapq
+import itertools
+import random
+from collections import defaultdict
+from dataclasses import dataclass, field
+
+from .assumptions import AssumptionSet
+from .state import Unit, Status, CONTROL_SKIP, CONTROL_SILENCE
+
+DEFAULT_RELATION = {
+    "damaged": "self", "dodged": "self", "healed": "self", "controlled": "self", "revived": "self",
+    "after_attack": "self", "crit": "self", "kill": "self", "self_death": "self",
+    "ally_death": "ally", "enemy_death": "enemy", "action": "ally",
+    "battle_start": "any", "round_start": "any", "round_end": "any", "pet_phase": "any",
+    "shield_broken": "self", "status_applied": "self",
+}
+ATTACK_OPS = {"damage", "extra_attack", "extra_action"}
+
+
+@dataclass
+class Pending:
+    unit: Unit
+    ability: dict
+    ctx: dict
+    depth: int
+    kind: str = "trigger"      # trigger | extra_attack | extra_action
+
+
+@dataclass
+class BattleResult:
+    winner: str
+    rounds: int
+    seed: int
+    units: list
+    deaths: list
+    round_damage: dict
+    first_round: dict
+    assumptions_used: list
+    end_reason: str
+    hp_left: dict
+    log: list | None = None
+
+    def unit(self, uid: str) -> dict:
+        return next(u for u in self.units if u["uid"] == uid)
+
+
+class Battle:
+    def __init__(self, units_a: list[Unit], units_b: list[Unit], asm: AssumptionSet, seed: int = 0, log: bool = True):
+        self.rng = random.Random(seed)
+        self.seed = seed
+        self.asm = asm
+        self.units = units_a + units_b
+        self.round = 0
+        self.q: list = []
+        self.seq = itertools.count()
+        self.log: list | None = [] if log else None
+        self.deaths: list = []
+        self.eor_extras: list[Pending] = []
+        self.order_index: dict[str, int] = {u.uid: i for i, u in enumerate(self.units)}
+        self.round_damage = {"A": defaultdict(float), "B": defaultdict(float)}
+        self.first_round = {"order": [], "controls": 0, "deaths": [], "damage": {"A": 0.0, "B": 0.0}}
+        self._sseq = 0
+        self.winner: str | None = None
+        self.end_reason = ""
+        self.max_depth = int(asm.get("react.max_depth"))
+        self._cd_fresh: set = set()
+        self.listeners = defaultdict(list)
+        for u in self.units:
+            for ab in u.abilities:
+                kind = ab.get("kind", "passive")
+                if kind in ("basic", "active"):
+                    continue
+                on = ab.get("trigger", {}).get("on")
+                if on:
+                    self.listeners[on].append((u, ab))
+            for ab in u.abilities:
+                c0 = ab.get("trigger", {}).get("initial_cooldown")
+                if c0:
+                    u.cooldowns[ab["id"]] = int(c0)
+
+    # ================================================================ helpers
+    def _set_cd(self, u: Unit, ab: dict):
+        cd = ab.get("trigger", {}).get("cooldown")
+        if cd:
+            u.cooldowns[ab["id"]] = int(cd)
+            self._cd_fresh.add((u.uid, ab["id"]))
+
+    def _next_sseq(self) -> int:
+        self._sseq += 1
+        return self._sseq
+
+    def _log(self, **e):
+        if self.log is not None:
+            e["r"] = self.round
+            self.log.append(e)
+
+    def fighters(self, side: str | None = None, alive: bool | None = True) -> list[Unit]:
+        return [u for u in self.units if not u.is_team_source and (side is None or u.side == side)
+                and (alive is None or u.alive == alive)]
+
+    @staticmethod
+    def other(side: str) -> str:
+        return "B" if side == "A" else "A"
+
+    def _check_end(self) -> bool:
+        if self.winner:
+            return True
+        a, b = bool(self.fighters("A")), bool(self.fighters("B"))
+        if a and b:
+            return False
+        self.winner = "A" if a else "B" if b else "draw"
+        self.end_reason = "wipe" if self.winner != "draw" else "mutual_wipe"
+        return True
+
+    # ================================================================ targeting
+    def select(self, u: Unit, sel: str, ctx: dict) -> list[Unit]:
+        side = u.side
+        enemies = sorted(self.fighters(self.other(side)), key=lambda x: x.pos)
+        allies = sorted(self.fighters(side), key=lambda x: x.pos)
+        front = set(self.asm.get("formation.front"))
+        name, _, arg = sel.partition(":")
+        n = int(arg) if arg.isdigit() else 1
+        if name == "self":
+            return [] if u.is_team_source else [u]
+        if name == "same":
+            return [t for t in ctx.get("_prev_targets", []) if t.alive]
+        if name == "hit":
+            return [t for t in ctx.get("_prev_hit", []) if t.alive]
+        if name == "attacker":
+            a = ctx.get("attacker")
+            return [a] if a is not None and a.alive and not a.is_team_source else []
+        if name == "actor":
+            a = ctx.get("actor")
+            return [a] if a is not None and a.alive and not a.is_team_source else []
+        if name == "event_target":
+            t = ctx.get("target")
+            return [t] if t is not None else []
+        if name in ("dead_allies", "dead_ally_random"):
+            dead = [x for x in self.fighters(side, alive=False)]
+            if name == "dead_ally_random":
+                self.rng.shuffle(dead)
+            return dead[:n] if arg else dead
+        if name.startswith("enemy"):
+            pool = enemies
+            taunters = [e for e in pool if any(s.key == "taunt" for s in e.statuses)]
+            if name == "enemy_single":
+                if taunters:
+                    return [taunters[0]]
+                mode = self.asm.get("target.default_single")
+                if mode == "lowest_hp":
+                    return [min(pool, key=lambda x: (x.hp_frac(), x.pos))] if pool else []
+                if mode == "random":
+                    return [self.rng.choice(pool)] if pool else []
+                fr = [e for e in pool if e.pos in front] or pool
+                if mode == "front_first_random":
+                    return [self.rng.choice(fr)] if fr else []
+                return fr[:1]
+            if name == "enemy_all":
+                return pool
+            if name == "enemy_front":
+                return [e for e in pool if e.pos in front] or pool
+            if name == "enemy_back":
+                return [e for e in pool if e.pos not in front] or pool
+            if name == "enemy_random":
+                return self.rng.sample(pool, min(n, len(pool)))
+            if name == "enemy_lowest_hp":
+                return sorted(pool, key=lambda x: (x.hp_frac(), x.pos))[:n]
+            if name == "enemy_highest_atk":
+                return sorted(pool, key=lambda x: (-x.stat("ATK"), x.pos))[:n]
+            if name == "enemy_highest_spd":
+                return sorted(pool, key=lambda x: (-x.stat("SPD"), x.pos))[:n]
+            if name == "enemy_role":
+                return [e for e in pool if f"role:{arg}" in e.tags]
+            raise ValueError(f"unknown selector {sel}")
+        if name.startswith("ally"):
+            pool = allies
+            if name == "ally_all":
+                return pool
+            if name == "ally_others":
+                return [a for a in pool if a is not u]
+            if name == "ally_lowest_hp":
+                return sorted(pool, key=lambda x: (x.hp_frac(), x.pos))[:n]
+            if name == "ally_random":
+                return self.rng.sample(pool, min(n, len(pool)))
+            if name == "ally_highest_atk":
+                return sorted(pool, key=lambda x: (-x.stat("ATK"), x.pos))[:n]
+            if name == "ally_front":
+                return [a for a in pool if a.pos in front] or pool
+            if name == "ally_back":
+                return [a for a in pool if a.pos not in front] or pool
+            raise ValueError(f"unknown selector {sel}")
+        raise ValueError(f"unknown selector {sel}")
+
+    # ================================================================ triggers
+    def _relation_ok(self, u: Unit, ab: dict, event: str, ctx: dict) -> bool:
+        rel = ab.get("trigger", {}).get("relation") or DEFAULT_RELATION.get(event, "any")
+        subject = ctx.get("subject")
+        if rel == "any" or subject is None:
+            return True
+        if rel == "self":
+            return subject is u
+        if rel == "ally":
+            return subject is not u and subject.side == u.side
+        if rel == "ally_or_self":
+            return subject.side == u.side
+        if rel == "enemy":
+            return subject.side != u.side
+        return False
+
+    def _conditions_ok(self, u: Unit, ab: dict, ctx: dict, consume: bool = True) -> bool:
+        t = ab.get("trigger", {})
+        aid = ab["id"]
+        if u.cooldowns.get(aid, 0) > 0:
+            return False
+        if "round" in t and self.round != t["round"]:
+            return False
+        if "round_ge" in t and self.round < t["round_ge"]:
+            return False
+        if "first_n_rounds" in t and self.round > t["first_n_rounds"]:
+            return False
+        if "every_n_rounds" in t and (self.round % t["every_n_rounds"]) != 0:
+            return False
+        if "hp_below" in t and u.hp_frac() >= t["hp_below"]:
+            return False
+        if "ally_hp_below" in t and not any(a.hp_frac() < t["ally_hp_below"] for a in self.fighters(u.side)):
+            return False
+        if "ability_tag" in t:
+            src_ab = ctx.get("ability") or {}
+            if t["ability_tag"] not in src_ab.get("tags", []):
+                return False
+        if "dtype" in t and ctx.get("dtype") != t["dtype"]:
+            return False
+        if t.get("per_round") is not None and u.trig_round[aid] >= t["per_round"]:
+            return False
+        if t.get("per_battle") is not None and u.trig_battle[aid] >= t["per_battle"]:
+            return False
+        if "chance" in t and self.rng.random() >= t["chance"]:
+            return False
+        if consume:
+            u.trig_round[aid] += 1
+            u.trig_battle[aid] += 1
+        return True
+
+    def _event_rank(self, event: str) -> int:
+        order = self.asm.get("death.trigger_order")
+        if event not in ("kill", "enemy_death", "self_death", "ally_death"):
+            return 0
+        if order == "by_priority":
+            return 0
+        killer_side = event in ("kill", "enemy_death")
+        if order == "kill_effects_first":
+            return 0 if killer_side else 1
+        return 1 if killer_side else 0
+
+    def emit(self, event: str, depth: int, **ctx):
+        if depth > self.max_depth:
+            self._log(t="depth_cap", ev=event)
+            return
+        rank = self._event_rank(event)
+        for u, ab in self.listeners.get(event, ()):
+            if not u.alive and not (event == "self_death" and ctx.get("subject") is u):
+                continue
+            if not self._relation_ok(u, ab, event, ctx):
+                continue
+            if (not u.is_team_source and u.has_control() and depth > 0
+                    and not self.asm.get("ctrl.controlled_can_react")
+                    and any(e.get("op") in ATTACK_OPS for e in ab.get("effects", []))):
+                continue
+            if not self._conditions_ok(u, ab, ctx):
+                continue
+            prio = ab.get("priority", 0) - ab.get("rune_order", 0)
+            heapq.heappush(self.q, ((depth, rank, -prio, self.order_index[u.uid], next(self.seq)),
+                                    Pending(u, ab, dict(ctx, event=event), depth)))
+
+    def drain(self):
+        """Resolve every pending reaction. Victory is checked only once the queue is empty, so
+        death reactions (self-revive, revive-ban on kill) always resolve before the battle ends."""
+        while self.q and not self.winner:
+            _, p = heapq.heappop(self.q)
+            if not p.unit.alive and p.kind != "trigger":
+                continue
+            if p.kind == "trigger":
+                if not p.unit.alive and p.ctx.get("event") != "self_death":
+                    continue
+                self.execute(p.unit, p.ability, p.ctx, p.depth)
+                self._set_cd(p.unit, p.ability)
+            else:
+                self._run_extra(p)
+        self._check_end()
+
+    # ================================================================ effects
+    def execute(self, u: Unit, ab: dict, ctx: dict, depth: int):
+        ctx = dict(ctx)
+        ctx.setdefault("chain", 0)
+        st = u.st.by_ability[ab["id"]]
+        st["casts"] += 1
+        self._log(t="cast", src=u.uid, ab=ab["id"], ev=ctx.get("event", "turn"), d=depth)
+        did_attack = False
+        hit_any = []
+        for eff in ab.get("effects", []):
+            if self.winner:
+                break
+            if "chance" in eff and eff["op"] not in ("status", "extra_attack") and self.rng.random() >= eff["chance"]:
+                continue
+            op = eff["op"]
+            targets = self.select(u, eff.get("target", "enemy_single" if op == "damage" else "self"), ctx)
+            ctx["_prev_targets"] = targets
+            if op == "damage":
+                did_attack = True
+                hit = []
+                for t in targets:
+                    for _h in range(int(eff.get("hits", 1))):
+                        if not t.alive:
+                            break
+                        r = self.deal(u, t, eff, ab, depth, ctx)
+                        if r and r["hit"]:
+                            hit.append(t)
+                ctx["_prev_hit"] = hit
+                hit_any += hit
+            elif op == "heal":
+                for t in targets:
+                    self.heal(u, t, eff, ab, depth)
+            elif op == "shield":
+                for t in targets:
+                    self.shield(u, t, eff, ab)
+            elif op == "status":
+                for t in targets:
+                    self.apply_status(u, t, eff, ab, depth)
+            elif op == "cleanse":
+                for t in targets:
+                    self.remove_statuses(u, t, "debuff", int(eff.get("count", 1)), ab)
+            elif op == "dispel":
+                for t in targets:
+                    self.remove_statuses(u, t, "buff", int(eff.get("count", 1)), ab)
+            elif op == "revive":
+                for t in self.select(u, eff.get("target", "dead_ally_random"), ctx)[: int(eff.get("count", 1))]:
+                    self.revive(u, t, eff, ab, depth)
+            elif op in ("extra_attack", "extra_action"):
+                self.schedule_extra(u, eff, ab, ctx, depth)
+            elif op == "cooldown":
+                for t in targets:
+                    for k in list(t.cooldowns):
+                        t.cooldowns[k] = max(0, t.cooldowns[k] + int(eff.get("delta", -1)))
+            else:
+                raise ValueError(f"unknown op {op} in {ab['id']}")
+        # nested runes: each rolls independently after the parent rune resolved
+        for nest in ab.get("nested", []):
+            if self.rng.random() < nest.get("prob", 0):
+                self._log(t="nested_rune", src=u.uid, ab=nest.get("id"))
+                self.execute(u, {"id": f"{ab['id']}>{nest.get('id', 'nested')}", "effects": nest.get("effects", []),
+                                 "tags": ["rune"]}, ctx, depth)
+        if did_attack and not self.winner:
+            self.emit("after_attack", depth + 1, subject=u, actor=u, ability=ab, targets_hit=hit_any,
+                      chain=ctx.get("chain", 0), is_extra=ctx.get("is_extra", False))
+
+    # ---------------------------------------------------------------- damage
+    def deal(self, src: Unit, tgt: Unit, spec: dict, ab: dict, depth: int, ctx: dict) -> dict | None:
+        a = self.asm
+        dtype = spec.get("dtype", "physical")
+        if not tgt.alive:
+            return None
+        can_miss = spec.get("can_dodge", True) and (dtype in ("physical", "magic") or (dtype == "true" and a.get("dmg.true_can_miss")))
+        if can_miss and a.get("dmg.hit_formula") == "dodge_minus_acc":
+            p_miss = min(1.0, max(0.0, tgt.stat("DODGE") - src.stat("ACC")))
+            if p_miss > 0 and self.rng.random() < p_miss:
+                src.st.misses += 1
+                tgt.st.dodges += 1
+                self._log(t="miss", src=src.uid, tgt=tgt.uid, ab=ab["id"])
+                self.emit("dodged", depth + 1, subject=tgt, attacker=src, ability=ab)
+                return {"hit": False}
+        base = (spec.get("coef", 0.0) * src.stat(spec.get("stat", "ATK")) + spec.get("flat", 0.0)
+                + spec.get("pct_max_hp", 0.0) * tgt.max_hp + spec.get("pct_cur_hp", 0.0) * tgt.hp)
+        if "amount" in spec:
+            base += spec["amount"]
+        crit = False
+        if dtype in ("physical", "magic"):
+            def_stat = "DEF" if dtype == "physical" else a.get("dmg.magic_def_stat")
+            D = tgt.stat(def_stat) if def_stat != "none" else 0.0
+            ign = min(1.0, max(0.0, src.stat("IGNORE_DEF") + spec.get("ignore_def", 0.0)))
+            D_eff = D * (1 - ign)
+            fam = a.get("dmg.family")
+            if fam == "divisive":
+                k = float(a.get("dmg.k_def"))
+                dmg = base * k / (k + D_eff)
+            elif fam == "ratio":
+                dmg = base * base / (base + D_eff) if base > 0 else 0.0
+            elif fam == "subtractive":
+                dmg = base - float(a.get("dmg.sub_c")) * D_eff
+            else:
+                raise ValueError(fam)
+            dmg = max(dmg, base * float(a.get("dmg.min_fraction")))
+            bonuses = [src.stat("DMG_BONUS"), src.stat("PHYS_DMG_BONUS" if dtype == "physical" else "MAGIC_DMG_BONUS"),
+                       spec.get("bonus", 0.0)]
+            for key, b in spec.get("bonus_vs_status", {}).items():
+                if any(s.key == key for s in tgt.statuses):
+                    bonuses.append(b)
+            if a.get("dmg.bonus_stacking") == "additive":
+                dmg *= max(0.0, 1 + sum(bonuses))
+            else:
+                for b in bonuses:
+                    dmg *= max(0.0, 1 + b)
+            crit, dmg = self._crit(src, tgt, spec, dmg)
+            dmg *= 1 - min(max(0.0, tgt.stat("DR")), float(a.get("dmg.dr_cap")))
+        elif dtype == "true":
+            dmg = base
+            if a.get("dmg.true_can_crit"):
+                crit, dmg = self._crit(src, tgt, spec, dmg)
+        elif dtype == "fixed":
+            dmg = base
+        else:
+            raise ValueError(f"unknown dtype {dtype}")
+        v = float(a.get("dmg.variance"))
+        if v > 0:
+            dmg *= 1 + self.rng.uniform(-v, v)
+        out = self.apply_damage(src, tgt, max(0.0, dmg), dtype, ab, depth, crit=crit)
+        out["hit"] = True
+        return out
+
+    def _crit(self, src, tgt, spec, dmg):
+        if not spec.get("can_crit", True):
+            return False, dmg
+        p = src.stat("CRIT")
+        if self.asm.get("dmg.crit_formula") == "crit_minus_crit_res":
+            p -= tgt.stat("CRIT_RES")
+        if p > 0 and self.rng.random() < p:
+            mult = src.stat("CRIT_DMG") or float(self.asm.get("dmg.base_crit_dmg"))
+            src.st.crits += 1
+            return True, dmg * mult
+        return False, dmg
+
+    def apply_damage(self, src: Unit, tgt: Unit, dmg: float, dtype: str, ab: dict, depth: int,
+                     crit: bool = False, reflected: bool = False, dot: bool = False) -> dict:
+        raw = dmg
+        absorbed = 0.0
+        if tgt.shields() and (dtype in ("physical", "magic") or self.asm.get("shield.absorbs_true")):
+            for sh in sorted(tgt.shields(), key=lambda s: s.seq):
+                take = min(sh.shield_amount, dmg)
+                sh.shield_amount -= take
+                dmg -= take
+                absorbed += take
+                if sh.shield_amount <= 1e-9:
+                    tgt.statuses.remove(sh)
+                    self.emit("shield_broken", depth + 1, subject=tgt, attacker=src)
+                if dmg <= 0:
+                    break
+        hp_loss = min(dmg, tgt.hp)
+        overkill = dmg - hp_loss
+        tgt.hp -= hp_loss
+        s = src.st
+        s.dmg_raw += raw
+        s.dmg_effective += hp_loss
+        s.dmg_to_shield += absorbed
+        s.overkill += overkill
+        tgt.st.dmg_taken_hp += hp_loss
+        tgt.st.dmg_absorbed_by_own_shield += absorbed
+        s.by_ability[ab["id"]]["dmg"] += hp_loss
+        s.by_ability[ab["id"]]["dmg_to_shield"] += absorbed
+        if src.side != tgt.side:
+            self.round_damage[src.side][self.round] += hp_loss + absorbed
+            if self.round == 1:
+                self.first_round["damage"][src.side] += hp_loss + absorbed
+        self._log(t="dmg", src=src.uid, tgt=tgt.uid, ab=ab["id"], dt=dtype, raw=round(raw, 2),
+                  hp=round(hp_loss, 2), sh=round(absorbed, 2), crit=crit, refl=reflected, dot=dot)
+        # lifesteal
+        ls = src.stat("LIFESTEAL") if not reflected and not dot and not src.is_team_source else 0.0
+        if ls > 0 and src.alive:
+            self.heal_amount(src, src, (hp_loss + absorbed) * ls, {"id": "lifesteal"}, depth)
+        # reflect
+        rp = tgt.reflect_pct()
+        if rp > 0 and not reflected and not dot and src.alive and not src.is_team_source and (hp_loss + absorbed) > 0:
+            amount = (hp_loss + absorbed) * rp
+            rtype = "true" if self.asm.get("reflect.dtype") == "true" else dtype
+            tgt.st.reflected += amount
+            self.apply_damage(tgt, src, amount, rtype, {"id": "reflect"}, depth + 1, reflected=True)
+        if (hp_loss + absorbed) > 0 and (not reflected or self.asm.get("reflect.triggers_on_hit")):
+            self.emit("damaged", depth + 1, subject=tgt, attacker=src, target=tgt, ability=ab, dtype=dtype,
+                      amount=hp_loss + absorbed)
+            if crit:
+                self.emit("crit", depth + 1, subject=src, actor=src, target=tgt, ability=ab)
+        if tgt.hp <= 1e-9 and tgt.alive:
+            self.kill(tgt, src, ab, dtype, overkill, depth)
+        return {"raw": raw, "hp": hp_loss, "absorbed": absorbed, "crit": crit}
+
+    def kill(self, tgt: Unit, killer: Unit, ab: dict, dtype: str, overkill: float, depth: int):
+        tgt.alive = False
+        tgt.hp = 0.0
+        tgt.st.deaths += 1
+        if killer.side != tgt.side:
+            killer.st.kills += 1
+        rec = {"round": self.round, "uid": tgt.uid, "hero": tgt.hero_id, "killer": killer.uid,
+               "killer_hero": killer.hero_id, "ability": ab["id"], "dtype": dtype, "overkill": round(overkill, 2)}
+        self.deaths.append(rec)
+        if self.round == 1:
+            self.first_round["deaths"].append(tgt.uid)
+        self._log(t="death", **{k: v for k, v in rec.items() if k != "round"})
+        if self.asm.get("death.clear_statuses"):
+            tgt.statuses = [s for s in tgt.statuses if s.persist_on_death]
+        self.emit("kill", depth + 1, subject=killer, actor=killer, target=tgt, ability=ab)
+        self.emit("enemy_death", depth + 1, subject=tgt, target=tgt, killer=killer)
+        self.emit("self_death", depth + 1, subject=tgt, target=tgt, killer=killer)
+        self.emit("ally_death", depth + 1, subject=tgt, target=tgt, killer=killer)
+
+    # ---------------------------------------------------------------- heal / shield
+    def heal(self, src: Unit, tgt: Unit, spec: dict, ab: dict, depth: int):
+        if not tgt.alive:
+            return
+        amount = (spec.get("coef", 0.0) * src.stat(spec.get("stat", "ATK")) + spec.get("pct_max_hp", 0.0) * tgt.max_hp
+                  + spec.get("flat", 0.0))
+        self.heal_amount(src, tgt, amount, ab, depth)
+
+    def heal_amount(self, src: Unit, tgt: Unit, amount: float, ab: dict, depth: int):
+        if not tgt.alive or amount <= 0:
+            return
+        amount *= (1 + src.stat("HEAL_BONUS")) * (1 + tgt.stat("HEAL_RECV"))
+        amount = max(0.0, amount)
+        eff = min(amount, tgt.max_hp - tgt.hp)
+        tgt.hp += eff
+        src.st.heal_effective += eff
+        src.st.overheal += amount - eff
+        src.st.by_ability[ab["id"]]["heal"] += eff
+        self._log(t="heal", src=src.uid, tgt=tgt.uid, ab=ab["id"], v=round(eff, 2), over=round(amount - eff, 2))
+        if eff > 0:
+            self.emit("healed", depth + 1, subject=tgt, actor=src, amount=eff)
+
+    def shield(self, src: Unit, tgt: Unit, spec: dict, ab: dict):
+        if not tgt.alive:
+            return
+        amount = (spec.get("coef", 0.0) * src.stat(spec.get("stat", "ATK")) + spec.get("pct_max_hp", 0.0) * tgt.max_hp
+                  + spec.get("flat", 0.0))
+        key = spec.get("key", f"shield:{ab['id']}")
+        existing = next((s for s in tgt.statuses if s.key == key), None)
+        if existing and spec.get("stacking", "refresh") == "refresh":
+            existing.shield_amount = max(existing.shield_amount, amount)
+            existing.duration = spec.get("duration")
+        else:
+            tgt.statuses.append(Status(key=key, kind="buff", source=src.uid, shield_amount=amount,
+                                       duration=spec.get("duration"), seq=self._next_sseq(), ability=ab["id"],
+                                       undispellable=spec.get("undispellable", False)))
+        src.st.shield_given += amount
+        src.st.by_ability[ab["id"]]["shield"] += amount
+        self._log(t="shield", src=src.uid, tgt=tgt.uid, ab=ab["id"], v=round(amount, 2))
+
+    # ---------------------------------------------------------------- statuses
+    def apply_status(self, src: Unit, tgt: Unit, eff: dict, ab: dict, depth: int):
+        spec = dict(eff["status"])
+        if not tgt.alive and not (spec.get("revive_ban") or spec.get("persist_on_death")):
+            return
+        chance = eff.get("chance", 1.0)
+        if spec.get("control"):
+            src.st.ctrl_attempts += 1
+            if any(s.key == "control_immune" for s in tgt.statuses):
+                p = 0.0
+            else:
+                p = chance * (1 + src.stat("CTRL_HIT") - tgt.stat("CTRL_RES"))
+            p = min(1.0, max(0.0, p))
+            if self.rng.random() >= p:
+                src.st.ctrl_resisted += 1
+                self._log(t="ctrl_resist", src=src.uid, tgt=tgt.uid, ab=ab["id"], c=spec["control"])
+                return
+            src.st.ctrl_landed += 1
+            if self.round == 1:
+                self.first_round["controls"] += 1
+        elif chance < 1.0 and self.rng.random() >= chance:
+            return
+        key = spec["key"]
+        policy = spec.get("stacking") or self.asm.get("stack.same_status_default")
+        existing = [s for s in tgt.statuses if s.key == key]
+        dot = spec.get("dot")
+        if dot and self.asm.get("dot.snapshot"):
+            dot = dict(dot, snap=src.stat(dot.get("stat", "ATK")))
+        new = Status(key=key, kind=spec.get("kind", "debuff"), source=src.uid, mods=spec.get("mods", []),
+                     duration=spec.get("duration"), max_stacks=spec.get("max_stacks", 1), stacking=policy,
+                     control=spec.get("control"), dot=dot, hot=spec.get("hot"), revive_ban=spec.get("revive_ban", False),
+                     reflect=spec.get("reflect", 0.0), undispellable=spec.get("undispellable", False),
+                     persist_on_death=spec.get("persist_on_death", spec.get("revive_ban", False)),
+                     tick=spec.get("tick"), seq=self._next_sseq(), ability=ab["id"])
+        if existing and policy == "refresh":
+            ex = existing[0]
+            ex.duration = new.duration if new.duration is None or ex.duration is None else max(ex.duration, new.duration)
+            ex.mods, ex.source = new.mods, new.source
+        elif existing and policy == "stack":
+            ex = existing[0]
+            ex.stacks = min(ex.stacks + 1, max(ex.max_stacks, new.max_stacks))
+            ex.duration = new.duration
+        else:
+            tgt.statuses.append(new)
+        self._log(t="status", src=src.uid, tgt=tgt.uid, ab=ab["id"], key=key, ctrl=spec.get("control"))
+        if spec.get("control"):
+            self.emit("controlled", depth + 1, subject=tgt, actor=src, control=spec["control"])
+        self.emit("status_applied", depth + 1, subject=tgt, actor=src, key=key)
+
+    def remove_statuses(self, src: Unit, tgt: Unit, kind: str, count: int, ab: dict):
+        cands = [s for s in tgt.statuses if s.kind == kind and not s.undispellable]
+        cands.sort(key=lambda s: -s.seq)          # newest first
+        for s in cands[:count]:
+            tgt.statuses.remove(s)
+            if kind == "debuff":
+                src.st.cleansed += 1
+            else:
+                src.st.dispelled += 1
+            self._log(t="cleanse" if kind == "debuff" else "dispel", src=src.uid, tgt=tgt.uid, key=s.key, ab=ab["id"])
+
+    def revive(self, src: Unit, tgt: Unit, eff: dict, ab: dict, depth: int):
+        if tgt.alive or tgt.is_team_source:
+            return
+        if tgt.revive_banned():
+            tgt.st.revive_blocked += 1
+            self._log(t="revive_blocked", src=src.uid, tgt=tgt.uid, ab=ab["id"])
+            return
+        tgt.alive = True
+        tgt.hp = max(1.0, tgt.max_hp * eff.get("hp_pct", 0.3))
+        if self.asm.get("revive.cleanse_on_revive"):
+            tgt.statuses = []
+        tgt.st.revived_times += 1
+        src.st.revives_done += 1
+        if not self.asm.get("revive.can_act_same_round"):
+            tgt.tags.add("_revived_this_round")
+        self._log(t="revive", src=src.uid, tgt=tgt.uid, ab=ab["id"], hp=round(tgt.hp, 2))
+        self.emit("revived", depth + 1, subject=tgt, actor=src)
+
+    # ---------------------------------------------------------------- extra actions / combo
+    def schedule_extra(self, u: Unit, eff: dict, ab: dict, ctx: dict, depth: int):
+        chain = ctx.get("chain", 0) if ctx.get("is_extra") else 0
+        if eff["op"] == "extra_attack" and ctx.get("is_extra"):
+            if chain > int(self.asm.get("extra.combo_chain_max")):
+                self._log(t="combo_chain_cap", src=u.uid, ab=ab["id"])
+                return
+        if "chance" in eff and self.rng.random() >= eff["chance"]:
+            return
+        actor = u
+        if eff.get("actor") == "event_actor" and ctx.get("actor") is not None:
+            actor = ctx["actor"]
+        if actor.is_team_source or not actor.alive:
+            return
+        if actor.extra_this_round >= int(self.asm.get("extra.per_unit_per_round_max")):
+            self._log(t="extra_cap", src=actor.uid)
+            return
+        actor.extra_this_round += 1
+        p = Pending(actor, {"id": eff.get("ability", "basic"), "by": ab["id"]},
+                    {"chain": chain + 1, "is_extra": True, "parent": ab["id"], "target_hint": eff.get("target")},
+                    depth + 1, kind=eff["op"])
+        timing = self.asm.get("extra.timing")
+        if eff["op"] == "extra_attack":
+            actor.st.combo_triggers += 1
+        if timing == "immediate":
+            heapq.heappush(self.q, ((depth + 1, 0, -100, self.order_index[actor.uid], next(self.seq)), p))
+        else:
+            self.eor_extras.append(p)
+        self._log(t="extra_scheduled", src=actor.uid, kind=eff["op"], by=ab["id"], timing=timing)
+
+    def _run_extra(self, p: Pending):
+        u = p.unit
+        if not u.alive or u.has_control():
+            return
+        u.st.extra_actions += 1
+        if p.kind == "extra_action":
+            ab = self.choose_ability(u)
+        else:
+            want = p.ability["id"]
+            ab = self.basic(u) if want == "basic" else next((a for a in u.abilities if a["id"] == want), None)
+        if ab is None:
+            return
+        # an out-of-queue action is a new action: its reactions start at depth 0 again;
+        # loops are bounded by extra.combo_chain_max and extra.per_unit_per_round_max instead
+        self.execute(u, ab, dict(p.ctx), 0)
+        self.emit("action", 1, subject=u, actor=u, ability=ab, is_extra=True, chain=p.ctx.get("chain", 1))
+
+    # ---------------------------------------------------------------- turns
+    @staticmethod
+    def basic(u: Unit) -> dict | None:
+        return next((a for a in u.abilities if a.get("kind") == "basic"), None)
+
+    def choose_ability(self, u: Unit) -> dict | None:
+        silenced = u.has_control(CONTROL_SILENCE)
+        if not silenced:
+            actives = [a for a in u.abilities if a.get("kind") == "active"]
+            actives.sort(key=lambda a: -a.get("priority", 0))
+            for a in actives:
+                if self._conditions_ok(u, a, {}, consume=True):
+                    return a
+        return self.basic(u)
+
+    def take_turn(self, u: Unit):
+        if not u.alive:
+            return
+        if "_revived_this_round" in u.tags:
+            return
+        if self.asm.get("dot.timing") == "owner_turn_start":
+            self.tick_periodic(u)
+            if not u.alive or self._check_end():
+                return
+        self._cd_fresh = set()
+        turn_mark = self._sseq
+        c = u.has_control()
+        if c:
+            u.st.skipped_turns += 1
+            u.st.turns_controlled += 1
+            self._log(t="skip", src=u.uid, c=c)
+        else:
+            ab = self.choose_ability(u)
+            if ab is not None:
+                u.st.actions += 1
+                self.execute(u, ab, {"chain": 0}, 0)
+                self._set_cd(u, ab)
+                if not self.winner:
+                    self.emit("action", 1, subject=u, actor=u, ability=ab, is_extra=False, chain=0)
+        self.drain()
+        # cooldown.tick: decrement at the owner's turn end, except cooldowns set during this turn
+        for k in list(u.cooldowns):
+            if u.cooldowns[k] > 0 and (u.uid, k) not in self._cd_fresh:
+                u.cooldowns[k] -= 1
+        self._cd_fresh = set()
+        self.tick_statuses(u, "owner_turn_end", applied_before=turn_mark)
+
+    def tick_periodic(self, u: Unit):
+        for s in list(u.statuses):
+            if not u.alive:
+                break
+            if s.dot:
+                srcu = next((x for x in self.units if x.uid == s.source), u)
+                d = s.dot
+                base = d.get("snap", srcu.stat(d.get("stat", "ATK"))) * d.get("coef", 0.0) + d.get("pct_max_hp", 0.0) * u.max_hp
+                base *= s.stacks if s.stacking == "stack" else 1
+                dtype = d.get("dtype", "true")
+                if dtype in ("physical", "magic"):
+                    self.deal(srcu, u, {"coef": 0, "amount": base, "dtype": dtype, "can_crit": False, "can_dodge": False},
+                              {"id": s.ability or s.key}, 0, {})
+                else:
+                    self.apply_damage(srcu, u, base, dtype, {"id": s.ability or s.key}, 0, dot=True)
+            if s.hot and u.alive:
+                srcu = next((x for x in self.units if x.uid == s.source), u)
+                h = s.hot
+                amt = srcu.stat(h.get("stat", "ATK")) * h.get("coef", 0.0) + h.get("pct_max_hp", 0.0) * u.max_hp
+                self.heal_amount(srcu, u, amt, {"id": s.ability or s.key}, 0)
+        self.drain()
+
+    def tick_statuses(self, u: Unit, phase: str, applied_before: int | None = None):
+        """Decrement durations. On the owner's turn end, statuses applied during that same turn are
+        not decremented (duration N = N full owner turns)."""
+        default = self.asm.get("status.tick")
+        keep = []
+        for s in u.statuses:
+            tick = s.tick or default
+            fresh = applied_before is not None and s.seq > applied_before
+            if s.duration is not None and tick == phase and not fresh:
+                s.duration -= 1
+                if s.duration <= 0:
+                    self._log(t="expire", tgt=u.uid, key=s.key)
+                    continue
+            keep.append(s)
+        u.statuses = keep
+
+    def action_order(self) -> list[Unit]:
+        mode = self.asm.get("order.mode")
+        alive = self.fighters()
+        if mode == "fixed_position":
+            return sorted(alive, key=lambda u: (u.pos, u.side))
+        ties = self.asm.get("order.tie_break")
+        rnd = {u.uid: self.rng.random() for u in alive}
+
+        def key(u):
+            k = [-u.stat("SPD")]
+            for t in ties:
+                if t == "attacker_first":
+                    k.append(0 if u.side == "A" else 1)
+                elif t == "defender_first":
+                    k.append(0 if u.side == "B" else 1)
+                elif t == "position":
+                    k.append(u.pos)
+                elif t == "random":
+                    k.append(rnd[u.uid])
+                elif t == "base_spd":
+                    k.append(-float(u.stats.get("SPD", 0)))
+            k.append(self.order_index[u.uid])
+            return tuple(k)
+
+        return sorted(alive, key=key)
+
+    # ================================================================ main loop
+    def run(self) -> BattleResult:
+        self.round = 0
+        self.emit("battle_start", 0, subject=None)
+        self.drain()
+        max_rounds = int(self.asm.get("battle.max_rounds"))
+        pet_timing = self.asm.get("pet.timing")
+        while not self._check_end():
+            self.round += 1
+            if self.round > max_rounds:
+                self.round = max_rounds
+                self._timeout()
+                break
+            for u in self.units:
+                u.trig_round.clear()
+                u.extra_this_round = 0
+                u.tags.discard("_revived_this_round")
+                if u.is_team_source:
+                    for k in list(u.cooldowns):
+                        u.cooldowns[k] = max(0, u.cooldowns[k] - 1)
+            self.emit("round_start", 0, subject=None)
+            if pet_timing == "round_start":
+                self.emit("pet_phase", 0, subject=None)
+            self.drain()
+            if self._check_end():
+                break
+            order = self.action_order()
+            if self.round == 1:
+                self.first_round["order"] = [(u.uid, u.hero_id, round(u.stat("SPD"), 2)) for u in order]
+            i = 0
+            while i < len(order):
+                u = order[i]
+                i += 1
+                self.take_turn(u)
+                if self._check_end():
+                    break
+                if self.asm.get("order.resort_mid_round") and i < len(order):
+                    rest = [x for x in self.action_order() if x in order[i:]]
+                    order = order[:i] + rest
+            if self.winner:
+                break
+            # ---- round end
+            if self.asm.get("dot.timing") == "round_end":
+                for u in self.fighters():
+                    self.tick_periodic(u)
+                    if self._check_end():
+                        break
+            if self.winner:
+                break
+            if pet_timing == "round_end":
+                self.emit("pet_phase", 0, subject=None)
+            self.emit("round_end", 0, subject=None)
+            self.drain()
+            extras, self.eor_extras = self.eor_extras, []
+            for p in extras:
+                if self.winner:
+                    break
+                self._run_extra(p)
+                self.drain()
+            for u in self.units:
+                self.tick_statuses(u, "round_end")
+        return self.result()
+
+    def _timeout(self):
+        rule = self.asm.get("battle.draw_result")
+        self.end_reason = "round_limit"
+        if rule == "defender_wins":
+            self.winner = "B"
+        elif rule == "hp_percent":
+            fa = sum(u.hp for u in self.fighters("A")) / max(1e-9, sum(u.max_hp for u in self.fighters("A", None)))
+            fb = sum(u.hp for u in self.fighters("B")) / max(1e-9, sum(u.max_hp for u in self.fighters("B", None)))
+            self.winner = "A" if fa > fb else "B" if fb > fa else "draw"
+        else:
+            self.winner = "draw"
+
+    def result(self) -> BattleResult:
+        units = []
+        for u in self.units:
+            if u.is_team_source:
+                d = {"uid": u.uid, "side": u.side, "hero": "__team__", "team_source": True}
+            else:
+                d = {"uid": u.uid, "side": u.side, "hero": u.hero_id, "pos": u.pos, "alive": u.alive,
+                     "hp": round(u.hp, 2), "max_hp": u.max_hp, "team_source": False}
+            s = u.st
+            d.update({k: getattr(s, k) for k in s.__dataclass_fields__ if k != "by_ability"})
+            d["by_ability"] = {k: dict(v) for k, v in s.by_ability.items()}
+            units.append(d)
+        hp_left = {}
+        for side in "AB":
+            mx = sum(u.max_hp for u in self.fighters(side, None))
+            hp_left[side] = round(sum(u.hp for u in self.fighters(side)) / mx, 4) if mx else 0.0
+        return BattleResult(winner=self.winner or "draw", rounds=self.round, seed=self.seed, units=units,
+                            deaths=self.deaths, round_damage={k: dict(v) for k, v in self.round_damage.items()},
+                            first_round=self.first_round, assumptions_used=sorted(self.asm.used),
+                            end_reason=self.end_reason or "wipe", hp_left=hp_left, log=self.log)
