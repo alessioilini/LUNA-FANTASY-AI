@@ -167,3 +167,11 @@ def test_matchup_analysis_and_suggestions():
     assert all("reason" in r and "ci95" in r for r in sug["all"])
     ab = ma.ablation(A, B, n=20)
     assert {r["kind"] for r in ab} >= {"руны", "оружие принцессы"}
+
+
+def test_with_resources_inventory_filter():
+    from luna.matchup import filter_roster_inventory
+    r = roster()
+    r.inventory = {"heroes:s_mage": 1, "heroes:s_tank": 1, "runes:rune_0": 1}
+    f = filter_roster_inventory(r)
+    assert set(f.heroes) == {"s_mage", "s_tank"} and f.rune_pool == ["rune_0"] and f.pw_pool == []

@@ -331,3 +331,22 @@ def filter_roster_no_donation(roster, cat: Catalog):
     r.rune_pool = [x for x in r.rune_pool if not cat.get("runes", x).get("donation_only")]
     r.pw_pool = [x for x in r.pw_pool if not cat.get("princess_weapon_parts", x).get("donation_only")]
     return r
+
+
+def filter_roster_inventory(roster):
+    """with_resources: keep only heroes/items present in roster.inventory ("section:id" -> count > 0).
+    Heroes are filtered only if the inventory lists any "heroes:" keys (otherwise the roster itself is the owned set)."""
+    r = copy.deepcopy(roster)
+    inv = r.inventory or {}
+    own = lambda sec, iid: inv.get(f"{sec}:{iid}", 0) > 0
+    if any(k.startswith("heroes:") for k in inv):
+        r.heroes = {h: b for h, b in r.heroes.items() if own("heroes", h)}
+    for hb in r.heroes.values():
+        hb.limbs = [x if (x is None or own("limbs", x)) else None for x in hb.limbs]
+        hb.pets = [x for x in hb.pets if own("pets", x)]
+        hb.decorations = [x for x in hb.decorations if x and own("decorations", x)]
+        hb.sigils = [sg for sg in hb.sigils if own("sigils", sg["id"])]
+        hb.charm_cards = [x for x in hb.charm_cards if own("charm_cards", x)]
+    r.rune_pool = [x for x in r.rune_pool if own("runes", x)]
+    r.pw_pool = [x for x in r.pw_pool if own("princess_weapon_parts", x)]
+    return r

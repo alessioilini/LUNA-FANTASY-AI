@@ -162,7 +162,7 @@ def cmd_matchup(args):
 
 
 def cmd_optimize(args):
-    from .matchup import mode_objective, filter_roster_no_donation
+    from .matchup import mode_objective, filter_roster_no_donation, filter_roster_inventory
     from .model import Team
     from .optimize.search import Roster, Evaluator, genetic_algorithm, beam_search
     cat = _catalog(args.catalog)
@@ -170,6 +170,8 @@ def cmd_optimize(args):
     mo = mode_objective(args.mode)
     if mo.get("filter") == "no_donation":
         roster = filter_roster_no_donation(roster, cat)
+    elif mo.get("filter") == "inventory":
+        roster = filter_roster_inventory(roster)
     opps = [Team.load(p) for p in args.opponents]
     ev = Evaluator(opps, cat, _asm(args), n=args.n, seed=args.seed, priors=_priors(args.priors))
     if args.algo == "beam":
