@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna Fantasy AI</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">☾</span>
+    <div>
+      <div class="brand-title">Luna Fantasy AI</div>
+      <div class="brand-sub">Локальная панель: база знаний, сборки, симулятор (модель)</div>
+    </div>
+  </div>
+  <div class="global-controls">
+    <label class="field inline">
+      <span>Каталог</span>
+      <select id="catalog-select" aria-label="Каталог"></select>
+    </label>
+    <button id="theme-toggle" class="btn ghost" type="button" title="Тема: авто / светлая / тёмная">Тема: авто</button>
+  </div>
+</header>
+
+<div id="banner" class="banner" role="status" hidden></div>
+
+<nav id="tabs" class="tabs" role="tablist" aria-label="Разделы"></nav>
+
+<main id="main">
+  <div id="loading" class="muted pad">Загрузка…</div>
+</main>
+
+<footer class="footer muted">
+  Все проценты побед на этой панели - <b>модельные</b> (симулятор не прошёл проверку на реальных боях).
+  Неизвестные значения показаны как <code>UNKNOWN</code> и никогда не подставляются молча.
+</footer>
+
+<div id="toast" class="toast" role="alert" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
