@@ -190,8 +190,11 @@ function itemLabel(section, id) {
 }
 
 function initials(name) {
-  const p = String(name || "?").replace(/[^\p{L}\p{N} ]/gu, " ").trim().split(/\s+/);
-  return ((p[0] || "?")[0] + (p[1] ? p[1][0] : (p[0] || "")[1] || "")).toUpperCase();
+  const p = String(name || "?").replace(/[^\p{L}\p{N} ]/gu, " ").trim().split(/\s+/).filter(Boolean);
+  if (!p.length) return "?";
+  if (p.length === 2) return (p[0][0] + p[1][0]).toUpperCase();
+  const w = p[p.length - 1];              // e.g. "Synth-s_striker" -> "striker" -> "ST"
+  return w.slice(0, 2).toUpperCase();
 }
 function hue(s) { let x = 0; for (const ch of String(s)) x = (x * 31 + ch.charCodeAt(0)) % 360; return x; }
 function avatar(hid, small) {
@@ -930,7 +933,9 @@ function histogram(hist) {
   if (!entries.length) return h("div", { class: "muted" }, "нет данных");
   const W = 600, H = 150, pad = 22;
   const max = Math.max(...entries.map((e) => e[1]));
-  const bw = (W - pad) / entries.length;
+  const slot = (W - pad) / entries.length;
+  const bw = Math.min(slot, 48);                       // a single bucket must not fill the whole chart
+  const x0 = pad / 2 + (W - pad - bw * entries.length) / 2;
   const ns = "http://www.w3.org/2000/svg";
   const svg = document.createElementNS(ns, "svg");
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
@@ -940,7 +945,7 @@ function histogram(hist) {
   entries.forEach(([k, v], i) => {
     const bh = ((H - pad - 14) * v) / max;
     const r = document.createElementNS(ns, "rect");
-    r.setAttribute("x", pad / 2 + i * bw + 2);
+    r.setAttribute("x", x0 + i * bw + 2);
     r.setAttribute("y", H - pad - bh);
     r.setAttribute("width", Math.max(2, bw - 4));
     r.setAttribute("height", bh);
@@ -949,13 +954,13 @@ function histogram(hist) {
     r.append(tt);
     svg.append(r);
     const tx = document.createElementNS(ns, "text");
-    tx.setAttribute("x", pad / 2 + i * bw + bw / 2);
+    tx.setAttribute("x", x0 + i * bw + bw / 2);
     tx.setAttribute("y", H - 6);
     tx.setAttribute("text-anchor", "middle");
     tx.textContent = k;
     svg.append(tx);
     const tv = document.createElementNS(ns, "text");
-    tv.setAttribute("x", pad / 2 + i * bw + bw / 2);
+    tv.setAttribute("x", x0 + i * bw + bw / 2);
     tv.setAttribute("y", H - pad - bh - 3);
     tv.setAttribute("text-anchor", "middle");
     tv.textContent = v;
@@ -1047,10 +1052,10 @@ function renderMatchupResult(r) {
       h("div", {}, h("h4", {}, "Ключевые героини - соперник"), table(kh.enemy, khCols))),
     h("h4", {}, "Первый раунд"),
     h("div", { class: "muted small" }, `Средний урон: A ${num(fr.avg_damage && fr.avg_damage.A)} / B ${num(fr.avg_damage && fr.avg_damage.B)} · P(смерть в 1-м раунде): A ${pct(fr.p_any_death_r1 && fr.p_any_death_r1.A)} / B ${pct(fr.p_any_death_r1 && fr.p_any_death_r1.B)}`),
-    h("h4", {}, `Причины поражений (${lc.n_lost || 0} боёв)`),
+    h("h4", {}, `Причины не-побед: поражения + ничьи (${lc.n_lost || 0} боёв)`),
     lc.n_lost ? h("div", {}, table((lc.top_killers || []).map(([k, v]) => ({ k, v })), [{ k: "k", t: "Убийца / способность" }, { k: "v", t: "Убийств", num: true }]),
       table(Object.entries(lc.first_to_die || {}).map(([k, v]) => ({ k, v })), [{ k: "k", t: "Первой погибает", f: (x) => heroName(x.k) }, { k: "v", t: "Доля поражений", num: true, f: (x) => pct(x.v) }]))
-      : h("div", { class: "muted" }, "Поражений нет."),
+      : h("div", { class: "muted" }, "Все бои выиграны."),
     h("h4", {}, "Опасные источники урона соперника"),
     table((dg.enemy_top_damage_sources || []).map(([k, v]) => ({ k, v })), [{ k: "k", t: "Героиня / способность" }, { k: "v", t: "Доля урона", num: true, f: (x) => pct(x.v) }]),
     r.suggest ? h("div", {}, h("h4", {}, `Контрпики: улучшения (${r.suggest.evaluated} вариантов проверено)`), modelLabel(r.suggest.label),
@@ -1309,15 +1314,18 @@ async function boot() {
     S.portraits = portraits || {};
     for (const e of gl.entries) S.glossary[e.key] = e;
     await refreshSaved();
-    const sel = $("#catalog-select");
-    sel.replaceChildren(...cats.map((c) => h("option", { value: c.id }, `${c.label}${c.empty ? " - пусто" : ` (${c.heroes} героинь)`}`)));
     const want = store("catalog");
     const first = cats.find((c) => c.id === want) || cats.find((c) => !c.empty) || cats[0];
+    await loadCatalog(first.id);
+    // Options appear only after the initial catalog is loaded, so a quick user choice is never overwritten.
+    const sel = $("#catalog-select");
+    sel.replaceChildren(...cats.map((c) => h("option", { value: c.id }, `${c.label}${c.empty ? " - пусто" : ` (${c.heroes} героинь)`}`)));
     sel.value = first.id;
     sel.addEventListener("change", async () => {
+      sel.disabled = true;
       try { await loadCatalog(sel.value); activate(S.tab); } catch (e) { toast(e.message, true); }
+      finally { sel.disabled = false; }
     });
-    await loadCatalog(first.id);
     window.addEventListener("hashchange", () => activate(location.hash.slice(1)));
     activate(location.hash.slice(1) || "heroes");
   } catch (e) {
