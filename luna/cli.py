@@ -254,6 +254,22 @@ def cmd_export(args):
     print(*export(rep, args.out, args.fmt), sep="\n")
 
 
+def cmd_planbook(args):
+    from .planbook.build import main as pb_main
+    argv = []
+    for k in ("team", "out", "today"):
+        if getattr(args, k):
+            argv += [f"--{k}", getattr(args, k)]
+    argv += ["--model-n", str(args.model_n)] + (["--no-model"] if args.no_model else [])
+    pb_main(argv)
+
+
+def cmd_collect_appmedia(args):
+    from .collector.appmedia import collect
+    r = collect(refresh=args.refresh)
+    print(json.dumps({"heroes": len(r["heroes"]), "errors": r["errors"]}, ensure_ascii=False))
+
+
 def cmd_dashboard(args):
     from .dashboard.server import serve
     serve(args.host, args.port)
@@ -308,6 +324,11 @@ def main(argv=None):
     sp = sub.add_parser("export"); sp.add_argument("report"); sp.add_argument("out"); sp.add_argument("--fmt"); sp.set_defaults(fn=cmd_export)
     sp = sub.add_parser("dashboard"); sp.add_argument("--host", default="127.0.0.1"); sp.add_argument("--port", type=int, default=8765)
     sp.set_defaults(fn=cmd_dashboard)
+    sp = sub.add_parser("planbook", help="Excel plan: builds weighted by JP/RU sources and the simulator model")
+    sp.add_argument("--team"); sp.add_argument("--out"); sp.add_argument("--today"); sp.add_argument("--model-n", type=int, default=600)
+    sp.add_argument("--no-model", action="store_true"); sp.set_defaults(fn=cmd_planbook)
+    sp = sub.add_parser("collect-appmedia", help="fetch AppMedia (JP) build pages into data/kb/appmedia/builds.json")
+    sp.add_argument("--refresh", action="store_true"); sp.set_defaults(fn=cmd_collect_appmedia)
     args = p.parse_args(argv)
     args.fn(args)
 

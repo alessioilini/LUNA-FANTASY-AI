@@ -1,0 +1,4140 @@
+{
+ "snapshot": "2026-11-01",
+ "source": "https://appmedia.jp/yabasyoujyo",
+ "region": "JP",
+ "heroes": {
+  "aileen": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759287",
+   "title": "【ヤバ少女】アイリーンの評価とスキル | AppMedia",
+   "name_jp": "アイリーン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "aileen"
+  },
+  "amatsuki-ai": {
+   "url": "https://appmedia.jp/yabasyoujyo/78776765",
+   "title": "【ヤバ少女】天月愛の評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "天月愛",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-04-14",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "抹殺",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "髑髏花",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "物理ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "amatsuki-ai"
+  },
+  "anura": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759293",
+   "title": "【ヤバ少女】アヌラの評価とスキル | AppMedia",
+   "name_jp": "アヌラ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "anura"
+  },
+  "bell": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759272",
+   "title": "【ヤバ少女】ベルの評価とスキル | AppMedia",
+   "name_jp": "ベル",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "bell"
+  },
+  "bunina": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759239",
+   "title": "【ヤバ少女】ブニナの評価とスキル | AppMedia",
+   "name_jp": "ブニナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "神護",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "物理連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "反射",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "bunina"
+  },
+  "carol": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759269",
+   "title": "【ヤバ少女】キャロルの評価とスキル | AppMedia",
+   "name_jp": "キャロル",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "carol"
+  },
+  "caroro": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759263",
+   "title": "【ヤバ少女】キャロロの評価とスキル | AppMedia",
+   "name_jp": "キャロロ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "caroro"
+  },
+  "chiyo-ruri": {
+   "url": "https://appmedia.jp/yabasyoujyo/79308515",
+   "title": "【ヤバ少女】千夜瑠璃の評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "千夜瑠璃",
+   "date_modified": "2025-09-22",
+   "date_published": "2025-09-19",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "波動",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "回避",
+     "group": "candidate",
+     "pos": 7
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 8
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "魔法ダメ",
+     "会心率",
+     "会心ダメ",
+     "光特攻",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "chiyo-ruri"
+  },
+  "christine": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759197",
+   "title": "【ヤバ少女】クリスティーンの評価とスキル | AppMedia",
+   "name_jp": "クリスティーン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "christine"
+  },
+  "cthulhu": {
+   "url": "https://appmedia.jp/yabasyoujyo/78806732",
+   "title": "【ヤバ少女】クトゥルフの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "クトゥルフ",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-04-21",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "追擊",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 3,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "物理ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "cthulhu"
+  },
+  "debbie": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759329",
+   "title": "【ヤバ少女】デビーの評価とスキル | AppMedia",
+   "name_jp": "デビー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "debbie"
+  },
+  "elena": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759224",
+   "title": "【ヤバ少女】エレナの評価とスキル | AppMedia",
+   "name_jp": "エレナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "elena"
+  },
+  "evelyn": {
+   "url": "https://appmedia.jp/yabasyoujyo/79081880",
+   "title": "【ヤバ少女】エヴリンの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "エヴリン",
+   "date_modified": "2025-07-15",
+   "date_published": "2025-07-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "波動",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "魔法ダメ",
+     "光特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "evelyn"
+  },
+  "ferry": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759227",
+   "title": "【ヤバ少女】フェリーの評価とスキル | AppMedia",
+   "name_jp": "フェリー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "神護",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "制御",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "物理連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "反射",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "ferry"
+  },
+  "fran": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759314",
+   "title": "【ヤバ少女】フランの評価とスキル | AppMedia",
+   "name_jp": "フラン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "fran"
+  },
+  "freya": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759248",
+   "title": "【ヤバ少女】フレイヤの評価とスキル | AppMedia",
+   "name_jp": "フレイヤ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "freya"
+  },
+  "gina": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759323",
+   "title": "【ヤバ少女】ジーナの評価とスキル | AppMedia",
+   "name_jp": "ジーナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "gina"
+  },
+  "harit": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759203",
+   "title": "【ヤバ少女】ハリエットの評価とスキル | AppMedia",
+   "name_jp": "ハリエット",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "神護",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "物理連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "反射",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "harit"
+  },
+  "helen": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759311",
+   "title": "【ヤバ少女】ヘレンの評価とスキル | AppMedia",
+   "name_jp": "ヘレン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "helen"
+  },
+  "illusia": {
+   "url": "https://appmedia.jp/yabasyoujyo/78981884",
+   "title": "【ヤバ少女】エルシアの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "エルシア",
+   "date_modified": "2025-06-25",
+   "date_published": "2025-06-12",
+   "tier": "SSS",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "悪南瓜",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "疆域王",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "SPD",
+     "ATK",
+     "物理ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "回避率"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "illusia"
+  },
+  "jenny": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759215",
+   "title": "【ヤバ少女】ジェニーの評価とスキル | AppMedia",
+   "name_jp": "ジェニー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "神護",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "物理連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "反射",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "jenny"
+  },
+  "kagadi": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759284",
+   "title": "【ヤバ少女】カガディの評価とスキル | AppMedia",
+   "name_jp": "カガディ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "kagadi"
+  },
+  "koto": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759218",
+   "title": "【ヤバ少女】琴の評価とスキル | AppMedia",
+   "name_jp": "琴",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "制御",
+     "group": "candidate",
+     "pos": 5
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "koto"
+  },
+  "kurimu": {
+   "url": "https://appmedia.jp/yabasyoujyo/78932423",
+   "title": "【ヤバ少女】クリムの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "クリム",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-05-29",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "制御",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "解除",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "反射",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "白ダイヤ",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "芳草",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "人食い花",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "制御率",
+     "SPD"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "kurimu"
+  },
+  "lahn": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759326",
+   "title": "【ヤバ少女】ラーンの評価とスキル | AppMedia",
+   "name_jp": "ラーン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "lahn"
+  },
+  "leny": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759242",
+   "title": "【ヤバ少女】レニーの評価とスキル | AppMedia",
+   "name_jp": "レニー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "leny"
+  },
+  "liadora": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759236",
+   "title": "【ヤバ少女】リアドラの評価とスキル | AppMedia",
+   "name_jp": "リアドラ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "神の赦し",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "魔法連擊",
+     "group": "candidate",
+     "pos": 7
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "聖光のケンタウロス",
+     "pos": 1
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "liadora"
+  },
+  "lilith": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759194",
+   "title": "【ヤバ少女】リリスの評価とスキル | AppMedia",
+   "name_jp": "リリス",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "lilith"
+  },
+  "lucifer": {
+   "url": "https://appmedia.jp/yabasyoujyo/78871784",
+   "title": "【ヤバ少女】ルシファーの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ルシファー",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-05-09",
+   "tier": "SS",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "強欲",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "解除",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "奇夢うさぎ",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "芳草",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "幻蝶",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "SPD"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "lucifer"
+  },
+  "luna": {
+   "url": "https://appmedia.jp/yabasyoujyo/79168433",
+   "title": "【ヤバ少女】ルーナの評価とスキル | AppMedia",
+   "name_jp": "ルーナ",
+   "date_modified": "2025-08-08",
+   "date_published": "2025-08-07",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "波動",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "魔法ダメ",
+     "会心率",
+     "会心ダメ",
+     "光特攻",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "luna"
+  },
+  "meylis": {
+   "url": "https://appmedia.jp/yabasyoujyo/79128809",
+   "title": "【ヤバ少女】メリアスの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "メリアス",
+   "date_modified": "2025-08-01",
+   "date_published": "2025-07-28",
+   "tier": "SSS",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "波動",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 5
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "髑髏花",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 3,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "魔法ダメ",
+     "会心率",
+     "会心ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "回避率"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "喜怒楽",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "meylis"
+  },
+  "milasis": {
+   "url": "https://appmedia.jp/yabasyoujyo/79105931",
+   "title": "【ヤバ少女】ミラシスの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ミラシス",
+   "date_modified": "2025-07-21",
+   "date_published": "2025-07-18",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "隻眼",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "悪南瓜",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 3,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "物理ダメ",
+     "会心率",
+     "会心ダメ",
+     "光特攻",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "milasis"
+  },
+  "milim": {
+   "url": "https://appmedia.jp/yabasyoujyo/79262834",
+   "title": "【ヤバ少女】ミリムの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ミリム",
+   "date_modified": "2025-09-10",
+   "date_published": "2025-09-04",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "抹殺",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "戦意",
+     "group": "main",
+     "pos": 4
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "フラッシュ",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "バトルソウル",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "熔岩",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "物理ダメ",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗",
+     "会心ダメ軽減"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "milim"
+  },
+  "minos": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759230",
+   "title": "【ヤバ少女】ミノスの評価とスキル | AppMedia",
+   "name_jp": "ミノス",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "minos"
+  },
+  "nia": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759173",
+   "title": "【ヤバ少女】ニアの評価とスキル | AppMedia",
+   "name_jp": "ニア",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "nia"
+  },
+  "olivia": {
+   "url": "https://appmedia.jp/yabasyoujyo/79583243",
+   "title": "【ヤバ少女】オリビアの評価とスキル | AppMedia",
+   "name_jp": "オリビア",
+   "date_modified": "2025-12-13",
+   "date_published": "2025-12-13",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "波動",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦意",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "精密",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 7
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 8
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "奇夢うさぎ",
+     "pos": 3,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "魔法ダメ",
+     "会心率",
+     "会心ダメ",
+     "制御率"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "回避率"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "喜怒楽",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "olivia"
+  },
+  "oumu": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759260",
+   "title": "【ヤバ少女】オウムの評価とスキル | AppMedia",
+   "name_jp": "オウム",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "oumu"
+  },
+  "pandora": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759200",
+   "title": "【ヤバ少女】パンドラの評価とスキル | AppMedia",
+   "name_jp": "パンドラ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "神の赦し",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "魔法連擊",
+     "group": "candidate",
+     "pos": 7
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "聖光のケンタウロス",
+     "pos": 1
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "pandora"
+  },
+  "pekka": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759191",
+   "title": "【ヤバ少女】ペッカの評価とスキル | AppMedia",
+   "name_jp": "ペッカ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "pekka"
+  },
+  "phil": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759209",
+   "title": "【ヤバ少女】フィルの評価とスキル | AppMedia",
+   "name_jp": "フィル",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "phil"
+  },
+  "phoenix": {
+   "url": "https://appmedia.jp/yabasyoujyo/79497302",
+   "title": "【ヤバ少女】フェニックスの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "フェニックス",
+   "date_modified": "2025-11-30",
+   "date_published": "2025-11-13",
+   "tier": "SS",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "強靭",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "回避",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "精密",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "戦意",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "守護王",
+     "pos": 1,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "雛菊",
+     "pos": 2,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "物理ダメ",
+     "会心率",
+     "回復率"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "phoenix"
+  },
+  "pocho": {
+   "url": "https://appmedia.jp/yabasyoujyo/79003496",
+   "title": "【ヤバ少女】ぽちょの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ぽちょ",
+   "date_modified": "2025-06-25",
+   "date_published": "2025-06-19",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "波動",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "髑髏花",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 3,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "魔法ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "pocho"
+  },
+  "rachel": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759320",
+   "title": "【ヤバ少女】レイチェルの評価とスキル | AppMedia",
+   "name_jp": "レイチェル",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "rachel"
+  },
+  "renka": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759221",
+   "title": "【ヤバ少女】レンカの評価とスキル | AppMedia",
+   "name_jp": "レンカ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "renka"
+  },
+  "risa": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759185",
+   "title": "【ヤバ少女】リサの評価とスキル | AppMedia",
+   "name_jp": "リサ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "risa"
+  },
+  "ruth": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759296",
+   "title": "【ヤバ少女】ルースの評価とスキル | AppMedia",
+   "name_jp": "ルース",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "ruth"
+  },
+  "ruto": {
+   "url": "https://appmedia.jp/yabasyoujyo/79040099",
+   "title": "【ヤバ少女】ルトの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ルト",
+   "date_modified": "2025-07-01",
+   "date_published": "2025-06-27",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "抹殺",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 5
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "物理ダメ",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "ruto"
+  },
+  "sain": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759251",
+   "title": "【ヤバ少女】サインの評価とスキル | AppMedia",
+   "name_jp": "サイン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "sain"
+  },
+  "sally": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759290",
+   "title": "【ヤバ少女】サリーの評価とスキル | AppMedia",
+   "name_jp": "サリー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "sally"
+  },
+  "seika-yarei": {
+   "url": "https://appmedia.jp/yabasyoujyo/79448972",
+   "title": "【ヤバ少女】セイカ＆ヤレイの評価とスキル | AppMedia",
+   "name_jp": "セイカ＆ヤレイ",
+   "date_modified": "2025-10-30",
+   "date_published": "2025-10-30",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "吸収",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "精密",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "回避",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "物理ダメ",
+     "会心率",
+     "会心ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 4
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 5
+    }
+   ],
+   "lfru_slug": "seika-yarei"
+  },
+  "seneren": {
+   "url": "https://appmedia.jp/yabasyoujyo/79541414",
+   "title": "【ヤバ少女】セネリンの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "セネリン",
+   "date_modified": "2025-11-30",
+   "date_published": "2025-11-30",
+   "tier": "SS",
+   "talents": [
+    {
+     "name_jp": "庇護",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生命力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "回避",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強靭",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "フラッシュ",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "幻蝶",
+     "pos": 1,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "雛菊",
+     "pos": 2,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "回復率",
+     "SPD"
+    ],
+    "スロット2・4": [
+     "HP",
+     "回避率",
+     "被回復率",
+     "魔法ダメ軽減",
+     "会心抵抗率"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 1
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 2
+    },
+    {
+     "name_jp": "聖殿のグリフォン",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "seneren"
+  },
+  "sere": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759182",
+   "title": "【ヤバ少女】セレの評価とスキル | AppMedia",
+   "name_jp": "セレ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "sere"
+  },
+  "setori": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759275",
+   "title": "【ヤバ少女】セトリの評価とスキル | AppMedia",
+   "name_jp": "セトリ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "setori"
+  },
+  "sheena": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759302",
+   "title": "【ヤバ少女】シーナの評価とスキル | AppMedia",
+   "name_jp": "シーナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "sheena"
+  },
+  "shinonome-hyo": {
+   "url": "https://appmedia.jp/yabasyoujyo/79220861",
+   "title": "【ヤバ少女】東雲氷の評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "東雲氷",
+   "date_modified": "2025-08-28",
+   "date_published": "2025-08-26",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "吸収",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "奇夢うさぎ",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "物理ダメ",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "回避率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "shinonome-hyo"
+  },
+  "shira": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759299",
+   "title": "【ヤバ少女】シラの評価とスキル | AppMedia",
+   "name_jp": "シラ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "shira"
+  },
+  "siena": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759254",
+   "title": "【ヤバ少女】シエナの評価とスキル | AppMedia",
+   "name_jp": "シエナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "siena"
+  },
+  "sophia": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759257",
+   "title": "【ヤバ少女】ソフィアの評価とスキル | AppMedia",
+   "name_jp": "ソフィア",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "sophia"
+  },
+  "soran": {
+   "url": "https://appmedia.jp/yabasyoujyo/79383605",
+   "title": "【ヤバ少女】霜嵐の評価とスキル | AppMedia",
+   "name_jp": "霜嵐",
+   "date_modified": "2025-10-14",
+   "date_published": "2025-10-14",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "抹殺",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 7
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 8
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "物理ダメ",
+     "会心率",
+     "会心ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 4
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 5
+    }
+   ],
+   "lfru_slug": "soran"
+  },
+  "susan": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759281",
+   "title": "【ヤバ少女】スーザンの評価とスキル | AppMedia",
+   "name_jp": "スーザン",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "susan"
+  },
+  "tairexiu": {
+   "url": "https://appmedia.jp/yabasyoujyo/79430540",
+   "title": "【ヤバ少女】タイレクシウの評価とスキル | AppMedia",
+   "name_jp": "タイレクシウ",
+   "date_modified": "2025-10-24",
+   "date_published": "2025-10-24",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "波動",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "回避",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "髑髏花",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "会心ダメ",
+     "会心率",
+     "物理ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "tairexiu"
+  },
+  "teselien": {
+   "url": "https://appmedia.jp/yabasyoujyo/79237664",
+   "title": "【ヤバ少女】テセリエンの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "テセリエン",
+   "date_modified": "2025-09-01",
+   "date_published": "2025-08-29",
+   "tier": "SS",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "魔法連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 7
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "雛菊",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "芳草",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "回復率",
+     "SPD",
+     "制御率"
+    ],
+    "スロット2・4": [
+     "HP",
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "聖光のケンタウロス",
+     "pos": 1
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "teselien"
+  },
+  "tess": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759245",
+   "title": "【ヤバ少女】テスの評価とスキル | AppMedia",
+   "name_jp": "テス",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "tess"
+  },
+  "tina": {
+   "url": "https://appmedia.jp/yabasyoujyo/78842285",
+   "title": "【ヤバ少女】ティナの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ティナ",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-04-30",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "吸収",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "抹殺",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生存",
+     "group": "candidate",
+     "pos": 5
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "髑髏花",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "熔岩",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "会心ダメ",
+     "ATK",
+     "物理ダメ"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "闇抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "tina"
+  },
+  "toby": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759317",
+   "title": "【ヤバ少女】トビーの評価とスキル | AppMedia",
+   "name_jp": "トビー",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "toby"
+  },
+  "triste": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759305",
+   "title": "【ヤバ少女】トリステの評価とスキル | AppMedia",
+   "name_jp": "トリステ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "triste"
+  },
+  "tsubaki": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759266",
+   "title": "【ヤバ少女】ツバキの評価とスキル | AppMedia",
+   "name_jp": "ツバキ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "tsubaki"
+  },
+  "ume": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759233",
+   "title": "【ヤバ少女】梅の評価とスキル | AppMedia",
+   "name_jp": "梅",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "C",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "制御",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "ume"
+  },
+  "umu": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759212",
+   "title": "【ヤバ少女】ウムの評価とスキル | AppMedia",
+   "name_jp": "ウム",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "D",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "神の赦し",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "魔法連擊",
+     "group": "candidate",
+     "pos": 7
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 1
+    },
+    {
+     "name_jp": "スターユニコーン",
+     "pos": 2
+    },
+    {
+     "name_jp": "チェシャタートルウサギ",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "umu"
+  },
+  "undine": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759206",
+   "title": "【ヤバ少女】ウンディーネの評価とスキル | AppMedia",
+   "name_jp": "ウンディーネ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "魔力",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "貫通",
+     "group": "candidate",
+     "pos": 4
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    }
+   ],
+   "lfru_slug": "undine"
+  },
+  "uni": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759278",
+   "title": "【ヤバ少女】ウニの評価とスキル | AppMedia",
+   "name_jp": "ウニ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "uni"
+  },
+  "veena": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759308",
+   "title": "【ヤバ少女】ヴィーナの評価とスキル | AppMedia",
+   "name_jp": "ヴィーナ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": null,
+   "talents": [],
+   "limbs": [],
+   "substats": {},
+   "pets": [],
+   "lfru_slug": "veena"
+  },
+  "vinette": {
+   "url": "https://appmedia.jp/yabasyoujyo/78914927",
+   "title": "【ヤバ少女】ヴィネットの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ヴィネット",
+   "date_modified": "2025-06-02",
+   "date_published": "2025-05-23",
+   "tier": "SSS",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "魔法連擊",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 6
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 7
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "芳草",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "雛菊",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "回復率",
+     "SPD"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "回避率"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "聖光のケンタウロス",
+     "pos": 1
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "vinette"
+  },
+  "vironika": {
+   "url": "https://appmedia.jp/yabasyoujyo/79188380",
+   "title": "【ヤバ少女】ヴィロニカの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ヴィロニカ",
+   "date_modified": "2025-08-16",
+   "date_published": "2025-08-14",
+   "tier": "S",
+   "talents": [
+    {
+     "name_jp": "物理連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "吸収",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "追擊",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "戦力",
+     "group": "candidate",
+     "pos": 3
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "隻眼",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 2,
+     "stars": 5,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "会心率",
+     "ATK",
+     "物理ダメ",
+     "光特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "光抵抗"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "vironika"
+  },
+  "yula": {
+   "url": "https://appmedia.jp/yabasyoujyo/78759188",
+   "title": "【ヤバ少女】ユラの評価とスキル | AppMedia",
+   "name_jp": "ユラ",
+   "date_modified": "2025-05-08",
+   "date_published": "2025-04-10",
+   "tier": "B",
+   "talents": [
+    {
+     "name_jp": "回復薬",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "生存",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "神の赦し",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "迅速",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "浄化",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "神護",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "栄光",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "生命力",
+     "group": "candidate",
+     "pos": 5
+    },
+    {
+     "name_jp": "聖霊",
+     "group": "candidate",
+     "pos": 6
+    }
+   ],
+   "limbs": [],
+   "substats": {},
+   "pets": [
+    {
+     "name_jp": "聖光のケンタウロス",
+     "pos": 1
+    },
+    {
+     "name_jp": "夢女魅る枕",
+     "pos": 2
+    },
+    {
+     "name_jp": "トリプルパンティ",
+     "pos": 3
+    },
+    {
+     "name_jp": "パラダイスゴースト",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "yula"
+  },
+  "yuni": {
+   "url": "https://appmedia.jp/yabasyoujyo/79340132",
+   "title": "【ヤバ少女】ユーニの評価とおすすめ刻印・戒魔 | AppMedia",
+   "name_jp": "ユーニ",
+   "date_modified": "2025-10-01",
+   "date_published": "2025-09-30",
+   "tier": "A",
+   "talents": [
+    {
+     "name_jp": "魔法連擊",
+     "group": "main",
+     "pos": 1
+    },
+    {
+     "name_jp": "貫通",
+     "group": "main",
+     "pos": 2
+    },
+    {
+     "name_jp": "会心ダメージ",
+     "group": "main",
+     "pos": 3
+    },
+    {
+     "name_jp": "魔力",
+     "group": "candidate",
+     "pos": 1
+    },
+    {
+     "name_jp": "庇護",
+     "group": "candidate",
+     "pos": 2
+    },
+    {
+     "name_jp": "波動",
+     "group": "candidate",
+     "pos": 3
+    },
+    {
+     "name_jp": "鈍化",
+     "group": "candidate",
+     "pos": 4
+    },
+    {
+     "name_jp": "強欲",
+     "group": "candidate",
+     "pos": 5
+    }
+   ],
+   "limbs": [
+    {
+     "name_jp": "髑髏花",
+     "pos": 1,
+     "stars": 5,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "聖域獅子王",
+     "pos": 2,
+     "stars": 4,
+     "stars_max": 5
+    },
+    {
+     "name_jp": "隻眼",
+     "pos": 3,
+     "stars": 3,
+     "stars_max": 5
+    }
+   ],
+   "substats": {
+    "スロット1・3": [
+     "ATK",
+     "魔法ダメ",
+     "会心ダメ",
+     "光特攻",
+     "闇特攻"
+    ],
+    "スロット2・4": [
+     "被回復率",
+     "物理ダメ軽減",
+     "魔法ダメ軽減",
+     "HP"
+    ]
+   },
+   "pets": [
+    {
+     "name_jp": "焔鱗谷の赤竜",
+     "pos": 1
+    },
+    {
+     "name_jp": "キャッスルフェニックス",
+     "pos": 2
+    },
+    {
+     "name_jp": "ナイトレオプリンス",
+     "pos": 3
+    },
+    {
+     "name_jp": "めぇめぇ",
+     "pos": 4
+    }
+   ],
+   "lfru_slug": "yuni"
+  }
+ },
+ "errors": []
+}

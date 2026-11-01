@@ -62,6 +62,8 @@ luna collect --offline-dir saved_pages/ && luna kb accept RU
 luna validate import history.xlsx && luna validate calibrate --grid grid.json
 luna meta forecast
 luna dashboard --port 8765
+luna collect-appmedia                            # японские билды AppMedia (刻印/戒魔/ペット, тир)
+luna planbook                                    # Excel-план пачки: веса JP/RU-источников + модель (docs/PLANBOOK.md)
 ```
 
 ## Как пополнять данные (сайты недоступны из облачной сессии)

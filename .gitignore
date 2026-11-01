@@ -6,3 +6,4 @@ build/
 dist/
 data/cache/
 reports/tmp/
+data/planbook/model_cache.json
