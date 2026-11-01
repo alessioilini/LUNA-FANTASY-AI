@@ -31,6 +31,7 @@ class Status:
     tick: str | None = None         # owner_turn_end | round_end (override)
     seq: int = 0
     ability: str = ""
+    flags: dict = field(default_factory=dict)   # stealth, immune_debuff, immune_control, block_hits, freeze_break_hits, dot_timing
 
 
 @dataclass
@@ -87,6 +88,9 @@ class Unit:
     st: UnitStats = field(default_factory=UnitStats)
     death_log: list = field(default_factory=list)
     tags: set = field(default_factory=set)
+    res: dict = field(default_factory=lambda: defaultdict(float))       # named stacks/resources (marks, seals, forms)
+    cast_counts: dict = field(default_factory=lambda: defaultdict(int))
+    link_group: object = None
 
     def __post_init__(self):
         self.max_hp = float(self.stats.get("HP", 0))
@@ -121,6 +125,21 @@ class Unit:
             if s.control in kinds:
                 return s.control
         return None
+
+    def flag(self, name: str):
+        for s in self.statuses:
+            if s.flags.get(name):
+                return s
+        return None
+
+    def has_status(self, key: str) -> bool:
+        return any(s.key == key for s in self.statuses)
+
+    def status_stacks(self, key: str) -> int:
+        return sum(s.stacks for s in self.statuses if s.key == key)
+
+    def debuff_stacks(self) -> int:
+        return sum(s.stacks for s in self.statuses if s.kind == "debuff")
 
     def revive_banned(self) -> bool:
         return any(s.revive_ban for s in self.statuses)

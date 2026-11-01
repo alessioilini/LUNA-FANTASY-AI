@@ -94,6 +94,9 @@ _a("death.clear_statuses", "Статусы снимаются при смерт�
 _a("revive.timing", "Воскрешение срабатывает", "immediate", "immediate")
 _a("revive.cleanse_on_revive", "Снимать статусы при воскрешении", True, "bool")
 # ---- battle frame
+_a("drain.cap_scope", "Потолок вытягивания HP (×ATK) применяется", "per_target", "per_target | total")
+_a("link.share", "Распределение урона в «Жизненной связи»", "equal_split", "equal_split")
+_a("stealth.scope", "Невидимость защищает от одиночных целей, не от массовых", "single_only", "single_only")
 _a("battle.max_rounds", "Лимит раундов", 15, "целое")
 _a("battle.draw_result", "Итог при лимите раундов", "draw", "draw | defender_wins | hp_percent")
 _a("formation.front", "Позиции первого ряда", [0, 1, 2], "список индексов")

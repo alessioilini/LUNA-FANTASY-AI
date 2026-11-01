@@ -48,6 +48,9 @@
 | `death.clear_statuses` | Статусы снимаются при смерти (кроме persist_on_death) | UNKNOWN | `True` | bool |  |
 | `revive.timing` | Воскрешение срабатывает | UNKNOWN | `immediate` | immediate |  |
 | `revive.cleanse_on_revive` | Снимать статусы при воскрешении | UNKNOWN | `True` | bool |  |
+| `drain.cap_scope` | Потолок вытягивания HP (×ATK) применяется | UNKNOWN | `per_target` | per_target | total |  |
+| `link.share` | Распределение урона в «Жизненной связи» | UNKNOWN | `equal_split` | equal_split |  |
+| `stealth.scope` | Невидимость защищает от одиночных целей, не от массовых | UNKNOWN | `single_only` | single_only |  |
 | `battle.max_rounds` | Лимит раундов | UNKNOWN | `15` | целое |  |
 | `battle.draw_result` | Итог при лимите раундов | UNKNOWN | `draw` | draw | defender_wins | hp_percent |  |
 | `formation.front` | Позиции первого ряда | UNKNOWN | `[0, 1, 2]` | список индексов |  |

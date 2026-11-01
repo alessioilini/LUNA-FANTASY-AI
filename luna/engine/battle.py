@@ -76,6 +76,8 @@ class Battle:
         self.end_reason = ""
         self.max_depth = int(asm.get("react.max_depth"))
         self._cd_fresh: set = set()
+        self.barriers: dict = {}          # side -> team barrier (Illusia-type shared shield)
+
         self.listeners = defaultdict(list)
         for u in self.units:
             for ab in u.abilities:
@@ -89,6 +91,7 @@ class Battle:
                 c0 = ab.get("trigger", {}).get("initial_cooldown")
                 if c0:
                     u.cooldowns[ab["id"]] = int(c0)
+        self.fatal_listeners = list(self.listeners.pop("fatal", []))
 
     # ================================================================ helpers
     def _set_cd(self, u: Unit, ab: dict):
@@ -147,6 +150,8 @@ class Battle:
         if name == "event_target":
             t = ctx.get("target")
             return [t] if t is not None else []
+        if name == "dead_allies_revivable":
+            return [x for x in self.fighters(side, alive=False) if not x.revive_banned()]
         if name in ("dead_allies", "dead_ally_random"):
             dead = [x for x in self.fighters(side, alive=False)]
             if name == "dead_ally_random":
@@ -154,19 +159,21 @@ class Battle:
             return dead[:n] if arg else dead
         if name.startswith("enemy"):
             pool = enemies
-            taunters = [e for e in pool if any(s.key == "taunt" for s in e.statuses)]
+            visible = [e for e in pool if not e.flag("stealth")] or pool      # stealth: not selectable while others are
+            taunters = [e for e in visible if any(s.key == "taunt" for s in e.statuses)]
+            if name == "enemy_first":
+                order = taunters + [e for e in self._single_order(visible) if e not in taunters]
+                return order[:n]
+            if name == "enemy_without":
+                cand = [e for e in visible if not e.has_status(arg)] or visible
+                return self._single_order(cand)[:1]
+            if name == "enemy_highest_atk_lowest_hp":
+                return sorted(visible, key=lambda x: (-x.stat("ATK"), x.hp, x.pos))[:1]
+            pool_single = visible
             if name == "enemy_single":
                 if taunters:
                     return [taunters[0]]
-                mode = self.asm.get("target.default_single")
-                if mode == "lowest_hp":
-                    return [min(pool, key=lambda x: (x.hp_frac(), x.pos))] if pool else []
-                if mode == "random":
-                    return [self.rng.choice(pool)] if pool else []
-                fr = [e for e in pool if e.pos in front] or pool
-                if mode == "front_first_random":
-                    return [self.rng.choice(fr)] if fr else []
-                return fr[:1]
+                return self._single_order(pool_single)[:1]
             if name == "enemy_all":
                 return pool
             if name == "enemy_front":
@@ -174,11 +181,11 @@ class Battle:
             if name == "enemy_back":
                 return [e for e in pool if e.pos not in front] or pool
             if name == "enemy_random":
-                return self.rng.sample(pool, min(n, len(pool)))
+                return self.rng.sample(pool_single, min(n, len(pool_single)))
             if name == "enemy_lowest_hp":
-                return sorted(pool, key=lambda x: (x.hp_frac(), x.pos))[:n]
+                return sorted(pool_single, key=lambda x: (x.hp_frac(), x.pos))[:n]
             if name == "enemy_highest_atk":
-                return sorted(pool, key=lambda x: (-x.stat("ATK"), x.pos))[:n]
+                return sorted(pool_single, key=lambda x: (-x.stat("ATK"), x.pos))[:n]
             if name == "enemy_highest_spd":
                 return sorted(pool, key=lambda x: (-x.stat("SPD"), x.pos))[:n]
             if name == "enemy_role":
@@ -196,6 +203,16 @@ class Battle:
                 return self.rng.sample(pool, min(n, len(pool)))
             if name == "ally_highest_atk":
                 return sorted(pool, key=lambda x: (-x.stat("ATK"), x.pos))[:n]
+            if name == "ally_class":
+                return [a for a in pool if f"class:{arg}" in a.tags]
+            if name == "ally_link":
+                others = [a for a in pool if a is not u] or pool
+                return sorted(others, key=lambda x: (x.hp_frac(), -x.stat("ATK"), x.pos))[:1]
+            if name == "ally_lowest_hp_unshielded":
+                return sorted(pool, key=lambda x: (x.shield > 0, x.hp_frac(), x.pos))[:n]
+            if name == "ally_highest_atk_with_self":
+                best = max(pool, key=lambda x: x.stat("ATK")) if pool else None
+                return list(dict.fromkeys([u] + ([best] if best else []))) if not u.is_team_source else ([best] if best else [])
             if name == "ally_front":
                 return [a for a in pool if a.pos in front] or pool
             if name == "ally_back":
@@ -236,8 +253,29 @@ class Battle:
             return False
         if "ally_hp_below" in t and not any(a.hp_frac() < t["ally_hp_below"] for a in self.fighters(u.side)):
             return False
-        if "dead_ally_ge" in t and len(self.fighters(u.side, alive=False)) < t["dead_ally_ge"]:
+        if "dead_ally_ge" in t and len(self.select(u, "dead_allies_revivable", {})) < t["dead_ally_ge"]:
             return False
+        for rname, need in (t.get("res_ge") or {}).items():
+            if u.res[rname] < need:
+                return False
+        if "self_has" in t and not u.has_status(t["self_has"]):
+            return False
+        if "self_not" in t and u.has_status(t["self_not"]):
+            return False
+        if "ability_id" in t and (ctx.get("ability") or {}).get("id") != t["ability_id"]:
+            return False
+        if "every_n_casts" in t:
+            src_id = (ctx.get("ability") or {}).get("id")
+            if not src_id or u.cast_counts[src_id] % int(t["every_n_casts"]) != 0:
+                return False
+        if "resource" in t and ctx.get("name") != t["resource"]:
+            return False
+        if t.get("per_subject_per_round") is not None and ctx.get("subject") is not None:
+            k = (aid, ctx["subject"].uid)
+            if u.trig_round[k] >= t["per_subject_per_round"]:
+                return False
+            if consume:
+                u.trig_round[k] += 1
         if "ability_tag" in t:
             src_ab = ctx.get("ability") or {}
             if t["ability_tag"] not in src_ab.get("tags", []):
@@ -272,7 +310,8 @@ class Battle:
             return
         rank = self._event_rank(event)
         for u, ab in self.listeners.get(event, ()):
-            if not u.alive and not (event == "self_death" and ctx.get("subject") is u):
+            if not u.alive and not (event == "self_death" and ctx.get("subject") is u) \
+                    and not ab.get("trigger", {}).get("while_dead"):
                 continue
             if not self._relation_ok(u, ab, event, ctx):
                 continue
@@ -294,7 +333,8 @@ class Battle:
             if not p.unit.alive and p.kind != "trigger":
                 continue
             if p.kind == "trigger":
-                if not p.unit.alive and p.ctx.get("event") != "self_death":
+                if not p.unit.alive and p.ctx.get("event") != "self_death" \
+                        and not p.ability.get("trigger", {}).get("while_dead"):
                     continue
                 self.execute(p.unit, p.ability, p.ctx, p.depth)
                 self._set_cd(p.unit, p.ability)
@@ -317,11 +357,16 @@ class Battle:
             if "chance" in eff and eff["op"] not in ("status", "extra_attack") and self.rng.random() >= eff["chance"]:
                 continue
             op = eff["op"]
+            if not self._eff_cond_ok(u, eff.get("cond"), ctx):
+                continue
             targets = self.select(u, eff.get("target", "enemy_single" if op == "damage" else "self"), ctx)
+            targets = [t for t in targets if self._target_cond_ok(t, eff.get("tcond"))]
             ctx["_prev_targets"] = targets
             if op == "damage":
                 did_attack = True
                 hit = []
+                if eff.get("split_total"):
+                    eff = dict(eff, coef=eff.get("coef", 0.0) / max(1, len(targets)))
                 for t in targets:
                     for _h in range(int(eff.get("hits", 1))):
                         if not t.alive:
@@ -351,6 +396,24 @@ class Battle:
                     self.revive(u, t, eff, ab, depth)
             elif op in ("extra_attack", "extra_action"):
                 self.schedule_extra(u, eff, ab, ctx, depth)
+            elif op == "res":
+                for t in (targets or ([u] if not u.is_team_source else [])):
+                    self.change_res(t, eff["name"], eff.get("add", 0), eff.get("cap"), eff.get("set"), depth)
+            elif op == "drain":
+                self.drain_hp(u, targets, eff, ab, depth)
+            elif op == "detonate":
+                for t in targets:
+                    self.detonate(u, t, eff, ab, depth)
+            elif op == "barrier":
+                self.make_barrier(u, eff, ab, depth)
+            elif op == "link":
+                for t in targets:
+                    self.make_link(u, t, eff, ab, depth)
+            elif op == "cast":
+                self.schedule_cast(u, eff, ab, ctx, depth)
+            elif op == "execute":
+                for t in targets:
+                    self.execute_kill(u, t, eff, ab, depth)
             elif op == "cooldown":
                 for t in targets:
                     for k in list(t.cooldowns):
@@ -382,15 +445,27 @@ class Battle:
                 self._log(t="miss", src=src.uid, tgt=tgt.uid, ab=ab["id"])
                 self.emit("dodged", depth + 1, subject=tgt, attacker=src, ability=ab)
                 return {"hit": False}
+        pmh = spec.get("pct_max_hp", 0.0) * tgt.max_hp
+        if spec.get("pct_max_hp_cap_atk") is not None:
+            pmh = min(pmh, spec["pct_max_hp_cap_atk"] * src.stat("ATK"))
         base = (spec.get("coef", 0.0) * src.stat(spec.get("stat", "ATK")) + spec.get("flat", 0.0)
-                + spec.get("pct_max_hp", 0.0) * tgt.max_hp + spec.get("pct_cur_hp", 0.0) * tgt.hp)
+                + pmh + spec.get("pct_cur_hp", 0.0) * tgt.hp + spec.get("pct_self_max_hp", 0.0) * src.max_hp)
+        if spec.get("per_res"):
+            r = spec["per_res"]
+            base += r.get("pct_self_max_hp", 0.0) * src.max_hp * tgt.status_stacks(r["status"]) if "status" in r else 0.0
+        if spec.get("cap_atk_mult") is not None:
+            base = min(base, spec["cap_atk_mult"] * src.stat("ATK"))
         if "amount" in spec:
             base += spec["amount"]
         crit = False
         if dtype in ("physical", "magic"):
             def_stat = "DEF" if dtype == "physical" else a.get("dmg.magic_def_stat")
             D = tgt.stat(def_stat) if def_stat != "none" else 0.0
-            ign = min(1.0, max(0.0, src.stat("IGNORE_DEF") + spec.get("ignore_def", 0.0)))
+            ign_res = 0.0
+            if spec.get("ignore_def_per_res"):
+                r = spec["ignore_def_per_res"]
+                ign_res = src.res[r["name"]] * r["per"]
+            ign = min(1.0, max(0.0, src.stat("IGNORE_DEF") + spec.get("ignore_def", 0.0) + ign_res))
             D_eff = D * (1 - ign)
             fam = a.get("dmg.family")
             if fam == "divisive":
@@ -408,13 +483,21 @@ class Battle:
             for key, b in spec.get("bonus_vs_status", {}).items():
                 if any(s.key == key for s in tgt.statuses):
                     bonuses.append(b)
+            if spec.get("bonus_per_debuff"):
+                bp = spec["bonus_per_debuff"]
+                bonuses.append(min(bp.get("cap", 1.0), bp["per"] * tgt.debuff_stacks()))
+            if spec.get("bonus_if_target_hp_ge"):
+                bh = spec["bonus_if_target_hp_ge"]
+                if tgt.hp_frac() >= bh["thr"]:
+                    bonuses.append(bh["bonus"])
             if a.get("dmg.bonus_stacking") == "additive":
                 dmg *= max(0.0, 1 + sum(bonuses))
             else:
                 for b in bonuses:
                     dmg *= max(0.0, 1 + b)
             crit, dmg = self._crit(src, tgt, spec, dmg)
-            dmg *= 1 - min(max(0.0, tgt.stat("DR")), float(a.get("dmg.dr_cap")))
+            typed_dr = tgt.stat("MAGIC_DR") if dtype == "magic" else tgt.stat("PHYS_DR")
+            dmg *= 1 - min(max(0.0, tgt.stat("DR") + typed_dr), float(a.get("dmg.dr_cap")))
         elif dtype == "true":
             dmg = base
             if a.get("dmg.true_can_crit"):
@@ -423,6 +506,8 @@ class Battle:
             dmg = base
         else:
             raise ValueError(f"unknown dtype {dtype}")
+        if dtype != "fixed":
+            dmg *= max(0.0, 1 + tgt.stat("DMG_TAKEN"))
         v = float(a.get("dmg.variance"))
         if v > 0:
             dmg *= 1 + self.rng.uniform(-v, v)
@@ -446,6 +531,28 @@ class Battle:
                      crit: bool = False, reflected: bool = False, dot: bool = False) -> dict:
         raw = dmg
         absorbed = 0.0
+        blk = tgt.flag("block_hits") if not dot and dmg > 0 else None
+        if blk is not None:
+            blk.flags["block_hits"] -= 1
+            if blk.flags["block_hits"] <= 0:
+                tgt.statuses.remove(blk)
+            self._log(t="blocked", src=src.uid, tgt=tgt.uid, ab=ab["id"], v=round(dmg, 2))
+            return {"raw": raw, "hp": 0.0, "absorbed": dmg, "crit": crit, "blocked": True}
+        bar = self.barriers.get(tgt.side)
+        if bar and bar["amount"] > 0 and dmg > 0 and tgt is not None and not tgt.is_team_source:
+            take = min(dmg * bar["share"], bar["amount"])
+            bar["amount"] -= take
+            dmg -= take
+            absorbed += take
+            bar["owner"].st.by_ability[bar["ability"]]["shield_absorbed"] += take
+            if bar["amount"] <= 1e-9:
+                self.collapse_barrier(tgt.side, depth)
+        frz = next((s for s in tgt.statuses if s.flags.get("freeze_break_hits")), None)
+        if frz is not None and not dot:
+            frz.flags["hits"] = frz.flags.get("hits", 0) + 1
+            if frz.flags["hits"] >= frz.flags["freeze_break_hits"]:
+                tgt.statuses.remove(frz)
+                self._log(t="freeze_broken", tgt=tgt.uid)
         if tgt.shields() and (dtype in ("physical", "magic") or self.asm.get("shield.absorbs_true")):
             for sh in sorted(tgt.shields(), key=lambda s: s.seq):
                 take = min(sh.shield_amount, dmg)
@@ -457,8 +564,18 @@ class Battle:
                     self.emit("shield_broken", depth + 1, subject=tgt, attacker=src)
                 if dmg <= 0:
                     break
+        if tgt.link_group and dmg > 0 and not dot:
+            mates = [m for m in tgt.link_group["members"] if m.alive and m is not tgt]
+            if mates:                                   # link.share: damage split equally (assumption)
+                part = dmg / (len(mates) + 1)
+                dmg = part
+                for m in mates:
+                    self._raw_hp_loss(src, m, part, ab, depth)
         hp_loss = min(dmg, tgt.hp)
         overkill = dmg - hp_loss
+        if hp_loss >= tgt.hp - 1e-9 and self._try_fatal_save(tgt, src, depth):
+            hp_loss = 0.0
+            overkill = 0.0
         tgt.hp -= hp_loss
         s = src.st
         s.dmg_raw += raw
@@ -560,9 +677,12 @@ class Battle:
         if not tgt.alive and not (spec.get("revive_ban") or spec.get("persist_on_death")):
             return
         chance = eff.get("chance", 1.0)
+        if spec.get("kind", "debuff") == "debuff" and tgt.flag("immune_debuff") and src.side != tgt.side:
+            self._log(t="immune", tgt=tgt.uid, key=spec.get("key"))
+            return
         if spec.get("control"):
             src.st.ctrl_attempts += 1
-            if any(s.key == "control_immune" for s in tgt.statuses):
+            if any(s.key == "control_immune" for s in tgt.statuses) or tgt.flag("immune_control"):
                 p = 0.0
             else:
                 p = chance * (1 + src.stat("CTRL_HIT") - tgt.stat("CTRL_RES"))
@@ -587,7 +707,9 @@ class Battle:
                      control=spec.get("control"), dot=dot, hot=spec.get("hot"), revive_ban=spec.get("revive_ban", False),
                      reflect=spec.get("reflect", 0.0), undispellable=spec.get("undispellable", False),
                      persist_on_death=spec.get("persist_on_death", spec.get("revive_ban", False)),
-                     tick=spec.get("tick"), seq=self._next_sseq(), ability=ab["id"])
+                     tick=spec.get("tick"), seq=self._next_sseq(), ability=ab["id"],
+                     flags={k: spec[k] for k in ("stealth", "immune_debuff", "immune_control", "block_hits",
+                                                 "freeze_break_hits", "dot_timing") if k in spec})
         if existing and policy == "refresh":
             ex = existing[0]
             ex.duration = new.duration if new.duration is None or ex.duration is None else max(ex.duration, new.duration)
@@ -617,7 +739,7 @@ class Battle:
     def revive(self, src: Unit, tgt: Unit, eff: dict, ab: dict, depth: int):
         if tgt.alive or tgt.is_team_source:
             return
-        if tgt.revive_banned():
+        if tgt.revive_banned() and not eff.get("ignore_revive_ban"):
             tgt.st.revive_blocked += 1
             self._log(t="revive_blocked", src=src.uid, tgt=tgt.uid, ab=ab["id"])
             return
@@ -629,7 +751,11 @@ class Battle:
         src.st.revives_done += 1
         if not self.asm.get("revive.can_act_same_round"):
             tgt.tags.add("_revived_this_round")
+        if eff.get("hp_atk_pct"):
+            tgt.hp = min(tgt.max_hp, max(1.0, eff["hp_atk_pct"] * src.stat("ATK")))
         self._log(t="revive", src=src.uid, tgt=tgt.uid, ab=ab["id"], hp=round(tgt.hp, 2))
+        for g in eff.get("grant", []):
+            self.apply_status(src, tgt, {"status": g}, ab, depth)
         self.emit("revived", depth + 1, subject=tgt, actor=src)
 
     # ---------------------------------------------------------------- extra actions / combo
@@ -664,9 +790,16 @@ class Battle:
 
     def _run_extra(self, p: Pending):
         u = p.unit
-        if not u.alive or u.has_control():
+        if not u.alive or (u.has_control() and not p.ctx.get("ignore_control")):
             return
         u.st.extra_actions += 1
+        if p.kind == "cast":
+            ab = next((a for a in u.abilities if a["id"] == p.ability["id"]), None)
+            if ab is None:
+                return
+            self.execute(u, ab, dict(p.ctx), 0)
+            self.after_cast(u, ab, 1)
+            return
         if p.kind == "extra_action":
             ab = self.choose_ability(u)
         else:
@@ -687,7 +820,7 @@ class Battle:
     def choose_ability(self, u: Unit) -> dict | None:
         silenced = u.has_control(CONTROL_SILENCE)
         if not silenced:
-            actives = [a for a in u.abilities if a.get("kind") == "active"]
+            actives = [a for a in u.abilities if a.get("kind") == "active" and a.get("trigger", {}).get("on", "turn") == "turn"]
             actives.sort(key=lambda a: -a.get("priority", 0))
             for a in actives:
                 if self._conditions_ok(u, a, {}, consume=True):
@@ -699,10 +832,13 @@ class Battle:
             return
         if "_revived_this_round" in u.tags:
             return
-        if self.asm.get("dot.timing") == "owner_turn_start":
-            self.tick_periodic(u)
-            if not u.alive or self._check_end():
-                return
+        self.tick_periodic(u, "owner_turn_start")
+        if not u.alive or self._check_end():
+            return
+        self.emit("turn_start", 0, subject=u)
+        self.drain()
+        if not u.alive or self.winner:
+            return
         self._cd_fresh = set()
         turn_mark = self._sseq
         c = u.has_control()
@@ -711,11 +847,14 @@ class Battle:
             u.st.turns_controlled += 1
             self._log(t="skip", src=u.uid, c=c)
         else:
-            ab = self.choose_ability(u)
+            self.emit("action_start", 0, subject=u)
+            self.drain()
+            ab = self.choose_ability(u) if u.alive and not self.winner else None
             if ab is not None:
                 u.st.actions += 1
                 self.execute(u, ab, {"chain": 0}, 0)
                 self._set_cd(u, ab)
+                self.after_cast(u, ab, 1)
                 if not self.winner:
                     self.emit("action", 1, subject=u, actor=u, ability=ab, is_extra=False, chain=0)
         self.drain()
@@ -726,15 +865,25 @@ class Battle:
         self._cd_fresh = set()
         self.tick_statuses(u, "owner_turn_end", applied_before=turn_mark)
 
-    def tick_periodic(self, u: Unit):
+    def tick_periodic(self, u: Unit, phase: str | None = None):
+        default = self.asm.get("dot.timing")
         for s in list(u.statuses):
             if not u.alive:
                 break
+            if phase is not None and (s.flags.get("dot_timing") or default) != phase:
+                continue
             if s.dot:
                 srcu = next((x for x in self.units if x.uid == s.source), u)
                 d = s.dot
-                base = d.get("snap", srcu.stat(d.get("stat", "ATK"))) * d.get("coef", 0.0) + d.get("pct_max_hp", 0.0) * u.max_hp
+                base = (d.get("snap", srcu.stat(d.get("stat", "ATK"))) * d.get("coef", 0.0) + d.get("pct_max_hp", 0.0) * u.max_hp
+                        + d.get("pct_src_max_hp", 0.0) * srcu.max_hp)
+                if d.get("cap_src_atk_mult") is not None:
+                    base = min(base, d["cap_src_atk_mult"] * srcu.stat("ATK"))
+                if d.get("cap_src_max_hp_pct") is not None:
+                    base = min(base, d["cap_src_max_hp_pct"] * srcu.max_hp)
                 base *= s.stacks if s.stacking == "stack" else 1
+                base *= max(0.0, 1 + srcu.stat("DOT_BONUS") + sum(b for k, b in d.get("bonus_vs_status", {}).items() if u.has_status(k)))
+                base *= max(0.0, 1 - u.stat("DOT_TAKEN_RED"))
                 dtype = d.get("dtype", "true")
                 if dtype in ("physical", "magic"):
                     self.deal(srcu, u, {"coef": 0, "amount": base, "dtype": dtype, "can_crit": False, "can_dodge": False},
@@ -763,6 +912,207 @@ class Battle:
                     continue
             keep.append(s)
         u.statuses = keep
+
+    # ================================================================ v2 mechanics
+    def _single_order(self, pool: list[Unit]) -> list[Unit]:
+        """Order for single-target picks (target.default_single); taunt is handled by callers."""
+        mode = self.asm.get("target.default_single")
+        front = set(self.asm.get("formation.front"))
+        if mode == "lowest_hp":
+            return sorted(pool, key=lambda x: (x.hp_frac(), x.pos))
+        if mode == "random":
+            p = list(pool)
+            self.rng.shuffle(p)
+            return p
+        fr = sorted([e for e in pool if e.pos in front], key=lambda x: x.pos)
+        bk = sorted([e for e in pool if e.pos not in front], key=lambda x: x.pos)
+        if mode == "front_first_random":
+            self.rng.shuffle(fr)
+            self.rng.shuffle(bk)
+        return fr + bk
+
+    def _eff_cond_ok(self, u: Unit, c: dict | None, ctx: dict) -> bool:
+        if not c:
+            return True
+        if "self_has" in c and not u.has_status(c["self_has"]):
+            return False
+        if "self_not" in c and u.has_status(c["self_not"]):
+            return False
+        for k, v in (c.get("res_ge") or {}).items():
+            if u.res[k] < v:
+                return False
+        for k, v in (c.get("res_lt") or {}).items():
+            if u.res[k] >= v:
+                return False
+        if "dead_ally_ge" in c and len(self.select(u, "dead_allies_revivable", {})) < c["dead_ally_ge"]:
+            return False
+        if "dead_ally_lt" in c and len(self.select(u, "dead_allies_revivable", {})) >= c["dead_ally_lt"]:
+            return False
+        if "chance" in c and self.rng.random() >= c["chance"]:
+            return False
+        return True
+
+    @staticmethod
+    def _target_cond_ok(t: Unit, c: dict | None) -> bool:
+        if not c:
+            return True
+        if "has" in c and not t.has_status(c["has"]):
+            return False
+        if "not" in c and t.has_status(c["not"]):
+            return False
+        if "hp_ge" in c and t.hp_frac() < c["hp_ge"]:
+            return False
+        if "hp_lt" in c and t.hp_frac() >= c["hp_lt"]:
+            return False
+        if "stacks_ge" in c and t.status_stacks(c["stacks_ge"][0]) < c["stacks_ge"][1]:
+            return False
+        return True
+
+    def change_res(self, t: Unit, name: str, add: float = 0, cap: float | None = None, set_to: float | None = None,
+                   depth: int = 0):
+        before = t.res[name]
+        val = set_to if set_to is not None else before + add
+        if cap is not None:
+            val = min(val, cap)
+        t.res[name] = max(0.0, val)
+        self._log(t="res", tgt=t.uid, name=name, v=t.res[name])
+        if t.res[name] != before:
+            self.emit("resource", depth + 1, subject=t, name=name, value=t.res[name])
+
+    def after_cast(self, u: Unit, ab: dict, depth: int):
+        u.cast_counts[ab["id"]] += 1
+        if not self.winner:
+            self.emit("cast", depth, subject=u, actor=u, ability=ab)
+
+    def schedule_cast(self, u: Unit, eff: dict, ab: dict, ctx: dict, depth: int):
+        actor = u if not u.is_team_source else None
+        if actor is None or not actor.alive:
+            return
+        p = Pending(actor, {"id": eff["ability"], "by": ab["id"]},
+                    {"chain": 0, "is_extra": True, "ignore_control": eff.get("ignore_control", False), "parent": ab["id"]},
+                    depth + 1, kind="cast")
+        actor.st.extra_actions += 1
+        heapq.heappush(self.q, ((depth + 1, 0, -90, self.order_index[actor.uid], next(self.seq)), p))
+        self._log(t="cast_scheduled", src=actor.uid, ab=eff["ability"], by=ab["id"])
+
+    def _raw_hp_loss(self, src: Unit, tgt: Unit, amount: float, ab: dict, depth: int):
+        if not tgt.alive or amount <= 0:
+            return
+        loss = min(amount, tgt.hp)
+        if loss >= tgt.hp - 1e-9 and self._try_fatal_save(tgt, src, depth):
+            return
+        tgt.hp -= loss
+        tgt.st.dmg_taken_hp += loss
+        src.st.dmg_effective += loss
+        src.st.by_ability[ab["id"]]["dmg"] += loss
+        self._log(t="dmg_shared", src=src.uid, tgt=tgt.uid, ab=ab["id"], hp=round(loss, 2))
+        if tgt.hp <= 1e-9:
+            self.kill(tgt, src, ab, "shared", amount - loss, depth)
+
+    def _try_fatal_save(self, tgt: Unit, src: Unit, depth: int) -> bool:
+        """'When receiving fatal damage' passives resolve synchronously, before death."""
+        for u, ab in self.fatal_listeners:
+            if u is not tgt or not self._conditions_ok(u, ab, {"subject": tgt, "attacker": src}):
+                continue
+            self._log(t="fatal_save", tgt=tgt.uid, ab=ab["id"])
+            tgt.hp = max(1.0, tgt.hp)
+            self.execute(u, ab, {"subject": tgt, "attacker": src, "event": "fatal"}, depth + 1)
+            return True
+        return False
+
+    def drain_hp(self, u: Unit, targets: list[Unit], eff: dict, ab: dict, depth: int):
+        cap_scope = self.asm.get("drain.cap_scope")
+        cap = eff.get("cap_atk_mult", 1e18) * u.stat("ATK")
+        total = 0.0
+        for t in targets:
+            amt = eff.get("pct_cur_hp", 0.0) * t.hp
+            if cap_scope == "per_target":
+                amt = min(amt, cap)
+            res = self.apply_damage(u, t, amt, "true", ab, depth)
+            total += res.get("hp", 0.0) + res.get("absorbed", 0.0)
+        if cap_scope == "total":
+            total = min(total, cap)
+        recv = self.select(u, eff.get("heal_target", "ally_lowest_hp:3"), {})
+        if not recv:
+            return
+        each = total / len(recv)
+        for r in recv:
+            missing = r.max_hp - r.hp
+            self.heal_amount(u, r, each, ab, depth)
+            over = max(0.0, each - missing)
+            if over > 0 and eff.get("overflow_shield"):
+                self.shield(u, r, {"flat": over, "key": eff["overflow_shield"], "duration": eff.get("shield_duration")}, ab)
+
+    def detonate(self, u: Unit, t: Unit, eff: dict, ab: dict, depth: int):
+        keys = set(eff.get("keys", []))
+        factor = eff.get("factor", 1.0)
+        for s in list(t.statuses):
+            if not s.dot or (keys and s.key not in keys) or not t.alive:
+                continue
+            srcu = next((x for x in self.units if x.uid == s.source), u)
+            d = s.dot
+            base = (srcu.stat(d.get("stat", "ATK")) * d.get("coef", 0.0) + d.get("pct_max_hp", 0.0) * t.max_hp
+                    + d.get("pct_src_max_hp", 0.0) * srcu.max_hp)
+            if d.get("cap_src_atk_mult") is not None:
+                base = min(base, d["cap_src_atk_mult"] * srcu.stat("ATK"))
+            base *= s.stacks if s.stacking == "stack" else 1
+            base *= max(0.0, 1 + srcu.stat("DOT_BONUS")) * factor
+            self._log(t="detonate", src=u.uid, tgt=t.uid, key=s.key)
+            self.apply_damage(srcu, t, base, d.get("dtype", "true"), {"id": ab["id"]}, depth, dot=True)
+            if eff.get("consume"):
+                if s in t.statuses:
+                    t.statuses.remove(s)
+
+    def make_barrier(self, u: Unit, eff: dict, ab: dict, depth: int):
+        old = self.barriers.get(u.side)
+        if old and old["amount"] > 0:
+            self.collapse_barrier(u.side, depth)          # re-cast overwrites: old barrier collapses
+        amount = eff.get("pct_max_hp", 0.0) * u.max_hp
+        self.barriers[u.side] = {"amount": amount, "total": amount, "share": eff.get("share", 0.5), "owner": u,
+                                 "ability": ab["id"], "collapse": eff.get("collapse")}
+        u.st.shield_given += amount
+        u.st.by_ability[ab["id"]]["shield"] += amount
+        self._log(t="barrier", src=u.uid, v=round(amount, 2))
+
+    def collapse_barrier(self, side: str, depth: int):
+        bar = self.barriers.pop(side, None)
+        if not bar or not bar.get("collapse"):
+            return
+        c = bar["collapse"]
+        owner = bar["owner"]
+        amount = c.get("pct_of_total", 0.0) * bar["total"]
+        self._log(t="barrier_collapse", src=owner.uid, v=round(amount, 2))
+        for t in self.select(owner, c.get("target", "enemy_first:3"), {}):
+            self.apply_damage(owner, t, amount, c.get("dtype", "true"), {"id": bar["ability"] + ":collapse"}, depth + 1)
+
+    def make_link(self, u: Unit, t: Unit, eff: dict, ab: dict, depth: int):
+        grp = u.link_group or {"members": [u], "owner": u}
+        if eff.get("reset") and len(grp["members"]) > 1:
+            for m in grp["members"]:
+                if m is not u:
+                    m.link_group = None
+            grp = {"members": [u], "owner": u}
+        if t not in grp["members"]:
+            grp["members"].append(t)
+        for m in grp["members"]:
+            m.link_group = grp
+        if eff.get("status"):
+            for m in grp["members"]:
+                self.apply_status(u, m, {"status": eff["status"]}, ab, depth)
+        self._log(t="link", src=u.uid, members=[m.uid for m in grp["members"]])
+
+    def execute_kill(self, u: Unit, t: Unit, eff: dict, ab: dict, depth: int):
+        if not t.alive or t.hp_frac() >= eff.get("thr", 0.0):
+            return
+        if eff.get("mode") == "kill":
+            amount = t.hp
+        else:                                             # 'threshold': remove thr*maxHP, capped
+            amount = min(eff["thr"] * t.max_hp, eff.get("cap_atk_mult", 1e18) * u.stat("ATK"))
+        self._log(t="execute", src=u.uid, tgt=t.uid, v=round(amount, 2))
+        self.apply_damage(u, t, amount, "true", ab, depth)
+        if not t.alive:
+            for g in eff.get("on_kill_status", []):
+                self.apply_status(u, t, {"status": g}, ab, depth)
 
     def action_order(self) -> list[Unit]:
         mode = self.asm.get("order.mode")
@@ -832,11 +1182,10 @@ class Battle:
             if self.winner:
                 break
             # ---- round end
-            if self.asm.get("dot.timing") == "round_end":
-                for u in self.fighters():
-                    self.tick_periodic(u)
-                    if self._check_end():
-                        break
+            for u in self.fighters():
+                self.tick_periodic(u, "round_end")
+                if self._check_end():
+                    break
             if self.winner:
                 break
             if pet_timing == "round_end":

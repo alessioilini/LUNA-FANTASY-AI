@@ -21,11 +21,13 @@ STAT_KEYS = [
     "ATK", "HP", "DEF", "SPD", "CRIT", "CRIT_DMG", "ACC", "DODGE", "DR", "IGNORE_DEF",
     "CTRL_RES", "CTRL_HIT", "HEAL_BONUS", "HEAL_RECV", "MDEF", "CRIT_RES", "DMG_BONUS",
     "PHYS_DMG_BONUS", "MAGIC_DMG_BONUS", "REFLECT", "LIFESTEAL",
+    "DMG_TAKEN", "DOT_BONUS", "DOT_TAKEN_RED", "MAGIC_DR", "PHYS_DR", "CRIT_DMG_RES", "DMG_IMMUNITY",
 ]
 # Combat stats expressed as fractions (0.15 == 15 %); everything else is an absolute number.
 FRACTION_STATS = {"CRIT", "CRIT_DMG", "ACC", "DODGE", "DR", "IGNORE_DEF", "CTRL_RES", "CTRL_HIT",
                   "HEAL_BONUS", "HEAL_RECV", "CRIT_RES", "DMG_BONUS", "PHYS_DMG_BONUS",
-                  "MAGIC_DMG_BONUS", "REFLECT", "LIFESTEAL"}
+                  "MAGIC_DMG_BONUS", "REFLECT", "LIFESTEAL", "DMG_TAKEN", "DOT_BONUS", "DOT_TAKEN_RED",
+                  "MAGIC_DR", "PHYS_DR", "CRIT_DMG_RES", "DMG_IMMUNITY"}
 
 CATALOG_SECTIONS = ["heroes", "sigils", "talents", "limbs", "limb_sets", "decorations", "pets",
                     "charm_cards", "charm_combos", "runes", "princess_weapon_parts", "princess_resonance",
