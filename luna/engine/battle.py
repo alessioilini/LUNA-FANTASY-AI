@@ -150,6 +150,13 @@ class Battle:
         if name == "event_target":
             t = ctx.get("target")
             return [t] if t is not None else []
+        if name == "link_members":
+            return [m for m in (u.link_group or {}).get("members", []) if m.alive]
+        if name == "event_hits":
+            return [t for t in ctx.get("targets_hit", []) if t.alive]
+        if name == "event_subject":
+            s_ = ctx.get("subject")
+            return [s_] if s_ is not None and s_.alive else []
         if name == "dead_allies_revivable":
             return [x for x in self.fighters(side, alive=False) if not x.revive_banned()]
         if name in ("dead_allies", "dead_ally_random"):
@@ -170,6 +177,11 @@ class Battle:
             if name == "enemy_highest_atk_lowest_hp":
                 return sorted(visible, key=lambda x: (-x.stat("ATK"), x.hp, x.pos))[:1]
             pool_single = visible
+            forced = u.flag("forced_target") if not u.is_team_source else None
+            if forced is not None:
+                ft = next((e for e in visible if e.uid == forced.flags["forced_target"]), None)
+                if ft is not None and name in ("enemy_single", "enemy_lowest_hp", "enemy_highest_atk", "enemy_first"):
+                    return [ft]
             if name == "enemy_single":
                 if taunters:
                     return [taunters[0]]
@@ -269,6 +281,15 @@ class Battle:
             if not src_id or u.cast_counts[src_id] % int(t["every_n_casts"]) != 0:
                 return False
         if "resource" in t and ctx.get("name") != t["resource"]:
+            return False
+        if "subject_has" in t and (ctx.get("subject") is None or not ctx["subject"].has_status(t["subject_has"])):
+            return False
+        if t.get("attack_only") and (ctx.get("dot") or ctx.get("attacker") is None or ctx["attacker"].is_team_source):
+            return False
+        if "dead_ally_lt" in t and len(self.select(u, "dead_allies_revivable", {})) >= t["dead_ally_lt"]:
+            return False
+        if t.get("subject_linked") and (ctx.get("subject") is None or u.link_group is None
+                                        or ctx["subject"] not in u.link_group["members"]):
             return False
         if t.get("per_subject_per_round") is not None and ctx.get("subject") is not None:
             k = (aid, ctx["subject"].uid)
@@ -392,10 +413,23 @@ class Battle:
                 for t in targets:
                     self.remove_statuses(u, t, "buff", int(eff.get("count", 1)), ab)
             elif op == "revive":
-                for t in self.select(u, eff.get("target", "dead_ally_random"), ctx)[: int(eff.get("count", 1))]:
-                    self.revive(u, t, eff, ab, depth)
+                revived = []
+                for t in self.select(u, eff.get("target", "dead_ally_random"), ctx)[: int(eff.get("count", 99 if eff.get("target") == "dead_allies_revivable" else 1))]:
+                    if self.revive(u, t, eff, ab, depth):
+                        revived.append(t)
+                ctx["_prev_targets"] = revived
             elif op in ("extra_attack", "extra_action"):
                 self.schedule_extra(u, eff, ab, ctx, depth)
+            elif op == "remove_status":
+                for t in targets:
+                    t.statuses = [s_ for s_ in t.statuses if s_.key != eff["key"]]
+            elif op == "res_stat":
+                for t in (targets or [u]):
+                    t.res_stats.append((eff["stat"], eff["name"], eff["per"], eff.get("mode", "flat")))
+            elif op == "res_count":
+                cnt = {"alive_allies": len(self.fighters(u.side))}.get(eff["count"], 0)
+                for t in (targets or [u]):
+                    self.change_res(t, eff["name"], set_to=cnt + eff.get("offset", 0), depth=depth)
             elif op == "res":
                 for t in (targets or ([u] if not u.is_team_source else [])):
                     self.change_res(t, eff["name"], eff.get("add", 0), eff.get("cap"), eff.get("set"), depth)
@@ -486,6 +520,9 @@ class Battle:
             if spec.get("bonus_per_debuff"):
                 bp = spec["bonus_per_debuff"]
                 bonuses.append(min(bp.get("cap", 1.0), bp["per"] * tgt.debuff_stacks()))
+            ramp = src.flag("ramp_missing_hp")
+            if ramp is not None:
+                bonuses.append(ramp.flags["ramp_missing_hp"] * int((1 - tgt.hp_frac()) * 10 + 1e-9))
             if spec.get("bonus_if_target_hp_ge"):
                 bh = spec["bonus_if_target_hp_ge"]
                 if tgt.hp_frac() >= bh["thr"]:
@@ -500,6 +537,9 @@ class Battle:
             dmg *= 1 - min(max(0.0, tgt.stat("DR") + typed_dr), float(a.get("dmg.dr_cap")))
         elif dtype == "true":
             dmg = base
+            bh = spec.get("bonus_if_target_hp_ge")       # explicit skill-text bonus still applies to true damage
+            if bh and tgt.hp_frac() >= bh["thr"]:
+                dmg *= 1 + bh["bonus"]
             if a.get("dmg.true_can_crit"):
                 crit, dmg = self._crit(src, tgt, spec, dmg)
         elif dtype == "fixed":
@@ -605,7 +645,7 @@ class Battle:
             self.apply_damage(tgt, src, amount, rtype, {"id": "reflect"}, depth + 1, reflected=True)
         if (hp_loss + absorbed) > 0 and (not reflected or self.asm.get("reflect.triggers_on_hit")):
             self.emit("damaged", depth + 1, subject=tgt, attacker=src, target=tgt, ability=ab, dtype=dtype,
-                      amount=hp_loss + absorbed)
+                      amount=hp_loss + absorbed, dot=dot)
             if crit:
                 self.emit("crit", depth + 1, subject=src, actor=src, target=tgt, ability=ab)
         if tgt.hp <= 1e-9 and tgt.alive:
@@ -636,7 +676,7 @@ class Battle:
         if not tgt.alive:
             return
         amount = (spec.get("coef", 0.0) * src.stat(spec.get("stat", "ATK")) + spec.get("pct_max_hp", 0.0) * tgt.max_hp
-                  + spec.get("flat", 0.0))
+                  + spec.get("flat", 0.0) + spec.get("pct_self_max_hp", 0.0) * src.max_hp)
         self.heal_amount(src, tgt, amount, ab, depth)
 
     def heal_amount(self, src: Unit, tgt: Unit, amount: float, ab: dict, depth: int):
@@ -709,7 +749,8 @@ class Battle:
                      persist_on_death=spec.get("persist_on_death", spec.get("revive_ban", False)),
                      tick=spec.get("tick"), seq=self._next_sseq(), ability=ab["id"],
                      flags={k: spec[k] for k in ("stealth", "immune_debuff", "immune_control", "block_hits",
-                                                 "freeze_break_hits", "dot_timing") if k in spec})
+                                                 "freeze_break_hits", "dot_timing", "ramp_missing_hp", "dot_on_expire")
+                            if k in spec} | ({"forced_target": src.uid} if spec.get("provoke") else {}))
         if existing and policy == "refresh":
             ex = existing[0]
             ex.duration = new.duration if new.duration is None or ex.duration is None else max(ex.duration, new.duration)
@@ -738,11 +779,11 @@ class Battle:
 
     def revive(self, src: Unit, tgt: Unit, eff: dict, ab: dict, depth: int):
         if tgt.alive or tgt.is_team_source:
-            return
+            return False
         if tgt.revive_banned() and not eff.get("ignore_revive_ban"):
             tgt.st.revive_blocked += 1
             self._log(t="revive_blocked", src=src.uid, tgt=tgt.uid, ab=ab["id"])
-            return
+            return False
         tgt.alive = True
         tgt.hp = max(1.0, tgt.max_hp * eff.get("hp_pct", 0.3))
         if self.asm.get("revive.cleanse_on_revive"):
@@ -757,6 +798,7 @@ class Battle:
         for g in eff.get("grant", []):
             self.apply_status(src, tgt, {"status": g}, ab, depth)
         self.emit("revived", depth + 1, subject=tgt, actor=src)
+        return True
 
     # ---------------------------------------------------------------- extra actions / combo
     def schedule_extra(self, u: Unit, eff: dict, ab: dict, ctx: dict, depth: int):
@@ -872,6 +914,8 @@ class Battle:
                 break
             if phase is not None and (s.flags.get("dot_timing") or default) != phase:
                 continue
+            if s.flags.get("dot_on_expire"):
+                continue
             if s.dot:
                 srcu = next((x for x in self.units if x.uid == s.source), u)
                 d = s.dot
@@ -909,6 +953,8 @@ class Battle:
                 s.duration -= 1
                 if s.duration <= 0:
                     self._log(t="expire", tgt=u.uid, key=s.key)
+                    if s.flags.get("dot_on_expire") and s.dot and u.alive:
+                        self.detonate(u, u, {"keys": [s.key], "factor": 1.0}, {"id": s.ability or s.key}, 0)
                     continue
             keep.append(s)
         u.statuses = keep
@@ -947,6 +993,8 @@ class Battle:
         if "dead_ally_ge" in c and len(self.select(u, "dead_allies_revivable", {})) < c["dead_ally_ge"]:
             return False
         if "dead_ally_lt" in c and len(self.select(u, "dead_allies_revivable", {})) >= c["dead_ally_lt"]:
+            return False
+        if c.get("prev_nonempty") and not ctx.get("_prev_targets"):
             return False
         if "chance" in c and self.rng.random() >= c["chance"]:
             return False

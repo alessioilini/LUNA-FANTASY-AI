@@ -91,6 +91,7 @@ class Unit:
     res: dict = field(default_factory=lambda: defaultdict(float))       # named stacks/resources (marks, seals, forms)
     cast_counts: dict = field(default_factory=lambda: defaultdict(int))
     link_group: object = None
+    res_stats: list = field(default_factory=list)   # [(stat, res_name, per, mode)] stat bonus scaled by a resource
 
     def __post_init__(self):
         self.max_hp = float(self.stats.get("HP", 0))
@@ -100,6 +101,12 @@ class Unit:
     def stat(self, key: str) -> float:
         base = float(self.stats.get(key, 0.0) or 0.0)
         flat = pct = 0.0
+        for (rs, rname, per, mode) in self.res_stats:
+            if rs == key:
+                if mode == "pct" and key not in FRACTION_STATS:
+                    pct += per * self.res[rname]
+                else:
+                    flat += per * self.res[rname]
         for s in self.statuses:
             for m in s.mods:
                 if m["stat"] != key:

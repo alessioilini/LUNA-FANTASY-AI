@@ -51,6 +51,12 @@
 | `drain.cap_scope` | Потолок вытягивания HP (×ATK) применяется | UNKNOWN | `per_target` | per_target | total |  |
 | `link.share` | Распределение урона в «Жизненной связи» | UNKNOWN | `equal_split` | equal_split |  |
 | `stealth.scope` | Невидимость защищает от одиночных целей, не от массовых | UNKNOWN | `single_only` | single_only |  |
+| `kit.ct_semantics` | Смысл «CT N» в текстах навыков | UNKNOWN | `cycle` | cycle (навык раз в N ходов: перезарядка N-1) | gap (N ходов пропуска) |  |
+| `kit.turn_means_round` | «ターン/ход» в пассивках = раунд (а не ход владельца) | UNKNOWN | `True` | bool |  |
+| `kit.basic_coef` | Множитель обычной атаки (нигде не опубликован) | UNKNOWN | `1.0` | число |  |
+| `kit.constitution_in_panel` | Бонусы «Тело …» (HP/ATK %) уже входят в панельные статы образца | UNKNOWN | `True` | bool |  |
+| `kit.basic_dtype` | Тип урона обычной атаки | UNKNOWN | `by_class` | by_class (Маг/Поддержка - магический, Воин/Страж - физический) |  |
+| `kit.stat_sample` | Источник базовых статов героини | UNKNOWN | `sbg_lv350_panel` | sbg_lv350_panel (образец 350 ур. с JP-сайта; звёзды/экипировка образца неизвестны) | operator |  |
 | `battle.max_rounds` | Лимит раундов | UNKNOWN | `15` | целое |  |
 | `battle.draw_result` | Итог при лимите раундов | UNKNOWN | `draw` | draw | defender_wins | hp_percent |  |
 | `formation.front` | Позиции первого ряда | UNKNOWN | `[0, 1, 2]` | список индексов |  |
