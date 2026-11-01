@@ -51,7 +51,12 @@
 | `drain.cap_scope` | Потолок вытягивания HP (×ATK) применяется | UNKNOWN | `per_target` | per_target | total |  |
 | `link.share` | Распределение урона в «Жизненной связи» | UNKNOWN | `equal_split` | equal_split |  |
 | `stealth.scope` | Невидимость защищает от одиночных целей, не от массовых | UNKNOWN | `single_only` | single_only |  |
-| `kit.ct_semantics` | Смысл «CT N» в текстах навыков | UNKNOWN | `cycle` | cycle (навык раз в N ходов: перезарядка N-1) | gap (N ходов пропуска) |  |
+| `cd.model` | Модель КД «активация K / КД N» | UNKNOWN | — (задать явно) | A_cycle (навык в ходы K, K+N, K+2N…) | B_gap (после применения N ходов недоступен: K, K+N+1, …) | да |
+| `cd.clock` | По чему отсчитывается КД и активация | UNKNOWN | `own_turn` | own_turn (ходы героини) | round (раунды боя) |  |
+| `cd.tick_while_controlled` | КД продолжает отсчитываться, пока героиня под контролем | UNKNOWN | `True` | bool |  |
+| `cd.reset_on_revive` | Что происходит с КД при воскрешении | UNKNOWN | `keep` | keep | reset_to_initial | clear |  |
+| `cd.extra_cast_sets_cd` | Доп. применение навыка (от пассивки) запускает его КД | UNKNOWN | `False` | bool |  |
+| `cd.priority` | Какой активный навык выбирается, если готовы несколько | UNKNOWN | `declared` | declared (приоритет в ките) | longer_ct_first (навык с большим КД) |  |
 | `kit.turn_means_round` | «ターン/ход» в пассивках = раунд (а не ход владельца) | UNKNOWN | `True` | bool |  |
 | `kit.basic_coef` | Множитель обычной атаки (нигде не опубликован) | UNKNOWN | `1.0` | число |  |
 | `kit.constitution_in_panel` | Бонусы «Тело …» (HP/ATK %) уже входят в панельные статы образца | UNKNOWN | `True` | bool |  |

@@ -97,8 +97,15 @@ _a("revive.cleanse_on_revive", "Снимать статусы при воскр�
 _a("drain.cap_scope", "Потолок вытягивания HP (×ATK) применяется", "per_target", "per_target | total")
 _a("link.share", "Распределение урона в «Жизненной связи»", "equal_split", "equal_split")
 _a("stealth.scope", "Невидимость защищает от одиночных целей, не от массовых", "single_only", "single_only")
-_a("kit.ct_semantics", "Смысл «CT N» в текстах навыков", "cycle",
-   "cycle (навык раз в N ходов: перезарядка N-1) | gap (N ходов пропуска)")
+_a("cd.model", "Модель КД «активация K / КД N»", None,
+   "A_cycle (навык в ходы K, K+N, K+2N…) | B_gap (после применения N ходов недоступен: K, K+N+1, …)", critical=True,
+   note="НЕ подтверждено ни одним источником (см. docs/CD_MECHANICS.md)")
+_a("cd.clock", "По чему отсчитывается КД и активация", "own_turn", "own_turn (ходы героини) | round (раунды боя)")
+_a("cd.tick_while_controlled", "КД продолжает отсчитываться, пока героиня под контролем", True, "bool")
+_a("cd.reset_on_revive", "Что происходит с КД при воскрешении", "keep", "keep | reset_to_initial | clear")
+_a("cd.extra_cast_sets_cd", "Доп. применение навыка (от пассивки) запускает его КД", False, "bool")
+_a("cd.priority", "Какой активный навык выбирается, если готовы несколько", "declared",
+   "declared (приоритет в ките) | longer_ct_first (навык с большим КД)")
 _a("kit.turn_means_round", "«ターン/ход» в пассивках = раунд (а не ход владельца)", True, "bool")
 _a("kit.basic_coef", "Множитель обычной атаки (нигде не опубликован)", 1.0, "число")
 _a("kit.constitution_in_panel", "Бонусы «Тело …» (HP/ATK %) уже входят в панельные статы образца", True, "bool")
@@ -124,12 +131,14 @@ PRESETS: dict[str, dict] = {
         "stack.duplicate_effect": "unique",
         "extra.timing": "immediate",
         "extra.combo_chain_max": 0,
+        "cd.model": "A_cycle",
     },
     "exploratory_v1_alt": {
         "stat.panel_includes_team": False,
         "stack.duplicate_effect": "stack",
         "extra.timing": "end_of_round",
         "extra.combo_chain_max": 1,
+        "cd.model": "B_gap",
     },
 }
 

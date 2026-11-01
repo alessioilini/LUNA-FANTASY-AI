@@ -31,10 +31,6 @@ class KitBuilder:
         self.notes: list[str] = []
 
     # ------------------------------------------------------------------ helpers
-    def _cd(self, ct: int | None) -> int | None:
-        if not ct:
-            return None
-        return ct - 1 if self.asm.get("kit.ct_semantics") == "cycle" else ct
 
     def basic(self, effects=None, aid="basic", name_ru="Обычная атака", dtype=None):
         if dtype is None:
@@ -47,11 +43,10 @@ class KitBuilder:
 
     def active(self, aid, name_ru, effects, ct=None, first=1, prio=5, tags=(), on="turn"):
         trig = {"on": on}
-        cd = self._cd(ct)
-        if cd:
-            trig["cooldown"] = cd
-        if first and first > 1:
-            trig["initial_cooldown"] = first - 1
+        if ct:
+            trig["ct"] = ct            # raw skill-text values; the engine applies cd.model / cd.clock
+        if first:
+            trig["first"] = first
         full = f"{self.hero_id}:{aid}"
         self.abilities.append({"id": full, "kind": "active", "name_ru": name_ru, "priority": prio, "trigger": trig,
                                "effects": effects, "tags": list(tags)})

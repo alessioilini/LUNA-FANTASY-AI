@@ -77,6 +77,7 @@ class Battle:
         self.max_depth = int(asm.get("react.max_depth"))
         self._cd_fresh: set = set()
         self.barriers: dict = {}          # side -> team barrier (Illusia-type shared shield)
+        self._cd_set_round: dict = {}
 
         self.listeners = defaultdict(list)
         for u in self.units:
@@ -88,17 +89,38 @@ class Battle:
                 if on:
                     self.listeners[on].append((u, ab))
             for ab in u.abilities:
+                self._init_timing(ab)
                 c0 = ab.get("trigger", {}).get("initial_cooldown")
                 if c0:
                     u.cooldowns[ab["id"]] = int(c0)
         self.fatal_listeners = list(self.listeners.pop("fatal", []))
 
     # ================================================================ helpers
+    def _init_timing(self, ab: dict):
+        """Raw skill text 'activation K / CT N' -> engine cooldown counters, per cd.model (critical, unconfirmed)."""
+        t = ab.get("trigger", {})
+        if "ct" not in t and "first" not in t:
+            return
+        model = self.asm.get("cd.model")
+        ct, first = t.get("ct"), t.get("first", 1)
+        if ct:
+            t["cooldown"] = ct - 1 if model == "A_cycle" else ct
+        if first and first > 1:
+            t["initial_cooldown"] = first - 1
+        t["_timing"] = {"model": model, "ct": ct, "first": first}
+
     def _set_cd(self, u: Unit, ab: dict):
         cd = ab.get("trigger", {}).get("cooldown")
         if cd:
             u.cooldowns[ab["id"]] = int(cd)
             self._cd_fresh.add((u.uid, ab["id"]))
+            self._cd_set_round[(u.uid, ab["id"])] = self.round
+
+    def _tick_cd(self, u: Unit):
+        """A cooldown is never decremented in the round in which it was started."""
+        for k in list(u.cooldowns):
+            if u.cooldowns[k] > 0 and self._cd_set_round.get((u.uid, k)) != self.round:
+                u.cooldowns[k] -= 1
 
     def _next_sseq(self) -> int:
         self._sseq += 1
@@ -790,6 +812,15 @@ class Battle:
             tgt.statuses = []
         tgt.st.revived_times += 1
         src.st.revives_done += 1
+        rr = self.asm.get("cd.reset_on_revive")
+        if rr == "clear":
+            tgt.cooldowns = {}
+        elif rr == "reset_to_initial":
+            tgt.cooldowns = {}
+            for a_ in tgt.abilities:
+                c0 = a_.get("trigger", {}).get("initial_cooldown")
+                if c0:
+                    tgt.cooldowns[a_["id"]] = int(c0)
         if not self.asm.get("revive.can_act_same_round"):
             tgt.tags.add("_revived_this_round")
         if eff.get("hp_atk_pct"):
@@ -839,7 +870,9 @@ class Battle:
             ab = next((a for a in u.abilities if a["id"] == p.ability["id"]), None)
             if ab is None:
                 return
-            self.execute(u, ab, dict(p.ctx), 0)
+            self.execute(u, ab, dict(p.ctx, event="extra_cast"), 0)
+            if self.asm.get("cd.extra_cast_sets_cd"):
+                self._set_cd(u, ab)
             self.after_cast(u, ab, 1)
             return
         if p.kind == "extra_action":
@@ -863,7 +896,10 @@ class Battle:
         silenced = u.has_control(CONTROL_SILENCE)
         if not silenced:
             actives = [a for a in u.abilities if a.get("kind") == "active" and a.get("trigger", {}).get("on", "turn") == "turn"]
-            actives.sort(key=lambda a: -a.get("priority", 0))
+            if self.asm.get("cd.priority") == "longer_ct_first":
+                actives.sort(key=lambda a: (-(a.get("trigger", {}).get("ct") or 0), -a.get("priority", 0)))
+            else:
+                actives.sort(key=lambda a: -a.get("priority", 0))
             for a in actives:
                 if self._conditions_ok(u, a, {}, consume=True):
                     return a
@@ -901,9 +937,8 @@ class Battle:
                     self.emit("action", 1, subject=u, actor=u, ability=ab, is_extra=False, chain=0)
         self.drain()
         # cooldown.tick: decrement at the owner's turn end, except cooldowns set during this turn
-        for k in list(u.cooldowns):
-            if u.cooldowns[k] > 0 and (u.uid, k) not in self._cd_fresh:
-                u.cooldowns[k] -= 1
+        if self.asm.get("cd.clock") == "own_turn" and (not c or self.asm.get("cd.tick_while_controlled")):
+            self._tick_cd(u)
         self._cd_fresh = set()
         self.tick_statuses(u, "owner_turn_end", applied_before=turn_mark)
 
@@ -1248,6 +1283,11 @@ class Battle:
                 self.drain()
             for u in self.units:
                 self.tick_statuses(u, "round_end")
+            if self.asm.get("cd.clock") == "round":
+                for u in self.fighters():
+                    if self.asm.get("cd.tick_while_controlled") or not u.has_control():
+                        self._tick_cd(u)
+                self._cd_fresh = set()
         return self.result()
 
     def _timeout(self):
