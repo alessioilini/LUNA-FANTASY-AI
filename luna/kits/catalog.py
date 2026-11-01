@@ -61,7 +61,17 @@ def build_catalog(awakening: dict, asm: AssumptionSet, heroes: list[str] | None 
             "stats_note": f"образец ур. {smp['level']} с {smp['source']} (kit.stat_sample); звёзды/экипировка образца неизвестны",
             "provenance": {"source": "; ".join(kit["sources"]), "confidence": "medium",
                            "note": "навыки закодированы по тексту (kits-v1); проверить в игре"}})
-    return Catalog({"region": "RU", "balance_version": VERSION, "heroes": entries,
+    soul_thief = {
+        "id": "soul_thief", "name_ru": "Похититель душ", "system": "any", "effect_key": "soul_thief",
+        "text": "36% предотвратить возрождение цели на 4 хода; +15% урона по целям со Святым благословением/Самосохранением",
+        "abilities": [{"id": "soul_thief", "kind": "passive", "trigger": {"on": "after_attack", "relation": "self"},
+                       "effects": [{"op": "status", "target": "event_hits", "chance": float(asm.get("talent.soul_thief_chance")),
+                                    "status": {"key": "soul_thief_ban", "kind": "debuff", "revive_ban": True, "duration": 4,
+                                               "persist_on_death": True}}]}],
+        "mods": [], "provenance": {"source": "operator-chat:2026-11-01; https://lunafantasy.ru/talents", "confidence": "user_stated",
+                                   "note": "срабатывание «при атаке» по поражённым целям — толкование текста; +15% урона пока не закодировано "
+                                           "(статусы Святое благословение/Самосохранение ещё не моделируются)"}}
+    return Catalog({"region": "RU", "balance_version": VERSION, "heroes": entries, "talents": [soul_thief],
                     "meta": {"warning": "Kits encoded from skill texts; stats are lv350 samples, not the operator's panels.",
                              "assumptions": ["kit.ct_semantics", "kit.turn_means_round", "kit.basic_coef",
                                              "kit.constitution_in_panel", "kit.basic_dtype", "kit.stat_sample"]}})

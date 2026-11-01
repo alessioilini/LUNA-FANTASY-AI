@@ -62,6 +62,7 @@
 | `kit.constitution_in_panel` | Бонусы «Тело …» (HP/ATK %) уже входят в панельные статы образца | UNKNOWN | `True` | bool |  |
 | `kit.basic_dtype` | Тип урона обычной атаки | UNKNOWN | `by_class` | by_class (Маг/Поддержка - магический, Воин/Страж - физический) |  |
 | `kit.stat_sample` | Источник базовых статов героини | UNKNOWN | `operator_panel_if_available` | operator_panel_if_available (панель RU-клиента оператора, иначе образец 350 ур. JP-сайта) | sbg_lv350_panel |  |
+| `talent.soul_thief_chance` | Шанс «Похитителя душ» (зависит от уровня таланта) | UNKNOWN | `0.36` | 0.36 (оператор, макс. уровень) | 0.30 (lunafantasy.ru) |  |
 | `battle.max_rounds` | Лимит раундов | UNKNOWN | `15` | целое |  |
 | `battle.draw_result` | Итог при лимите раундов | UNKNOWN | `draw` | draw | defender_wins | hp_percent |  |
 | `formation.front` | Позиции первого ряда | UNKNOWN | `[0, 1, 2]` | список индексов |  |

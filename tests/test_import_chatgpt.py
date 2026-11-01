@@ -50,3 +50,17 @@ def test_operator_panel_used_for_stats():
     cat = build_catalog({"illusia": 24}, AssumptionSet.preset("exploratory_v1"), heroes=["illusia"])
     st = cat.get("heroes", "illusia")["base_stats"]
     assert st["SPD"] == 12992 and abs(st["DR"] - 0.637) < 1e-9
+
+
+def test_soul_thief_talent_bans_revive():
+    from luna.engine.assumptions import AssumptionSet
+    from luna.engine.battle import Battle
+    from luna.engine.resolve import build_units
+    from luna.kits.catalog import build_catalog, team_from
+    asm = AssumptionSet.preset("exploratory_v1", **{"talent.soul_thief_chance": 1.0, "kit.stat_sample": "sbg_lv350_panel"})
+    cat = build_catalog({"lucifer": 24, "vinette": 14}, asm, heroes=["lucifer", "vinette"])
+    a = team_from(cat, "A", ["lucifer"])
+    a.heroes[0].talents = ["soul_thief"]
+    b = Battle(build_units(a, cat, "A", asm), build_units(team_from(cat, "B", ["vinette"]), cat, "B", asm), asm, seed=1)
+    r = b.run()
+    assert any(e["t"] == "status" and e.get("key") == "soul_thief_ban" for e in r.log)
