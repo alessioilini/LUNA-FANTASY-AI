@@ -110,8 +110,8 @@ _a("kit.turn_means_round", "«ターン/ход» в пассивках = рау�
 _a("kit.basic_coef", "Множитель обычной атаки (нигде не опубликован)", 1.0, "число")
 _a("kit.constitution_in_panel", "Бонусы «Тело …» (HP/ATK %) уже входят в панельные статы образца", True, "bool")
 _a("kit.basic_dtype", "Тип урона обычной атаки", "by_class", "by_class (Маг/Поддержка - магический, Воин/Страж - физический)")
-_a("kit.stat_sample", "Источник базовых статов героини", "sbg_lv350_panel",
-   "sbg_lv350_panel (образец 350 ур. с JP-сайта; звёзды/экипировка образца неизвестны) | operator")
+_a("kit.stat_sample", "Источник базовых статов героини", "operator_panel_if_available",
+   "operator_panel_if_available (панель RU-клиента оператора, иначе образец 350 ур. JP-сайта) | sbg_lv350_panel")
 _a("battle.max_rounds", "Лимит раундов", 15, "целое")
 _a("battle.draw_result", "Итог при лимите раундов", "draw", "draw | defender_wins | hp_percent")
 _a("formation.front", "Позиции первого ряда", [0, 1, 2], "список индексов")

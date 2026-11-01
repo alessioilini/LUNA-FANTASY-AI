@@ -13,7 +13,8 @@ AWK = {"teselien": 24, "vinette": 14, "seneren": 24, "lucifer": 24, "illusia": 2
 
 @pytest.fixture(scope="module")
 def cat():
-    return build_catalog(AWK, AssumptionSet.preset("exploratory_v1"))
+    # mechanics tests: all heroines from the same stat source (JP lv350 samples) so scales are comparable
+    return build_catalog(AWK, AssumptionSet.preset("exploratory_v1", **{"kit.stat_sample": "sbg_lv350_panel"}))
 
 
 def battle(cat, a_ids, b_ids, seed=1, **over):

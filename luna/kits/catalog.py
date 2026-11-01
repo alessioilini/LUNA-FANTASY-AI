@@ -18,7 +18,29 @@ RU_NAMES = {"teselien": "Тессарион", "vinette": "Виньетта", "se
 VERSION = "ru-client@2026-11-01+kits-v1"
 
 
-def stat_sample(hero_id: str) -> dict:
+PANEL_KEYS = ["CRIT", "CRIT_DMG", "DMG_BONUS", "PHYS_DMG_BONUS", "MAGIC_DMG_BONUS", "HEAL_BONUS", "HEAL_RECV", "DODGE", "ACC",
+              "CRIT_RES", "CTRL_RES", "PHYS_DR", "MAGIC_DR", "DR", "CRIT_DMG_RES"]
+
+
+def operator_panel(hero_id: str) -> dict | None:
+    p = ROOT / "data/user/panels/2026-11-01.json"
+    if not p.exists():
+        return None
+    rec = next((r for r in json.loads(p.read_text(encoding="utf-8")) if r["hero_id"] == hero_id), None)
+    if not rec:
+        return None
+    st = dict(rec["stats"])
+    for k in PANEL_KEYS:                       # COMBO_CHANCE is stored but not used: its mechanic is UNKNOWN
+        if k in rec["secondary"]:
+            st[k] = rec["secondary"][k]["value_pct"] / 100
+    return {"stats": st, "level": f"панель RU-клиента A{rec['awakening']}", "source": rec["screenshot"]}
+
+
+def stat_sample(hero_id: str, mode: str = "operator_panel_if_available") -> dict:
+    if mode == "operator_panel_if_available":
+        op = operator_panel(hero_id)
+        if op:
+            return op
     sb = {c["slug"]: c for c in json.loads((ROOT / "data/kb/sbg/characters.json").read_text(encoding="utf-8"))}
     c = sb.get(SBG_SLUG.get(hero_id, ""))
     if c and c["stats"]:
@@ -31,7 +53,7 @@ def build_catalog(awakening: dict, asm: AssumptionSet, heroes: list[str] | None 
     entries = []
     for hid in heroes:
         kit = KITS[hid](awakening.get(hid), asm)
-        smp = stat_sample(hid)
+        smp = stat_sample(hid, asm.get("kit.stat_sample"))
         entries.append({
             "id": hid, "names": {"ru": RU_NAMES.get(hid, hid)}, "role": kit["class"], "class": kit["class"],
             "tags": [f"class:{kit['class']}"], "abilities": kit["abilities"], "kit_notes": kit["notes"],
