@@ -1,0 +1,264 @@
+{
+ "owner": "operator",
+ "status": "my_roster_confirmed",
+ "date": "2026-11-01",
+ "region": "RU",
+ "balance_version": "ru-client@2026-11-01",
+ "note": "«уровень» из сообщения оператора интерпретирован как звёзды (★), «А» — уровень пробуждения. Панельные статы не сообщены -> UNKNOWN.",
+ "heroes": [
+  {
+   "hero_id": "teselien",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 14,
+    "awakening": 24,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Тессарион",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "vinette",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 13,
+    "awakening": 14,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Виньетта",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "seneren",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 12,
+    "awakening": 24,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Сеньерен",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "lucifer",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 12,
+    "awakening": 24,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Люцифер",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "illusia",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 12,
+    "awakening": 24,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Иллюсия",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "sbg:hymelle",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 11,
+    "awakening": 19,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Мяоинь",
+   "roster_role": "main"
+  },
+  {
+   "hero_id": "kurimu",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 11,
+    "awakening": 0,
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Клим",
+   "roster_role": "bench_meta"
+  },
+  {
+   "hero_id": "christine",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 14,
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Кристина",
+   "roster_role": "bench"
+  },
+  {
+   "hero_id": "pandora",
+   "progression": {
+    "level": "UNKNOWN",
+    "stars": 14,
+    "awakening": "UNKNOWN",
+    "skill_levels": {},
+    "upgrades": []
+   },
+   "stats": {
+    "ATK": "UNKNOWN",
+    "HP": "UNKNOWN",
+    "DEF": "UNKNOWN",
+    "SPD": "UNKNOWN"
+   },
+   "stats_mode": "panel",
+   "sigils": [],
+   "talents": [],
+   "limbs": [],
+   "decorations": [],
+   "pets": [],
+   "charm_cards": [],
+   "extra_mods": [],
+   "abilities_override": null,
+   "name_ru": "Пандора",
+   "roster_role": "bench"
+  }
+ ],
+ "inventory": {},
+ "rune_pool": [],
+ "pw_pool": [],
+ "main_team": [
+  "teselien",
+  "vinette",
+  "seneren",
+  "lucifer",
+  "illusia",
+  "sbg:hymelle"
+ ]
+}
