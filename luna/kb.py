@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable
 
-from .provenance import Fact, Region, Confidence, UNKNOWN, ensure_single_balance, is_unknown
+from .provenance import Fact, Region, Confidence, RuStatus, UNKNOWN, ensure_single_balance, is_unknown
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -43,7 +43,22 @@ class KnowledgeBase:
                     kb.facts.append(Fact.from_dict(json.loads(line)))
                 except Exception as e:  # pragma: no cover - surfaced to the user
                     raise ValueError(f"{f}:{line_no}: invalid fact: {e}") from e
+        kb.apply_contradictions()
         return kb
+
+    def apply_contradictions(self, path: Path | None = None) -> int:
+        """Operator decisions survive re-imports: listed source facts are marked ru_status=contradicted."""
+        p = Path(path or DATA / "kb" / "approvals" / "contradictions.json")
+        if not p.exists():
+            return 0
+        rules = json.loads(p.read_text(encoding="utf-8"))
+        n = 0
+        for f in self.facts:
+            for r in rules:
+                if f.key == r["key"] and f.balance_version.startswith(r.get("balance_version_prefix", "")):
+                    f.ru_status = RuStatus.CONTRADICTED
+                    n += 1
+        return n
 
     def add(self, fact: Fact, persist: bool = False, path: Path | None = None) -> None:
         self.facts.append(fact)
@@ -72,10 +87,12 @@ class KnowledgeBase:
     def best(self, key: str, region: str, balance_version: str | None = None):
         """Highest-confidence value for key within ONE region (never falls back to another region)."""
         cands = self.query(key, region=region, balance_version=balance_version)
-        cands = [f for f in cands if f.key == key]
+        cands = [f for f in cands if f.key == key and f.ru_status != RuStatus.CONTRADICTED]
         if not cands:
             return UNKNOWN, None
-        cands.sort(key=lambda f: CONF_RANK[f.confidence], reverse=True)
+        # a value the operator verified in the RU client outranks any website
+        cands.sort(key=lambda f: (f.ru_status == RuStatus.VERIFIED_IN_RU_CLIENT and f.source.kind == "user_prompt",
+                                  CONF_RANK[f.confidence]), reverse=True)
         top = cands[0]
         return top.value, top
 
